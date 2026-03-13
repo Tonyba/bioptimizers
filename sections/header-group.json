@@ -18,7 +18,8 @@
         "bg_color": "#231f20",
         "left_text": "Buy 1, Get 1 50% Off! SHOP NOW",
         "email": "support@bioptimizers.com",
-        "phone": "1-800-719-2467",
+        "phone": "1-800-719-BIOP (1-800-719-2467)",
+        "phone_link": "1-800-719-2467",
         "show_currency": true,
         "color_scheme": "scheme-2"
       }
