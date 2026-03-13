@@ -62,7 +62,7 @@
 }
 
 .account-button {
-    min-width: unset !important;
-    min-height: unset !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
     gap: 0;
 }
