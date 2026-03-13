@@ -32,12 +32,12 @@
       </a>
 
       {% if section.settings.show_currency %}
-        {%
-          render 'localization-selector',
+        {% render 'localization-selector',
           show_country: section.settings.show_currency,
           show_language: section.settings.show_currency,
           localization_font: section.settings.localization_font,
-          localization_font_size: section.settings.localization_font_size,s
+          localization_font_size: section.settings.localization_font_size,
+          country_selector_style: section.settings.country_selector_style,
           localization_style: 'dropdown',
           form_style: form_style,
           form_id: section.id
