@@ -16,7 +16,9 @@
     <div>{{ section.settings.left_text }}</div>
 
     <div class="flex">
-      <a href="tel:{{ section.settings.phone_link }}" class="flex">{{ section.settings.phone }}</a>
+      <a href="tel:{{ section.settings.phone_link }}" class="flex">
+        <span> {% render 'icon', icon: 'phone' %} </span> {{ section.settings.phone -}}
+      </a>
       <a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a>
     </div>
   </div>
