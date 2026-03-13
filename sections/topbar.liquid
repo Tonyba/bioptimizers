@@ -93,6 +93,13 @@
       "label": "Color scheme"
     },
     {
+      "type": "checkbox",
+      "id": "country_selector_style",
+      "label": "t:settings.flag",
+      "default": true,
+      "visible_if": "{{ section.settings.show_currency }}"
+    },
+    {
       "type": "select",
       "id": "localization_font",
       "label": "t:settings.font",
