@@ -38,8 +38,8 @@
 
       {% if section.settings.show_currency %}
         {% render 'localization-selector',
-          show_country: section.settings.show_currency,
-          show_language: section.settings.show_currency,
+          show_country: true,
+          show_language: true,
           localization_font: section.settings.localization_font,
           localization_font_size: section.settings.localization_font_size,
           country_selector_style: section.settings.country_selector_style,
