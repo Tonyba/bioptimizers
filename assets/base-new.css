@@ -60,3 +60,8 @@
 .menu-list__link {
     font-weight: 500 !important;
 }
+
+.account-button {
+    min-width: unset !important;
+    min-height: unset !important;
+}
