@@ -1,3 +1,10 @@
+{% liquid
+  assign localization_font = '--menu-localization-font: var(--font-[localization_font]--family); ' | replace: '[localization_font]', section.settings.localization_font
+  assign localization_font_size = '--menu-localization-font-size: [localization_font_size]; ' | replace: '[localization_font_size]', section.settings.localization_font_size
+  assign color_shadow = '--color-shadow: rgb(var(--color-foreground-rgb) / var(--opacity-10-25));'
+  assign form_style = localization_font | append: localization_font_size | append: color_shadow
+%}
+
 {% stylesheet %}
   .topbar-inner {
     padding: 8px 0;
@@ -23,6 +30,16 @@
         <span class="icon"> {% render 'icon', icon: 'email' %} </span>
         {{ section.settings.email }}
       </a>
+
+      {% if section.settings.show_currency %}
+        {% render 'localization-form',
+          show_country: section.settings.show_currency,
+          show_language: section.settings.show_currency,
+          localization_style: 'dropdown',
+          form_style: form_style,
+          form_id: section.id
+        %}
+      {% endif %}
     </div>
   </div>
 </div>
