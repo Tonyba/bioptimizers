@@ -17,9 +17,12 @@
 
     <div class="flex">
       <a href="tel:{{ section.settings.phone_link }}" class="flex">
-        <span> {% render 'icon', icon: 'phone' %} </span> {{ section.settings.phone -}}
+        <span class="icon"> {% render 'icon', icon: 'phone' %} </span> {{ section.settings.phone -}}
       </a>
-      <a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a>
+      <a href="mailto:{{ section.settings.email }}" class="flex">
+        <span class="icon"> {% render 'icon', icon: 'email' %} </span>
+        {{ section.settings.email }}
+      </a>
     </div>
   </div>
 </div>
