@@ -12,14 +12,14 @@
 </style>
 
 <div class="topbar-inner section section--page-width color-{{ section.settings.color_scheme }}">
-  <div class="flex">
+  <div class="flex items-center">
     <div>{{ section.settings.left_text }}</div>
 
-    <div class="flex">
-      <a href="tel:{{ section.settings.phone_link }}" class="flex">
+    <div class="flex items-center">
+      <a href="tel:{{ section.settings.phone_link }}" class="flex items-center">
         <span class="icon"> {% render 'icon', icon: 'phone' %} </span> {{ section.settings.phone -}}
       </a>
-      <a href="mailto:{{ section.settings.email }}" class="flex">
+      <a href="mailto:{{ section.settings.email }}" class="flex items-center">
         <span class="icon"> {% render 'icon', icon: 'email' %} </span>
         {{ section.settings.email }}
       </a>
