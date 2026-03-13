@@ -11,9 +11,9 @@
     style="{{ localization_font }} {{ localization_font_size }}"
   >
     {% if show_country %}
-      {% if section.settings.country_selector_style == true %}
+      {% if country_selector_style == true %}
         {% liquid
-          assign background_brightness = section.settings.color_scheme.settings.background | color_brightness
+          assign background_brightness = color_scheme.settings.background | color_brightness
           if background_brightness < 64
             assign shadow_size = 4
           else
