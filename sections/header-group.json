@@ -21,7 +21,11 @@
         "phone": "1-800-719-BIOP (1-800-719-2467)",
         "phone_link": "1-800-719-2467",
         "show_currency": true,
-        "color_scheme": "scheme-2"
+        "color_scheme": "scheme-2",
+        "country_selector_style": false,
+        "localization_font": "body",
+        "localization_font_size": "1rem",
+        "localization_position": "right"
       }
     },
     "header_section": {
