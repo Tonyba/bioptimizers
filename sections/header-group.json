@@ -14,7 +14,9 @@
     "topbar_AhwEnj": {
       "type": "topbar",
       "name": "topbar",
-      "settings": {}
+      "settings": {
+        "bg_color": "#231f20"
+      }
     },
     "header_section": {
       "type": "header",
