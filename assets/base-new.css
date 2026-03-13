@@ -48,4 +48,6 @@
     gap: 95px !important;
 }
 
-.menu-list__link {}
+.menu-list__link {
+    font-weight: 500 !important;
+}
