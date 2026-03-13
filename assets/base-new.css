@@ -6,10 +6,13 @@
     display: none;
 }
 
+.gap-40 {
+    gap: 40px;
+}
+
 .justify-between {
     justify-content: space-between;
 }
-
 
 .justify-center {
     justify-content: center;
