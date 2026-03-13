@@ -64,4 +64,5 @@
 .account-button {
     min-width: unset !important;
     min-height: unset !important;
+    gap: 0;
 }
