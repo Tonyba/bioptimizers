@@ -67,9 +67,3 @@
     gap: 0;
     --clamped-avatar-size: 0
 }
-
-shopify-account {
-    --clamped-avatar-size: 0;
-    min-width: 0 !important;
-    min-height: 0 !important;
-}
