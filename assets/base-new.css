@@ -45,5 +45,5 @@
 
 /*header*/
 .header__column--left {
-    gap: 95px
+    gap: 95px !important
 }
