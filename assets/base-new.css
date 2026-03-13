@@ -43,6 +43,10 @@
     flex-direction: row;
 }
 
+.m-x {
+    margin: auto;
+}
+
 /*header*/
 
 .header__column--left {
