@@ -15,7 +15,10 @@
   <div class="flex">
     <div>{{ section.settings.left_text }}</div>
 
-    <div class="flex"></div>
+    <div class="flex">
+      <a href="tel:{{ section.settings.phone_link }}" class="flex">{{ section.settings.phone }}</a>
+      <a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a>
+    </div>
   </div>
 </div>
 
