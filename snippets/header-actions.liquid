@@ -76,7 +76,7 @@
         {% if account_actions_style != blank %}
           style="{{ account_actions_style }}"
         {% endif %}
-      >
+        >dw
         {% if customer %}
           <div class="account-button__fallback"></div>
         {% else %}
@@ -88,7 +88,7 @@
           </span>
 
           <span
-            slot="signed-out-avatar"
+            slot="signed-out-avatar flex flex-column"
             class="{% if display_style != 'icon' %}desktop:hidden{% endif %}"
             aria-hidden="true"
           >
