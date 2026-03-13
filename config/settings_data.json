@@ -9,9 +9,9 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/Layer_4.png",
+    "logo": "shopify://shop_images/protocol-logo.svg",
     "logo_height": 50,
-    "logo_height_mobile": 28,
+    "logo_height_mobile": 30,
     "type_body_font": "figtree_n4",
     "type_subheading_font": "figtree_n7",
     "type_heading_font": "figtree_n7",
