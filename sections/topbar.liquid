@@ -25,7 +25,9 @@
 
 <div class="topbar-inner section section--page-width color-{{ section.settings.color_scheme }}">
   <div class="flex items-center justify-between">
-    <div>{{ section.settings.left_text }}</div>
+    <div class="left-text flex items-center">
+      {{ section.settings.left_text }}
+    </div>
 
     <div class="flex items-center gap-40">
       <a href="tel:{{ section.settings.phone_link }}" class="flex items-center">
@@ -39,7 +41,7 @@
       {% if section.settings.show_currency %}
         {% render 'localization-selector',
           show_country: true,
-          show_language: true,
+          show_language: false,
           localization_font: section.settings.localization_font,
           localization_font_size: section.settings.localization_font_size,
           country_selector_style: section.settings.country_selector_style,
