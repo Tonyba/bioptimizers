@@ -88,13 +88,15 @@
           </span>
 
           <span
-            slot="signed-out-avatar flex flex-column"
+            slot="signed-out-avatar"
             class="{% if display_style != 'icon' %}desktop:hidden{% endif %}"
             aria-hidden="true"
           >
             {{ account_icon }}
           </span>
         {% endif %}
+
+        <div>My Account</div>
       </shopify-account>
     </div>
   {% endif %}
