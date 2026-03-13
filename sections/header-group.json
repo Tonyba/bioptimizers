@@ -15,7 +15,8 @@
       "type": "topbar",
       "name": "topbar",
       "settings": {
-        "bg_color": "#231f20"
+        "bg_color": "#231f20",
+        "left_text": "Buy 1, Get 1 50% Off! SHOP NOW"
       }
     },
     "header_section": {
