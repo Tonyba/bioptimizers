@@ -75,13 +75,11 @@
                   {{ product.price | money }}
                 </div>
                 <div class="flex">
-                  <a class="button flex items-center" href="{{ item.settings.button_link_1 }}">
+                  <button class="button flex items-center">
                     <span class="icon">{% render 'icon', icon: 'bag' %}</span>
-                    {{ item.settings.button_text_1 }}
-                  </a>
-                  <a class="button button-secondary" href="{{ item.settings.button_link_2 }}">
-                    {{ item.settings.button_text_2 }}
-                  </a>
+                    Shop Now
+                  </button>
+                  <a class="button button-secondary" href="{{ product.url }}"> View Product </a>
                 </div>
               </div>
             </div>
