@@ -198,11 +198,11 @@ button {
     align-items: center;
 }
 
-.home-loop-item .featured-image-loop img {
+.home-loop-item .featured-image-loop {
     width: 173px;
 }
 
-.home-loop-item .loop-icon img {
+.home-loop-item .loop-icon {
     width: 21px;
     height: 21px;
     object-fit: fill;
