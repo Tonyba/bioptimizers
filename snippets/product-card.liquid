@@ -61,7 +61,8 @@
   }
 
   [data-product-id="{{ product.id }}"].home-loop-item * {
-   color: {{ product.metafields.custom.button_outline_color.value }}
+   color: {{ product.metafields.custom.button_outline_color.value }};
+   border-color: {{ product.metafields.custom.button_outline_color.value }} !important ;
   }
 
   [data-product-id="{{ product.id }}"].home-loop-item  {
