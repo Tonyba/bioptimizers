@@ -1558,7 +1558,7 @@
       ],
       "name": "t:names.multicolumn",
       "settings": {
-        "custom_css": "below-home-section",
+        "custom_css": "below-home-section all-products-are",
         "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
@@ -1566,7 +1566,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
+        "gap": 37,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
