@@ -94,6 +94,11 @@
                   {{ product.price | money }}
                 </div>
                 <div class="flex">
+                  {% render 'quick-add', product: product, section_id: section.id %}
+                  <button class="button flex items-center">
+                    <span class="icon">{% render 'icon', icon: 'bag' %}</span>
+                    Shop Now
+                  </button>
                   <a class="button button-secondary" href="{{ product.url }}"> View Product </a>
                 </div>
               </div>
