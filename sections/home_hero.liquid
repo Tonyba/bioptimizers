@@ -4,10 +4,12 @@
 <div class="embla cols-1">
   <div class="embla__viewport">
     <div class="embla__container">
-      <div class="grid">
-        <div class="col col-img"></div>
-        <div class="col col-text"></div>
-      </div>
+      {% for item in section.blocks %}
+        <div class="grid embla__item">
+          <div class="col col-img"></div>
+          <div class="col col-text"></div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>
