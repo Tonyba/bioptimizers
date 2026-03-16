@@ -206,8 +206,8 @@
               "name": "t:names.icon",
               "settings": {
                 "icon": "price_tag",
-                "image_upload": "shopify://shop_images/delivery-svgrepo-com_1.svg",
-                "width": 46,
+                "image_upload": "shopify://shop_images/trustpilot-with-stars.svg",
+                "width": 146,
                 "link": "",
                 "open_in_new_tab": false
               },
