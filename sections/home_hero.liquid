@@ -32,9 +32,11 @@
                   </a>
                 {% endif %}
 
-                <a href="{{ item.settings.button_link_2 }}">
-                  {{ item.settings.button_text_2 }}
-                </a>
+                {% if item.settings.button_text_2 != blank %}
+                  <a href="{{ item.settings.button_link_2 }}">
+                    {{ item.settings.button_text_2 }}
+                  </a>
+                {% endif %}
               </div>
             {% endif %}
           </div>
