@@ -6,12 +6,14 @@
 <div class="embla cols-1">
   <div class="embla__viewport">
     <div class="embla__container">
-      <div class="embla__item">
-        <div class="flex">
-          <div class="col"></div>
-          <div class="col"></div>
+      {% for product in block.settings.product_list %}
+        <div class="embla__item">
+          <div class="flex">
+            <div class="col"></div>
+            <div class="col"></div>
+          </div>
         </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 
