@@ -197,3 +197,7 @@ button {
 .home-loop-item .product-card__content {
     align-items: center;
 }
+
+.home-loop-item .image-block {
+    width: 173px;
+}
