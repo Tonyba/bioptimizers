@@ -23,6 +23,10 @@
             <div class="content">
               {{ item.settings.text }}
             </div>
+
+            {% if item.settings.button_text_1 or item.settings.button_text_2 %}
+              <div class="flex"></div>
+            {% endif %}
           </div>
         </div>
       {% endfor %}
