@@ -562,7 +562,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "custom_css": "",
+                "custom_css": "featured-image-loop",
                 "image": "{{ closest.product.metafields.custom.loop_image.value }}",
                 "link": "{{ closest.product.url }}",
                 "image_ratio": "adapt",
