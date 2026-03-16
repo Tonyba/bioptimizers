@@ -7,6 +7,10 @@
     font-weight: bold;
 }
 
+button {
+    cursor: pointer;
+}
+
 .flex-1 {
     flex: 1
 }
