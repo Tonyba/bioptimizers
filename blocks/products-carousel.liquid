@@ -24,8 +24,10 @@
           <div class="flex">
             <div class="col-img">
               {{
-                product.featured_image
-                | image_url: width: product.featured_image.width, height: product.featured_image.height
+                product.metafields.custom.loop_image
+                | image_url:
+                  width: product.metafields.custom.loop_image.width,
+                  height: product.metafields.custom.loop_image.height
                 | image_tag
               }}
             </div>
