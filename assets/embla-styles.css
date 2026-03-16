@@ -1,0 +1,93 @@
+.embla {
+    --slide-spacing: 20px;
+    --slide-size: 50%;
+}
+
+.embla .embla__viewport {
+    overflow: hidden;
+}
+
+.embla .embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    flex-wrap: nowrap;
+    margin-left: calc(var(--slide-spacing) * -1);
+}
+
+
+.embla .embla__container>* {
+    transform: translate3d(0, 0, 0);
+    flex: 0 0 var(--slide-size);
+    min-width: 0;
+    padding-left: var(--slide-spacing);
+    width: unset !important;
+}
+
+.cols-3 {
+    --slide-size: 33.33%;
+}
+
+.no-gap {
+    --slide-spacing: 0px;
+}
+
+.cols-5 {
+    --slide-size: 20%;
+}
+
+.cols-4 {
+    --slide-size: 25%;
+    --slide-spacing: 10px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .cols-3-t {
+        --slide-size: 33.33%;
+    }
+
+    .cols-1-half-t {
+        --slide-size: 60%;
+    }
+
+    .cols-2-t {
+        --slide-size: 50%;
+    }
+
+    .cols-two-t {
+        --slide-size: 45%;
+    }
+
+    .cols-3-half-t {
+        --slide-size: 30%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .embla {
+        --slide-size: 100%;
+        --slide-spacing: 15px;
+    }
+
+    .cols-1-half-m {
+        --slide-size: 90%;
+    }
+
+    .cols-one-half-m {
+        --slide-size: 80%;
+    }
+
+    .cols-2-half-m {
+        --slide-size: 47%;
+        --slide-spacing: 10px;
+    }
+
+    .cols-two-half-m {
+        --slide-size: 60%;
+        --slide-spacing: 10px;
+    }
+
+    .cols-3-half-m {
+        --slide-size: 70%;
+    }
+}
