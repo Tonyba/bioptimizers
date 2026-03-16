@@ -50,7 +50,7 @@
 
 <style></style>
 
-<div class="embla cols-1 no-gap">
+<div class="embla cols-1 no-gap absolute-arrows">
   <div class="embla__viewport">
     <div class="embla__container">
       {% for product in block.settings.product_list %}
@@ -60,7 +60,7 @@
                 background-color: {{ product.metafields.custom.color }}
             }
           </style>
-          <div class="flex items-center">
+          <div class="flex items-center" data-product-id="{{ product.id }}">
             <div class="col-img flex">
               <div class="marks"></div>
               <div class="prod-img flex justify-center">
