@@ -495,7 +495,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<p><strong>Best Selling</strong> SuperHuman Health Formulas</p>",
+                "text": "<h2><strong>Best Selling</strong> SuperHuman Health Formulas</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
