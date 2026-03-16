@@ -100,7 +100,17 @@
                   | image_tag
                 }}
               </div>
-              <div class="discount"></div>
+              <div class="discount">
+                {% if product.compare_at_price > product.price %}
+                  {% assign discount = product.compare_at_price
+                    | minus: product.price
+                    | times: 100.0
+                    | divided_by: product.compare_at_price
+                    | round
+                  %}
+                  <span>Save {{ discount }}%</span>
+                {% endif %}
+              </div>
             </div>
             <div class="col-content">
               <p class="section-subheading">{{ product.metafields.custom.nature_best_choices.value }}</p>
