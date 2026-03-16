@@ -23,6 +23,10 @@
     width: unset !important;
 }
 
+.cols-1 {
+    --slide-size: 100%;
+}
+
 .cols-3 {
     --slide-size: 33.33%;
 }
