@@ -815,7 +815,7 @@
               "type": "text",
               "name": "t:names.description",
               "settings": {
-                "custom_css": "wqfgqgwqgwq",
+                "custom_css": "text-white",
                 "text": "<p>Nature’s Best Choices</p>",
                 "width": "100%",
                 "max_width": "normal",
