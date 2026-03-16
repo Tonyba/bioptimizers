@@ -2,7 +2,7 @@
   assign max_items = section.settings.max_products
 %}
 
-<div class="section-background color-{{ section.settings.color_scheme }}"></div>
+<div class="section-background color-{{ section.settings.color_scheme }} {{ section.settings.custom_css }}"></div>
 <div
   data-testid="product-list"
   class="
