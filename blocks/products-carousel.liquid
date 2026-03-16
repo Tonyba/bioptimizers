@@ -60,17 +60,7 @@
           }
         </style>
 
-        {%- liquid
-          assign variant = product.selected_or_first_available_variant
-
-          if variant.available
-            assign can_add_to_cart = true
-          else
-            assign can_add_to_cart = false
-          endif
-        -%}
-
-        <div class="embla__item" data-product-id="{{ product.id }}">
+        <div class="embla__item">
           <div class="flex items-center">
             <div class="col-img flex">
               <div class="marks"></div>
@@ -96,7 +86,7 @@
                 </div>
                 <div class="flex">
                   {% render 'quick-add', product: product, section_id: block.id %}
-                  <button class="button flex items-center">
+                  <button class="button flex items-center" data-product-id="{{ product.id }}">
                     <span class="icon">{% render 'icon', icon: 'bag' %}</span>
                     Shop Now
                   </button>
