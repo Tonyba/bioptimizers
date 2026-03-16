@@ -22,7 +22,7 @@
               {{
                 item.settings.image
                 | image_url: width: item.settings.image.width, height: item.settings.image.height
-                | image_tag
+                | image_tag: class: 'img-cover'
               }}
             {% endif %}
           </div>
