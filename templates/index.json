@@ -523,7 +523,7 @@
           "name": "t:names.product_card",
           "static": true,
           "settings": {
-            "custom_css": "",
+            "custom_css": "home-loop-item",
             "bg_color": "{{ closest.product.metafields.custom.color.value }}",
             "product_card_gap": 4,
             "inherit_color_scheme": true,
