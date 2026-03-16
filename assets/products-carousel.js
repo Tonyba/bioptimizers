@@ -5,10 +5,10 @@
 
     prod_add_btns.map(btn => {
 
-        const quick = btn.parentNode?.querySelector('quick-add-component form');
+        const quick = btn.parentNode?.querySelector('quick-add-component .quick-add__button');
 
         btn.addEventListener('click', function () {
-            quick?.submit();
+            quick?.click();
         })
     })
 
