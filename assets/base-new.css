@@ -193,3 +193,7 @@ button {
 .home-loop-item {
     border-radius: 12px;
 }
+
+.home-loop-item .product-card__content {
+    align-items: center;
+}
