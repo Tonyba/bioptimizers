@@ -20,7 +20,12 @@
   <div class="embla__viewport">
     <div class="embla__container">
       {% for product in block.settings.product_list %}
-        <div class="embla__item">
+        <style>
+          [data-product-id="{{ product.id }}"] {
+              background-color: {{ product.metafields.custom.color }}
+          }
+        </style>
+        <div class="embla__item" data-product-id="{{ product.id }}">
           <div class="flex">
             <div class="col-img">
               {{
