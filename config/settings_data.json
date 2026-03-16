@@ -178,7 +178,7 @@
           "shadow": "#000000",
           "primary_button_background": "#fe9400",
           "primary_button_text": "#07180f",
-          "primary_button_border": "#000000",
+          "primary_button_border": "#d9d9d9",
           "primary_button_hover_background": "#07180f",
           "primary_button_hover_text": "#ffffff",
           "primary_button_hover_border": "#333333",
