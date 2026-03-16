@@ -637,7 +637,7 @@
               "type": "_product-card-group",
               "name": "t:names.group",
               "settings": {
-                "custom_css": "btn-loop",
+                "custom_css": "loop-btn",
                 "content_direction": "row",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "center",
