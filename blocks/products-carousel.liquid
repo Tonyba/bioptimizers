@@ -21,7 +21,7 @@
     <div class="embla__container">
       {% for product in block.settings.product_list %}
         <style>
-          [data-product-id="{{ product.id }}"] {
+          [data-product-id="{{ product.id }}"] .col-img {
               background-color: {{ product.metafields.custom.color }}
           }
         </style>
