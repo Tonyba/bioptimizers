@@ -60,13 +60,13 @@
               {% if item.settings.button_text_1 != blank or item.settings.button_text_2 != blank %}
                 <div class="flex">
                   {% if item.settings.button_text_1 != blank %}
-                    <a href="{{ item.settings.button_link_1 }}">
+                    <a class="button" href="{{ item.settings.button_link_1 }}">
                       {{ item.settings.button_text_1 }}
                     </a>
                   {% endif %}
 
                   {% if item.settings.button_text_2 != blank %}
-                    <a href="{{ item.settings.button_link_2 }}">
+                    <a class="button" href="{{ item.settings.button_link_2 }}">
                       {{ item.settings.button_text_2 }}
                     </a>
                   {% endif %}
