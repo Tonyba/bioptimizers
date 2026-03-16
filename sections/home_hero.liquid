@@ -24,11 +24,13 @@
               {{ item.settings.text }}
             </div>
 
-            {% if item.settings.button_text_1 or item.settings.button_text_2 %}
+            {% if item.settings.button_text_1 != blank or item.settings.button_text_2 != blank %}
               <div class="flex">
-                <a href="{{ item.settings.button_link_1 }}">
-                  {{ item.settings.button_text_1 }}
-                </a>
+                {% if item.settings.button_text_1 != blank %}
+                  <a href="{{ item.settings.button_link_1 }}">
+                    {{ item.settings.button_text_1 }}
+                  </a>
+                {% endif %}
 
                 <a href="{{ item.settings.button_link_2 }}">
                   {{ item.settings.button_text_2 }}
