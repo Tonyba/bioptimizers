@@ -966,8 +966,8 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "custom_css": "",
-                "text": "<h2>All Our Products are</h2>",
+                "custom_css": "fixing-heading",
+                "text": "<h2>All <strong>Our Products</strong> are</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
