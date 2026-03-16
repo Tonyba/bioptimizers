@@ -208,3 +208,7 @@ button {
     height: 21px;
     object-fit: fill;
 }
+
+.home-loop-item .h4 {
+    text-transform: uppercase;
+}
