@@ -60,6 +60,10 @@
     height: 5px;
 }
 
+.embla_dots-centered button {
+    max-width: 98px;
+}
+
 .embla__dots .embla__dot--selected {
     background-color: var(--color-primary-button-background);
 }
