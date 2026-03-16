@@ -237,3 +237,10 @@ button {
 .text-white {
     color: white;
 }
+
+.section-subheading {
+    line-height: 160%;
+    letter-spacing: 12%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
