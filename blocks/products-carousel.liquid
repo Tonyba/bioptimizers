@@ -59,6 +59,12 @@
             [data-product-id="{{ product.id }}"] .col-img {
                 background-color: {{ product.metafields.custom.color }}
             }
+
+            [data-product-id="{{ product.id }}"] .col-img:before {
+              content: '';
+              width: 100%;
+              height: {{ product.metafields.dark_color }}
+            }
           </style>
           <div class="flex items-center" data-product-id="{{ product.id }}">
             <div class="col-img flex relative">
