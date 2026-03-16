@@ -5,8 +5,8 @@
     console.log('hey')
     prod_add_btns.map(btn => {
 
-        const quick = btn.previousElementSibling();
-
+        const quick = btn.previousSibling();
+        console.log(quick)
 
         btn.addEventListener('click', function () {
 
