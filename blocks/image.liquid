@@ -2,6 +2,8 @@
   assign block_settings = block.settings
   assign ratio = 1
 
+  assign img_class = 'image-block__image border-style ' | append: block_settings.custom_css
+
   case block_settings.image_ratio
     when 'landscape'
       assign ratio = '16 / 9'
@@ -47,7 +49,7 @@
         width: block_settings.image.width,
         widths: widths,
         height: block_settings.image.height,
-        class: 'image-block__image border-style',
+        class: img_class,
         style: image_border_style,
         sizes: sizes
     }}
@@ -60,7 +62,7 @@
 
 {% if block_settings.link == blank %}
   <div
-    class="{{ class }} {{ block_settings.custom_css }}"
+    class="{{ class }}"
     style="{{ style }}"
     {{ block.shopify_attributes }}
   >
