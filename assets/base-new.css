@@ -178,3 +178,8 @@ button {
     min-height: 0 !important;
     gap: 0;
 }
+
+/*home*/
+.below-home-section .group-block-content:not(:last-child) {
+    border-right: 1px solid #d2d2d2;
+}
