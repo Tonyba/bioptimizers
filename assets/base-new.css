@@ -220,12 +220,4 @@ button {
 
 .best-selling .link {
     font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.best-selling .button-icon {
-    width: 35px;
-    height: 35px;
 }
