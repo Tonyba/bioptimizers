@@ -523,8 +523,6 @@
           "name": "t:names.product_card",
           "static": true,
           "settings": {
-            "custom_css": "",
-            "bg_color": "{{ closest.product.metafields.custom.color.value }}",
             "product_card_gap": 4,
             "inherit_color_scheme": true,
             "color_scheme": "",
