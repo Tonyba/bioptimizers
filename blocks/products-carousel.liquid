@@ -42,6 +42,10 @@
     font-weight: bold;
     font-size: 42px;
   }
+
+  .products-carousel .price-buttons {
+    gap: 30px;
+  }
 {% endstylesheet %}
 
 <style></style>
@@ -80,6 +84,54 @@
                   {{ product.price | money }}
                 </div>
                 <div class="flex">
+                  <add-to-cart-component
+                    ref="addToCartButtonContainer"
+                    data-product-variant-media="{{ product_variant_media }}"
+                    data-add-to-cart-animation="{{ settings.add_to_cart_animation }}"
+                  >
+                    <button
+                      {% if id != blank %}
+                        id="{{ id }}"
+                      {% endif %}
+                      type="submit"
+                      name="add"
+                      ref="addToCartButton"
+                      on:click="/handleClick"
+                      class="button {{ class }}"
+                      {% if data_testid %}
+                        data-testid="{{ data_testid }}"
+                      {% endif %}
+                      {% unless can_add_to_cart %}
+                        disabled
+                      {% endunless %}
+                    >
+                      <span
+                        class="add-to-cart-text"
+                      >
+                        {% if can_add_to_cart %}
+                          <span
+                            aria-hidden="true"
+                            class="svg-wrapper add-to-cart-icon"
+                          >
+                            {{- 'icon-add-to-cart.svg' | inline_asset_content -}}
+                          </span>
+                        {% endif %}
+                        <span class="add-to-cart-text__content{% if icon_only_on_mobile %} is-visually-hidden-mobile{% endif %}">
+                          <span>
+                            <span>
+                              {{- add_to_cart_text | default: default_add_to_cart_text -}}
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                      {% comment %} checkmark burst markup {% endcomment %}
+                      <span class="add-to-cart__added">
+                        <span class="svg-wrapper add-to-cart__added-icon">
+                          {{- 'icon-checkmark-burst.svg' | inline_asset_content -}}
+                        </span>
+                      </span>
+                    </button>
+                  </add-to-cart-component>
                   <button class="button flex items-center">
                     <span class="icon">{% render 'icon', icon: 'bag' %}</span>
                     Shop Now
