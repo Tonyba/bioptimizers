@@ -92,46 +92,18 @@
                   {{ product.price | money }}
                 </div>
                 <div class="flex">
-                  <add-to-cart-component
-                    ref="addToCartButtonContainer"
-                    data-product-variant-media="{{ product_variant_media }}"
-                    data-add-to-cart-animation="{{ settings.add_to_cart_animation }}"
-                  >
-                    <button
-                      {% if product.id != blank %}
-                        id="{{ product.id }}"
-                      {% endif %}
-                      type="submit"
-                      name="add"
-                      ref="addToCartButton"
-                      on:click="/handleClick"
-                      class="button"
-                    >
-                      <span
-                        class="add-to-cart-text"
-                      >
-                        <span
-                          aria-hidden="true"
-                          class="svg-wrapper add-to-cart-icon"
-                        >
-                          {% render 'icon', icon: 'bag' %}
-                        </span>
-
-                        <span class="add-to-cart-text__content is-visually-hidden-mobile">
-                          <span>
-                            <span> Shop Now </span>
-                          </span>
-                        </span>
-                      </span>
-                      {% comment %} checkmark burst markup {% endcomment %}
-                      <span class="add-to-cart__added">
-                        <span class="svg-wrapper add-to-cart__added-icon">
-                          {{- 'icon-checkmark-burst.svg' | inline_asset_content -}}
-                        </span>
-                      </span>
-                    </button>
-                  </add-to-cart-component>
-
+                  {% render 'add-to-cart-button',
+                    id: id,
+                    class: class,
+                    can_add_to_cart: can_add_to_cart,
+                    product: closest.product,
+                    add_to_cart_text: add_to_cart_text,
+                    data_testid: 'standalone-add-to-cart'
+                  %}
+                  <button class="button flex items-center">
+                    <span class="icon">{% render 'icon', icon: 'bag' %}</span>
+                    Shop Now
+                  </button>
                   <a class="button button-secondary" href="{{ product.url }}"> View Product </a>
                 </div>
               </div>
