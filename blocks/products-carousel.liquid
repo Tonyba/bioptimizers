@@ -61,19 +61,12 @@
         </style>
 
         {%- liquid
-          assign product_variant_media = product.selected_or_first_available_variant.featured_media.preview_image | image_url: width: 100
-          assign class = 'add-to-cart-button ' | append: block.settings.style_class
           assign variant = product.selected_or_first_available_variant
 
           if variant.available
             assign can_add_to_cart = true
           else
             assign can_add_to_cart = false
-          endif
-
-          assign id = 'BuyButtons-ProductSubmitButton-' | append: block.id
-          if product.selected_or_first_available_variant.featured_media.preview_image == blank
-            assign product_variant_media = product.featured_media.preview_image | image_url: width: 100
           endif
         -%}
 
@@ -105,7 +98,7 @@
                   {% render 'add-to-cart-button',
                     add_to_cart_text: 'Shop Now',
                     class: 'button quick-add__button quick-add__button--add add-to-cart-button',
-                    can_add_to_cart: settings.can_add_to_cart,
+                    can_add_to_cart: can_add_to_cart,
                     icon_only_on_mobile: true,
                     product: product
                   %}
