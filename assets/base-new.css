@@ -209,6 +209,6 @@ button {
     object-fit: fill;
 }
 
-.home-loop-item .h4 {
+.home-loop-item .h4 p {
     text-transform: uppercase;
 }
