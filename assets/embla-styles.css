@@ -14,6 +14,12 @@
     margin-left: calc(var(--slide-spacing) * -1);
 }
 
+.embla .embla__button {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    border: 2px solid #E9E9E9;
+}
 
 .embla .embla__container>* {
     transform: translate3d(0, 0, 0);
