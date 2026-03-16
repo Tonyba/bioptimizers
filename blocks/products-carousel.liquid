@@ -54,13 +54,12 @@
   <div class="embla__viewport">
     <div class="embla__container">
       {% for product in block.settings.product_list %}
-        <style>
-          [data-product-id="{{ product.id }}"] .col-img {
-              background-color: {{ product.metafields.custom.color }}
-          }
-        </style>
-
         <div class="embla__item">
+          <style>
+            [data-product-id="{{ product.id }}"] .col-img {
+                background-color: {{ product.metafields.custom.color }}
+            }
+          </style>
           <div class="flex items-center">
             <div class="col-img flex">
               <div class="marks"></div>
