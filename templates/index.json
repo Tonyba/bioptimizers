@@ -740,6 +740,7 @@
       },
       "name": "t:names.products_carousel",
       "settings": {
+        "custom_css": "best-selling",
         "collection": "frontpage",
         "layout_type": "carousel",
         "carousel_on_mobile": false,
