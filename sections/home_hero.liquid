@@ -3,7 +3,7 @@
 {% stylesheet %}
 {% endstylesheet %}
 
-<div class="embla cols-1">
+<div class="embla cols-1 color-scheme-1">
   <div class="embla__viewport">
     <div class="embla__container">
       {% for item in section.blocks %}
@@ -18,27 +18,29 @@
             {% endif %}
           </div>
           <div class="col col-text">
-            <div class="subheading">{{ item.settings.subheading }}</div>
-            <div class="heading">{{ item.settings.heading }}</div>
-            <div class="content">
-              {{ item.settings.text }}
-            </div>
-
-            {% if item.settings.button_text_1 != blank or item.settings.button_text_2 != blank %}
-              <div class="flex">
-                {% if item.settings.button_text_1 != blank %}
-                  <a href="{{ item.settings.button_link_1 }}">
-                    {{ item.settings.button_text_1 }}
-                  </a>
-                {% endif %}
-
-                {% if item.settings.button_text_2 != blank %}
-                  <a href="{{ item.settings.button_link_2 }}">
-                    {{ item.settings.button_text_2 }}
-                  </a>
-                {% endif %}
+            <div class="inner-content">
+              <div class="subheading">{{ item.settings.subheading }}</div>
+              <div class="heading">{{ item.settings.heading }}</div>
+              <div class="content">
+                {{ item.settings.text }}
               </div>
-            {% endif %}
+
+              {% if item.settings.button_text_1 != blank or item.settings.button_text_2 != blank %}
+                <div class="flex">
+                  {% if item.settings.button_text_1 != blank %}
+                    <a href="{{ item.settings.button_link_1 }}">
+                      {{ item.settings.button_text_1 }}
+                    </a>
+                  {% endif %}
+
+                  {% if item.settings.button_text_2 != blank %}
+                    <a href="{{ item.settings.button_link_2 }}">
+                      {{ item.settings.button_text_2 }}
+                    </a>
+                  {% endif %}
+                </div>
+              {% endif %}
+            </div>
           </div>
         </div>
       {% endfor %}
