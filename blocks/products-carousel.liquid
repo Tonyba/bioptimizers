@@ -94,15 +94,6 @@
                   {{ product.price | money }}
                 </div>
                 <div class="flex">
-                  {% render 'add-to-cart-button',
-                    id: id,
-                    class: class,
-                    can_add_to_cart: true,
-                    product: product,
-                    add_to_cart_text: 'Shop Now',
-                    data_testid: 'standalone-add-to-cart'
-                  %}
-
                   <a class="button button-secondary" href="{{ product.url }}"> View Product </a>
                 </div>
               </div>
