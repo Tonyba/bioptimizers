@@ -134,7 +134,6 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "custom_css": "",
                 "text": "<p>Fast & Reliable Delivery</p>",
                 "width": "100%",
                 "max_width": "normal",
@@ -220,7 +219,6 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "custom_css": "",
                 "text": "<p><strong>Rated 4.5</strong> (+500 reviews)</p>",
                 "width": "100%",
                 "max_width": "normal",
@@ -306,7 +304,6 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "custom_css": "",
                 "text": "<p> Secure Online Shopping<br/></p>",
                 "width": "100%",
                 "max_width": "normal",
@@ -392,7 +389,6 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "custom_css": "",
                 "text": "<p>100% Natural & Herbal</p>",
                 "width": "100%",
                 "max_width": "normal",
@@ -616,7 +612,6 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "custom_css": "",
                 "text": "{{ closest.product.metafields.custom.short_description | metafield_tag }}",
                 "width": "100%",
                 "max_width": "normal",
@@ -707,7 +702,6 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "custom_css": "",
                     "text": "<p>{{ closest.product.metafields.custom.button_loop_text.value }}</p>",
                     "width": "fit-content",
                     "max_width": "normal",
@@ -815,7 +809,6 @@
               "type": "text",
               "name": "t:names.description",
               "settings": {
-                "custom_css": "text-white",
                 "text": "<p>Nature’s Best Choices</p>",
                 "width": "100%",
                 "max_width": "normal",
@@ -842,7 +835,6 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "custom_css": "",
                 "text": "<p><strong>Save Big and Get</strong> More Complete Support with Stacks</p>",
                 "width": "100%",
                 "max_width": "normal",
