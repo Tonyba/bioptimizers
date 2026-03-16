@@ -247,6 +247,10 @@ button {
 }
 
 /*all products are*/
+.all-products-are {
+    color: #6D6D6D
+}
+
 .all-products-are .group-block:not(:last-child) {
     padding-right: 37px;
 }
