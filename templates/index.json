@@ -522,6 +522,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "View All Products",
+                "icon": "shopify://shop_images/plus.svg",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "link",
