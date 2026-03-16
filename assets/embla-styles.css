@@ -49,6 +49,17 @@
     height: 16px;
 }
 
+.embla__dots button {
+    flex: 1;
+    background-color: var(--border-color);
+    border: 0;
+    border-radius: 3px;
+}
+
+.embla__dots .embla__dot--selected {
+    background-color: var(--color-primary-button-background);
+}
+
 .embla .embla__container>* {
     transform: translate3d(0, 0, 0);
     flex: 0 0 var(--slide-size);
