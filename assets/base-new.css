@@ -248,7 +248,8 @@ button {
 
 /*all products are*/
 .all-products-are {
-    color: #6D6D6D
+    color: #6D6D6D;
+    font-size: 14px;
 }
 
 .all-products-are .group-block:not(:last-child) {
