@@ -9,7 +9,13 @@
       {% for product in block.settings.product_list %}
         <div class="embla__item">
           <div class="flex">
-            <div class="col-img"></div>
+            <div class="col-img">
+              {{
+                product.featured_image
+                | image_url: width: product.featured_image.width, height: product.featured_image.height
+                | image_tag
+              }}
+            </div>
             <div class="col-content"></div>
           </div>
         </div>
