@@ -24,10 +24,24 @@
             "button_text_2": "Explore all products",
             "button_link_2": "shopify://collections/all"
           }
+        },
+        "carousel_item_Extn8b": {
+          "type": "carousel-item",
+          "settings": {
+            "image": "shopify://shop_images/72d870501bb85a390c2fcfbfd063d7d337224a50.jpg",
+            "subheading": "1# Supplement in the world",
+            "heading": "All-in-one Supplement For Your Family",
+            "text": "<p><strong>Nutritional supplement filled with 33 ingredients,</strong> all working together to support your strength and health.<br/><br/></p>",
+            "button_text_1": "Shop Now",
+            "button_link_1": "shopify://collections/all",
+            "button_text_2": "Explore all products",
+            "button_link_2": "shopify://collections/all"
+          }
         }
       },
       "block_order": [
-        "carousel_item_WCRrPa"
+        "carousel_item_WCRrPa",
+        "carousel_item_Extn8b"
       ],
       "name": "Home Hero",
       "settings": {}
