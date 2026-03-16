@@ -3,6 +3,10 @@
     display: flex;
 }
 
+.button {
+    font-weight: bold;
+}
+
 .flex-1 {
     flex: 1
 }
