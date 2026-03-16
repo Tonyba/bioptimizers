@@ -57,7 +57,11 @@
 <style>
   [data-product-id="{{ product.id }}"].home-loop-item {
     background-color: {{ block_settings.bg_color }};
-    text: {{ product.metafields.custom.button_outline_color.value }}
+
+  }
+
+   [data-product-id="{{ product.id }}"].home-loop-item * {
+     text: {{ product.metafields.custom.button_outline_color.value }}
   }
 
   [data-product-id="{{ product.id }}"].home-loop-item  {
