@@ -63,7 +63,8 @@
             [data-product-id="{{ product.id }}"] .col-img:before {
               content: '';
               width: 100%;
-              height: {{ product.metafields.dark_color }}
+              background-color: {{ product.metafields.dark_color }};
+              height: 83px
             }
           </style>
           <div class="flex items-center" data-product-id="{{ product.id }}">
