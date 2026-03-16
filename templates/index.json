@@ -864,11 +864,24 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "products_carousel_Cd9bVj": {
+              "type": "products-carousel",
+              "name": "Products Carousel",
+              "settings": {
+                "product_list": [
+                  "magnesium-power-blend",
+                  "masszymes",
+                  "probiotic-breakthrough"
+                ]
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "text_G9dnNX",
-            "text_GDWrjj"
+            "text_GDWrjj",
+            "products_carousel_Cd9bVj"
           ]
         }
       },
