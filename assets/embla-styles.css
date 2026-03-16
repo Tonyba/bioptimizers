@@ -14,6 +14,12 @@
     margin-left: calc(var(--slide-spacing) * -1);
 }
 
+.absolute-arrows .embla__button {
+    position: absolute;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+}
+
 .embla .embla__button {
     width: 48px;
     height: 48px;
