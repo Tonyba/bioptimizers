@@ -57,7 +57,8 @@
         <div class="embla__item">
           <style>
             [data-product-id="{{ product.id }}"] .col-img {
-                background-color: {{ product.metafields.custom.color }}
+                background-color: {{ product.metafields.custom.color }};
+                overflow: hidden;
             }
 
             [data-product-id="{{ product.id }}"] .col-img:before {
