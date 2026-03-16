@@ -69,6 +69,12 @@
               <p class="section-subheading">{{ product.metafields.custom.nature_best_choices.value }}</p>
               <h3>{{ product.title }}</h3>
               <p>{{ product.description }}</p>
+
+              <div class="flex">
+                <div class="price">
+                  {{ product.price | money }}
+                </div>
+              </div>
             </div>
           </div>
         </div>
