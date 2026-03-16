@@ -245,3 +245,8 @@ button {
     text-transform: uppercase;
     font-weight: 600;
 }
+
+/*all products are*/
+.all-products-are .group-block:not(:last-child) {
+    padding-right: 37px;
+}
