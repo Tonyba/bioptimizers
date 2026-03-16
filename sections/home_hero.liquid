@@ -1,6 +1,10 @@
 {{ 'embla-styles.css' | asset_url | stylesheet_tag }}
 
 {% stylesheet %}
+  .home-hero:before {
+    content: '';
+  }
+
   .home-hero .inner-content {
     max-width: 530px;
     padding-right: 20px;
