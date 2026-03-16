@@ -375,7 +375,7 @@
               "settings": {
                 "icon": "price_tag",
                 "image_upload": "shopify://shop_images/herb.svg",
-                "width": 42,
+                "width": 40,
                 "link": "",
                 "open_in_new_tab": false
               },
@@ -433,7 +433,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
