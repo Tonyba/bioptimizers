@@ -60,7 +60,7 @@
 
 {% if block_settings.link == blank %}
   <div
-    class="{{ class }}"
+    class="{{ class }} {{ block_settings.custom_css }}"
     style="{{ style }}"
     {{ block.shopify_attributes }}
   >
