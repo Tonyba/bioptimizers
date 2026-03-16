@@ -56,6 +56,10 @@
     border-radius: 3px;
 }
 
+.embla__dots-thick button {
+    height: 5px;
+}
+
 .embla__dots .embla__dot--selected {
     background-color: var(--color-primary-button-background);
 }
