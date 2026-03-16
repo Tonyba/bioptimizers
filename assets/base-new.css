@@ -212,3 +212,8 @@ button {
 .home-loop-item .h4 p {
     text-transform: uppercase;
 }
+
+/*best selling*/
+.best-selling h2 {
+    font-weight: 400;
+}
