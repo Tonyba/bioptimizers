@@ -25,6 +25,11 @@
     background-color: white;
 }
 
+.embla .embla__button svg {
+    width: 20px;
+
+}
+
 .embla .embla__container>* {
     transform: translate3d(0, 0, 0);
     flex: 0 0 var(--slide-size);
