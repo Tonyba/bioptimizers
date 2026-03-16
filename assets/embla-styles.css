@@ -14,10 +14,22 @@
     margin-left: calc(var(--slide-spacing) * -1);
 }
 
+.absolute-arrows {
+    position: relative;
+}
+
 .absolute-arrows .embla__button {
     position: absolute;
     top: 50%;
     transform: translate3d(0, -50%, 0);
+}
+
+.absolute-arrows .embla__button--prev {
+    left: 20px;
+}
+
+.absolute-arrows .embla__button--prev {
+    right: 20px;
 }
 
 .embla .embla__button {
