@@ -254,4 +254,5 @@ button {
 
 .all-products-are .group-block:not(:last-child) {
     padding-right: 37px;
+    border-right-width: 2px;
 }
