@@ -100,7 +100,15 @@
           </style>
           <div class="flex items-center" data-product-id="{{ product.id }}">
             <div class="col-img flex relative">
-              <div class="marks"></div>
+              <div class="marks">
+                {{
+                  'dairy-free.svg'
+                  | asset_img_url:
+                    width: product.metafields.custom.loop_image.width,
+                    height: product.metafields.custom.loop_image.height
+                  | image_tag
+                }}
+              </div>
               <div class="prod-img flex justify-center">
                 {{
                   product.metafields.custom.loop_image
