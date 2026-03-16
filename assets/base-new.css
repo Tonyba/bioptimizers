@@ -202,4 +202,8 @@ button {
     width: 173px;
 }
 
-.home-loop-item {}
+.home-loop-item .loop-icon img {
+    width: 21px;
+    height: 21px;
+    object-fit: fill;
+}
