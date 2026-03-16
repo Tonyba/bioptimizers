@@ -218,6 +218,6 @@ button {
     font-weight: 400 !important;
 }
 
-.best-selling h2 strong {
+.best-selling .link {
     font-weight: 600;
 }
