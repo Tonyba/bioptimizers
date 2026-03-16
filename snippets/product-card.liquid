@@ -54,8 +54,40 @@
   endif
 %}
 
+<style>
+  [data-product-id="{{ product.id }}"].home-loop-item {
+    background-color: {{ block_settings.bg_color }};
+  }
+
+  [data-product-id="{{ product.id }}"].home-loop-item * {
+   color: {{ product.metafields.custom.button_outline_color.value }};
+   border-color: {{ product.metafields.custom.button_outline_color.value }} !important ;
+  }
+
+  [data-product-id="{{ product.id }}"].home-loop-item  {
+    position: relative;
+  }
+
+  [data-product-id="{{ product.id }}"].home-loop-item:before {
+    content: '';
+    width: 100%;
+    height: 82px;
+    background-color: {{ product.metafields.custom.dark_color.value }};
+    position: absolute;
+    top: 225px
+  }
+
+  [data-product-id="{{ product.id }}"] .loop-btn {
+    border-color: #231F20;
+  }
+
+  [data-product-id="{{ product.id }}"] .loop-btn:hover {
+
+  }
+</style>
+
 <product-card
-  class="product-card size-style"
+  class="product-card size-style {{ block_settings.custom_css }}"
   style="{% render 'size-style', settings: block_settings %}"
   data-product-id="{{ product.id }}"
   id="product-card-{{ block.id }}"

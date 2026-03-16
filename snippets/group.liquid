@@ -16,6 +16,7 @@
     group-block
     group-block--height-{{ settings.height }}
     group-block--width-{{ settings.width }}
+    {{ settings.custom_css }}
     border-style
     spacing-style
     size-style
@@ -41,7 +42,7 @@
     ></a>
   {%- endif -%}
 
-  <div class="group-block__media-wrapper">
+  <div class="group-block__media-wrapper {{ settings.custom_css }}">
     {% render 'background-media',
       background_media: settings.background_media,
       background_video: settings.video,
@@ -58,6 +59,7 @@
   <div
     class="
       group-block-content
+      {{ settings.custom_css }}
       {% if request.design_mode %}group-block-content--design-mode{% endif %}
       layout-panel-flex
       layout-panel-flex--{{ settings.content_direction | default: 'column' }}

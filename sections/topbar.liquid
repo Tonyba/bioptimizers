@@ -1,0 +1,198 @@
+{% liquid
+  assign localization_font = '--menu-localization-font: var(--font-[localization_font]--family); ' | replace: '[localization_font]', section.settings.localization_font
+  assign localization_font_size = '--menu-localization-font-size: [localization_font_size]; ' | replace: '[localization_font_size]', section.settings.localization_font_size
+  assign color_shadow = '--color-shadow: rgb(var(--color-foreground-rgb) / var(--opacity-10-25));'
+  assign form_style = localization_font | append: localization_font_size | append: color_shadow
+%}
+
+{% stylesheet %}
+  .topbar-inner {
+    padding: 8px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .topbar-inner a {
+    border-right: 1px solid var(--color-border);
+    padding-right: 40px;
+  }
+{% endstylesheet %}
+
+<style>
+  .topbar {
+      background-color: {{section.settings.bg_color}};
+  }
+
+  .left-text  {
+    background-color: var(--color-primary-button-background);
+    color: var(--color-primary-button-text);
+    padding: 9px 40px;
+    border-radius: 50px
+  }
+</style>
+
+<div class="topbar-inner section section--page-width color-{{ section.settings.color_scheme }}">
+  <div class="flex items-center justify-between">
+    <div class="left-text flex items-center">
+      <span class="icon"> {% render 'icon', icon: 'tag' %} </span>
+      {{ section.settings.left_text }}
+      <span class="icon"> {% render 'icon', icon: 'chevron-right' %} </span>
+    </div>
+
+    <div class="flex items-center gap-40">
+      <a href="tel:{{ section.settings.phone_link }}" class="flex items-center">
+        <span class="icon"> {% render 'icon', icon: 'phone' %} </span> {{ section.settings.phone -}}
+      </a>
+      <a href="mailto:{{ section.settings.email }}" class="flex items-center">
+        <span class="icon"> {% render 'icon', icon: 'email' %} </span>
+        {{ section.settings.email }}
+      </a>
+
+      {% if section.settings.show_currency %}
+        {% render 'localization-selector',
+          show_country: true,
+          show_language: false,
+          localization_font: section.settings.localization_font,
+          localization_font_size: section.settings.localization_font_size,
+          country_selector_style: section.settings.country_selector_style,
+          color_scheme: section.settings.color_scheme,
+          localization_style: 'dropdown',
+          form_style: form_style,
+          form_id: section.id
+        %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Topbar",
+  "class": "topbar",
+  "enabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "text",
+      "id": "left_text",
+      "label": "Left Text"
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "label": "Email"
+    },
+    {
+      "type": "text",
+      "id": "phone",
+      "label": "Phone Text"
+    },
+    {
+      "type": "text",
+      "id": "phone_link",
+      "label": "Phone Link"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_currency",
+      "label": "Currency Selector",
+      "default": true
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "scheme_1",
+      "label": "Color scheme"
+    },
+    {
+      "type": "checkbox",
+      "id": "country_selector_style",
+      "label": "t:settings.flag",
+      "default": true,
+      "visible_if": "{{ section.settings.show_currency }}"
+    },
+    {
+      "type": "select",
+      "id": "localization_font",
+      "label": "t:settings.font",
+      "options": [
+        {
+          "value": "heading",
+          "label": "t:options.heading"
+        },
+        {
+          "value": "subheading",
+          "label": "t:options.subheading"
+        },
+        {
+          "value": "body",
+          "label": "t:options.body"
+        },
+        {
+          "value": "accent",
+          "label": "t:options.accent"
+        }
+      ],
+      "default": "heading",
+      "visible_if": "{{ section.settings.show_currency }}"
+    },
+    {
+      "type": "select",
+      "id": "localization_font_size",
+      "label": "t:settings.size",
+      "options": [
+        {
+          "value": "0.625rem",
+          "label": "10px"
+        },
+        {
+          "value": "0.75rem",
+          "label": "12px"
+        },
+        {
+          "value": "0.875rem",
+          "label": "14px"
+        },
+        {
+          "value": "1rem",
+          "label": "16px"
+        },
+        {
+          "value": "1.125rem",
+          "label": "18px"
+        }
+      ],
+      "default": "1rem"
+    },
+    {
+      "type": "select",
+      "id": "localization_position",
+      "label": "t:settings.position",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:options.left"
+        },
+        {
+          "value": "right",
+          "label": "t:options.right"
+        }
+      ],
+      "default": "right",
+      "visible_if": "{{ section.settings.show_currency  }}"
+    }
+  ],
+  "presets": [
+    {
+      "name": "topbar"
+    }
+  ]
+}
+{% endschema %}

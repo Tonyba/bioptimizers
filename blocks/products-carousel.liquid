@@ -1,0 +1,212 @@
+{% stylesheet %}
+  .products-carousel .embla__item > .flex {
+    gap: 80px;
+  }
+
+  .products-carousel .col-img {
+    border-radius: 10px;
+    width: 40%;
+    padding: 20px;
+  }
+
+  .products-carousel .col-content {
+    width: 60%;
+  }
+
+  .products-carousel .col-img img {
+    width: 194px;
+  }
+
+  .products-carousel .col-img > * {
+    width: 27.5%;
+    position: relative;
+  }
+
+  .products-carousel .prod-img {
+    width: 72.5%;
+  }
+
+  .products-carousel .section-subheading {
+    background-color: #7c76c8;
+    display: inline-block;
+    color: white;
+    padding: 6px 36px;
+    border-radius: 2px;
+    line-height: 1;
+  }
+
+  .products-carousel h3 {
+    margin-top: 0;
+  }
+
+  .products-carousel .price {
+    font-weight: bold;
+    font-size: 42px;
+  }
+
+  .products-carousel .price-buttons {
+    gap: 30px;
+  }
+
+  .products-carousel .embla__dots {
+    margin-top: 46px;
+  }
+
+  .products-carousel {
+    max-width: 1120px;
+  }
+
+  .products-carousel .absolute-arrows .embla__button--prev {
+    left: -100px;
+  }
+
+  .products-carousel .absolute-arrows .embla__button--next {
+    right: -100px;
+  }
+
+  .products-carousel .discount {
+    color: white;
+    font-weight: bold;
+    background-color: #231f20;
+    border-radius: 2px;
+    text-align: center;
+    display: inline-block;
+    padding: 2px 10px;
+    position: absolute;
+    right: 25px;
+    width: max-content;
+  }
+{% endstylesheet %}
+
+<style></style>
+
+<div class="embla cols-1 no-gap absolute-arrows">
+  <div class="embla__viewport">
+    <div class="embla__container">
+      {% for product in block.settings.product_list %}
+        <div class="embla__item">
+          <style>
+            [data-product-id="{{ product.id }}"] .col-img {
+                background-color: {{ product.metafields.custom.color }};
+                overflow: hidden;
+            }
+
+            [data-product-id="{{ product.id }}"] .col-img:before {
+              content: '';
+              width: 100%;
+              background-color: {{ product.metafields.custom.dark_color }};
+              height: 83px;
+              position: absolute;
+              bottom:0;
+              left:0;
+            }
+          </style>
+          <div class="flex items-center" data-product-id="{{ product.id }}">
+            <div class="col-img flex relative">
+              <div class="marks">
+                <img
+                  src="{{ 'dairy-free.svg' | asset_url }}"
+                  alt=""
+                  height="84"
+                  width="84"
+                  loading="lazy"
+                >
+
+                <img
+                  src="{{ 'sugar-free.svg' | asset_url }}"
+                  alt=""
+                  height="84"
+                  width="84"
+                  loading="lazy"
+                >
+
+                <img
+                  src="{{ 'chemicals.svg' | asset_url }}"
+                  alt=""
+                  height="84"
+                  width="84"
+                  loading="lazy"
+                >
+              </div>
+              <div class="prod-img flex items-center">
+                {{
+                  product.metafields.custom.loop_image
+                  | image_url:
+                    width: product.metafields.custom.loop_image.width,
+                    height: product.metafields.custom.loop_image.height
+                  | image_tag
+                }}
+              </div>
+
+              <div class="discount">
+                {% if product.compare_at_price > product.price %}
+                  {% assign discount = product.compare_at_price
+                    | minus: product.price
+                    | times: 100.0
+                    | divided_by: product.compare_at_price
+                    | round
+                  %}
+                  <span>{{ discount }}% OFF</span>
+                {% endif %}
+              </div>
+            </div>
+            <div class="col-content">
+              <p class="section-subheading">{{ product.metafields.custom.nature_best_choices.value }}</p>
+              <h3>{{ product.title }}</h3>
+              <p>{{ product.description }}</p>
+
+              <div class="flex items-center price-buttons">
+                <div class="price">
+                  {{ product.price | money }}
+                </div>
+                <div class="flex">
+                  {% render 'quick-add', product: product, section_id: block.id %}
+                  <button class="button flex items-center product-carousel-add" data-product-id="{{ product.id }}">
+                    <span class="icon">{% render 'icon', icon: 'bag' %}</span>
+                    Shop Now
+                  </button>
+                  <a class="button button-secondary" href="{{ product.url }}"> View Product </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="embla__controls">
+    <button class="embla__button embla__button--prev" type="button">
+      {% render 'icon', icon: 'chevron-left' %}
+    </button>
+
+    <button class="embla__button embla__button--next" type="button">
+      {% render 'icon', icon: 'chevron-right' %}
+    </button>
+
+    <div class="embla__dots flex embla__dots-thick embla_dots-centered justify-center"></div>
+  </div>
+</div>
+
+<script src="{{ 'embla-carousel.umd.js' | asset_url }}" defer></script>
+<script src="{{ 'mount-embla.js' | asset_url }}" defer></script>
+<script src="{{ 'products-carousel.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "Products Carousel",
+  "class": "products-carousel",
+  "settings": [
+    {
+      "type": "product_list",
+      "id": "product_list",
+      "label": "Products"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Products Carousel"
+    }
+  ]
+}
+{% endschema %}

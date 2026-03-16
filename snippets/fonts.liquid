@@ -39,4 +39,23 @@
     fetchpriority="low"
   >
 {%- endunless -%}
+<link
+  rel="preload"
+  as="font"
+  href="{{ 'figtree-v9-latin-500.woff2' | asset_url }}"
+  type="font/woff2"
+  crossorigin
+  fetchpriority="low"
+>
+
+<style>
+  @font-face {
+    font-family: Figtree;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url({{ 'figtree-v9-latin-500.woff2' | asset_url }}) format("woff2");
+  }
+</style>
+
 {% # theme-check-enable %}
