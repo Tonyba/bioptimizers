@@ -101,6 +101,14 @@
           <div class="flex items-center" data-product-id="{{ product.id }}">
             <div class="col-img flex relative">
               <div class="marks">
+                <img
+                  class=""
+                  src="{{ 'dairy-free.svg' | asset_img_url }}"
+                  alt=""
+                  height="84"
+                  width="84"
+                  loading="lazy"
+                >
                 {{ 'dairy-free.svg' | asset_img_url: width: 84, height: 84 | image_tag }}
               </div>
               <div class="prod-img flex justify-center">
