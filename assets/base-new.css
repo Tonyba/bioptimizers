@@ -233,3 +233,7 @@ button {
 .best-selling .link .text {
     border-bottom: 2px solid #231F20;
 }
+
+.text-white {
+    color: white;
+}
