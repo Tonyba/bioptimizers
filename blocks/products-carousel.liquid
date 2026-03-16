@@ -37,6 +37,10 @@
   .products-carousel h3 {
     margin-top: 0;
   }
+
+  .products-carousel .price {
+    font-weight: bold;
+  }
 {% endstylesheet %}
 
 <style></style>
@@ -70,7 +74,7 @@
               <h3>{{ product.title }}</h3>
               <p>{{ product.description }}</p>
 
-              <div class="flex">
+              <div class="flex items-center">
                 <div class="price">
                   {{ product.price | money }}
                 </div>
