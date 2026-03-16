@@ -30,18 +30,14 @@
         </style>
         <div class="embla__item" data-product-id="{{ product.id }}">
           <div class="flex">
-            <div class="col-img flex">
-              <div class="marks"></div>
-              <div class="prod-img">
-                {{
-                  product.metafields.custom.loop_image
-                  | image_url:
-                    width: product.metafields.custom.loop_image.width,
-                    height: product.metafields.custom.loop_image.height
-                  | image_tag
-                }}
-              </div>
-              <div class="discount"></div>
+            <div class="col-img">
+              {{
+                product.metafields.custom.loop_image
+                | image_url:
+                  width: product.metafields.custom.loop_image.width,
+                  height: product.metafields.custom.loop_image.height
+                | image_tag
+              }}
             </div>
             <div class="col-content">
               <h3>{{ product.title }}</h3>
