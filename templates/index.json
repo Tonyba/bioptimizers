@@ -1824,11 +1824,24 @@
                         "padding-inline-end": 8
                       },
                       "blocks": {}
+                    },
+                    "divider_npQxCj": {
+                      "type": "_divider",
+                      "name": "t:names.divider",
+                      "settings": {
+                        "thickness": 1,
+                        "corner_radius": "square",
+                        "width_percent": 45,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0
+                      },
+                      "blocks": {}
                     }
                   },
                   "block_order": [
                     "text_keWeLq",
-                    "collection_title_PWeBfg"
+                    "collection_title_PWeBfg",
+                    "divider_npQxCj"
                   ]
                 }
               },
