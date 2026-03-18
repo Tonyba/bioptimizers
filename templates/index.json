@@ -843,7 +843,7 @@
               "name": "t:names.heading",
               "settings": {
                 "custom_css": "fixing-heading",
-                "text": "<h2><strong>Save Big and Get</strong> More Complete Support with Stacks t</h2>",
+                "text": "<h2><strong>Save Big and Get</strong> More Complete Support with Stacks te</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
