@@ -1832,7 +1832,7 @@
                         "thickness": 2,
                         "corner_radius": "square",
                         "width_percent": 80,
-                        "padding-block-start": 0,
+                        "padding-block-start": 23,
                         "padding-block-end": 0
                       },
                       "blocks": {}
