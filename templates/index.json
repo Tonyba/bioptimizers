@@ -1778,7 +1778,7 @@
                       "name": "t:names.text",
                       "settings": {
                         "custom_css": "",
-                        "text": "<p>OPTIMIZE YOUR</p>",
+                        "text": "<h2>OPTIMIZE YOUR</h2>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
