@@ -387,9 +387,9 @@ button {
     top: 0;
     left: 0;
 }
-.position-absolute {
+.relative-50 {
     position: relative;
-    top: -80px;
+    top: -50%;
 }
 
 .dark-overlay>* {
