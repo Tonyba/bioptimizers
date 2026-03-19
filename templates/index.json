@@ -1908,7 +1908,7 @@
         "group_hWEC8D": {
           "type": "group",
           "settings": {
-            "custom_css": "",
+            "custom_css": "relative-50",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
