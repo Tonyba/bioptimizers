@@ -2930,7 +2930,7 @@
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 27,
                 "width": "custom",
-                "custom_width": 70,
+                "custom_width": 60,
                 "width_mobile": "custom",
                 "custom_width_mobile": 90,
                 "height": "fit",
