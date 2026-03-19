@@ -387,10 +387,8 @@ button {
     top: 0;
     left: 0;
 }
-.relative-50 {
-    position: absolute;
-    top: -45%;
-    height: 250px;
+.margin-t-4 {
+    margin-top: -4%;
 }
 
 @media screen and (max-width: 750px){
