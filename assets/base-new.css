@@ -392,10 +392,9 @@ button {
 }
 
 @media screen and (max-width: 750px){
-    .relative-50 {
-    position: relative;
-    top: -10%;
-}
+    .margin-t-4 {
+        margin-top: -10%;
+    }
 }
 
 .dark-overlay>* {
