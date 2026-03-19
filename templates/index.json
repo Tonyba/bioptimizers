@@ -1833,6 +1833,7 @@
                         "thickness": 2,
                         "corner_radius": "square",
                         "width_percent": 80,
+                        "alignment_horizontal": "center",
                         "padding-block-start": 23,
                         "padding-block-end": 0
                       },
@@ -1899,6 +1900,20 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "divider_EeJDwr": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "page-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 42,
+        "alignment_horizontal": "center",
+        "padding-block-start": 16,
+        "padding-block-end": 16
+      }
     }
   },
   "order": [
@@ -1908,6 +1923,7 @@
     "section_zTwrwV",
     "section_DKghPp",
     "section_FJbCxt",
-    "collection_list_xbWwaM"
+    "collection_list_xbWwaM",
+    "divider_EeJDwr"
   ]
 }
