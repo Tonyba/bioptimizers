@@ -1804,6 +1804,7 @@
                       "type": "collection-title",
                       "name": "t:names.collection_title",
                       "settings": {
+                        "custom_css": "text-white",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
