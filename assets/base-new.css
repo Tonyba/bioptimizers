@@ -389,7 +389,7 @@ button {
 }
 .relative-50 {
     position: relative;
-    top: -50%;
+    top: -45%;
 }
 @media screen and (max-width: 750px){
     .relative-50 {
