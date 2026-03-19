@@ -38,6 +38,27 @@
       "visible_if": "{{ block.settings.thickness > 1 }}"
     },
     {
+      "type": "select",
+      "id": "alignment_horizontal",
+      "label": "t:settings.alignment",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "t:options.left"
+        },
+        {
+          "value": "center",
+          "label": "t:options.center"
+        },
+        {
+          "value": "flex-end",
+          "label": "t:options.right"
+        }
+      ],
+      "default": "center",
+      "visible_if": "{{ section.settings.width_percent < 100 }}"
+    },
+    {
       "type": "range",
       "id": "width_percent",
       "label": "t:settings.length",
