@@ -2048,7 +2048,7 @@
                     "custom_css": "",
                     "text": "<p><strong>Our mission is focused on customer obsession. If after trying our products you don't feel we are the BEST IN CLASS, we will refund your money.</strong> PERIOD. We're THAT confident you'll love our products and that's why we give you 365 days to try them. You have nothing to lose so take advantage of this amazing deal today. </p>",
                     "width": "100%",
-                    "max_width": "none",
+                    "max_width": "normal",
                     "alignment": "center",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -2063,8 +2063,8 @@
                     "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
-                    "padding-inline-start": 100,
-                    "padding-inline-end": 100
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 }
