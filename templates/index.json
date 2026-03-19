@@ -1832,7 +1832,7 @@
                         "color": "#ffffff",
                         "thickness": 2,
                         "corner_radius": "square",
-                        "width_percent": 59,
+                        "width_percent": 40,
                         "alignment_horizontal": "flex-start",
                         "padding-block-start": 23,
                         "padding-block-end": 0
