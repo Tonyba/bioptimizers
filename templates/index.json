@@ -2124,8 +2124,8 @@
         "corner_radius": "square",
         "width_percent": 33,
         "alignment_horizontal": "center",
-        "padding-block-start": 16,
-        "padding-block-end": 16
+        "padding-block-start": 60,
+        "padding-block-end": 60
       }
     }
   },
