@@ -2281,104 +2281,6 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_GaVWKH": {
-                      "type": "group",
-                      "name": "t:names.group",
-                      "settings": {
-                        "custom_css": "",
-                        "content_direction": "column",
-                        "vertical_on_mobile": true,
-                        "horizontal_alignment": "flex-start",
-                        "vertical_alignment": "center",
-                        "align_baseline": false,
-                        "horizontal_alignment_flex_direction_column": "center",
-                        "vertical_alignment_flex_direction_column": "space-between",
-                        "gap": 12,
-                        "width": "fill",
-                        "custom_width": 100,
-                        "width_mobile": "fill",
-                        "custom_width_mobile": 100,
-                        "height": "fill",
-                        "custom_height": 100,
-                        "inherit_color_scheme": true,
-                        "color_scheme": "",
-                        "background_media": "none",
-                        "video_position": "cover",
-                        "background_image_position": "cover",
-                        "border": "solid",
-                        "border_width": 2,
-                        "border_opacity": 100,
-                        "border_radius": 13,
-                        "toggle_overlay": false,
-                        "overlay_color": "#00000026",
-                        "overlay_style": "solid",
-                        "gradient_direction": "to top",
-                        "link": "",
-                        "open_in_new_tab": false,
-                        "placeholder": "",
-                        "padding-block-start": 20,
-                        "padding-block-end": 20,
-                        "padding-inline-start": 27,
-                        "padding-inline-end": 27
-                      },
-                      "blocks": {
-                        "image_74hAdh": {
-                          "type": "image",
-                          "name": "t:names.image",
-                          "settings": {
-                            "custom_css": "",
-                            "image": "shopify://shop_images/5fb06eed-d55a-4c99-891b-8ed5813fbdf2_copy_1.png",
-                            "link": "",
-                            "image_ratio": "adapt",
-                            "width": "custom",
-                            "custom_width": 35,
-                            "width_mobile": "fill",
-                            "custom_width_mobile": 100,
-                            "height": "fit",
-                            "border": "none",
-                            "border_width": 1,
-                            "border_opacity": 100,
-                            "border_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
-                        },
-                        "text_7WmDp9": {
-                          "type": "text",
-                          "name": "t:names.text",
-                          "settings": {
-                            "custom_css": "",
-                            "text": "<p>We work with one of <strong>the top Chinese herbal experts </strong>in the world.</p>",
-                            "width": "fit-content",
-                            "max_width": "normal",
-                            "alignment": "left",
-                            "type_preset": "rte",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "wrap": "pretty",
-                            "color": "var(--color-foreground)",
-                            "background": false,
-                            "background_color": "#00000026",
-                            "corner_radius": 0,
-                            "padding-block-start": 0,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "image_74hAdh",
-                        "text_7WmDp9"
-                      ]
-                    },
                     "group_qgm7E9": {
                       "type": "group",
                       "name": "t:names.group",
@@ -2425,7 +2327,7 @@
                           "name": "t:names.image",
                           "settings": {
                             "custom_css": "",
-                            "image": "shopify://shop_images/pill_1.png",
+                            "image": "shopify://shop_images/5fb06eed-d55a-4c99-891b-8ed5813fbdf2_copy_1.png",
                             "link": "",
                             "image_ratio": "adapt",
                             "width": "custom",
@@ -2445,6 +2347,104 @@
                           "blocks": {}
                         },
                         "text_qWr3zR": {
+                          "type": "text",
+                          "name": "t:names.text",
+                          "settings": {
+                            "custom_css": "",
+                            "text": "<p>We work with one of <strong>the top Chinese herbal experts </strong>in the world.</p>",
+                            "width": "fit-content",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "rte",
+                            "font": "var(--font-body--family)",
+                            "font_size": "1rem",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "color": "var(--color-foreground)",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "image_M8FyaC",
+                        "text_qWr3zR"
+                      ]
+                    },
+                    "group_cw7TXU": {
+                      "type": "group",
+                      "name": "t:names.group",
+                      "settings": {
+                        "custom_css": "",
+                        "content_direction": "column",
+                        "vertical_on_mobile": true,
+                        "horizontal_alignment": "flex-start",
+                        "vertical_alignment": "center",
+                        "align_baseline": false,
+                        "horizontal_alignment_flex_direction_column": "center",
+                        "vertical_alignment_flex_direction_column": "space-between",
+                        "gap": 12,
+                        "width": "fill",
+                        "custom_width": 100,
+                        "width_mobile": "fill",
+                        "custom_width_mobile": 100,
+                        "height": "fill",
+                        "custom_height": 0,
+                        "inherit_color_scheme": true,
+                        "color_scheme": "",
+                        "background_media": "none",
+                        "video_position": "cover",
+                        "background_image_position": "cover",
+                        "border": "solid",
+                        "border_width": 2,
+                        "border_opacity": 100,
+                        "border_radius": 13,
+                        "toggle_overlay": false,
+                        "overlay_color": "#00000026",
+                        "overlay_style": "solid",
+                        "gradient_direction": "to top",
+                        "link": "",
+                        "open_in_new_tab": false,
+                        "placeholder": "",
+                        "padding-block-start": 20,
+                        "padding-block-end": 20,
+                        "padding-inline-start": 27,
+                        "padding-inline-end": 27
+                      },
+                      "blocks": {
+                        "image_XLmDz4": {
+                          "type": "image",
+                          "name": "t:names.image",
+                          "settings": {
+                            "custom_css": "",
+                            "image": "shopify://shop_images/pill_1.png",
+                            "link": "",
+                            "image_ratio": "adapt",
+                            "width": "custom",
+                            "custom_width": 35,
+                            "width_mobile": "fill",
+                            "custom_width_mobile": 100,
+                            "height": "fit",
+                            "border": "none",
+                            "border_width": 1,
+                            "border_opacity": 100,
+                            "border_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        },
+                        "text_MYw6a6": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
@@ -2473,14 +2473,14 @@
                         }
                       },
                       "block_order": [
-                        "image_M8FyaC",
-                        "text_qWr3zR"
+                        "image_XLmDz4",
+                        "text_MYw6a6"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_GaVWKH",
-                    "group_qgm7E9"
+                    "group_qgm7E9",
+                    "group_cw7TXU"
                   ]
                 },
                 "group_MbCDpc": {
