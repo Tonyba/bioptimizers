@@ -387,6 +387,9 @@ button {
     top: 0;
     left: 0;
 }
+.position-absolute {
+    position: absolute;
+}
 
 .dark-overlay>* {
     z-index: 1;
