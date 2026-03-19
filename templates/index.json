@@ -3167,27 +3167,15 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "image_HbJPk4": {
-              "type": "image",
-              "name": "t:names.image",
+            "icon_FPaVf4": {
+              "type": "icon",
+              "name": "t:names.icon",
               "settings": {
-                "custom_css": "",
-                "image": "shopify://shop_images/Group_18460_e913319c-6923-46c3-b144-96240ba507cf.png",
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/Group_18529.png",
+                "width": 156,
                 "link": "",
-                "image_ratio": "adapt",
-                "width": "custom",
-                "custom_width": 20,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "open_in_new_tab": false
               },
               "blocks": {}
             },
@@ -3288,7 +3276,7 @@
             }
           },
           "block_order": [
-            "image_HbJPk4",
+            "icon_FPaVf4",
             "text_HtNXUY",
             "text_ahpAVU",
             "divider_KhnyR7",
