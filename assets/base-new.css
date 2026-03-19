@@ -388,8 +388,12 @@ button {
     left: 0;
 }
 .relative-50 {
-    position: relative;
+    position: absolute;
     top: -45%;
+    height: 250px;
+}
+.h-250 {
+    height: 250px;
 }
 @media screen and (max-width: 750px){
     .relative-50 {
