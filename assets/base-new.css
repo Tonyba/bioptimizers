@@ -391,6 +391,12 @@ button {
     position: relative;
     top: -50%;
 }
+@media screen and (min-width: 750px){
+    .relative-50 {
+    position: relative;
+    top: -10%;
+}
+}
 
 .dark-overlay>* {
     z-index: 1;
