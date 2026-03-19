@@ -388,7 +388,8 @@ button {
     left: 0;
 }
 .position-absolute {
-    position: absolute;
+    position: relative;
+    top: -50px;
 }
 
 .dark-overlay>* {
