@@ -1916,7 +1916,7 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 16,
+            "gap": 0,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -1992,43 +1992,17 @@
                 "placeholder": "",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-inline-start": 100,
+                "padding-inline-end": 100
               },
               "blocks": {
-                "text_UbGrTD": {
-                  "type": "text",
-                  "settings": {
-                    "custom_css": "",
-                    "text": "<h2>Intentional design</h2>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
-                    "type_preset": "h3",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
                 "text_zieNCT": {
                   "type": "text",
                   "settings": {
                     "custom_css": "",
-                    "text": "<p>Everything we do starts with why</p>",
+                    "text": "<p><strong>Our mission is focused on customer obsession. If after trying our products you don't feel we are the BEST IN CLASS, we will refund your money.</strong> PERIOD. We're THAT confident you'll love our products and that's why we give you 365 days to try them. You have nothing to lose so take advantage of this amazing deal today. </p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "center",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -2050,7 +2024,6 @@
                 }
               },
               "block_order": [
-                "text_UbGrTD",
                 "text_zieNCT"
               ]
             }
