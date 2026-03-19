@@ -1634,7 +1634,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "custom_css": "fixing-heading text-black",
+                "custom_css": "fixing-heading",
                 "text": "<h2><strong>Shop</strong> by collection</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -1671,8 +1671,8 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "flex-end",
             "collection_card_gap": 8,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-6",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
@@ -1715,9 +1715,9 @@
                 "open_in_new_tab": false,
                 "placeholder": "",
                 "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-block-end": 10,
+                "padding-inline-start": 20,
+                "padding-inline-end": 15
               },
               "blocks": {
                 "icon_XTz3wa": {
@@ -1897,7 +1897,7 @@
         "icons_shape": "none",
         "section_width": "page-width",
         "gap": 12,
-        "color_scheme": "scheme-6",
+        "color_scheme": "scheme-e1ce9cec-a602-4ebc-b758-682e2aa7be70",
         "padding-block-start": 48,
         "padding-block-end": 48
       }
