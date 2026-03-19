@@ -1676,7 +1676,7 @@
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 0
+            "border_radius": 12
           },
           "blocks": {
             "group_DwH3T6": {
@@ -1832,7 +1832,7 @@
                         "color": "#ffffff",
                         "thickness": 2,
                         "corner_radius": "square",
-                        "width_percent": 80,
+                        "width_percent": 59,
                         "alignment_horizontal": "flex-start",
                         "padding-block-start": 23,
                         "padding-block-end": 0
@@ -1881,11 +1881,12 @@
       "name": "t:names.collections_grid",
       "settings": {
         "collection_list": [
-          "frontpage"
+          "digestion",
+          "brain-energy"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "columns": 3,
+        "columns": 2,
         "mobile_columns": "1",
         "mobile_card_size": "60cqw",
         "columns_gap": 8,
