@@ -129,6 +129,17 @@ button {
     z-index: 1;
 }
 
+.margin-t-4 {
+    margin-top: -4%;
+}
+
+@media screen and (max-width: 750px){
+    .margin-t-4 {
+        margin-top: -10%;
+    }
+}
+
+
 /*basic end*/
 
 
@@ -386,16 +397,6 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-.margin-t-4 {
-    margin-top: -4%;
-}
-
-@media screen and (max-width: 750px){
-    .margin-t-4 {
-        margin-top: -10%;
-    }
 }
 
 .dark-overlay>* {
