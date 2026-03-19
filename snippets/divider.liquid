@@ -16,7 +16,7 @@
 
 <div
   class="divider divider-{{ id }} spacing-style"
-  style=" background-color: red;
+  style="
     --divider-justify-content: {{ settings.alignment_horizontal | default: 'center' }};
     {% render 'spacing-style', settings: settings %}
   "
@@ -26,7 +26,7 @@
 >
   <span
     class="divider__line"
-    style="
+    style=" color: red;
       --divider-border-thickness: {{ settings.thickness }}px;
       {% unless full_width %}
         --divider-border-rounded: {% if settings.corner_radius == 'rounded' %}1{% else %}0{% endif %};
