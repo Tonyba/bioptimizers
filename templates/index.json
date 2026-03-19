@@ -3361,6 +3361,74 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "divider_PVQH7L": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "color": "#f58220",
+                "thickness": 3,
+                "corner_radius": "square",
+                "width_percent": 15,
+                "alignment_horizontal": "flex-start",
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "text_pTNyn3": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "custom_css": "",
+                "text": "<h1>Get Access To The <br/><strong>AWESOME Health Course</strong></h1>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "2.5rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_tjDHjB": {
+              "type": "text",
+              "name": "t:names.description",
+              "settings": {
+                "custom_css": "",
+                "text": "<p>In this 12 week program, you're going <strong>to discover how to achieve AWESOME health and double your energy</strong> with natural, tested, and scientific strategies.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "email_signup_aFxCjg": {
               "type": "email-signup",
               "name": "t:names.email_signup",
@@ -3386,66 +3454,13 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "text_pTNyn3": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "custom_css": "",
-                "text": "<h1>Get Access To The <br/>AWESOME Health Course</h1>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_tjDHjB": {
-              "type": "text",
-              "name": "t:names.description",
-              "settings": {
-                "custom_css": "",
-                "text": "<p>In this 12 week program, you're going <strong>to discover how to achieve AWESOME health and double your energy</strong> with natural, tested, and scientific strategies.</p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "email_signup_aFxCjg",
+            "divider_PVQH7L",
             "text_pTNyn3",
-            "text_tjDHjB"
+            "text_tjDHjB",
+            "email_signup_aFxCjg"
           ]
         },
         "group_fGQUWN": {
