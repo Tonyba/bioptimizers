@@ -1832,8 +1832,8 @@
                         "color": "#ffffff",
                         "thickness": 2,
                         "corner_radius": "square",
-                        "width_percent": 100,
-                        "alignment_horizontal": "center",
+                        "width_percent": 49,
+                        "alignment_horizontal": "flex-start",
                         "padding-block-start": 23,
                         "padding-block-end": 0
                       },
