@@ -3823,7 +3823,8 @@
         "group_9hixnA"
       ],
       "custom_css": [
-        "strong {color: #fbbc05;}"
+        "strong {color: #fbbc05;}",
+        "em strong {font-style: normal; font-size: 52px; color: #f58220;}"
       ],
       "name": "t:names.multicolumn",
       "settings": {
