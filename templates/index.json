@@ -1833,7 +1833,7 @@
                         "thickness": 2,
                         "corner_radius": "square",
                         "width_percent": 49,
-                        "alignment_horizontal": "flex-start",
+                        "alignment_horizontal": "flex-end",
                         "padding-block-start": 23,
                         "padding-block-end": 0
                       },
