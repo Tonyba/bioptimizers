@@ -239,6 +239,10 @@ button {
     color: white;
 }
 
+.text-black {
+    color: black;
+}
+
 .section-subheading {
     line-height: 160%;
     letter-spacing: 12%;
