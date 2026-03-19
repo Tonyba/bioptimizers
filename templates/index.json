@@ -1829,7 +1829,7 @@
                       "type": "_divider",
                       "name": "t:names.divider",
                       "settings": {
-                        "color": "#e42f2f",
+                        "color": "#ffffff",
                         "thickness": 2,
                         "corner_radius": "square",
                         "width_percent": 80,
