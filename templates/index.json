@@ -1634,7 +1634,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "custom_css": "fixing-heading",
+                "custom_css": "fixing-heading text-black",
                 "text": "<h2><strong>Shop</strong> by collection</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -1804,7 +1804,6 @@
                       "type": "collection-title",
                       "name": "t:names.collection_title",
                       "settings": {
-                        "custom_css": "text-white",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1898,7 +1897,7 @@
         "icons_shape": "none",
         "section_width": "page-width",
         "gap": 12,
-        "color_scheme": "scheme-e1ce9cec-a602-4ebc-b758-682e2aa7be70",
+        "color_scheme": "scheme-6",
         "padding-block-start": 48,
         "padding-block-end": 48
       }
