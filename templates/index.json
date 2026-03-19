@@ -3522,7 +3522,7 @@
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
                 "height": "fill",
-                "custom_height": 100,
+                "custom_height": 43,
                 "inherit_color_scheme": true,
                 "color_scheme": "",
                 "background_media": "none",
