@@ -3234,12 +3234,40 @@
                 "padding-block-end": 18
               },
               "blocks": {}
+            },
+            "text_7PzaFc": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "custom_css": "",
+                "text": "<p>Science is our everything. We also realize trust is earned and not given. That's why our 365-day guarantee gives you an entire year to put us to the test. The clock starts the day you receive your shipment.<br/><br/>Now, in the unlikely event your product doesn't measure up as best in its class, we don't want your money. Reach out to our customer happiness team and they will take it from there.<br/>Simply return your remaining unopened product bottles. You'll receive a full refund (minus shipping and handling costs). <br/><br/>NOTE: the guarantee applies ONLY to the first opened bottle. A second opened bottle means you no longer qualify for any guarantee. We thank you. And we want you to be 100% satisfied no matter the outcome.</p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "text_HtNXUY",
             "text_ahpAVU",
-            "divider_KhnyR7"
+            "divider_KhnyR7",
+            "text_7PzaFc"
           ]
         }
       },
