@@ -129,11 +129,11 @@ button {
     z-index: 1;
 }
 
-.border-top:not(:first-child) {
+.border-top {
     border-top: 1px solid #D9D9D9;
 }
 
-.border-bottom:not(:last-child) {
+.border-bottom {
     border-bottom: 1px solid #D9D9D9;
 }
 
