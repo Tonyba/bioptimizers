@@ -57,6 +57,13 @@
   %}
 {% endcapture %}
 
+{%  capture button %} 
+  {% content_for 'block',
+    id: 'button',
+    type: 'button'
+  %}
+{% endcapture %}
+
 <div
   class="
     featured-blog-posts-card spacing-style border-style
@@ -95,6 +102,7 @@
       <h4>{{ title }}</h4>
       {{ details }}
       {{ description }}
+      {{ button }}
     </div>
   </div>
 </div>
