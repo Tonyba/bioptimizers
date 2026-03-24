@@ -4068,7 +4068,7 @@
                     "padding-block-start": 30,
                     "padding-block-end": 30,
                     "padding-inline-start": 20,
-                    "padding-inline-end": 35
+                    "padding-inline-end": 20
                   },
                   "blocks": {
                     "image_zBE8xi": {
@@ -4168,10 +4168,26 @@
             "group_83fPEJ",
             "group_xyfa8e"
           ]
+        },
+        "button_rPXLwk": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Meet Our Experts",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "group_dEbUhc"
+        "group_dEbUhc",
+        "button_rPXLwk"
       ],
       "name": "t:names.multicolumn",
       "settings": {
@@ -4183,7 +4199,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 0,
+        "gap": 25,
         "section_width": "full-width",
         "section_height": "",
         "section_height_custom": 50,
