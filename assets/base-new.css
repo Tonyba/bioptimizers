@@ -253,7 +253,10 @@ button {
     align-items: center;
     gap: 12px;
 }
-
+.best-selling .button-secondary .button-icon{
+    width: 17px;
+    height: 17px;
+}
 .best-selling .button-icon {
     width: 35px;
     height: 35px;
