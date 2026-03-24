@@ -3153,9 +3153,9 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "flex-start",
-            "gap": 8,
+            "gap": 12,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -3178,10 +3178,10 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 10,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding-block-start": 30,
+            "padding-block-end": 30,
+            "padding-inline-start": 35,
+            "padding-inline-end": 35
           },
           "blocks": {
             "image_HiEiXk": {
@@ -3192,8 +3192,8 @@
                 "image": "shopify://shop_images/Rectangle_16.png",
                 "link": "",
                 "image_ratio": "square",
-                "width": "fill",
-                "custom_width": 100,
+                "width": "custom",
+                "custom_width": 60,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
                 "height": "fit",
@@ -3213,7 +3213,7 @@
               "name": "t:names.heading",
               "settings": {
                 "custom_css": "",
-                "text": "<h2>Intentional design</h2>",
+                "text": "<p>DR. JOHN DOE</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -3240,7 +3240,7 @@
               "name": "t:names.description",
               "settings": {
                 "custom_css": "",
-                "text": "<p>We create with intention. Our products solve real problems with clean design and honest materials.</p>",
+                "text": "<p>BSC IN BIOLOGY, ECOLOGY</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
