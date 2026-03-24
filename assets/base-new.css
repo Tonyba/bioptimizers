@@ -128,7 +128,7 @@ button {
 .dark-overlay>* {
     z-index: 1;
 }
-.circle {
+.circle svg{
     border-radius: 50% !important;
 }
 .border-top{
