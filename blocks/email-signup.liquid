@@ -52,8 +52,8 @@
         {% endif %}
       >
         {% if block_settings.display_type == 'text' %}
-          {% render 'icon-plus' | assets %}{{ block_settings.label }}
-        {% else %}
+          {% render 'icon-plus' | asset %}{{ block_settings.label }}
+        {% else %} 
           <svg
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
