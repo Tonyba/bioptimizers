@@ -3193,7 +3193,7 @@
                 "link": "",
                 "image_ratio": "square",
                 "width": "custom",
-                "custom_width": 60,
+                "custom_width": 70,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
                 "height": "fit",
@@ -3269,7 +3269,7 @@
             "text_tDrKCt"
           ]
         },
-        "group_UGnqwM": {
+        "group_yqr3Mr": {
           "type": "group",
           "name": "t:names.column",
           "settings": {
@@ -3279,9 +3279,9 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "flex-start",
-            "gap": 8,
+            "gap": 12,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -3293,10 +3293,10 @@
             "background_media": "none",
             "video_position": "cover",
             "background_image_position": "cover",
-            "border": "none",
+            "border": "solid",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 0,
+            "border_radius": 12,
             "toggle_overlay": false,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
@@ -3304,18 +3304,42 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 10,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding-block-start": 30,
+            "padding-block-end": 30,
+            "padding-inline-start": 35,
+            "padding-inline-end": 35
           },
           "blocks": {
-            "text_99RpVz": {
+            "image_jpy39B": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "custom_css": "",
+                "image": "shopify://shop_images/Rectangle_16.png",
+                "link": "",
+                "image_ratio": "square",
+                "width": "custom",
+                "custom_width": 70,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_7qQGge": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
                 "custom_css": "",
-                "text": "<h2>Quality first</h2>",
+                "text": "<p>DR. JOHN DOE</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -3337,12 +3361,12 @@
               },
               "blocks": {}
             },
-            "text_JiXHQQ": {
+            "text_KaJwET": {
               "type": "text",
               "name": "t:names.description",
               "settings": {
                 "custom_css": "",
-                "text": "<p>We obsess over the details and strive to deliver the best products at the best prices, every time.</p>",
+                "text": "<p>BSC IN BIOLOGY, ECOLOGY</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -3366,11 +3390,12 @@
             }
           },
           "block_order": [
-            "text_99RpVz",
-            "text_JiXHQQ"
+            "image_jpy39B",
+            "text_7qQGge",
+            "text_KaJwET"
           ]
         },
-        "group_cjEL8L": {
+        "group_RjKP3R": {
           "type": "group",
           "name": "t:names.column",
           "settings": {
@@ -3380,9 +3405,9 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "flex-start",
-            "gap": 8,
+            "gap": 12,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -3394,10 +3419,10 @@
             "background_media": "none",
             "video_position": "cover",
             "background_image_position": "cover",
-            "border": "none",
+            "border": "solid",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 0,
+            "border_radius": 12,
             "toggle_overlay": false,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
@@ -3405,18 +3430,42 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 10,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding-block-start": 30,
+            "padding-block-end": 30,
+            "padding-inline-start": 35,
+            "padding-inline-end": 35
           },
           "blocks": {
-            "text_LBTCVw": {
+            "image_CnUQYe": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "custom_css": "",
+                "image": "shopify://shop_images/Rectangle_16.png",
+                "link": "",
+                "image_ratio": "square",
+                "width": "custom",
+                "custom_width": 70,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_B8jcjP": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
                 "custom_css": "",
-                "text": "<h2>Customer care</h2>",
+                "text": "<p>DR. JOHN DOE</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -3438,12 +3487,12 @@
               },
               "blocks": {}
             },
-            "text_Mfkiwf": {
+            "text_tVHBnp": {
               "type": "text",
               "name": "t:names.description",
               "settings": {
                 "custom_css": "",
-                "text": "<p>We're always on your side: keeping our loyal customers happy is our top priority and number one goal.</p>",
+                "text": "<p>BSC IN BIOLOGY, ECOLOGY</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -3467,15 +3516,143 @@
             }
           },
           "block_order": [
-            "text_LBTCVw",
-            "text_Mfkiwf"
+            "image_CnUQYe",
+            "text_B8jcjP",
+            "text_tVHBnp"
+          ]
+        },
+        "group_zxHCYC": {
+          "type": "group",
+          "name": "t:names.column",
+          "settings": {
+            "custom_css": "",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "solid",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 12,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 30,
+            "padding-block-end": 30,
+            "padding-inline-start": 35,
+            "padding-inline-end": 35
+          },
+          "blocks": {
+            "image_UaAHyY": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "custom_css": "",
+                "image": "shopify://shop_images/Rectangle_16.png",
+                "link": "",
+                "image_ratio": "square",
+                "width": "custom",
+                "custom_width": 70,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_XPVkHd": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "custom_css": "",
+                "text": "<p>DR. JOHN DOE</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h4",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_nwaXGC": {
+              "type": "text",
+              "name": "t:names.description",
+              "settings": {
+                "custom_css": "",
+                "text": "<p>BSC IN BIOLOGY, ECOLOGY</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_UaAHyY",
+            "text_XPVkHd",
+            "text_nwaXGC"
           ]
         }
       },
       "block_order": [
         "group_jHGx4c",
-        "group_UGnqwM",
-        "group_cjEL8L"
+        "group_yqr3Mr",
+        "group_RjKP3R",
+        "group_zxHCYC"
       ],
       "name": "t:names.multicolumn",
       "settings": {
