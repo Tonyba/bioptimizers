@@ -4366,7 +4366,7 @@
       ],
       "name": "t:names.custom_section",
       "settings": {
-        "custom_css": "border-top",
+        "custom_css": "border-top border -bottom",
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
