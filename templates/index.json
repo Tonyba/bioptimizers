@@ -4693,25 +4693,25 @@
                   },
                   "blocks": {}
                 },
-                "email_signup_dNAGTk": {
+                "email_signup_LnYykq": {
                   "type": "email-signup",
                   "name": "t:names.email_signup",
                   "settings": {
                     "width": "fill",
                     "custom_width": 100,
                     "inherit_color_scheme": false,
-                    "color_scheme": "scheme-58084d4c-a86e-4d0a-855e-a0966e5043f7",
+                    "color_scheme": "scheme-6",
                     "heading": "",
                     "heading_preset": "h3",
                     "border_style": "all",
                     "border_width": 2,
                     "border_radius": 0,
-                    "input_type_preset": "paragraph",
+                    "input_type_preset": "",
                     "style_class": "button",
                     "display_type": "text",
                     "label": "Subscribe",
                     "integrated_button": false,
-                    "button_type_preset": "paragraph",
+                    "button_type_preset": "",
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -4723,7 +4723,7 @@
               "block_order": [
                 "text_djCyKC",
                 "text_BfQCnb",
-                "email_signup_dNAGTk"
+                "email_signup_LnYykq"
               ]
             },
             "group_LtVMP3": {
