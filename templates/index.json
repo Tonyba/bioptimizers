@@ -4451,7 +4451,7 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
-                "text": "<h4>{{ closest.article.title }}</h4>",
+                "text": "<h3>{{ closest.article.title }}</h3>",
                 "read_only": false,
                 "alignment": "left",
                 "show_alignment": false,
