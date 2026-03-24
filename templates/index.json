@@ -4413,7 +4413,7 @@
           "static": true,
           "settings": {
             "alignment": "left",
-            "gap": 8,
+            "gap": 20,
             "inherit_color_scheme": true,
             "color_scheme": "",
             "border": "none",
@@ -4434,7 +4434,7 @@
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
-                "border_radius": 0
+                "border_radius": 10
               },
               "blocks": {}
             },
@@ -4465,6 +4465,7 @@
             "blog-post-info-text": {
               "type": "_blog-post-info-text",
               "name": "t:names.details",
+              "disabled": true,
               "static": true,
               "settings": {
                 "show_date": true,
@@ -4480,6 +4481,7 @@
             "blog-post-description": {
               "type": "_blog-post-description",
               "name": "t:names.excerpt",
+              "disabled": true,
               "static": true,
               "settings": {
                 "type_preset": "rte",
