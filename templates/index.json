@@ -4503,7 +4503,7 @@
               "settings": {
                 "label": "Learn more",
                 "icon": "shopify://shop_images/Frame_1000012060.svg",
-                "link": "",
+                "link": "{{ closest.article.url }}",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
