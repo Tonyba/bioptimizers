@@ -4708,7 +4708,7 @@
                     "border_radius": 0,
                     "input_type_preset": "paragraph",
                     "style_class": "button",
-                    "display_type": "text",
+                    "display_type": "arrow",
                     "label": "Subscribe",
                     "integrated_button": false,
                     "button_type_preset": "paragraph",
