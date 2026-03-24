@@ -3499,7 +3499,7 @@
                     "heading_preset": "h3",
                     "border_style": "all",
                     "border_width": 2,
-                    "border_radius": 0,
+                    "border_radius": 3,
                     "input_type_preset": "",
                     "style_class": "button",
                     "display_type": "text",
