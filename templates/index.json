@@ -3493,8 +3493,8 @@
                   "settings": {
                     "width": "fill",
                     "custom_width": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
+                    "inherit_color_scheme": false,
+                    "color_scheme": "scheme-1",
                     "heading": "",
                     "heading_preset": "h3",
                     "border_style": "all",
