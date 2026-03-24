@@ -140,6 +140,9 @@ button {
 .margin-t-4 {
     margin-top: -4%;
 }
+.margin-b-4 {
+    margin-top: -4%;
+}
 
 @media screen and (max-width: 750px){
     .margin-t-4 {
