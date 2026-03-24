@@ -4496,6 +4496,22 @@
                 "padding-block-end": 0
               },
               "blocks": {}
+            },
+            "button": {
+              "type": "button",
+              "static": true,
+              "settings": {
+                "label": "Learn more",
+                "icon": "shopify://shop_images/Frame_1000012060.svg",
+                "link": "",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
             }
           },
           "block_order": []
