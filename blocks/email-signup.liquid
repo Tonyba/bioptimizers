@@ -52,12 +52,9 @@
         {% endif %}
       >
         {% if block_settings.display_type == 'text' %}
-          <svg
-            
-            class="email-signup__button-icon"
-          >
+          
             {% render 'icon', icon: 'chevron-right' %}
-          </svg>{{ block_settings.label }}
+          {{ block_settings.label }}
         {% else %} 
           <svg
             viewBox="0 0 20 20"
