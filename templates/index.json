@@ -3262,8 +3262,8 @@
                     "placeholder": "",
                     "padding-block-start": 30,
                     "padding-block-end": 30,
-                    "padding-inline-start": 35,
-                    "padding-inline-end": 35
+                    "padding-inline-start": 20,
+                    "padding-inline-end": 20
                   },
                   "blocks": {
                     "image_9pfzQ9": {
