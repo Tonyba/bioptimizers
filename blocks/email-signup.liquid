@@ -52,7 +52,15 @@
         {% endif %}
       >
         {% if block_settings.display_type == 'text' %}
-          {% render 'icon', icon: 'arrow' %}{{ block_settings.label }}
+          <svg
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            class="email-signup__button-icon"
+          >
+            {% render 'icon', icon: 'arrow' %}
+          </svg>{{ block_settings.label }}
         {% else %} 
           <svg
             viewBox="0 0 20 20"
