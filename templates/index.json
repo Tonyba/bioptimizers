@@ -4127,7 +4127,7 @@
           "name": "t:names.group",
           "settings": {
             "custom_css": "border-bottom",
-            "content_direction": "column",
+            "content_direction": "row",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
@@ -4135,7 +4135,7 @@
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
-            "width": "fill",
+            "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
@@ -4157,32 +4157,29 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-start": 30,
+            "padding-block-end": 30,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_AWJknj": {
-              "type": "text",
-              "name": "t:names.heading",
+            "image_zUHgXM": {
+              "type": "image",
+              "name": "t:names.image",
               "settings": {
                 "custom_css": "",
-                "text": "<h2>Quality first</h2>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
+                "image": "shopify://shop_images/fa08-0c1f-d3d3-4674_Matt-Gallant_1.svg",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -4195,7 +4192,7 @@
               "name": "t:names.description",
               "settings": {
                 "custom_css": "",
-                "text": "<p>We obsess over the details and strive to deliver the best products at the best prices, every time.</p>",
+                "text": "<p>CEO/Co-founder of BIOptimizers</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -4219,7 +4216,7 @@
             }
           },
           "block_order": [
-            "text_AWJknj",
+            "image_zUHgXM",
             "text_WYfxCD"
           ]
         }
