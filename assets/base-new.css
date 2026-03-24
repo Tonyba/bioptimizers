@@ -246,7 +246,8 @@ button {
     font-weight: 400;
 }
 
-.best-selling .link, best-selling .secondary-button {
+.best-selling .link, best-selling .button-secondary
+ {
     font-weight: 600;
     display: flex;
     align-items: center;
