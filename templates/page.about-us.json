@@ -61,17 +61,18 @@
     "hero_Wbcmm4": {
       "type": "hero",
       "blocks": {
-        "text_YykRG7": {
+        "text_7EyLi6": {
           "type": "text",
+          "name": "t:names.heading",
           "settings": {
             "custom_css": "fixing-heading",
             "text": "<h2>Creating a <strong>new standard</strong> of self-care</h2>",
             "width": "fit-content",
-            "max_width": "narrow",
+            "max_width": "normal",
             "alignment": "left",
             "type_preset": "h1",
             "font": "var(--font-body--family)",
-            "font_size": "3.5rem",
+            "font_size": "1rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
@@ -89,7 +90,7 @@
         }
       },
       "block_order": [
-        "text_YykRG7"
+        "text_7EyLi6"
       ],
       "name": "t:names.hero",
       "settings": {
@@ -168,16 +169,43 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_Ne3eM4": {
+            "text_PqEdtQ": {
+              "type": "text",
+              "name": "t:names.description",
+              "settings": {
+                "custom_css": "text-white section-subheading",
+                "text": "<p>who we are</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#07180f",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 31,
+                "padding-inline-end": 31
+              },
+              "blocks": {}
+            },
+            "text_GxqTEk": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
                 "custom_css": "fixing-heading",
                 "text": "<h2>We're Mili and Maya, sisters <strong>and co-founder(s) of Moom</strong></h2>",
-                "width": "100%",
+                "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h2",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -224,7 +252,8 @@
             }
           },
           "block_order": [
-            "text_Ne3eM4",
+            "text_PqEdtQ",
+            "text_GxqTEk",
             "text_tDTixz"
           ]
         },
