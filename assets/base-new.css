@@ -554,7 +554,7 @@ button {
     border-right-width: 2px;
 }
 /* blog tags */
-.color-bg {
+.color-bg a{
     background-color: #018476;
     width: fit-content;
    
