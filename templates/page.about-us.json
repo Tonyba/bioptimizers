@@ -578,7 +578,7 @@
                   "name": "t:names.image",
                   "settings": {
                     "custom_css": "",
-                    "image": "shopify://shop_images/Rectangle_6.png",
+                    "image": "shopify://shop_images/Rectangle_364.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -602,7 +602,7 @@
                   "name": "t:names.text",
                   "settings": {
                     "custom_css": "",
-                    "text": "<p><strong>Matt Gallant</strong></p>",
+                    "text": "<p><strong>Wade Lightheart</strong></p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -629,7 +629,7 @@
                   "name": "t:names.text",
                   "settings": {
                     "custom_css": "",
-                    "text": "<p>Chief Executive Officer</p>",
+                    "text": "<p>President</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
