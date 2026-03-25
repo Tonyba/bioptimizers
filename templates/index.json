@@ -2062,7 +2062,7 @@
                 "text_zieNCT": {
                   "type": "text",
                   "settings": {
-                    "custom_css": "",
+                    "custom_css": "w-60",
                     "text": "<p><strong>Our mission is focused on customer obsession. If after trying our products you don't feel we are the BEST IN CLASS, we will refund your money.</strong> PERIOD. We're THAT confident you'll love our products and that's why we give you 365 days to try them. You have nothing to lose so take advantage of this amazing deal today. </p>",
                     "width": "100%",
                     "max_width": "normal",
