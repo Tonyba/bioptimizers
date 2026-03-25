@@ -2937,7 +2937,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
-                "custom_css": "",
+                "custom_css": "best-selling",
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -3021,6 +3021,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "Get to Know Us",
+                    "icon": "shopify://shop_images/plus_1.svg",
                     "link": "shopify://collections/all",
                     "open_in_new_tab": false,
                     "style_class": "button-secondary",
