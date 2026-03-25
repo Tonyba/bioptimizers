@@ -282,7 +282,7 @@
               "type": "group",
               "name": "t:names.column",
               "settings": {
-                "custom_css": "best-selling justify-center",
+                "custom_css": "best-selling content-center",
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
