@@ -302,6 +302,7 @@
               "name": "t:names.image",
               "settings": {
                 "custom_css": "",
+                "image": "shopify://shop_images/Group_18627.png",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
