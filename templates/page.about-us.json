@@ -3903,7 +3903,7 @@
             "custom_css": "",
             "content_direction": "row",
             "vertical_on_mobile": true,
-            "horizontal_alignment": "center",
+            "horizontal_alignment": "space-between",
             "vertical_alignment": "flex-start",
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
@@ -4100,7 +4100,7 @@
                 "link": "",
                 "open_in_new_tab": false,
                 "placeholder": "",
-                "padding-block-start": 10,
+                "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -4111,7 +4111,7 @@
                   "name": "t:names.image",
                   "settings": {
                     "custom_css": "",
-                    "image": "shopify://shop_images/Frame_1000012478.png",
+                    "image": "shopify://shop_images/Rectangle_11_1.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -4146,7 +4146,7 @@
         "group_VRYHX8"
       ],
       "custom_css": [
-        ".group-block {background-color: #c7dc91;}"
+        ".group-block {background-color: #f58220;}"
       ],
       "name": "t:names.multicolumn",
       "settings": {
