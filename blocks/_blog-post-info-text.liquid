@@ -23,7 +23,7 @@
     style="{% render 'spacing-style', settings: block_settings %}"
   >
     {%- if block_settings.show_date -%}
-      <span>{{- display_date | time_tag: format: 'date' -}}</span>
+      {% render 'icon' %}%}<span>{{- display_date | time_tag: format: 'date' -}}</span>
     {%- endif -%}
 
     {%- if block_settings.show_date and block_settings.show_author -%}
