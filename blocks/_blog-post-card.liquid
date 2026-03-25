@@ -16,7 +16,7 @@
       {%- content_for 'block', id: 'heading', type: '_heading', text: article.title -%}
     </a>
 {% for tag in blog.all_tags %}
-  <a href="{{ article.url }}/tagged/{{ tag | handleize }}">{{ tag }}</a>
+  <a href="{{ blog.url }}/tagged/{{ tag | handleize }}">{{ tag }}</a>
 {% endfor %}
     {% content_for 'block',
       id: 'blog-post-details',
