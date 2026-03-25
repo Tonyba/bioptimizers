@@ -1488,7 +1488,6 @@
       ],
       "custom_css": [
         ".group-block {background-color: #f58220;}",
-        "strong {color: white;}",
         "em strong {font-style: normal; color: white;}"
       ],
       "name": "t:names.multicolumn",
