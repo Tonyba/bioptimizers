@@ -1970,7 +1970,7 @@
         "color": "#f58220",
         "color_scheme": "scheme-1",
         "section_width": "page-width",
-        "thickness": 1,
+        "thickness": 3,
         "corner_radius": "square",
         "width_percent": 33,
         "alignment_horizontal": "center",
