@@ -582,7 +582,7 @@
                   "name": "t:names.description",
                   "settings": {
                     "custom_css": "",
-                    "text": "<p>Our health experts ceaselessly monitor the health and wellness industry, and never stop evolving. We keep researching and testing to deliver on our commitment. We are honored to share with you the practices, principles, and products that have allowed us, and tens of thousands of people to achieve remarkable levels of BIOptimized health.</p>",
+                    "text": "<p>Wade T. Lightheart, host of the Awesome Health Podcast, is a 3-time All Natural National Bodybuilding Champion, advisor to the American Anti-Cancer Institute, and Director of Education at BIOptimizers, one of the world’s most innovative nutritional supplement companies.<br/><br/>The Awesome Health Podcast reflects Wade’s passion and mission to end needless physical suffering, while helping individuals fix their digestion and transform their health.</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -609,7 +609,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "Meet Our Editorial Team",
-                    "icon": "shopify://shop_images/plus_1_1.svg",
+                    "icon": "shopify://shop_images/plus_1.svg",
                     "link": "#",
                     "open_in_new_tab": false,
                     "style_class": "button-secondary",
@@ -722,7 +722,7 @@
         "section_width": "full-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
