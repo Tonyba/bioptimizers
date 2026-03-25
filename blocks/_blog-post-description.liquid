@@ -64,7 +64,7 @@
   <{{ element }} {{ attributes }}>
     {{ content | strip_html | truncatewords: truncatewords }}
     {% if show_read_more %}
-      <a href="{{ article.url }}" class="best-selling link"><img src="//perfectprotocol.co/cdn/shop/files/Frame_1000012060.svg?crop=center&amp;height=60&amp;v=1773848168&amp;width=60" alt="" srcset="//perfectprotocol.co/cdn/shop/files/Frame_1000012060.svg?crop=center&amp;height=35&amp;v=1773848168&amp;width=35 35w" width="35" height="35" loading="lazy" class="button-icon">{{- 'content.read_more' | t -}}</a>
+      <a href="{{ article.url }}" class="best-selling "><img src="//perfectprotocol.co/cdn/shop/files/Frame_1000012060.svg?crop=center&amp;height=60&amp;v=1773848168&amp;width=60" alt="" srcset="//perfectprotocol.co/cdn/shop/files/Frame_1000012060.svg?crop=center&amp;height=35&amp;v=1773848168&amp;width=35 35w" width="35" height="35" loading="lazy" class="button-icon link">{{- 'content.read_more' | t -}}</a>
     {% endif %}
   </{{ element }}>
 {% endif %}
