@@ -1960,8 +1960,23 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 48,
+        "padding-block-start": 60,
         "padding-block-end": 48
+      }
+    },
+    "divider_m3w3yL": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color": "#f58220",
+        "color_scheme": "",
+        "section_width": "full-width",
+        "thickness": 3,
+        "corner_radius": "square",
+        "width_percent": 33,
+        "alignment_horizontal": "center",
+        "padding-block-start": 0,
+        "padding-block-end": 40
       }
     }
   },
@@ -1970,6 +1985,7 @@
     "hero_Wbcmm4",
     "section_87wxqD",
     "section_4JNMPx",
-    "section_VFCBaT"
+    "section_VFCBaT",
+    "divider_m3w3yL"
   ]
 }
