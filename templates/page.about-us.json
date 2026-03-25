@@ -61,6 +61,33 @@
     "hero_Wbcmm4": {
       "type": "hero",
       "blocks": {
+        "text_WYmNMH": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "custom_css": "fixing-heading",
+            "text": "<h2>Creating a <strong>new standard</strong> of self-care</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "text_YykRG7": {
           "type": "text",
           "settings": {
@@ -89,6 +116,7 @@
         }
       },
       "block_order": [
+        "text_WYmNMH",
         "text_YykRG7"
       ],
       "name": "t:names.hero",
