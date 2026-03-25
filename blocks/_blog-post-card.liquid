@@ -9,7 +9,7 @@
   {% endif %}
 
   <div class="blog-post-card__content best-selling">
-    <div class="color-bg">
+    <div class="color-bg flex">
       {% for tag in article.tags %}
         <a href="{{ blog.url }}/tagged/{{ tag | handleize }}">{{ tag }}</a>
       {% endfor %}
