@@ -709,7 +709,7 @@
               "name": "t:names.description",
               "settings": {
                 "custom_css": "section-subheading",
-                "text": "<p>who we are</p>",
+                "text": "<p>From Vision to Innovation</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
