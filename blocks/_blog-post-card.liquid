@@ -9,15 +9,18 @@
   {% endif %}
 
   <div class="blog-post-card__content best-selling">
+    
+    {% for tag in article.tags %}
+      <a href="{{ blog.url }}/tagged/{{ tag | handleize }}" class="color-bg">{{ tag }}</a>
+    {% endfor %}
+
     <a
       href="{{ article.url }}"
       data-testid="blog-post-link"
     >
       {%- content_for 'block', id: 'heading', type: '_heading', text: article.title -%}
     </a>
-{% for tag in article.tags %}
-  <a href="{{ blog.url }}/tagged/{{ tag | handleize }}">{{ tag }}</a>
-{% endfor %}
+
     {% content_for 'block',
       id: 'blog-post-details',
       type: '_blog-post-info-text',
