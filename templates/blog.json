@@ -282,7 +282,7 @@
               "type": "group",
               "name": "t:names.column",
               "settings": {
-                "custom_css": "",
+                "custom_css": "best-selling",
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -386,12 +386,29 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
+                },
+                "button_cCRyJ9": {
+                  "type": "button",
+                  "name": "t:names.button",
+                  "settings": {
+                    "label": "Meet Our Editorial Team",
+                    "icon": "shopify://shop_images/plus_1_1.svg",
+                    "link": "#",
+                    "open_in_new_tab": false,
+                    "style_class": "button-secondary",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "divider_maPV8n",
                 "text_38Qn3g",
-                "text_XTadEJ"
+                "text_XTadEJ",
+                "button_cCRyJ9"
               ]
             }
           },
