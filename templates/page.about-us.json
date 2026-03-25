@@ -228,7 +228,7 @@
               "settings": {
                 "custom_css": "",
                 "text": "<p>Wade’s passion and mission for helping others optimize their health started when he witnessed his 23-year-old sister pass away from cancer. It was a heart-breaking experience that shaped his destiny. That’s when he realized that health was the most precious asset we have in this life.<br/><br/>Matt’s passion and purpose for helping others started when he helped his best friend lose 191 lbs in 18 months. He watched his friend’s entire life transform as a result. He went from never having a girlfriend to being married in just a couple of years.<br/><br/></p>",
-                "width": "fit-content",
+                "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
