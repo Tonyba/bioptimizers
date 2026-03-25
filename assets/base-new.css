@@ -556,4 +556,5 @@ button {
 /* blog tags */
 .color-bg{
     background-color: red;
+    width: fit-content;
 }
