@@ -557,8 +557,5 @@ button {
 .color-bg{
     background-color: #018476;
     width: fit-content;
-    padding: 4px 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-block-start: 4px;
 }
