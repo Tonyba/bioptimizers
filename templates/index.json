@@ -4282,7 +4282,7 @@
               "name": "t:names.description",
               "settings": {
                 "custom_css": "text-white section-subheading",
-                "text": "<p>Nature’s Best Choices</p>",
+                "text": "<p>The Strongest Promise In The Industry:</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -4384,6 +4384,9 @@
       },
       "block_order": [
         "group_9D3PAn"
+      ],
+      "custom_css": [
+        "{background-color: #FDAE1D;}"
       ],
       "name": "t:names.multicolumn",
       "settings": {
