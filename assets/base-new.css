@@ -557,6 +557,6 @@ button {
 .color-bg a{
     background-color: #018476;
     width: fit-content;
-   
     padding: 4px 12px !important;
+    border-radius: 2px;
 }
