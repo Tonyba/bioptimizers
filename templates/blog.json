@@ -1519,89 +1519,6 @@
         "padding-block-start": 80,
         "padding-block-end": 0
       }
-    },
-    "section_496p9Y": {
-      "type": "section",
-      "blocks": {
-        "text_R6CYee": {
-          "type": "text",
-          "settings": {
-            "custom_css": "",
-            "text": "<p>Made with care and unconditionally loved by our customers, this signature bestseller exceeds all expectations.</p>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "logo_WUNMPt": {
-          "type": "logo",
-          "settings": {
-            "inverse": false,
-            "font": "heading",
-            "unit": "percent",
-            "percent_width": 100,
-            "pixel_height": 48,
-            "custom_mobile_size": false,
-            "unit_mobile": "percent",
-            "percent_width_mobile": 100,
-            "pixel_height_mobile": 120,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_R6CYee",
-        "logo_WUNMPt"
-      ],
-      "name": "t:names.large_logo",
-      "settings": {
-        "custom_css": "",
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "space-between",
-        "gap": 16,
-        "section_width": "page-width",
-        "section_height": "medium",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-3",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
-      }
     }
   },
   "order": [
@@ -1611,7 +1528,6 @@
     "section_79VDWm",
     "section_pKc8DD",
     "section_a6VxF4",
-    "section_fBcmM4",
-    "section_496p9Y"
+    "section_fBcmM4"
   ]
 }
