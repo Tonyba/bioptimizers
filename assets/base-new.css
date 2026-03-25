@@ -555,9 +555,10 @@ button {
 }
 /* blog tags */
 .color-bg{
-    background-color: red;
+    background-color: #018476;
     width: fit-content;
     padding: 4px 18px;
+    display: flex;
     justify-content: center;
-  align-items: center;
+    align-items: center;
 }
