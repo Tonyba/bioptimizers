@@ -248,6 +248,17 @@ button {
 .fixing-heading h2 {
     font-weight: 400;
 }
+.best-selling .link, .best-selling .button-primary
+ {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.best-selling .button-primary .button-icon{
+    width: 17px;
+    height: 17px;
+}
 
 .best-selling .link, .best-selling .button-secondary
  {
