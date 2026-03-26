@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "main": {
       "type": "product-information",
@@ -25,6 +25,7 @@
             "slideshow_mobile_controls_style": "dots",
             "thumbnail_position": "right",
             "thumbnail_width": 44,
+            "thumbnail_radius": 0,
             "aspect_ratio": "adapt",
             "constrain_to_viewport": true,
             "media_fit": "contain",
@@ -71,8 +72,7 @@
               "type": "group",
               "name": "Header",
               "settings": {
-                "link": "",
-                "open_in_new_tab": false,
+                "custom_css": "",
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -96,11 +96,13 @@
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
-                "placeholder": "",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -111,6 +113,7 @@
                   "type": "text",
                   "name": "t:names.title",
                   "settings": {
+                    "custom_css": "",
                     "text": "<h1>{{ closest.product.title }}</h1>",
                     "width": "fit-content",
                     "max_width": "normal",
@@ -165,9 +168,11 @@
               "type": "_divider",
               "name": "t:names.divider",
               "settings": {
+                "color": "",
                 "thickness": 1,
                 "corner_radius": "square",
                 "width_percent": 100,
+                "alignment_horizontal": "center",
                 "padding-block-start": 0,
                 "padding-block-end": 0
               },
@@ -225,6 +230,7 @@
               "type": "text",
               "name": "Product description",
               "settings": {
+                "custom_css": "",
                 "text": "{{ closest.product.description }}",
                 "width": "100%",
                 "max_width": "normal",
@@ -260,9 +266,10 @@
       "settings": {
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
-        "equal_columns": false,
+        "equal_columns": true,
         "limit_details_width": false,
         "gap": 48,
+        "enable_sticky_add_to_cart": true,
         "color_scheme": "",
         "padding-block-start": 0,
         "padding-block-end": 0
@@ -275,6 +282,7 @@
           "type": "text",
           "name": "t:names.header",
           "settings": {
+            "custom_css": "",
             "text": "<h3>You may also like </h3>",
             "width": "fit-content",
             "max_width": "normal",
@@ -302,6 +310,8 @@
           "name": "t:names.product_card",
           "static": true,
           "settings": {
+            "custom_css": "",
+            "bg_color": "",
             "product_card_gap": 8,
             "inherit_color_scheme": true,
             "color_scheme": "",
