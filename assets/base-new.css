@@ -278,7 +278,7 @@ button {
 }
 
 .text-cyan p {
-    color: #018476;
+    color: #018476 !important;
 }
 
 .section-subheading {
