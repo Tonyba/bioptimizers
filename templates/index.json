@@ -4176,7 +4176,7 @@
           "settings": {
             "label": "Meet Our Experts",
             "icon": "shopify://shop_images/plus_1_1.svg",
-            "link": "#",
+            "link": "shopify://pages/the-team",
             "open_in_new_tab": false,
             "style_class": "button-secondary",
             "width": "fit-content",
