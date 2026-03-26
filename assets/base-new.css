@@ -264,7 +264,9 @@ button {
     width: 35px;
     height: 35px;
 }
-
+.best-selling .button-icon:hover {
+    color: white;
+}
 .best-selling .link .text {
     border-bottom: 2px solid #231F20;
 }
