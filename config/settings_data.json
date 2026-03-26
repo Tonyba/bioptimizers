@@ -146,7 +146,7 @@
           "secondary_button_background": "rgba(0,0,0,0)",
           "secondary_button_text": "#ffffff",
           "secondary_button_border": "#000000",
-          "secondary_button_hover_background": "#ffffff5c",
+          "secondary_button_hover_background": "#fe9400",
           "secondary_button_hover_text": "#ffffff",
           "secondary_button_hover_border": "#fe9400",
           "input_background": "rgba(0,0,0,0)",
