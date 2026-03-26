@@ -601,76 +601,6 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_N6Tyy9": {
-              "type": "group",
-              "name": "t:names.column",
-              "settings": {
-                "custom_css": "",
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 8,
-                "width": "custom",
-                "custom_width": 30,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "image_g3jR8Q": {
-                  "type": "image",
-                  "name": "t:names.image",
-                  "settings": {
-                    "custom_css": "",
-                    "image": "shopify://shop_images/Rectangle_390.png",
-                    "link": "",
-                    "image_ratio": "square",
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "height": "fit",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 12,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "image_g3jR8Q"
-              ]
-            },
             "group_zUkWTi": {
               "type": "group",
               "name": "t:names.column",
@@ -758,7 +688,7 @@
                       "name": "t:names.heading",
                       "settings": {
                         "custom_css": "",
-                        "text": "<h3>Dr. Joann Doe</h3>",
+                        "text": "<h3>Matt Gallant</h3>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -785,7 +715,7 @@
                       "name": "t:names.text",
                       "settings": {
                         "custom_css": "text-cyan",
-                        "text": "<p><strong>President</strong></p>",
+                        "text": "<p><strong>Chief Executive Officer</strong></p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -818,7 +748,7 @@
                   "name": "t:names.description",
                   "settings": {
                     "custom_css": "",
-                    "text": "<p>3-Time Canadian Natural Bodybuilding Champion, Wade Lightheart, is one of the world's premier authorities on Natural Nutrition and Training Methods. Having majored in Sports Science at the University of New Brunswick, he has authored numerous books on health, nutrition, and exercise which have sold in over 80 countries. Wade is sought out by athletes and high-performance oriented individuals worldwide for his advice on how to optimize their health and fitness levels.</p>",
+                    "text": "<p>Matt Gallant is the CEO and Co-Founder of BIOptimizers and has a bachelor’s degree in Kinesiology. He’s been a strength and conditioning coach for multiple pro-athletes, a self-defense instructor, and has over 15 years experience formulating supplements. He's also a serial entrepreneur that's built over 13 profitable companies.</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -845,11 +775,81 @@
                 "group_nxenQW",
                 "text_itLCPa"
               ]
+            },
+            "group_N6Tyy9": {
+              "type": "group",
+              "name": "t:names.column",
+              "settings": {
+                "custom_css": "",
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 8,
+                "width": "custom",
+                "custom_width": 30,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_g3jR8Q": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "custom_css": "",
+                    "image": "shopify://shop_images/Rectangle_390.png",
+                    "link": "",
+                    "image_ratio": "square",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 12,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_g3jR8Q"
+              ]
             }
           },
           "block_order": [
-            "group_N6Tyy9",
-            "group_zUkWTi"
+            "group_zUkWTi",
+            "group_N6Tyy9"
           ]
         }
       },
