@@ -109,6 +109,33 @@
                 "padding-inline-end": 0
               },
               "blocks": {
+                "text_faFN6U": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "custom_css": "text-white",
+                    "text": "<p>GET A FREE GIFT WHEN YOU SUBSCRIBE + SAVE</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "uppercase",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": true,
+                    "background_color": "#7c76c8",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 25,
+                    "padding-inline-end": 25
+                  },
+                  "blocks": {}
+                },
                 "text_xpVMaM": {
                   "type": "text",
                   "name": "t:names.title",
@@ -138,6 +165,7 @@
                 },
                 "price_tVjtKg": {
                   "type": "price",
+                  "disabled": true,
                   "settings": {
                     "show_sale_price_first": true,
                     "show_installments": false,
@@ -160,6 +188,7 @@
                 }
               },
               "block_order": [
+                "text_faFN6U",
                 "text_xpVMaM",
                 "price_tVjtKg"
               ]
