@@ -4386,7 +4386,7 @@
         "group_9D3PAn"
       ],
       "custom_css": [
-        "{background-color: #FDAE1D;}"
+        "{background-color: #fdae1d;}"
       ],
       "name": "t:names.multicolumn",
       "settings": {
@@ -5907,7 +5907,7 @@
         "section_width": "full-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
