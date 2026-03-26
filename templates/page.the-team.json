@@ -441,7 +441,7 @@
                       "name": "t:names.text",
                       "settings": {
                         "custom_css": "text-cyan",
-                        "text": "<p>President</p>",
+                        "text": "<p><strong>President</strong></p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
