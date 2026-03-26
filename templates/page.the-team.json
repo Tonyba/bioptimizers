@@ -228,7 +228,7 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 16,
+            "gap": 0,
             "width": "custom",
             "custom_width": 60,
             "width_mobile": "fill",
@@ -373,7 +373,7 @@
                   "name": "t:names.heading",
                   "settings": {
                     "custom_css": "",
-                    "text": "<p>Dr. Joann Doe</p>",
+                    "text": "<h3>Dr. Joann Doe</h3>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -421,28 +421,11 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
-                },
-                "button_FgXzbx": {
-                  "type": "button",
-                  "name": "t:names.button",
-                  "settings": {
-                    "label": "Meet Our Editorial Team",
-                    "icon": "shopify://shop_images/plus_1_1.svg",
-                    "link": "#",
-                    "open_in_new_tab": false,
-                    "style_class": "button-secondary",
-                    "width": "custom",
-                    "custom_width": 100,
-                    "width_mobile": "fit-content",
-                    "custom_width_mobile": 100
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
                 "text_EK4r3h",
-                "text_cxXDPL",
-                "button_FgXzbx"
+                "text_cxXDPL"
               ]
             }
           },
