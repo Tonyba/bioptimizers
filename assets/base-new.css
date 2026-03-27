@@ -578,15 +578,18 @@ button {
     right: 16px;
     z-index: 99;
 }
+
 .product-badge img{
     width: 100px;
 }
+
 .product-keylist-grid{
     display: grid;
     grid-template-columns: auto auto;
     gap: 25px;
     padding-top: 45px;
 }
+
 .product-keylist-item{
     display: flex;
     flex-direction: column;
@@ -595,9 +598,8 @@ button {
     padding: 20px;
     background-color: #F9F9F9;
 }
-.product-keylist-item{
-    
-}
+
 .key-text{
     text-align: center;
+    font-weight: 600;
 }
