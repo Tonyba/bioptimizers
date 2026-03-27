@@ -599,8 +599,8 @@
       </zoom-dialog>
     {%- endif -%}
     <div>
-      {%  for item in product.metafields.custom.productkeybenefits.value  %}  {% endfor %}
-      hello list product_keylist
+      {%  for item in product_keylist  %} {{ item }} {% endfor %}
+      hello 
     </div>
     {%- if first_3d_model -%}
       <link
