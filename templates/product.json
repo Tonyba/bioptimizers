@@ -556,6 +556,9 @@
           ]
         }
       },
+      "custom_css": [
+        ".price {font-size: 42px; font-weight: bold;}"
+      ],
       "settings": {
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
