@@ -570,6 +570,7 @@ button {
 }
 .product-badge{
     position: absolute;
-    right: 0px;
+    top: 16px;
+    right: 16px;
     z-index: 99;
 }
