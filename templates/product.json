@@ -72,7 +72,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
-                "custom_css": "border-bottom border-top",
+                "custom_css": "border-bottom",
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
