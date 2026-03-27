@@ -888,7 +888,7 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
+            "gap": 25,
             "width": "custom",
             "custom_width": 59,
             "width_mobile": "fill",
