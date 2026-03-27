@@ -313,7 +313,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
-                "custom_css": "border-bottom",
+                "custom_css": "",
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -350,6 +350,20 @@
                 "padding-inline-end": 0
               },
               "blocks": {
+                "divider_XmiVwW": {
+                  "type": "_divider",
+                  "name": "t:names.divider",
+                  "settings": {
+                    "color": "#d9d9d9",
+                    "thickness": 1,
+                    "corner_radius": "square",
+                    "width_percent": 100,
+                    "alignment_horizontal": "center",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0
+                  },
+                  "blocks": {}
+                },
                 "group_tGBCBi": {
                   "type": "group",
                   "name": "t:names.group",
@@ -511,6 +525,7 @@
                 }
               },
               "block_order": [
+                "divider_XmiVwW",
                 "group_tGBCBi",
                 "group_aiAJxd"
               ]
