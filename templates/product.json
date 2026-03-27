@@ -167,7 +167,7 @@
                       "name": "t:names.heading",
                       "settings": {
                         "custom_css": "",
-                        "text": "<h4>Want FREE SHIPPING?</h4>",
+                        "text": "<h5>Want FREE SHIPPING?</h5>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
