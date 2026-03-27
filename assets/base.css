@@ -2612,7 +2612,7 @@ product-price.text-block:is(.h1, .h2, .h3, .h4, .h5, .h6) > *:not(.tax-note) {
   opacity: 1.0;
   text-decoration-line: line-through;
   text-decoration-thickness: 1.5px;
-  color: #D93B20;
+  /* color: #D93B20; */
 }
 
 .card-gallery {
