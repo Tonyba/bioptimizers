@@ -247,20 +247,6 @@
               },
               "blocks": {}
             },
-            "divider_VJhene": {
-              "type": "_divider",
-              "name": "t:names.divider",
-              "settings": {
-                "color": "",
-                "thickness": 1,
-                "corner_radius": "square",
-                "width_percent": 100,
-                "alignment_horizontal": "center",
-                "padding-block-start": 0,
-                "padding-block-end": 0
-              },
-              "blocks": {}
-            },
             "variant_picker_R3rGDr": {
               "type": "variant-picker",
               "settings": {
@@ -549,7 +535,6 @@
           "block_order": [
             "group_icgrde",
             "text_aEtTtq",
-            "divider_VJhene",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
             "group_r97hxY"
