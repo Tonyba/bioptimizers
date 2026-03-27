@@ -603,7 +603,7 @@
     <div class="product-keylist-grid">
       {%  for item in product_keylist  %}
         <div class="product-keylist-item">
-          <div class="product-keylist-item_icon">O</div>
+          <div class="product-keylist-item_icon">{%  render 'icon-check-circle' %}</div>
           <div class="key-text">{{ item }}</div>
         </div>
       {% endfor %}
