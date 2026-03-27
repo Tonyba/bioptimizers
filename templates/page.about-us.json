@@ -754,7 +754,7 @@
               "type": "text",
               "name": "t:names.description",
               "settings": {
-                "custom_css": "text-white section-subheading",
+                "custom_css": "section-subheading",
                 "text": "<p>From Vision to Innovation</p>",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -768,7 +768,7 @@
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
                 "background": true,
-                "background_color": "#07180f",
+                "background_color": "#f58220",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -869,8 +869,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 80,
+        "padding-block-end": 80
       }
     }
   },
