@@ -586,3 +586,6 @@ button {
     grid-template-columns: auto auto;
     gap: 25px;
 }
+.product-keylist-item{
+    align-content: center;
+}
