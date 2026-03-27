@@ -58,18 +58,18 @@
         "padding-block-end": 80
       }
     },
-    "hero_zhWL76": {
+    "hero_eNcRhd": {
       "type": "hero",
       "blocks": {
-        "text_AAHVFp": {
+        "text_9gq6et": {
           "type": "text",
           "settings": {
-            "custom_css": "",
-            "text": "<h1>New arrivals</h1>",
+            "custom_css": "fixing-header",
+            "text": "<h1>Creating a <strong>new standard</strong> of self-care</h1>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
-            "type_preset": "h1",
+            "type_preset": "rte",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -86,57 +86,15 @@
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
-        "text_XGWWrD": {
-          "type": "text",
-          "settings": {
-            "custom_css": "",
-            "text": "<p>Made with care and unconditionally loved by our customers.</p>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 32,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "button_YpMtwc": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Shop now",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "text_AAHVFp",
-        "text_XGWWrD",
-        "button_YpMtwc"
+        "text_9gq6et"
       ],
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
+        "image_1": "shopify://shop_images/woman-sitting-sofa-smiles_1.png",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -153,7 +111,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 16,
         "section_width": "page-width",
-        "section_height": "large",
+        "section_height": "small",
         "section_height_custom": 50,
         "color_scheme": "scheme-5",
         "toggle_overlay": true,
@@ -169,6 +127,6 @@
   },
   "order": [
     "main",
-    "hero_zhWL76"
+    "hero_eNcRhd"
   ]
 }
