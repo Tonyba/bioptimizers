@@ -871,7 +871,7 @@
                       "name": "t:names.heading",
                       "settings": {
                         "custom_css": "",
-                        "text": "<h2>Dr. Joann Doe</h2>",
+                        "text": "<h2>Matt Gallant</h2>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -898,7 +898,7 @@
                       "name": "t:names.text",
                       "settings": {
                         "custom_css": "text-cyan section-subheading",
-                        "text": "<p>president</p>",
+                        "text": "<p>Chief Executive Officer</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -931,7 +931,7 @@
                   "name": "t:names.description",
                   "settings": {
                     "custom_css": "",
-                    "text": "<p>3-Time Canadian Natural Bodybuilding Champion, Wade Lightheart, is one of the world's premier authorities on Natural Nutrition and Training Methods. Having majored in Sports Science at the University of New Brunswick, he has authored numerous books on health, nutrition, and exercise which have sold in over 80 countries. Wade is sought out by athletes and high-performance oriented individuals worldwide for his advice on how to optimize their health and fitness levels.</p>",
+                    "text": "<p>Matt Gallant is the CEO and Co-Founder of BIOptimizers and has a bachelor’s degree in Kinesiology. He’s been a strength and conditioning coach for multiple pro-athletes, a self-defense instructor, and has over 15 years experience formulating supplements. He's also a serial entrepreneur that's built over 13 profitable companies.</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
