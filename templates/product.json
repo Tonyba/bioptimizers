@@ -355,7 +355,7 @@
                   "name": "t:names.divider",
                   "settings": {
                     "color": "#d9d9d9",
-                    "thickness": 1,
+                    "thickness": 2,
                     "corner_radius": "square",
                     "width_percent": 100,
                     "alignment_horizontal": "center",
@@ -496,7 +496,7 @@
                       "name": "t:names.text",
                       "settings": {
                         "custom_css": "",
-                        "text": "<ul><li>Order above $99 and get free shipping.</li><li>Get instant access to our best-selling book \"From Sick To Superhuman\".<br/></li></ul>",
+                        "text": "<ul><li>Order above $99 and get free shipping.</li><li>Get instant access to our best-selling book \"From Sick To Superhuman\".</li></ul>",
                         "width": "fit-content",
                         "max_width": "none",
                         "alignment": "left",
@@ -522,12 +522,27 @@
                   "block_order": [
                     "text_Kt7kDA"
                   ]
+                },
+                "divider_KgfWHk": {
+                  "type": "_divider",
+                  "name": "t:names.divider",
+                  "settings": {
+                    "color": "#d9d9d9",
+                    "thickness": 2,
+                    "corner_radius": "square",
+                    "width_percent": 100,
+                    "alignment_horizontal": "center",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "divider_XmiVwW",
                 "group_tGBCBi",
-                "group_aiAJxd"
+                "group_aiAJxd",
+                "divider_KgfWHk"
               ]
             }
           },
