@@ -568,6 +568,7 @@ button {
     font-size: 14px;
     font-weight: 600;
 }
-.r-0{
-    right: 20px;
+.product-badge{
+    position: absolute;
+    right: 0px;
 }

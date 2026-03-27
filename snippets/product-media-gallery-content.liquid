@@ -351,7 +351,7 @@
     style="{% render 'spacing-style', settings: block_settings %} --thumbnail-width: {{ block_settings.thumbnail_width }}px; --media-radius: {{ block_settings.media_radius }}px;{% if block_settings.icons_style contains 'large' %} --slideshow-icon-padding: 0px;{% endif %}--image-gap: {{ block_settings.image_gap }}px;{% unless block_settings.aspect_ratio == 'adapt' %} --gallery-aspect-ratio: {{ block_settings.aspect_ratio }};{% endunless %}"
     data-presentation="{{ media_presentation }}"
     {{ block_shopify_attributes }}
-  ><div class="absolute"><img src="https://cdn.shopify.com/s/files/1/0635/4744/1237/files/Group_18529.png?v=1773929667" alt="hello" width="20px" height="20px"></div>
+  ><div class="product-badge"><img src="https://cdn.shopify.com/s/files/1/0635/4744/1237/files/Group_18529.png?v=1773929667" alt="hello" width="20px" height="20px"></div>
     {% capture slides %}
       {% for media in sorted_media %}
         {% capture children %}
