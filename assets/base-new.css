@@ -592,6 +592,9 @@ button {
     align-items: center;
     justify-content: center;
 }
+.product-keylist-item{
+    padding: 20px;
+}
 .key-text{
     text-align: center;
 }
