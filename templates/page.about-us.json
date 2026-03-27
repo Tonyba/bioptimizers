@@ -2812,6 +2812,203 @@
         "padding-block-start": 40,
         "padding-block-end": 100
       }
+    },
+    "section_U7FPbH": {
+      "type": "section",
+      "blocks": {
+        "group_GVWGxx": {
+          "type": "group",
+          "name": "t:names.column",
+          "settings": {
+            "custom_css": "margin-t-4",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 0,
+            "width": "custom",
+            "custom_width": 70,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "icon_k6Htcn": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/Group_18529.png",
+                "width": 200,
+                "link": "",
+                "open_in_new_tab": false
+              },
+              "blocks": {}
+            },
+            "text_zMBTqt": {
+              "type": "text",
+              "name": "t:names.description",
+              "settings": {
+                "custom_css": "text-white section-subheading",
+                "text": "<p>The Strongest Promise In The Industry:</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#07180f",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 31,
+                "padding-inline-end": 31
+              },
+              "blocks": {}
+            },
+            "text_fkKBw9": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "custom_css": "",
+                "text": "<h2>The 365 Day \"Best Product Ever Or Your Money Back\" Guarantee</h2>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 15,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "divider_7UGDfE": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "color": "#231f20",
+                "thickness": 3,
+                "corner_radius": "square",
+                "width_percent": 15,
+                "alignment_horizontal": "center",
+                "padding-block-start": 18,
+                "padding-block-end": 18
+              },
+              "blocks": {}
+            },
+            "text_rBdUMN": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "custom_css": "",
+                "text": "<p>Science is our everything. We also realize trust is earned and not given. That's why our 365-day guarantee gives you an entire year to put us to the test. The clock starts the day you receive your shipment.<br/><br/>Now, in the unlikely event your product doesn't measure up as best in its class, we don't want your money. Reach out to our customer happiness team and they will take it from there.<br/>Simply return your remaining unopened product bottles. You'll receive a full refund (minus shipping and handling costs). <br/><br/><strong>NOTE: the guarantee applies ONLY to the first opened bottle. A second opened bottle means you no longer qualify for any guarantee. We thank you. And we want you to be 100% satisfied no matter the outcome.</strong></p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "icon_k6Htcn",
+            "text_zMBTqt",
+            "text_fkKBw9",
+            "divider_7UGDfE",
+            "text_rBdUMN"
+          ]
+        }
+      },
+      "block_order": [
+        "group_GVWGxx"
+      ],
+      "custom_css": [
+        "{background-color: #fdae1d;}"
+      ],
+      "name": "t:names.multicolumn",
+      "settings": {
+        "custom_css": "",
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-cb6d7d71-0583-4d67-9e44-3ae4eebf76d3",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 48
+      }
     }
   },
   "order": [
@@ -2821,6 +3018,7 @@
     "section_HxVide",
     "section_jqQHXP",
     "divider_QaF6BW",
-    "section_i4JWN4"
+    "section_i4JWN4",
+    "section_U7FPbH"
   ]
 }
