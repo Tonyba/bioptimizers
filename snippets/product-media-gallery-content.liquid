@@ -23,6 +23,9 @@
   ></script>
 {%- endif -%}
 {%- liquid
+
+  assign product_keylist = product.metafields.custom.product_key_benefits.value
+
   assign selected_product = closest.product
   assign selected_variant_media = selected_product.selected_or_first_available_variant.featured_media
   assign first_3d_model = selected_product.media | where: 'media_type', 'model' | first
