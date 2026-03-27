@@ -584,4 +584,5 @@ button {
 .product-keylist-grid{
     display: grid;
     grid-template-columns: auto auto;
+    gap: 25px;
 }
