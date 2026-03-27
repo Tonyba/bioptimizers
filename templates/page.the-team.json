@@ -220,7 +220,7 @@
           "type": "group",
           "name": "t:names.column",
           "settings": {
-            "custom_css": "best-selling",
+            "custom_css": "",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -228,7 +228,7 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "flex-start",
-            "gap": 8,
+            "gap": 20,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -251,7 +251,7 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 10,
+            "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
@@ -337,46 +337,46 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "button_hcmCJW": {
-              "type": "button",
-              "name": "t:names.button",
-              "settings": {
-                "label": "Get to Know Us",
-                "icon": "shopify://shop_images/plus_1_1.svg",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 15,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "text_BcfnYe",
             "text_iQdLnG",
-            "text_4gBx9t",
-            "button_hcmCJW"
+            "text_4gBx9t"
           ]
+        },
+        "button_PYXhtN": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Get to Know Us",
+            "icon": "shopify://shop_images/plus_1_1.svg",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 15,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "group_ictpN6"
+        "group_ictpN6",
+        "button_PYXhtN"
       ],
       "name": "t:names.multicolumn",
       "settings": {
-        "custom_css": "",
-        "content_direction": "row",
+        "custom_css": "best-selling",
+        "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "flex-start",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
+        "gap": 30,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
