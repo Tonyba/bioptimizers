@@ -598,9 +598,12 @@
         </dialog>
       </zoom-dialog>
     {%- endif -%}
-    <div>
-      {%  for item in product_keylist  %} {{ item }} {% endfor %}
-      hello 
+    
+  {% comment %} spiro {% endcomment %}
+    <div class="grid cols-2 d-grid">
+      {%  for item in product_keylist  %}
+        {{ item }} 
+      {% endfor %}
     </div>
     {%- if first_3d_model -%}
       <link
