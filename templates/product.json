@@ -517,6 +517,7 @@
             },
             "ai_gen_block_a6e9282_krbVBr": {
               "type": "ai_gen_block_a6e9282",
+              "disabled": true,
               "settings": {
                 "show_label": false,
                 "label_text": "Share this product",
