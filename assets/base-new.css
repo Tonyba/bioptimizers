@@ -571,4 +571,5 @@ button {
 .product-badge{
     position: absolute;
     right: 0px;
+    z-index: 99;
 }
