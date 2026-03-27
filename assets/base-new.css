@@ -597,6 +597,7 @@ button {
     justify-content: center;
     padding: 20px;
     background-color: #F9F9F9;
+    gap: 10px;
 }
 
 .key-text{
