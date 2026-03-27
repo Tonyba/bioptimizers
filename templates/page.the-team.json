@@ -488,7 +488,7 @@
                     "custom_css": "",
                     "image": "shopify://shop_images/Rectangle_390.png",
                     "link": "",
-                    "image_ratio": "landscape",
+                    "image_ratio": "square",
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
