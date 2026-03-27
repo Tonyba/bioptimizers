@@ -574,3 +574,6 @@ button {
     right: 16px;
     z-index: 99;
 }
+.product-badge img{
+    width: 100px;
+}
