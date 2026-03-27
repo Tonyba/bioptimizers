@@ -72,7 +72,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
-                "custom_css": "",
+                "custom_css": "border-bottom border-top",
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -167,7 +167,7 @@
                       "name": "t:names.heading",
                       "settings": {
                         "custom_css": "",
-                        "text": "<h5>Want FREE SHIPPING?</h5>",
+                        "text": "<h4>Want FREE SHIPPING?</h4>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -194,10 +194,38 @@
                     "icon_BgUhMF",
                     "text_7FEThT"
                   ]
+                },
+                "text_DQbJnH": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "custom_css": "",
+                    "text": "<ul><li>Order above $99 and get free shipping.</li><li>Get instant access to our best-selling book \"From Sick To Superhuman\".<br/></li></ul>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "group_tGBCBi"
+                "group_tGBCBi",
+                "text_DQbJnH"
               ]
             },
             "group_icgrde": {
