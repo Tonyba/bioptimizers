@@ -571,6 +571,7 @@ button {
     font-size: 14px;
     font-weight: 600;
 }
+/* product */
 .product-badge{
     position: absolute;
     top: 16px;
@@ -579,4 +580,7 @@ button {
 }
 .product-badge img{
     width: 100px;
+}
+.product-keylist-grid{
+    display: grid;
 }
