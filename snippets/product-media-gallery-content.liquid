@@ -600,13 +600,12 @@
     {%- endif -%}
     
   {% comment %} spiro {% endcomment %}
-    <div class="grid cols-2 d-grid">
+    <div class="product-keylist-grid">
       {%  for item in product_keylist  %}
         <div class="product-keylist-item">
           <div class="product-keylist-item_icon">O</div>
           <div class="textt">{{ item }}</div>
         </div>
-         
       {% endfor %}
     </div>
     {%- if first_3d_model -%}
