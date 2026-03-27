@@ -243,7 +243,7 @@
                     "custom_css": "fixing-heading",
                     "text": "<h2>We're Mili and Maya, sisters <strong>and co-founder(s) of Moom</strong></h2>",
                     "width": "fit-content",
-                    "max_width": "narrow",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
