@@ -11,19 +11,19 @@
     </a>
   </li>
     <li class="share-social {% if block.settings.enable_x %}d-block{% else %}d-none{% endif %}">
-        <a aria-label="Twitter" class="share-social flex horizontal items-center" href="https://x.com/share?text={{ product.title }}&url={{ share_url }}" onclick="{{ action }}">
+        <a aria-label="Twitter" class="flex horizontal items-center" href="https://x.com/share?text={{ product.title }}&url={{ share_url }}" onclick="{{ action }}">
         {%- render 'icon-twitter-x',  -%}
         <span>SHARE</span>
         </a>
     </li>
     <li class="share-social {% if block.settings.enable_pinterest %}d-block{% else %}d-none{% endif %}">
-        <a aria-label="Pinterest" class="share-social flex horizontal items-center" href="https://pinterest.com/pin/create/button/?url={{ share_url }}&media={{ share_image }}&description={{ share_description }}" onclick="{{ action }}">
+        <a aria-label="Pinterest" class="flex horizontal items-center" href="https://pinterest.com/pin/create/button/?url={{ share_url }}&media={{ share_image }}&description={{ share_description }}" onclick="{{ action }}">
         {%- render 'icon-pinterest',  -%}
         <span>SHARE</span>
         </a>
     </li>
     <li class="share-social {% if block.settings.enable_email %}d-block{% else %}d-none{% endif %}">
-        <a aria-label="Email" class="share-social flex horizontal items-center" {% unless content_for_header contains 'Shopify.designMode' %} href="mailto:?subject={{ product.title }}&body={{ product.title }}%0D%0A{{ share_url }}" onclick="{{ action }}"{% endunless %}>
+        <a aria-label="Email" class="flex horizontal items-center" {% unless content_for_header contains 'Shopify.designMode' %} href="mailto:?subject={{ product.title }}&body={{ product.title }}%0D%0A{{ share_url }}" onclick="{{ action }}"{% endunless %}>
         {%- render 'icon-mail',  -%}
         <span>SHARE</span>
         </a>
