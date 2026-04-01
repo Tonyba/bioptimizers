@@ -3,7 +3,7 @@
     
     assign action = "javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
 -%}
-<ul class="ls-none flex">
+<ul class="ls-none flex justify-center">
     
     <li class=" {% if block.settings.enable_facebook %}d-block{% else %}d-none{% endif %}">
     <a aria-label="Facebook" class="share-social flex horizontal items-center" href="https://www.facebook.com/sharer.php?u={{ share_url }}" onclick="{{ action }}">
