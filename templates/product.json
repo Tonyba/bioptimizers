@@ -68,17 +68,6 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "social_share_dKHAaQ": {
-              "type": "social_share",
-              "name": "Social Share",
-              "settings": {
-                "enable_facebook": true,
-                "enable_x": true,
-                "enable_pinterest": true,
-                "enable_email": true
-              },
-              "blocks": {}
-            },
             "group_icgrde": {
               "type": "group",
               "name": "Header",
@@ -540,16 +529,27 @@
                 "group_aiAJxd",
                 "divider_KgfWHk"
               ]
+            },
+            "social_share_dKHAaQ": {
+              "type": "social_share",
+              "name": "Social Share",
+              "settings": {
+                "enable_facebook": true,
+                "enable_x": true,
+                "enable_pinterest": true,
+                "enable_email": true
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "social_share_dKHAaQ",
             "group_icgrde",
             "text_aEtTtq",
             "price_8FJEaT",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
-            "group_r97hxY"
+            "group_r97hxY",
+            "social_share_dKHAaQ"
           ]
         }
       },
