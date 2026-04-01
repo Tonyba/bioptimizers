@@ -72,7 +72,7 @@
               "type": "social_share",
               "name": "Social Share",
               "settings": {
-                "enable_facebook": true,
+                "enable_facebook": false,
                 "enable_x": true,
                 "enable_pinterest": true,
                 "enable_email": true
