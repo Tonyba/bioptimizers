@@ -22,6 +22,12 @@
       Pinterest
     </a>
   </li>
+  <li class="d-block">
+    <a aria-label="Email" class="social-share-link btn btn-icon btn-small btn-plain" {% unless content_for_header contains 'Shopify.designMode' %} href="mailto:?subject={{ product.title }}&body={{ product.title }}%0D%0A{{ share_url }}" onclick="{{ action }}"{% endunless %}>
+      {%- render 'icon-mail', class: 'mr-8' -%}
+      Email
+    </a>
+  </li>
 </ul>
 {%  schema  %} 
 {
