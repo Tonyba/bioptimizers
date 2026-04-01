@@ -610,3 +610,6 @@ button {
 .d-block{
     display: block;
 }
+.ls-none {
+    list-style: none;
+}
