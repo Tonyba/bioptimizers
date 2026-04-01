@@ -11,7 +11,7 @@
         </a>
     </li>
     <li class="d-block">
-    <a aria-label="Twitter" class="{{enable_x | replace: false, 'd-none' | replace: true, 'd-block'}}" href="https://twitter.com/share?text={{ type.title }}&url={{ share_url }}" onclick="{{ action }}">
+    <a aria-label="Twitter" class="{{ block.settings.enable-twitter-x | default: false | json | replace: 'true', 'd-block' | replace: 'false', 'd-none'}}" href="https://twitter.com/share?text={{ type.title }}&url={{ share_url }}" onclick="{{ action }}">
       {% render 'icon-twitter-x' %}
       Twitter
     </a>
