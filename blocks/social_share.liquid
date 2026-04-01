@@ -11,7 +11,7 @@
       <span>SHARE</span>
     </a>
   </li>
-    <li class="{% if block.settings.enable_x %}d-block{% else %}d-none{% endif %}">
+    <li class="{% if block.settings.enable_instagram %}d-block{% else %}d-none{% endif %}">
         <a aria-label="Twitter" class="share-social flex horizontal items-center" href="https://instagram.com/share?text={{ product.title }}&url={{ share_url }}" onclick="{{ action }}">
         {%- render 'icon-instagram',  -%}
         <span>SHARE</span>
@@ -47,7 +47,7 @@
         {
           "type": "checkbox",
           "id": "enable_instagram",
-          "label": "X",
+          "label": "Instagram",
           "default": true
         }
         ,
