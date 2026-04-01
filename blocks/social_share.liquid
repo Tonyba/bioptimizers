@@ -4,12 +4,12 @@
     assign action = "javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
 -%}
 <ul class="ls-none">
-    <li class="{% if block.settings.enable-facebook %}d-block{% else %}d-none{% endif %}">
-        <a aria-label="Facebook" class="social-share-link btn btn-icon btn-small btn-plain" href="https://www.facebook.com/sharer.php?u={{ share_url }}" onclick="{{ action }}">
-        {%- render 'icon-facebook',  -%}
-        <span class="visually-hidden">Facebook</span>
-        </a>
-    </li>
+    <li class="d-block {% if block.settings.enable-facebook %}d-block{% else %}d-none{% endif %}">
+    <a aria-label="Facebook" class="social-share-link d-flex middle-xs bg-transparent pt-12 pr-24 pb-12 pl-24" href="https://www.facebook.com/sharer.php?u={{ share_url }}" onclick="{{ action }}">
+      {%- render 'icon-facebook', class: 'mr-8' -%}
+      Facebook
+    </a>
+  </li>
     <li class="{% if block.settings.enable-twitter-x %}d-block{% else %}d-none{% endif %}">
         <a aria-label="Twitter" class="social-share-link btn btn-icon btn-small btn-plain" href="https://x.com/share?text={{ product.title }}&url={{ share_url }}" onclick="{{ action }}">
         {%- render 'icon-twitter-x',  -%}
