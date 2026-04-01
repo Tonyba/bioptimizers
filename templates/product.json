@@ -1322,7 +1322,7 @@
                   "name": "t:names.text",
                   "settings": {
                     "custom_css": "",
-                    "text": "<p>Informed Sport is a global sports supplement quality assurance and supplement certification program. The presence of the Informed Sport supplement certification on the packaging of a product assures athletes and consumers that:<br/><br/></p><ul><li><em><strong>Every batch of a product has been tested for 250+ substances that are prohibited in sports</strong></em></li><li>Every product was made in an environment with quality systems appropriate for sports nutrition manufacturing</li></ul>",
+                    "text": "<p>Informed Sport is a global sports supplement quality assurance and supplement certification program. The presence of the Informed Sport supplement certification on the packaging of a product assures athletes and consumers that:<br/></p><ul><li><em><strong>Every batch of a product has been tested for 250+ substances that are prohibited in sports</strong></em></li><li>Every product was made in an environment with quality systems appropriate for sports nutrition manufacturing</li></ul>",
                     "width": "fit-content",
                     "max_width": "none",
                     "alignment": "left",
@@ -1363,7 +1363,8 @@
       ],
       "custom_css": [
         "li em strong {color: #fbbc05; font-style: normal;}",
-        "ul li:first-child {color: red;}"
+        "ul li:first-child {color: red;}",
+        "ul li {padding: 10px 0;}"
       ],
       "name": "t:names.multicolumn",
       "settings": {
