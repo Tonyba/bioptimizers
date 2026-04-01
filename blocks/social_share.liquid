@@ -4,12 +4,12 @@
     assign action = "javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
 -%}
 <ul class="ls-none">
-    <li class="{{ enable_facebook  | replace: false, 'd-none' | replace: true, 'd-block'}}">
-    <a aria-label="Facebook" class="social-share-link btn btn-icon btn-small btn-plain" href="https://www.facebook.com/sharer.php?u={{ share_url }}" onclick="{{ action }}">
-      {%- render 'icon-facebook',  -%}
-      <span class="visually-hidden">Facebook</span>
-    </a>
-  </li>
+    <li class="{{ enable_email | replace: false, 'd-none' | replace: true, 'd-block'}}">
+        <a aria-label="Facebook" class="social-share-link btn btn-icon btn-small btn-plain" href="https://www.facebook.com/sharer.php?u={{ share_url }}" onclick="{{ action }}">
+        {%- render 'icon-facebook',  -%}
+        <span class="visually-hidden">Facebook</span>
+        </a>
+    </li>
     <li class="d-block">
     <a aria-label="Twitter" class="{{enable_x | replace: false, 'd-none' | replace: true, 'd-block'}}" href="https://twitter.com/share?text={{ type.title }}&url={{ share_url }}" onclick="{{ action }}">
       {% render 'icon-twitter-x' %}
