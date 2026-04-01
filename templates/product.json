@@ -3714,7 +3714,13 @@
     "scientific_studies_P6ExLA": {
       "type": "scientific-studies",
       "name": "Scientific Studies",
-      "settings": {}
+      "settings": {
+        "custom_css": "",
+        "section_width": "page-width",
+        "color_scheme": "",
+        "padding-block-start": 53,
+        "padding-block-end": 44
+      }
     }
   },
   "order": [
