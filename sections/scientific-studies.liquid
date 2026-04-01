@@ -1,5 +1,5 @@
 {% liquid
-    assign product = closest.product
+    
     assign scientific_studies = product.metafieldscustom.scientific_studies
 %}
 
@@ -7,7 +7,7 @@
     {% for item in scientific_studies  %}
             <div class="col">
                 <div class="number d-flex items-center justify-center">{{ forloop.index }}</div>
-                <div class="text">{{ item }}</div>
+                <div class="text">{{ item }} hello</div>
             </div>
         {% endfor %}
 </div>
