@@ -1,13 +1,19 @@
 {% liquid
-    
     assign scientificstudies = product.metafields.custom.scientific_studies.value
 %}
 
 <div>
-    hello
+    
     {% for item in scientificstudies %}
-  {{ item }}
-{% endfor %}
+        <div>
+            <div class="number">
+                {{ forloop.index }}
+            </div>
+            <div class="item">
+                {{ item }}
+            </div>
+        </div>
+    {% endfor %}
 </div>
 
 {% schema %}
