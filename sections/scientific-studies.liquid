@@ -1,11 +1,11 @@
 {% liquid
     
-    assign scientific_studies = product.metafields.custom.scientific_studies
+    assign scientific-studies = product.metafields.custom.scientific_studies
 %}
 
 <div>
     
-    {% for item in scientific_studies  %}
+    {% for item in scientific-studies  %}
             {{item}}
     {% endfor %}
 </div>
