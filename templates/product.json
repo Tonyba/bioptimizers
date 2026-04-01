@@ -3718,8 +3718,8 @@
         "custom_css": "",
         "section_width": "page-width",
         "color_scheme": "",
-        "padding-block--start": 44,
-        "padding-block-end": 44
+        "padding-block-start": 0,
+        "padding-block-end": 55
       }
     }
   },
