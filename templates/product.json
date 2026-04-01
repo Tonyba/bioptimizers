@@ -1502,6 +1502,201 @@
         "padding-block-end": 40
       }
     },
+    "section_eJgwHV": {
+      "type": "section",
+      "blocks": {
+        "group_REj4eb": {
+          "type": "group",
+          "name": "t:names.column",
+          "settings": {
+            "custom_css": "margin-t-4",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 0,
+            "width": "custom",
+            "custom_width": 70,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "icon_ienUCk": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/Group_18529.png",
+                "width": 200,
+                "link": "",
+                "open_in_new_tab": false
+              },
+              "blocks": {}
+            },
+            "text_93DWF3": {
+              "type": "text",
+              "name": "t:names.description",
+              "settings": {
+                "custom_css": "text-black section-subheading",
+                "text": "<p>The Strongest Promise In The Industry:</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#f58220",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 31,
+                "padding-inline-end": 31
+              },
+              "blocks": {}
+            },
+            "text_tpzdKQ": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "custom_css": "",
+                "text": "<h2>{{ closest.product.title }} - 365 - Day Money Back Guarantee</h2>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 15,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "divider_HRnrjk": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "color": "#231f20",
+                "thickness": 3,
+                "corner_radius": "square",
+                "width_percent": 15,
+                "alignment_horizontal": "center",
+                "padding-block-start": 18,
+                "padding-block-end": 18
+              },
+              "blocks": {}
+            },
+            "text_mGgpPy": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "custom_css": "",
+                "text": "<p>All BIOptimizers products come with a 365-Day Money Back Guarantee. If you are not completely satisfied with your BIOptimizers product for any reason between today and 365 days from now, just send back your remaining unopened bottles of the product and we'll give you a full refund (minus the cost of shipping and handling). If you open a second bottle, you no longer qualify for any guarantee. Reach out to our customer happiness team and they will take complete care of it.</p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "icon_ienUCk",
+            "text_93DWF3",
+            "text_tpzdKQ",
+            "divider_HRnrjk",
+            "text_mGgpPy"
+          ]
+        }
+      },
+      "block_order": [
+        "group_REj4eb"
+      ],
+      "custom_css": [],
+      "name": "t:names.multicolumn",
+      "settings": {
+        "custom_css": "",
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-2",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 48
+      }
+    },
     "section_wExr8Q": {
       "type": "section",
       "blocks": {
@@ -4095,6 +4290,7 @@
     "section_Xxr9z3",
     "section_6apGgB",
     "section_gQKJCQ",
+    "section_eJgwHV",
     "section_wExr8Q",
     "section_f9QcbP",
     "section_etnJyQ",
