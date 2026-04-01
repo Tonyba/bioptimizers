@@ -1,10 +1,6 @@
 {%- liquid
     assign share_url = shop.url | append: product.url
-    if type == 'article'
-	  assign share_image = type.image | image_url: width: 750 | prepend: 'https: '
-  else
-    assign share_image = type.featured_image | image_url: width: 750 | prepend: 'https: '
-  endif
+    
     assign action = "javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
 -%}
 <ul>
