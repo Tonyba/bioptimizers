@@ -6,11 +6,14 @@
     
     {% for item in scientificstudies %}
         <div class="flex">
-            {% if forloop.index < 10 %}
-                0{{ forloop.index }}
-            {% else %}
-                {{ forloop.index }}
-            {% endif %}
+            <div>
+                {% if forloop.index < 10 %}
+                    0{{ forloop.index }}
+                {% else %}
+                    {{ forloop.index }}
+                {% endif %} 
+            </div>
+            
             <div class="item">
                 {{ item }}
             </div>
