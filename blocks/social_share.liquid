@@ -5,7 +5,7 @@
 -%}
 <ul class="ls-none flex">
     <li class=" {% if block.settings.enable_instagram%}d-block{% else %}d-none{% endif %}">
-    <a aria-label="Facebook" class="share-social flex horizontal items-center" href="https://www.facebook.com/sharer.php?u={{ share_url }}" onclick="{{ action }}">
+    <a aria-label="Facebook" class="share-social flex horizontal items-center" href="https://www.instagram.com/sharer.php?u={{ share_url }}" onclick="{{ action }}">
       {%- render 'icon-instagram',  -%}
       <span>SHARE</span>
     </a>
@@ -42,6 +42,12 @@
         {
           "type": "header",
           "content": "Social"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_instagram",
+          "label": "Instagram",
+          "default": true
         },
         {
           "type": "checkbox",
