@@ -1408,8 +1408,7 @@
         "group_rC6iYA"
       ],
       "custom_css": [
-        "li em strong {color: #fbbc05; font-style: normal;}",
-        "ul li:first-child {color: red;}",
+        "ul li:first-child,li em strong {color: #fbbc05; font-style: normal;}",
         "ul li {padding: 10px 0;}"
       ],
       "name": "t:names.multicolumn",
