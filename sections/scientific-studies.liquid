@@ -2,7 +2,11 @@
     assign scientificstudies = product.metafields.custom.scientific_studies.value
 %}
 
-<div class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }} {{ section.settings.custom_css }}">
+<div class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }} {{ section.settings.custom_css }}"
+style="
+        {% render 'layout-panel-style', settings: section.settings %}
+        {% render 'spacing-style', settings: section.settings %}
+      ">
     {% for item in scientificstudies %}
         <div class="flex">
             <div class="number-index">
