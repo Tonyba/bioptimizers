@@ -900,7 +900,7 @@
                 "vertical_alignment_flex_direction_column": "flex-start",
                 "gap": 8,
                 "width": "custom",
-                "custom_width": 40,
+                "custom_width": 38,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
                 "height": "fit",
