@@ -1,0 +1,26 @@
+{% liquid
+    assign product = closest.product
+    assign scientific_studies = product.metafieldscustom.scientific_studies
+%}
+
+<div>
+    {% for item in scientific_studies  %}
+            <div class="col">
+                <div class="number d-flex items-center justify-center">{{ forloop.index }}</div>
+                <div class="text">{{ item }}</div>
+            </div>
+        {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "scientific tudies",
+  "class": "how-to-use section-separation",
+  "settings": [ ],
+  "presets": [
+    {
+        "name": "How to use"
+    }
+  ]
+}
+{% endschema %}
