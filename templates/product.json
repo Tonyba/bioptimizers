@@ -1733,7 +1733,8 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "check_box",
-                        "width": 24,
+                        "image_upload": "shopify://shop_images/Vector_10.svg",
+                        "width": 40,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -1818,7 +1819,8 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "check_box",
-                        "width": 24,
+                        "image_upload": "shopify://shop_images/review_6042986_1.svg",
+                        "width": 40,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -1903,7 +1905,8 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "check_box",
-                        "width": 24,
+                        "image_upload": "shopify://shop_images/bank-card_1.svg",
+                        "width": 40,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -2036,7 +2039,8 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "check_box",
-                        "width": 24,
+                        "image_upload": "shopify://shop_images/medal_4_1.svg",
+                        "width": 40,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -2121,7 +2125,8 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "check_box",
-                        "width": 24,
+                        "image_upload": "shopify://shop_images/customer-service_1_1.svg",
+                        "width": 40,
                         "link": "",
                         "open_in_new_tab": false
                       },
@@ -2253,7 +2258,8 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "check_box",
-                        "width": 24,
+                        "image_upload": "shopify://shop_images/health_1.svg",
+                        "width": 60,
                         "link": "",
                         "open_in_new_tab": false
                       },
