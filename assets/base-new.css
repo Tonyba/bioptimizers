@@ -622,9 +622,7 @@ button {
     padding: 10px 30px;
 }
 @media screen and (max-width: 750px){
-    .flex {
-        flex-direction: column;
-    }
+    
     .ls-none{
         padding-inline-start: 0px;
     }
