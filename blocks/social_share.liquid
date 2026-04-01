@@ -4,12 +4,7 @@
     assign action = "javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
 -%}
 <ul class="ls-none flex">
-    <li class=" {% if block.settings.enable_instagram%}d-block{% else %}d-none{% endif %}">
-    <a aria-label="Facebook" class="share-social flex horizontal items-center" href="https://www.instagram.com/sharer.php?u={{ share_url }}" onclick="{{ action }}">
-      {%- render 'icon-instagram',  -%}
-      <span>SHARE</span>
-    </a>
-  </li>
+    
     <li class=" {% if block.settings.enable_facebook %}d-block{% else %}d-none{% endif %}">
     <a aria-label="Facebook" class="share-social flex horizontal items-center" href="https://www.facebook.com/sharer.php?u={{ share_url }}" onclick="{{ action }}">
       {%- render 'icon-facebook',  -%}
@@ -17,8 +12,8 @@
     </a>
   </li>
     <li class="{% if block.settings.enable_x %}d-block{% else %}d-none{% endif %}">
-        <a aria-label="Twitter" class="share-social flex horizontal items-center" href="https://x.com/share?text={{ product.title }}&url={{ share_url }}" onclick="{{ action }}">
-        {%- render 'icon-twitter-x',  -%}
+        <a aria-label="Twitter" class="share-social flex horizontal items-center" href="https://instagram.com/share?text={{ product.title }}&url={{ share_url }}" onclick="{{ action }}">
+        {%- render 'icon-instagram',  -%}
         <span>SHARE</span>
         </a>
     </li>
