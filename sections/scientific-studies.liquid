@@ -3,10 +3,7 @@
 %}
 
 <div class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }} {{ section.settings.custom_css }}"
-style="
-        {% render 'layout-panel-style', settings: section.settings %}
-        {% render 'spacing-style', settings: section.settings %}
-      ">
+style=" padding-block-start: {{ settings.padding-block-start }} ">
     {% for item in scientificstudies %}
         <div class="flex">
             <div class="number-index">
