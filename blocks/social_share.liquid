@@ -10,8 +10,8 @@
       <span>SHARE</span>
     </a>
   </li>
-    <li class="share-social {% if block.settings.enable_x %}d-block{% else %}d-none{% endif %}">
-        <a aria-label="Twitter" class="flex horizontal items-center" href="https://x.com/share?text={{ product.title }}&url={{ share_url }}" onclick="{{ action }}">
+    <li class="{% if block.settings.enable_x %}d-block{% else %}d-none{% endif %}">
+        <a aria-label="Twitter" class="share-social flex horizontal items-center" href="https://x.com/share?text={{ product.title }}&url={{ share_url }}" onclick="{{ action }}">
         {%- render 'icon-twitter-x',  -%}
         <span>SHARE</span>
         </a>
