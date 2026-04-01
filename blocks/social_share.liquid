@@ -13,19 +13,19 @@
     <li class="share-social {% if block.settings.enable_x %}d-block{% else %}d-none{% endif %}">
         <a aria-label="Twitter" class="social-share-link btn btn-icon btn-small btn-plain" href="https://x.com/share?text={{ product.title }}&url={{ share_url }}" onclick="{{ action }}">
         {%- render 'icon-twitter-x',  -%}
-        <span class="visually-hidden"> X </span>
+        <span>SHARE</span>
         </a>
     </li>
     <li class="share-social {% if block.settings.enable_pinterest %}d-block{% else %}d-none{% endif %}">
         <a aria-label="Pinterest" class="social-share-link btn btn-icon btn-small btn-plain" href="https://pinterest.com/pin/create/button/?url={{ share_url }}&media={{ share_image }}&description={{ share_description }}" onclick="{{ action }}">
         {%- render 'icon-pinterest',  -%}
-        <span class="visually-hidden"> Pinterest </span>
+        <span>SHARE</span>
         </a>
     </li>
     <li class="share-social {% if block.settings.enable_email %}d-block{% else %}d-none{% endif %}">
         <a aria-label="Email" class="social-share-link btn btn-icon btn-small btn-plain" {% unless content_for_header contains 'Shopify.designMode' %} href="mailto:?subject={{ product.title }}&body={{ product.title }}%0D%0A{{ share_url }}" onclick="{{ action }}"{% endunless %}>
         {%- render 'icon-mail',  -%}
-        <span class="visually-hidden">Email</span>
+        <span>SHARE</span>
         </a>
     </li>
 </ul>
