@@ -625,6 +625,9 @@ button {
     .flex {
         flex-direction: column;
     }
+    .ls-none{
+        padding-inline-start: 0px;
+    }
     .share-social{
     border: 1px solid black;
     display: flex;
