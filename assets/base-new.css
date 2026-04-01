@@ -613,3 +613,6 @@ button {
 .ls-none {
     list-style: none;
 }
+.share-social{
+    border: 1px solid black;
+}
