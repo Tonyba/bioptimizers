@@ -1047,7 +1047,7 @@
                 "custom_css": "",
                 "text": "<p>Most “healthy” individuals typically only get 1-2 forms of magnesium at best (much of the population is deficient in all forms)<br/><br/><em><strong>- but when you get all 7 major forms of magnesium, you can truly experience the benefits.</strong></em></p>",
                 "width": "100%",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "center",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
