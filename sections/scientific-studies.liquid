@@ -5,7 +5,7 @@
 <div class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }} {{ section.settings.custom_css }}"
 style=" padding-block-start: {{ section.settings.padding-block-start }}px; padding-block-end: {{ section.settings.padding-block-end }}px ">
     {% for item in scientificstudies %}
-        <div class="flex border-bottom">
+        <div class="flex border-bottom pd-9">
             <div class="number-index">
                 {% if forloop.index < 10 %}
                     0{{ forloop.index }}
