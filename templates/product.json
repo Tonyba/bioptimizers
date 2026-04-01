@@ -535,9 +535,9 @@
               "name": "Social Share",
               "settings": {
                 "enable_facebook": true,
-                "enable_x": true,
+                "enable_instagram": true,
                 "enable_pinterest": true,
-                "enable_email": true
+                "enable_email": false
               },
               "blocks": {}
             }
