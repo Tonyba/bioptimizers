@@ -1450,6 +1450,7 @@
           "name": "t:names.video",
           "settings": {
             "source": "url",
+            "video_url": "",
             "video_autoplay": false,
             "video_loop": true,
             "alt": "",
@@ -3658,6 +3659,7 @@
           "name": "t:names.video",
           "settings": {
             "source": "url",
+            "video_url": "",
             "video_autoplay": false,
             "video_loop": true,
             "alt": "",
@@ -3708,6 +3710,11 @@
         "padding-block-start": 40,
         "padding-block-end": 40
       }
+    },
+    "scientific_studies_xeE4WB": {
+      "type": "scientific-studies",
+      "name": "Scientific Studies",
+      "settings": {}
     }
   },
   "order": [
@@ -3722,6 +3729,7 @@
     "section_etnJyQ",
     "section_HeHDzX",
     "section_9gzEfn",
-    "section_VRXAjN"
+    "section_VRXAjN",
+    "scientific_studies_xeE4WB"
   ]
 }
