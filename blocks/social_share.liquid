@@ -6,6 +6,12 @@
 <ul class="ls-none flex">
     <li class=" {% if block.settings.enable_facebook %}d-block{% else %}d-none{% endif %}">
     <a aria-label="Facebook" class="share-social flex horizontal items-center" href="https://www.facebook.com/sharer.php?u={{ share_url }}" onclick="{{ action }}">
+      {%- render 'icon-instagram',  -%}
+      <span>SHARE</span>
+    </a>
+  </li>
+    <li class=" {% if block.settings.enable_facebook %}d-block{% else %}d-none{% endif %}">
+    <a aria-label="Facebook" class="share-social flex horizontal items-center" href="https://www.facebook.com/sharer.php?u={{ share_url }}" onclick="{{ action }}">
       {%- render 'icon-facebook',  -%}
       <span>SHARE</span>
     </a>
