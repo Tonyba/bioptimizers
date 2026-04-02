@@ -1121,6 +1121,11 @@
         "padding-block-end": 35
       }
     },
+    "timeline_section_yF4Dxz": {
+      "type": "timeline-section",
+      "name": "Timeline Section",
+      "settings": {}
+    },
     "section_6apGgB": {
       "type": "section",
       "blocks": {
@@ -4970,6 +4975,7 @@
     "product_recommendations_qggXJq",
     "section_WwGpXf",
     "section_Xxr9z3",
+    "timeline_section_yF4Dxz",
     "section_6apGgB",
     "section_gQKJCQ",
     "section_GPKMHH",
