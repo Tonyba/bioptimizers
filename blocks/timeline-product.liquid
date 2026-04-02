@@ -3,20 +3,20 @@
   assign timelinecontent = product.metafields.custom.timeline_items_content.value
 %}
 {% assign start = block.settings.index_start | minus: 1 %}
+{% assign end = block.settings.index_end %}
 
 <div class="right">  
   <div class="timeline">
     {% for item in timelineheader %}
       {% assign i = forloop.index0 | plus: start %}
+      {% assign display_index = forloop.index | plus: start %}
 
-      {% comment %} Skip items before the start index {% endcomment %}
-      {% if i >= timelineheader.size %}
+      {% if display_index > end %}
         {% break %}
       {% endif %}
 
       {% assign actualitem = timelineheader[i] %}
       {% assign otheritem = timelinecontent[i] %}
-      {% assign display_index = forloop.index | plus: start %}
       {% assign padded = display_index | prepend: '0' %}
 
       <div class="timeline-item">
@@ -31,7 +31,7 @@
     {% endfor %}
   </div>
 </div>
-
+      
 
 {%  stylesheet  %} 
 
@@ -108,6 +108,12 @@
                 "id": "index_start",
                 "label": "Start numbering from",
                 "default": 1
+            },
+            {
+                "type": "number",
+                "id": "index_end",
+                "label": "Stop numbering at",
+                "default": 4
             },
             {
                 "type": "select",
