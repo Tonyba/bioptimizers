@@ -1,12 +1,13 @@
 {% liquid
   assign timelineheader = product.metafields.custom.timeline_items.value
   assign timelinecontent = product.metafields.custom.timeline_items_content.value
+  assign i = block_settings.index-numver.value
 %}
 
     <div class="right">  
         <div class="timeline">
             {% for item in timelineheader %}
-                {% assign otheritem = timelinecontent[index-number] %}
+                {% assign otheritem = timelinecontent[4] %}
                 <div class="timeline-item">
                 <div class="timeline-number">
                     {{ forloop.index }}
