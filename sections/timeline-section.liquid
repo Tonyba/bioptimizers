@@ -7,7 +7,9 @@
 style=" padding-block-start: {{ section.settings.padding-block-start }}px; padding-block-end: {{ section.settings.padding-block-end }}px ">
     {% for item in timelineheader %}
         <div class="flex">{{ item }}</div>
-        
+        {% for item in timelinecontent %}
+            <div class="flex">{{ item }}</div>
+        {% endfor %}
     {% endfor %}
 </div>
 
