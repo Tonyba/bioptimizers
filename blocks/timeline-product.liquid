@@ -2,14 +2,14 @@
   assign timelineheader = product.metafields.custom.timeline_items.value
   assign timelinecontent = product.metafields.custom.timeline_items_content.value
 %}
-
+{% assign start = block.settings.index_start | minus: 1 %}
 
 
     <div class="right">  
         <div class="timeline">
-            {% for item in timelineheader %}{% assign start = block.settings.index_start | minus: 1 %}
-                {% comment %} {% assign i = forloop.index0 %} {% endcomment %}
-                {% assign otheritem = timelinecontent[start] %}
+            {% for item in timelineheader %}
+                {% assign i = forloop.index0 | plus: start %}
+                {% assign otheritem = timelinecontent[i] %}
                 {% assign display_index = forloop.index | plus: start %}
                 {% assign padded = display_index | prepend: '0' %}
                 <div class="timeline-item">
