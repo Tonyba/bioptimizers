@@ -2048,7 +2048,7 @@
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
-                    "custom_css": "items-center",
+                    "custom_css": "justify-center",
                     "label": "WATCH THIS VIDEO",
                     "icon": "shopify://shop_images/Frame_1000012061.svg",
                     "link": "{{ closest.product.metafields.custom.product_video_url.value }}",
