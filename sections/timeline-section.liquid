@@ -1,11 +1,16 @@
-<div class="section">
+{% liquid
+    assign timelineheader = product.metafields.custom.timeline_items.value
+    assign timelinecontent = product.metafields.custom.timeline_items_content.value
+%}
+
+<div class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }} {{ section.settings.custom_css }}"
+style=" padding-block-start: {{ section.settings.padding-block-start }}px; padding-block-end: {{ section.settings.padding-block-end }}px ">
+
+</div>
+
+
+{% comment %} <div class="section">
   <div class="container">
-
-    <!-- LEFT IMAGE -->
-    <div class="left">
-      <img src="{{ section.settings.image }}" alt="Wellness Image">
-    </div>
-
     <!-- RIGHT TIMELINE -->
     <div class="right">
       <div class="timeline">
@@ -31,7 +36,7 @@
     </div>
 
   </div>
-</div>
+</div> {% endcomment %}
 {% stylesheet  %} 
 .section {
   padding: 40px;
@@ -118,6 +123,57 @@
 {
     "name": "Timeline Section",
     "settings": [
+        {
+        "type": "text",
+        "id": "custom_css",
+        "label": "Custom CSS classes"
+        },
+        {
+        "type": "select",
+        "id": "section_width",
+        "label": "t:settings.width",
+        "options": [
+            {
+            "value": "page-width",
+            "label": "t:options.page"
+            },
+            {
+            "value": "full-width",
+            "label": "t:options.full"
+            }
+        ],
+        "default": "page-width"
+        },
+        {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:settings.color_scheme",
+        "default": "scheme-1"
+        },
+        {
+        "type": "header",
+        "content": "t:content.padding"
+        },
+        {
+        "type": "range",
+        "id": "padding-block-start",
+        "label": "t:settings.top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "default": 0
+        },
+        {
+        "type": "range",
+        "id": "padding-block-end",
+        "label": "t:settings.bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "default": 0
+        },
         {
         "type": "image_picker",
         "id": "image",
