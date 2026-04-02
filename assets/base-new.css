@@ -290,7 +290,9 @@ button {
 .text-gray {
     color: #6D6D6D;
 }
-
+.reverse{
+    flex-direction: row-reverse;
+}
 .section-subheading {
     line-height: 160%;
     letter-spacing: 12%;
