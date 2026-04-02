@@ -284,6 +284,10 @@ button {
     color: #018476 !important;
 }
 
+.text-gray {
+    color: #6D6D6D;
+}
+
 .section-subheading {
     line-height: 160%;
     letter-spacing: 12%;
