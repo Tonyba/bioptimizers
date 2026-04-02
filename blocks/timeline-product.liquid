@@ -3,7 +3,7 @@
   assign timelinecontent = product.metafields.custom.timeline_items_content.value
 %}
 
-<div class="">
+<div class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }} {{ section.settings.custom_css }}">
     
 {% comment %} <div class="left">
     {{ section.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: section.settings.image.alt }}
@@ -39,10 +39,59 @@
                 "label": "Custom CSS classes"
             },
             {
-                "type": "image_picker",
-                "id": "image",
-                "label": "Left Image"
-            }
+      "type": "select",
+      "id": "width",
+      "label": "t:settings.width_desktop",
+      "options": [
+        {
+          "value": "fit-content",
+          "label": "t:options.fit_content"
+        },
+        {
+          "value": "custom",
+          "label": "t:options.custom"
+        }
+      ],
+      "default": "fit-content"
+    },
+    {
+      "type": "range",
+      "id": "custom_width",
+      "label": "t:settings.custom_width",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 100,
+      "visible_if": "{{ block.settings.width == \"custom\" }}"
+    },
+    {
+      "type": "select",
+      "id": "width_mobile",
+      "label": "t:settings.width_mobile",
+      "options": [
+        {
+          "value": "fit-content",
+          "label": "t:options.fit_content"
+        },
+        {
+          "value": "custom",
+          "label": "t:options.custom"
+        }
+      ],
+      "default": "fit-content"
+    },
+    {
+      "type": "range",
+      "id": "custom_width_mobile",
+      "label": "t:settings.custom_width",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 100,
+      "visible_if": "{{ block.settings.width_mobile == \"custom\" }}"
+    }
         ],
         "presets": [
     {
