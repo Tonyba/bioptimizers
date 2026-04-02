@@ -1131,7 +1131,7 @@
             "custom_css": "",
             "image": "shopify://shop_images/our-tummies-love-good-workout-shot-young-woman-holding-heart-her-tummy-workout_1_1.png",
             "link": "",
-            "image_ratio": "adapt",
+            "image_ratio": "square",
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
