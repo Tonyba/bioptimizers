@@ -1124,23 +1124,23 @@
     "section_7Td7nh": {
       "type": "section",
       "blocks": {
-        "image_9GhXxq": {
+        "image_6dmr7q": {
           "type": "image",
           "name": "t:names.image",
           "settings": {
             "custom_css": "",
             "image": "shopify://shop_images/our-tummies-love-good-workout-shot-young-woman-holding-heart-her-tummy-workout_1_1.png",
             "link": "",
-            "image_ratio": "square",
-            "width": "custom",
-            "custom_width": 80,
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
-            "height": "fit",
+            "height": "fill",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 10,
+            "border_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -1158,7 +1158,7 @@
         }
       },
       "block_order": [
-        "image_9GhXxq",
+        "image_6dmr7q",
         "timeline_product_faLqPp"
       ],
       "name": "t:names.multicolumn",
