@@ -1,23 +1,27 @@
 {% liquid
-    assign timelineheader = product.metafields.custom.timeline_items.value
-    assign timelinecontent = product.metafields.custom.timeline_items_content.value
+  assign timelineheader = product.metafields.custom.timeline_items.value
+  assign timelinecontent = product.metafields.custom.timeline_items_content.value
 %}
 
 <div class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }} {{ section.settings.custom_css }}"
-style=" padding-block-start: {{ section.settings.padding-block-start }}px; padding-block-end: {{ section.settings.padding-block-end }}px ">
-    {% for item in timelineheader %}
-        {% assign i = forloop.index0 %}
-        {% assign otheritem = timelinecontent[i] %}
-        <div class="timeline-number">
-            {{ forloop.index }}
-        </div>
-        {{ forloop.index }}
-        <div class="timeline-content">
-            <h3>{{ item }}</h3>
-            <p>{{ otheritem }}</p>
-        </div>
-    {% endfor %}
+  style="padding-block-start: {{ section.settings.padding-block-start }}px; padding-block-end: {{ section.settings.padding-block-end }}px">
+
+  {% for item in timelineheader %}
+    {% assign i = forloop.index0 %}
+    {% assign otheritem = timelinecontent[i] %}
+    <div class="timeline-item">
+      <div class="timeline-number">
+        {{ forloop.index | prepend: '0' }}
+      </div>
+      <div class="timeline-content">
+        <h3>{{ item }}</h3>
+        <p>{{ otheritem }}</p>
+      </div>
+    </div>
+  {% endfor %}
+
 </div>
+
 
 
 {% comment %} <div class="section">
