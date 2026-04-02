@@ -7,7 +7,10 @@
 <div class=" container section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }} {{ section.settings.custom_css }}"
   style="padding-block-start: {{ section.settings.padding-block-start }}px; padding-block-end: {{ section.settings.padding-block-end }}px">
     <div class="left">
-        {{ section.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: section.settings.image.alt }}
+        {% capture children %}
+            {% content_for 'blocks' %}
+        {% endcapture %}
+{{ section.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: section.settings.image.alt }}
     </div>
     <div class="right">  
         <div class="timeline">
