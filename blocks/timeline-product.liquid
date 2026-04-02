@@ -6,7 +6,7 @@
     <div class="right">  
         <div class="timeline">
             {% for item in timelineheader %}
-                {% assign i = block.settings.index-number.value %}
+                {% assign i = forloop.index0 %}
                 {% assign otheritem = timelinecontent[i] %}
                 <div class="timeline-item">
                 <div class="timeline-number">
