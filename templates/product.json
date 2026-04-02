@@ -1124,6 +1124,27 @@
     "timeline_section_yF4Dxz": {
       "type": "timeline-section",
       "blocks": {
+        "item_g7FqBx": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "item_Utg7PU": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "item_rRC9LD": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
         "item_6gHrFD": {
           "type": "item",
           "settings": {
@@ -1133,10 +1154,15 @@
         }
       },
       "block_order": [
+        "item_g7FqBx",
+        "item_Utg7PU",
+        "item_rRC9LD",
         "item_6gHrFD"
       ],
       "name": "Timeline Section",
-      "settings": {}
+      "settings": {
+        "image": "shopify://shop_images/Rectangle_12.png"
+      }
     },
     "section_6apGgB": {
       "type": "section",
