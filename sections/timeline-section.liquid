@@ -1,0 +1,54 @@
+<div class="section">
+  <div class="container">
+
+    <!-- LEFT IMAGE -->
+    <div class="left">
+      <img src="{{ section.settings.image }}" alt="Wellness Image">
+    </div>
+
+    <!-- RIGHT TIMELINE -->
+    <div class="right">
+      <div class="timeline">
+
+        {% for item in section.blocks %}
+          <div class="timeline-item">
+            
+            <!-- NUMBER -->
+            <div class="timeline-number">
+              {{ forloop.index | prepend: '0' }}
+            </div>
+
+            <!-- CONTENT -->
+            <div class="timeline-content">
+              <h3>{{ item.settings.title }}</h3>
+              <p>{{ item.settings.text }}</p>
+            </div>
+
+          </div>
+        {% endfor %}
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+    "name": "Timeline Section",
+    "settings": [
+        {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Left Image"
+        }
+    ],
+    "presets": [
+    {
+        "name": "Timeline Section"
+    }
+  ]
+}
+{% endschema %}
