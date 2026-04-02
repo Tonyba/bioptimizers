@@ -28,7 +28,6 @@
 
 {%  stylesheet  %} 
 
-/* RIGHT SIDE */
 .right {
   flex: 1;
   height: 100%;
@@ -40,7 +39,6 @@
   height: 100%;
 }
 
-/* vertical line */
 .timeline::before {
   content: "";
   position: absolute;
@@ -56,7 +54,6 @@
   margin-bottom: 20px;
 }
 
-/* number circle */
 .timeline-number {
   position: absolute;
   left: -40px;
@@ -72,7 +69,6 @@
   justify-content: center;
 }
 
-/* content box */
 .timeline-content {
   padding: 16px;
   border-radius: 10px;
@@ -101,70 +97,70 @@
                 "label": "Custom CSS classes"
             },
             {
-  "type": "number",
-  "id": "index_start",
-  "label": "Start numbering from",
-  "default": 1
-},
+                "type": "number",
+                "id": "index_start",
+                "label": "Start numbering from",
+                "default": 1
+            },
             {
-      "type": "select",
-      "id": "width",
-      "label": "t:settings.width_desktop",
-      "options": [
-        {
-          "value": "fit-content",
-          "label": "t:options.fit_content"
-        },
-        {
-          "value": "custom",
-          "label": "t:options.custom"
-        }
-      ],
-      "default": "fit-content"
-    },
-    {
-      "type": "range",
-      "id": "custom_width",
-      "label": "t:settings.custom_width",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "default": 100,
-      "visible_if": "{{ block.settings.width == \"custom\" }}"
-    },
-    {
-      "type": "select",
-      "id": "width_mobile",
-      "label": "t:settings.width_mobile",
-      "options": [
-        {
-          "value": "fit-content",
-          "label": "t:options.fit_content"
-        },
-        {
-          "value": "custom",
-          "label": "t:options.custom"
-        }
-      ],
-      "default": "fit-content"
-    },
-    {
-      "type": "range",
-      "id": "custom_width_mobile",
-      "label": "t:settings.custom_width",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "default": 100,
-      "visible_if": "{{ block.settings.width_mobile == \"custom\" }}"
-    }
-        ],
-        "presets": [
-    {
-        "name": "Timeline product block"
-    }
-  ]
+                "type": "select",
+                "id": "width",
+                "label": "t:settings.width_desktop",
+                "options": [
+                    {
+                    "value": "fit-content",
+                    "label": "t:options.fit_content"
+                    },
+                    {
+                    "value": "custom",
+                    "label": "t:options.custom"
+                    }
+                ],
+                "default": "fit-content"
+                },
+                {
+                "type": "range",
+                "id": "custom_width",
+                "label": "t:settings.custom_width",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "%",
+                "default": 100,
+                "visible_if": "{{ block.settings.width == \"custom\" }}"
+                },
+                {
+                "type": "select",
+                "id": "width_mobile",
+                "label": "t:settings.width_mobile",
+                "options": [
+                    {
+                    "value": "fit-content",
+                    "label": "t:options.fit_content"
+                    },
+                    {
+                    "value": "custom",
+                    "label": "t:options.custom"
+                    }
+                ],
+                "default": "fit-content"
+                },
+                {
+                "type": "range",
+                "id": "custom_width_mobile",
+                "label": "t:settings.custom_width",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "%",
+                "default": 100,
+                "visible_if": "{{ block.settings.width_mobile == \"custom\" }}"
+                }
+                    ],
+                    "presets": [
+                {
+                    "name": "Timeline product block"
+                }
+            ]
     }
 {% endschema %}
