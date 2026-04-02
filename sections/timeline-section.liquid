@@ -7,9 +7,11 @@
 <div class=" container section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }} {{ section.settings.custom_css }}"
   style="padding-block-start: {{ section.settings.padding-block-start }}px; padding-block-end: {{ section.settings.padding-block-end }}px">
     <div class="left">
-        {% capture children %}
-            {% content_for 'blocks' %}
-        {% endcapture %}
+        {% for block in section.blocks %}
+    <div {{ block.shopify_attributes }}>
+      {% render block %}
+    </div>
+  {% endfor %}
 {% comment %} {{ section.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: section.settings.image.alt }} {% endcomment %}
     </div>
     <div class="right">  
