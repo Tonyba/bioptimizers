@@ -1,7 +1,7 @@
 {% liquid
   assign timelineheader = product.metafields.custom.timeline_items.value
   assign timelinecontent = product.metafields.custom.timeline_items_content.value
-  assign start = settings.index_start | minus: 1
+  assign start = block.settings.index_start.value | minus: 1
 
 %}
 
