@@ -10,7 +10,7 @@
         {% capture children %}
             {% content_for 'blocks' %}
         {% endcapture %}
-{{ section.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: section.settings.image.alt }}
+{% comment %} {{ section.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: section.settings.image.alt }} {% endcomment %}
     </div>
     <div class="right">  
         <div class="timeline">
