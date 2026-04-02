@@ -8,8 +8,8 @@
     <div class="right">  
         <div class="timeline">
             {% for item in timelineheader %}{% assign start = block.settings.index_start | minus: 1 %}
-                {% assign i = forloop.index0 %}
-                {% assign otheritem = timelinecontent[i] %}
+                {% comment %} {% assign i = forloop.index0 %} {% endcomment %}
+                {% assign otheritem = timelinecontent[start] %}
                 {% assign display_index = forloop.index | plus: start %}
                 {% assign padded = display_index | prepend: '0' %}
                 <div class="timeline-item">
