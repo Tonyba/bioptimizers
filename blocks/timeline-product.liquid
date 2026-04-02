@@ -6,8 +6,7 @@
     <div class="right">  
         <div class="timeline">
             {% for item in timelineheader %}
-                {% assign i = forloop.index0 %}
-                {% assign otheritem = timelinecontent[i] %}
+                {% assign otheritem = timelinecontent[index-number] %}
                 <div class="timeline-item">
                 <div class="timeline-number">
                     {{ forloop.index | prepend: '0' }}
@@ -95,6 +94,11 @@
                 "type": "text",
                 "id": "custom_css",
                 "label": "Custom CSS classes"
+            },
+            {
+                "type": "number",
+                "id": "index-number",
+                "label": "Starting number index"
             },
             {
       "type": "select",
