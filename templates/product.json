@@ -1126,7 +1126,7 @@
       "name": "Timeline Section",
       "settings": {
         "custom_css": "",
-        "section_width": "full-width",
+        "section_width": "page-width",
         "color_scheme": "scheme-1",
         "padding-block-start": 65,
         "padding-block-end": 65,
