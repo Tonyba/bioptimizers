@@ -12,7 +12,7 @@
       {% render block %}
     </div>
   {% endfor %}
-{% comment %} {{ section.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: section.settings.image.alt }} {% endcomment %}
+{{ section.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: section.settings.image.alt }}
     </div>
     <div class="right">  
         <div class="timeline">
