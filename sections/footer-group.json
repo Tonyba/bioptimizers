@@ -142,6 +142,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "stopwatch",
+                        "image_upload": "shopify://shop_images/telephone-call_1.svg",
                         "width": 24,
                         "link": "",
                         "open_in_new_tab": false
@@ -227,6 +228,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "stopwatch",
+                        "image_upload": "shopify://shop_images/email_5_1.svg",
                         "width": 24,
                         "link": "",
                         "open_in_new_tab": false
@@ -312,6 +314,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "stopwatch",
+                        "image_upload": "shopify://shop_images/chat_1_1.svg",
                         "width": 24,
                         "link": "",
                         "open_in_new_tab": false
