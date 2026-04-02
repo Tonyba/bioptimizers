@@ -1,6 +1,8 @@
 {% liquid
   assign timelineheader = product.metafields.custom.timeline_items.value
   assign timelinecontent = product.metafields.custom.timeline_items_content.value
+  assign start = section.settings.index_start | minus: 1
+
 %}
 
     <div class="right">  
@@ -8,9 +10,12 @@
             {% for item in timelineheader %}
                 {% assign i = forloop.index0 %}
                 {% assign otheritem = timelinecontent[i] %}
+                {% assign display_index = forloop.index | plus: start %}
+                {% assign padded = display_index | prepend: '0' %}
                 <div class="timeline-item">
                 <div class="timeline-number">
-                    {{ forloop.index | prepend: '0' }}
+                    {{ padded | slice: -2, 2 }}
+                    {% comment %} {{ forloop.index | prepend: '0' }} {% endcomment %}
                 </div>
                 <div class="timeline-content">
                     <h3>{{ item }}</h3>
