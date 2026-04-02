@@ -3,12 +3,6 @@
   assign timelinecontent = product.metafields.custom.timeline_items_content.value
 %}
 
-<div class="container">
-    
-{% comment %} <div class="left">
-    {{ section.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: section.settings.image.alt }}
-</div> {% endcomment %}
-   
     <div class="right">  
         <div class="timeline">
             {% for item in timelineheader %}
@@ -26,7 +20,7 @@
             {% endfor %}
         </div>
     </div>      
-</div>
+
 {%  stylesheet  %} 
 .section {
   padding: 40px;
