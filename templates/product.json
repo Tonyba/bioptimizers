@@ -1152,7 +1152,11 @@
           "type": "timeline-product",
           "name": "Timeline product block",
           "settings": {
-            "custom_css": "w-100"
+            "custom_css": "w-100",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
           },
           "blocks": {}
         }
@@ -1223,7 +1227,8 @@
           "type": "timeline-product",
           "name": "Timeline product block",
           "settings": {
-            "custom_css": "w-100",
+            "custom_css": "",
+            "index-number": 5,
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
