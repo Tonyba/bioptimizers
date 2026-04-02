@@ -1152,7 +1152,7 @@
           "type": "timeline-product",
           "name": "Timeline product block",
           "settings": {
-            "custom_css": "w-100",
+            "custom_css": "",
             "index_start": 1,
             "index_end": 4,
             "width": "fit-content",
