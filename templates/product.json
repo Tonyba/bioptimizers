@@ -1129,10 +1129,10 @@
           "name": "t:names.image",
           "settings": {
             "custom_css": "",
-            "image": "shopify://shop_images/Rectangle_16.png",
+            "image": "shopify://shop_images/Rectangle_12.png",
             "link": "",
             "image_ratio": "adapt",
-            "width": "fill",
+            "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
@@ -1140,7 +1140,7 @@
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 0,
+            "border_radius": 10,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -1158,8 +1158,7 @@
         "section_width": "page-width",
         "color_scheme": "scheme-1",
         "padding-block-start": 65,
-        "padding-block-end": 65,
-        "image": "shopify://shop_images/Rectangle_12.png"
+        "padding-block-end": 65
       }
     },
     "section_6apGgB": {
