@@ -1123,6 +1123,18 @@
     },
     "timeline_section_yF4Dxz": {
       "type": "timeline-section",
+      "blocks": {
+        "item_6gHrFD": {
+          "type": "item",
+          "settings": {
+            "title": "{{ product.title }}",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_6gHrFD"
+      ],
       "name": "Timeline Section",
       "settings": {}
     },
