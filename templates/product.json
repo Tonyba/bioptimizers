@@ -2031,7 +2031,7 @@
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
-                    "custom_css": "",
+                    "custom_css": "justify-center",
                     "label": "FIND OUT MORE",
                     "icon": "shopify://shop_images/plus_1_1.svg",
                     "link": "shopify://pages/the-team",
