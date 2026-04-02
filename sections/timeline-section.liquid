@@ -9,7 +9,7 @@ style=" padding-block-start: {{ section.settings.padding-block-start }}px; paddi
         {% assign i = forloop.index0 %}
         {% assign otheritem = timelinecontent[i] %}
         <div class="timeline-number">
-            {{ i }}
+            {{ forloop.index }}
         </div>
         <div class="timeline-content">
             <h3>{{ item }}</h3>
