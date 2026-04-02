@@ -1154,6 +1154,7 @@
           "settings": {
             "custom_css": "w-100",
             "index_start": 1,
+            "index_end": 4,
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
@@ -1230,6 +1231,7 @@
           "settings": {
             "custom_css": "",
             "index_start": 5,
+            "index_end": 7,
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
