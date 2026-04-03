@@ -9,7 +9,7 @@
                 <input class="check-position" type="checkbox"
                    id="fbt-variant-{{ product.id }}"
                    value="{{ product.id }}"
-                   data-price="{{ product.price | money_with_currency }}"
+                   data-price="{{ product.price | unit_price_with_measurement }}"
                    checked onchange="updateFBTPrice()">
                 {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
             </div>
