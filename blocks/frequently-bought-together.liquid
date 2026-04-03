@@ -29,7 +29,7 @@
 
     <div id="myBlueDiv">{% render 'icon-plus' %}</div>
     {% endfor %}
-    <p>Total: <span id="totalAfterPrice"></span>-<span id="totalPrice"></span></p>
+    <p class="space">Total Price: <span id="totalAfterPrice"></span>-<span id="totalPrice"></span></p>
 </div>
 
 <script>
@@ -50,6 +50,9 @@ function updateFBTPrice() {
 </script>
 
 {% stylesheet %}
+.space{
+    gap: 12px;
+}
 #totalPrice{
     font-size: 28px;
     font-weight: bold;
