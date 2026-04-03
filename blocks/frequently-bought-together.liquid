@@ -16,7 +16,7 @@
         {% endif %}
 
         <p><strong>{{ product.title }}</strong></p>
-        <p>{{ product.price | money }}</p>
+        <p><strong>{{ product.price | money }}</strong></p>
         <input type="checkbox" name="product_id" value="{{ product.id }}">
     </div>
     {% endfor %}
