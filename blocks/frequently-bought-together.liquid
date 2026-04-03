@@ -4,6 +4,7 @@
     <div class="fbt-item width">
         {% assign img = product.metafields.custom.loop_image.value %}
         {% if img %}
+            <div class="border">efejfjwefjj</div>
         {{ img | image_url: width: 100 | image_tag: loading: 'lazy', alt: product.title }}
         {% elsif product.featured_image %}
         {{ product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
