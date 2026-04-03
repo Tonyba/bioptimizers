@@ -1,4 +1,5 @@
-<div>
+<div class="flex">
+<div class="product_section">
 <div class="flex">
   {% for product in block.settings.product_list %}
     {% assign variant = product.selected_or_first_available_variant %}
@@ -60,7 +61,7 @@
   <span class="flexx">{% render 'icon-info' %}<span>Some of these products are shipped before others.</span></span>
 
 </div>
-
+</div>
 
 <script>
 function updateFBTPrice() {
