@@ -6,7 +6,7 @@
         {% if img %}
             <div class="image-card">
                 {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
-                <input class="check-position" type="checkbox" name="product_id" value="{{ product.id }}">
+                
             </div>
         
         {% elsif product.featured_image %}
@@ -17,7 +17,7 @@
 
         <p id="size"><strong>{{ product.title }}</strong></p>
         <p id="cyan"><strong>{{ product.price | money }}</strong></p>
-        
+        <input class="check-position" type="checkbox" name="product_id" value="{{ product.id }}">
     </div>
     {% endfor %}
 </div>
