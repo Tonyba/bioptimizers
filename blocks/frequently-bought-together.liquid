@@ -2,7 +2,7 @@
 <div class="flex">
     {% for product in block.settings.product_list %}
     <div class="fbt-item width h-100 ">
-        <div id="myBlueDiv">
+        <div id="myBlueDiv">{% render 'icon-plus' %}
             {% assign img = product.metafields.custom.loop_image.value %}
         {% if img %}
             <div class="image-card">
@@ -22,7 +22,7 @@
         <p id="cyan"><strong>{{ product.price | money }}</strong></p>
         
     </div>
-    <div id="myBlueDiv">{% render 'icon-plus' %}</div>
+    <div id="myBlueDiv"></div>
     {% endfor %}
 </div>
 {% stylesheet %}
