@@ -657,3 +657,6 @@ button {
     font-size: 14px;
     font-weight: bold;
 }
+.front{
+    z-index: 999;
+}
