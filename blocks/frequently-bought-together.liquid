@@ -1,5 +1,5 @@
 {% for product in block.settings.product_list %}
-  <div class="fbt-item">
+  <div class="fbt-item width flex">
     {% assign img = product.metafields.custom.loop_image.value %}
     {% if img %}
       {{ img | image_url: width: 100 | image_tag: loading: 'lazy', alt: product.title }}
@@ -12,6 +12,11 @@
     <input type="checkbox" name="product_id" value="{{ product.id }}">
   </div>
 {% endfor %}
+{% stylesheet %}
+    .width{
+        width: 200px;
+    }
+{% endstylesheet %}
 
 {% schema %}
 {
