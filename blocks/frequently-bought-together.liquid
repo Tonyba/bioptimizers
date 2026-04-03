@@ -7,17 +7,17 @@
             <div class="image-card">
                 {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
             </div>
-        
+        <input class="check-position" type="checkbox" name="product_id" value="{{ product.id }}">
         {% elsif product.featured_image %}
             <div lass="image-card">
                 {{ product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
             </div>
-        
+        <input class="check-position" type="checkbox" name="product_id" value="{{ product.id }}">
         {% endif %}
 
         <p id="size"><strong>{{ product.title }}</strong></p>
         <p id="cyan"><strong>{{ product.price | money }}</strong></p>
-        <input class="check-position" type="checkbox" name="product_id" value="{{ product.id }}">
+        
     </div>
     {% endfor %}
 </div>
