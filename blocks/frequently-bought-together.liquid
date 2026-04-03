@@ -6,6 +6,7 @@
         {% assign img = product.metafields.custom.loop_image.value %}
         {% if img %}
             <div class="image-card">
+                
                 <input class="check-position" type="checkbox"
                    id="fbt-variant-{{ product.id }}"
                    value="{{ product.id }}"
@@ -24,12 +25,27 @@
         <p id="cyan"><strong>{{ product.price | money }}</strong></p>
         
     </div>
+
     <div id="myBlueDiv">{% render 'icon-plus' %}</div>
     {% endfor %}
+    <p id="output"></p>
 </div>
 
 <script>
-    var total_price = {{ product.price }};
+    const container = document.getElementById("fbt-item");
+const output = document.getElementById("output");
+
+container.addEventListener("change", function(e) {
+  if (e.target.classList.contains("itemCheckbox")) {
+    const selected = [];
+
+    document.querySelectorAll(".itemCheckbox:checked").forEach(cb => {
+      selected.push(cb.value);
+    });
+
+    output.textContent = "Selected: " + selected.join(", ");
+  }
+});
 </script>
 
 {% stylesheet %}
