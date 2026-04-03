@@ -11,7 +11,7 @@
                    id="fbt-variant-{{ product.id }}"
                    value="{{ product.id }}"
                    data-price="{{ product.price }}"
-                   checked onchange="updateFBTPrice(this)">
+                   checked onchange="updateFBTPrice()">
                 {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
             </div>
         {% elsif product.featured_image %}
@@ -28,16 +28,23 @@
 
     <div id="myBlueDiv">{% render 'icon-plus' %}</div>
     {% endfor %}
-    <p id="output">out </p>
+    <p>Total: $<span id="totalPrice">0.00</span></p>
 </div>
 
 <script>
-function updateFBTPrice(el) {
-  if (el.checked) {
-    console.log("Checked:", el.value, "Price:", el.dataset.price);
-  } else {
-    console.log("Unchecked:", el.value);
-  }
+function updateFBTPrice() {
+  let total = 0;
+
+  const checkedBoxes = document.querySelectorAll(".check-position:checked");
+
+  checkedBoxes.forEach(cb => {
+    total += parseFloat(cb.dataset.price);
+  });
+
+  console.log("Total price:", total);
+
+  // Optional: show in UI
+  document.getElementById("totalPrice").textContent = total.toFixed(2);
 }
 </script>
 
