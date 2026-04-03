@@ -29,23 +29,23 @@
 
     <div id="myBlueDiv">{% render 'icon-plus' %}</div>
     {% endfor %}
-    <p>Total: <span id="totalPrice"></span></p>
+    <p>Total: <span id="totalAfterPrice"></span>-<span id="totalPrice"></span></p>
 </div>
 
 <script>
 function updateFBTPrice() {
   let total = 0;
+  let afterTotal = 0;
 
   const checkedBoxes = document.querySelectorAll(".check-position:checked");
 
   checkedBoxes.forEach(cb => {
-    total += parseFloat(cb.dataset.price);
+    total += parseFloat(cb.dataset.price) || 0;
+    afterTotal += parseFloat(cb.dataset.afterPrice) || 0;
   });
 
-  console.log("Total price:", total);
-
-  // Optional: show in UI
   document.getElementById("totalPrice").textContent = total.toFixed(2);
+  document.getElementById("totalAfterPrice").textContent = afterTotal.toFixed(2);
 }
 </script>
 
