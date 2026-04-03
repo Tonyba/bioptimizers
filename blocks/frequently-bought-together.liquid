@@ -1,5 +1,445 @@
-{% schema  %} 
-{
-    "name": "Frequently bought"
-}
+{% comment %}
+  Shopify Section: Frequently Bought Together
+  This section displays a list of related products that are frequently bought with the current product.
+  It requires a product metafield to define the related products.
+{% endcomment %}
+
+{% assign current_product = product %}
+
+
+{% comment %} Check if the current product and metafield are available {% endcomment %}
+{% if current_product and current_product.metafields.custom.frequently_bought_together.value != blank %}
+
+  {% assign current_product_price = current_product.selected_or_first_available_variant.price %}
+  {% assign total_price = current_product_price %}
+
+  <div class="frequently-bought-together-section" {{ section.shopify_attributes }}>
+    <h2 class="frequently-bought-together-title">{{ section.settings.title }}</h2>
+
+    <div class="frequently-bought-together-items">
+      {# Display the current product (always selected and disabled) #}
+      <div class="frequently-bought-item">
+        <input type="checkbox" id="fbt-current-product-{{ current_product.id }}" name="frequently_bought[]"
+               value="{{ current_product.selected_or_first_available_variant.id }}"
+               checked disabled data-price="{{ current_product_price }}"
+               data-product-handle="{{ current_product.handle }}">
+        <label for="fbt-current-product-{{ current_product.id }}">
+          <div class="item-image">
+            {{
+                  product.metafields.custom.loop_image
+                  | image_url:
+                    width: product.metafields.custom.loop_image.width,
+                    height: product.metafields.custom.loop_image.height
+                  | image_tag
+                }}
+          </div>
+          <div class="item-details">
+            <h3 class="item-title">{{ current_product.title }}</h3>
+            {% if current_product.selected_or_first_available_variant.title != 'Default Title' %}
+              <p class="item-variant">({{ current_product.selected_or_first_available_variant.title }})</p>
+            {% endif %}
+            <p class="item-price">{{ current_product_price | money }}</p>
+          </div>
+        </label>
+      </div>
+
+      {% comment %} Loop through related products from the metafield {% endcomment %}
+      {% for related_product_handle in current_product.metafields.custom.frequently_bought_together.value %}
+        {% assign related_product = all_products[related_product_handle] %}
+        {% if related_product and related_product.available %}
+          {% assign related_variant_id = related_product.selected_or_first_available_variant.id %}
+          {% assign related_variant_price = related_product.selected_or_first_available_variant.price %}
+          {% assign total_price = total_price | plus: related_variant_price %}
+
+          <span class="plus-sign">+</span>
+
+          <div class="frequently-bought-item">
+            <input type="checkbox" id="fbt-related-product-{{ related_product.id }}" name="frequently_bought[]"
+                   value="{{ related_variant_id }}" checked data-price="{{ related_variant_price }}"
+                   data-product-handle="{{ related_product.handle }}" onchange="updateFBTPrice()">
+            <label for="fbt-related-product-{{ related_product.id }}">
+              <div class="item-image">
+                {{
+                  product.metafields.custom.loop_image
+                  | image_url:
+                    width: product.metafields.custom.loop_image.width,
+                    height: product.metafields.custom.loop_image.height
+                  | image_tag
+                }}
+              </div>
+              <div class="item-details">
+                <h3 class="item-title">{{ related_product.title }}</h3>
+                {% if related_product.selected_or_first_available_variant.title != 'Default Title' %}
+                  <p class="item-variant">({{ related_product.selected_or_first_available_variant.title }})</p>
+                {% endif %}
+                <p class="item-price">{{ related_variant_price | money }}</p>
+              </div>
+            </label>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="frequently-bought-summary">
+      <div class="total-price-display">
+        <span class="label">{{ section.settings.total_price_label }}</span>
+        {% comment %} Display an "original" price, e.g., if there's a bundle discount {% endcomment %}
+        {% if section.settings.show_original_price %}
+          {% assign original_total_price = total_price | times: 1.2 %} {# Example: 20% higher original price #}
+          <span class="original-price">{{ original_total_price | money }}</span>
+        {% endif %}
+        <span id="fbt-current-total-price" class="current-price">{{ total_price | money }}</span>
+      </div>
+
+      <button type="button" class="add-selected-to-cart-button" onclick="addSelectedFBTToCart()">
+        {{ section.settings.add_to_cart_button_text }}
+      </button>
+
+      {% if section.settings.show_shipping_note %}
+        <p class="shipping-note">
+          {% render 'icon' 'check_box' %} {# Assumes you have an icon-info snippet, or replace with SVG directly #}
+          {{ section.settings.shipping_note_text }}
+        </p>
+      {% endif %}
+    </div>
+  </div>
+
+  <style>
+    /* Basic Styling for the FBT section (adjust as needed) */
+    .frequently-bought-together-section {
+      max-width: {{ section.settings.max_width }}px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      background-color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    .frequently-bought-together-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.8em;
+      color: #333;
+    }
+    .frequently-bought-together-items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .frequently-bought-item {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .frequently-bought-item input[type="checkbox"] {
+      margin-right: 15px;
+      transform: scale(1.3);
+      accent-color: {{ section.settings.checkbox_color }};
+    }
+    .frequently-bought-item label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .frequently-bought-item .item-image {
+      margin-right: 15px;
+    }
+    .frequently-bought-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      border: 1px solid #eee;
+      border-radius: 4px;
+    }
+    .frequently-bought-item .item-details h3 {
+      margin: 0 0 5px;
+      font-size: 1.1em;
+      color: #333;
+    }
+    .frequently-bought-item .item-details p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #666;
+    }
+    .frequently-bought-item .item-details .item-price {
+      font-weight: bold;
+      color: #000;
+    }
+    .plus-sign {
+      font-size: 2em;
+      font-weight: bold;
+      color: #ccc;
+      margin: 0 10px;
+    }
+
+    .frequently-bought-summary {
+      text-align: center;
+    }
+    .total-price-display {
+      margin-bottom: 20px;
+      font-size: 1.4em;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 10px;
+    }
+    .total-price-display .label {
+      font-weight: normal;
+      color: #666;
+    }
+    .total-price-display .original-price {
+      color: #ff0000;
+      text-decoration: line-through;
+      font-size: 0.8em;
+    }
+    .total-price-display .current-price {
+      font-weight: bold;
+      color: #000;
+      font-size: 1.2em;
+    }
+    .add-selected-to-cart-button {
+      background-color: {{ section.settings.button_bg_color }};
+      color: {{ section.settings.button_text_color }};
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .add-selected-to-cart-button:hover {
+      background-color: {{ section.settings.button_bg_color | color_darken: 10 }}; /* Darken on hover */
+    }
+    .shipping-note {
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+    .shipping-note .icon { /* Style for icon-info snippet */
+      width: 16px;
+      height: 16px;
+      fill: #888;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .frequently-bought-together-items {
+        flex-direction: column;
+      }
+      .frequently-bought-item {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .plus-sign {
+        margin: 10px 0;
+      }
+    }
+  </style>
+
+  <script>
+    // Ensure the script only runs once per section instance (important for dynamic sections)
+    if (typeof window.fbtScripts === 'undefined') {
+      window.fbtScripts = {};
+    }
+
+    // Only define these functions if they haven't been defined globally yet
+    if (typeof window.fbtScripts.updateFBTPrice === 'undefined') {
+      window.fbtScripts.updateFBTPrice = function() {
+        const currentProductPriceElement = document.querySelector('#fbt-current-product-{{ current_product.id }}');
+        if (!currentProductPriceElement) return;
+
+        let total = parseFloat(currentProductPriceElement.dataset.price); // Start with current product price (in cents)
+        const checkboxes = document.querySelectorAll('.frequently-bought-item input[type="checkbox"]:not(:disabled)');
+
+        checkboxes.forEach(checkbox => {
+          if (checkbox.checked && checkbox.id !== 'fbt-current-product-{{ current_product.id }}') { // Don't double count main product
+            total += parseFloat(checkbox.dataset.price);
+          }
+        });
+
+        // Update the displayed total price
+        document.getElementById('fbt-current-total-price').innerText = window.fbtScripts.formatMoney(total, "{{ shop.money_format }}");
+      }
+
+      window.fbtScripts.addSelectedFBTToCart = function() {
+        const itemsToAdd = [];
+        const checkboxes = document.querySelectorAll('.frequently-bought-item input[type="checkbox"]:checked');
+
+        checkboxes.forEach(checkbox => {
+          // It's crucial here that checkbox.value holds the VARIANT ID.
+          // In the Liquid, we set it to `current_product.selected_or_first_available_variant.id`
+          // and `related_product.selected_or_first_available_variant.id`.
+          itemsToAdd.push({
+            id: parseInt(checkbox.value), // Ensure it's an integer
+            quantity: 1
+          });
+        });
+
+        if (itemsToAdd.length > 0) {
+          fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ items: itemsToAdd })
+          })
+          .then(response => response.json())
+          .then(data => {
+            console.log('Successfully added to cart:', data);
+            // Optionally dispatch a custom event for other scripts to listen for cart updates
+            document.dispatchEvent(new CustomEvent('cart:add', { detail: data }));
+            // Redirect to cart or show a success message
+            window.location.href = '/cart';
+          })
+          .catch(error => {
+            console.error('Error adding to cart:', error);
+            alert('There was an error adding items to your cart. Please try again.');
+          });
+
+        } else {
+          alert('Please select at least one product to add to cart.');
+        }
+      }
+
+      // Helper function to format money (mimicking Shopify's money_format)
+      window.fbtScripts.formatMoney = function(cents, format) {
+        if (typeof cents == 'string') { cents = cents.replace('.', ''); }
+        var value = '';
+        var placeholderRegex = /\{\{\s*(\w+)\s*\}\}/;
+        var formatString = format || "{{ shop.money_format }}";
+
+        function defaultOption(opt, def) {
+          return (typeof opt == 'undefined' ? def : opt);
+        }
+
+        function formatWithDelimiters(number, precision, thousands, decimal) {
+          precision = defaultOption(precision, 2);
+          thousands = defaultOption(thousands, ',');
+          decimal   = defaultOption(decimal, '.');
+
+          if (isNaN(number) || number == null) { return 0; }
+
+          number = (number / 100.0).toFixed(precision); // Convert cents to dollars/euros
+
+          var parts   = number.split('.');
+          var integer = parts[0];
+          var fraction = parts[1] ? (decimal + parts[1]) : '';
+
+          return integer.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1' + thousands) + fraction;
+        }
+
+        switch(formatString.match(placeholderRegex)[1]) {
+          case 'amount':
+            value = formatWithDelimiters(cents, 2);
+            break;
+          case 'amount_no_decimals':
+            value = formatWithDelimiters(cents, 0);
+            break;
+          case 'amount_with_comma_separator':
+            value = formatWithDelimiters(cents, 2, '.', ',');
+            break;
+          case 'amount_no_decimals_with_comma_separator':
+            value = formatWithDelimiters(cents, 0, '.', ',');
+            break;
+        }
+
+        return formatString.replace(placeholderRegex, value);
+      }
+    }
+
+    // Initial price update on page load for this specific section instance
+    document.addEventListener('DOMContentLoaded', window.fbtScripts.updateFBTPrice);
+  </script>
+
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Frequently Bought",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Frequently Bought Together"
+      },
+      {
+        "type": "text",
+        "id": "total_price_label",
+        "label": "Total price label",
+        "default": "Total Price:"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_original_price",
+        "label": "Show original (higher) price",
+        "default": true,
+        "info": "Displays a struck-through price to suggest a bundle discount."
+      },
+      {
+        "type": "text",
+        "id": "add_to_cart_button_text",
+        "label": "Button text",
+        "default": "Add Selected To Cart"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_shipping_note",
+        "label": "Show shipping note",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "shipping_note_text",
+        "label": "Shipping note text",
+        "default": "Some of these products are shipped before others."
+      },
+      {
+        "type": "range",
+        "id": "max_width",
+        "min": 600,
+        "max": 1200,
+        "step": 50,
+        "unit": "px",
+        "label": "Maximum content width",
+        "default": 900
+      },
+      {
+        "type": "color",
+        "id": "checkbox_color",
+        "label": "Checkbox accent color",
+        "default": "#007bff"
+      },
+      {
+        "type": "color",
+        "id": "button_bg_color",
+        "label": "Button background color",
+        "default": "#ff9900"
+      },
+      {
+        "type": "color",
+        "id": "button_text_color",
+        "label": "Button text color",
+        "default": "#ffffff"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Frequently Bought Together"
+        
+      }
+    ]
+    
+  }
 {% endschema %}
