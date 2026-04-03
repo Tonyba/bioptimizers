@@ -657,9 +657,3 @@ button {
     font-size: 14px;
     font-weight: bold;
 }
-.front{
-    z-index: 2;
-}
-.back{
-    z-index: 1;
-}
