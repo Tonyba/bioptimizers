@@ -1,4 +1,4 @@
-<div class="flex">
+<div class="fbt-container">
 <div class="product_section">
 <div class="flex">
   {% for product in block.settings.product_list %}
@@ -109,6 +109,10 @@ updateFBTPrice();
 
 
 {% stylesheet %}
+.fbt-container{
+    display: flex;
+    gap: 45px;
+}
 .flexx{
     display: flex;
     gap: 5px;
