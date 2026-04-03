@@ -1,7 +1,8 @@
 
 <div class="flex">
     {% for product in block.settings.product_list %}
-    <div class="fbt-item width h-100 ">
+    <div>
+        <div class="fbt-item width h-100 ">
         {% assign img = product.metafields.custom.loop_image.value %}
         {% if img %}
             <div class="image-card">
@@ -18,8 +19,11 @@
         
         
     </div>
-    <p id="size"><strong>{{ product.title }}</strong></p>
+    <div>
+        <p id="size"><strong>{{ product.title }}</strong></p>
         <p id="cyan"><strong>{{ product.price | money }}</strong></p>
+    </div>
+</div>
     <div id="myBlueDiv">{% render 'icon-plus' %}</div>
     {% endfor %}
 </div>
