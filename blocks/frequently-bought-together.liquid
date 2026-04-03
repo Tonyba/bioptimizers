@@ -8,7 +8,7 @@
         {% if img %}
             <div class="image-card">
                 
-                <input class="check-position" type="checkbox"
+                <input class="check-position" type="checkbox" checked
                    id="fbt-variant-{{ product.id }}"
                    value="{{ product.id }}"
                    data-price="{{ variant.price | money_without_currency | replace: ',', '' }}"
