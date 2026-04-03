@@ -720,7 +720,11 @@
           "type": "frequently-bought-together",
           "name": "Frequently bought together",
           "settings": {
-            "product": "magnesium-power-blend"
+            "product_list": [
+              "magnesium-power-blend",
+              "masszymes",
+              "probiotic-breakthrough"
+            ]
           },
           "blocks": {}
         }
