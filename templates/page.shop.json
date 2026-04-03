@@ -1472,7 +1472,7 @@
       ],
       "name": "t:names.icons_with_text",
       "settings": {
-        "custom_css": "margin-t-4",
+        "custom_css": "margin-t-4 front",
         "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "center",
