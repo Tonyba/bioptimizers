@@ -14,15 +14,12 @@
                 <input class="check-position" type="checkbox" name="product_id" value="{{ product.id }}">
             </div>
         {% endif %}
-{% comment %} 
+
         <p id="size"><strong>{{ product.title }}</strong></p>
-        <p id="cyan"><strong>{{ product.price | money }}</strong></p> {% endcomment %}
+        <p id="cyan"><strong>{{ product.price | money }}</strong></p>
+        
     </div>
-    <div id="myBlueDiv">{% render 'icon-plus' %}</div>
-    {% endfor %}
-    {% for product in block.settings.product_list %}
-        <p id="size"><strong>{{ product.title }}</strong></p>
-        <p id="cyan"><strong>{{ product.price | money }}</strong></p> 
+    <div id="myBlueDiv"></div>{% render 'icon-plus' %}
     {% endfor %}
 </div>
 {% stylesheet %}
