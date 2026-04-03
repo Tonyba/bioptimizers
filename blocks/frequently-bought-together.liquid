@@ -14,9 +14,9 @@
                 <input class="check-position" type="checkbox" name="product_id" value="{{ product.id }}">
             </div>
         {% endif %}
-
+{% comment %} 
         <p id="size"><strong>{{ product.title }}</strong></p>
-        <p id="cyan"><strong>{{ product.price | money }}</strong></p>
+        <p id="cyan"><strong>{{ product.price | money }}</strong></p> {% endcomment %}
         
     </div>
     <div id="myBlueDiv">{% render 'icon-plus' %}</div>
