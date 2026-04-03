@@ -1,37 +1,58 @@
-{% assign variant = product.selected_or_first_available_variant %}
-
 <div class="flex">
-    {% for variant in block.settings.product_list %}
-<div id="myBlueDiv">{% render 'icon-plus' %}</div>
-    <div id="container" class="fbt-item width h-100 ">
-        {% assign img = variant.metafields.custom.loop_image.value %}
-        {% if img %}
-            <div class="image-card">
-                
-                <input class="check-position" type="checkbox"
-                   id="fbt-variant-{{ product.id }}"
-                   value="{{ product.id }}"
-                   data-price="{{ variant.price | money_without_currency | replace: ',', '' }}"
-                   data-after-price="{{ variant.compare_at_price | money_without_currency | replace: ',', '' }}"
-                    onchange="updateFBTPrice()">
-                {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
-            </div>
-        {% elsif product.featured_image %}
-            <div lass="image-card">
-                {{ product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
-                <input class="check-position" type="checkbox" name="product_id" value="{{ product.id }}">
-            </div>
+  {% for product in block.settings.product_list %}
+    {% assign variant = product.selected_or_first_available_variant %}
+    {% assign img = product.metafields.custom.loop_image.value %}
+
+    <div id="myBlueDiv">{% render 'icon-plus' %}</div>
+
+    <div class="fbt-item width h-100">
+      {% if img %}
+        <div class="image-card">
+          <input class="check-position" type="checkbox"
+            id="fbt-variant-{{ product.id }}"
+            value="{{ product.id }}"
+            data-variant-id="{{ variant.id }}"
+            data-price="{{ variant.price | money_without_currency | replace: ',', '' }}"
+            data-after-price="{{ variant.compare_at_price | money_without_currency | replace: ',', '' }}"
+            checked
+            onchange="updateFBTPrice()">
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+        </div>
+      {% elsif product.featured_image %}
+        <div class="image-card">
+          <input class="check-position" type="checkbox"
+            id="fbt-variant-{{ product.id }}"
+            value="{{ product.id }}"
+            data-variant-id="{{ variant.id }}"
+            data-price="{{ variant.price | money_without_currency | replace: ',', '' }}"
+            data-after-price="{{ variant.compare_at_price | money_without_currency | replace: ',', '' }}"
+            checked
+            onchange="updateFBTPrice()">
+          {{ product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+        </div>
+      {% endif %}
+
+      <p id="size"><strong>{{ product.title }}</strong></p>
+      <p id="cyan">
+        <strong>{{ variant.price | money }}</strong>
+        {% if variant.compare_at_price > variant.price %}
+          <s>{{ variant.compare_at_price | money }}</s>
         {% endif %}
-        <p id="size"><strong>{{ variant.title }}</strong></p>
-        <p id="cyan"><strong>{{ variant.price | money }}</strong></p>
-        
+      </p>
     </div>
-    
-    {% endfor %}
-    <div class="space"><span>Total Price: </span><span id="totalAfterPrice"></span><span id="totalPrice"></span></div>
-    <button type="button" id="fbt-add-to-cart" onclick="addFBTToCart()">
-    Add all to cart
-    </button>
+
+  {% endfor %}
+
+  <div class="space">
+    <span>Total Price: </span>
+    <span id="totalAfterPrice"></span>
+    <span id="totalPrice"></span>
+  </div>
+
+  <button type="button" id="fbt-add-to-cart" onclick="addFBTToCart()">
+    Add selected to cart
+  </button>
+
 </div>
 
 <script>
@@ -39,48 +60,45 @@ function updateFBTPrice() {
   let total = 0;
   let afterTotal = 0;
 
-  const checkedBoxes = document.querySelectorAll(".check-position:checked");
-
-  checkedBoxes.forEach(cb => {
+  document.querySelectorAll('.check-position:checked').forEach(cb => {
     total += parseFloat(cb.dataset.price) || 0;
     afterTotal += parseFloat(cb.dataset.afterPrice) || 0;
   });
 
-  document.getElementById("totalPrice").textContent = total.toFixed(2);
-  document.getElementById("totalAfterPrice").textContent = afterTotal.toFixed(2);
+  document.getElementById('totalPrice').textContent = '$' + total.toFixed(2);
+  document.getElementById('totalAfterPrice').textContent = afterTotal > 0 ? '$' + afterTotal.toFixed(2) : '';
 }
+
 async function addFBTToCart() {
   const checkboxes = document.querySelectorAll('.check-position:checked');
-  
-  if (checkboxes.length === 0) return;
 
-  const items = [];
-
-  for (const checkbox of checkboxes) {
-    const productId = checkbox.value;
-
-    // Fetch the default variant ID for this product
-    const response = await fetch(`/products/${productId}.js`);
-    const data = await response.json();
-    const variantId = data.variants[0].id;
-
-    items.push({
-      id: variantId,
-      quantity: 1
-    });
+  if (checkboxes.length === 0) {
+    alert('Please select at least one product.');
+    return;
   }
 
-  // Add all items at once
+  const items = Array.from(checkboxes).map(cb => ({
+    id: cb.dataset.variantId,
+    quantity: 1
+  }));
+
+  const btn = document.getElementById('fbt-add-to-cart');
+  btn.disabled = true;
+  btn.textContent = 'Adding...';
+
   await fetch('/cart/add.js', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ items })
   });
 
-  // Redirect to cart or refresh
   window.location.href = '/cart';
 }
+
+// Run on load to set initial total
+updateFBTPrice();
 </script>
+
 
 {% stylesheet %}
 .space{
