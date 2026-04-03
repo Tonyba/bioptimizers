@@ -716,6 +716,33 @@
     "section_76i8zR": {
       "type": "section",
       "blocks": {
+        "text_PcthwG": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "custom_css": "",
+            "text": "<h2>New arrivals</h2>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "frequently_bought_together_wtCdiw": {
           "type": "frequently-bought-together",
           "name": "Frequently bought together",
@@ -730,6 +757,7 @@
         }
       },
       "block_order": [
+        "text_PcthwG",
         "frequently_bought_together_wtCdiw"
       ],
       "name": "t:names.multicolumn",
