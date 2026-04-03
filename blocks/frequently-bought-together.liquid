@@ -8,12 +8,12 @@
         {% if img %}
             <div class="image-card">
                 
-                <input class="check-position" type="checkbox" checked
+                <input class="check-position" type="checkbox"
                    id="fbt-variant-{{ product.id }}"
                    value="{{ product.id }}"
                    data-price="{{ variant.price | money_without_currency | replace: ',', '' }}"
                    data-after-price="{{ variant.compare_at_price | money_without_currency | replace: ',', '' }}"
-                   checked onchange="updateFBTPrice()">
+                    onchange="updateFBTPrice()">
                 {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
             </div>
         {% elsif product.featured_image %}
