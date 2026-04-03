@@ -1,7 +1,8 @@
 
 <div class="flex">
     {% for product in block.settings.product_list %}
-    
+    {% assign variant = product.selected_or_first_available_variant %}
+
     <div id="container" class="fbt-item width h-100 ">
         {% assign img = product.metafields.custom.loop_image.value %}
         {% if img %}
@@ -23,7 +24,7 @@
         {% endif %}
 
         <p id="size"><strong>{{ product.title }}</strong></p>
-        <p id="cyan"><strong>{{ product.price | money }} {{ product.compare_at_price | money }}</strong></p>
+        <p id="cyan"><strong>{{ product.price | money }} {{ variant.compare_at_price | money }}</strong></p>
         
     </div>
 
