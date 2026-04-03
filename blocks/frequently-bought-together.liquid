@@ -32,19 +32,21 @@
 </div>
 
 <script>
-    const container = document.getElementById("container");
+const checkboxes = document.querySelectorAll(".check-position");
 const output = document.getElementById("output");
 
-container.addEventListener("change", function(e) {
-  if (e.target.classList.contains("check-position")) {
+checkboxes.forEach(cb => {
+  cb.addEventListener("change", () => {
     const selected = [];
 
-    document.querySelectorAll(".check-position:checked").forEach(cb => {
-      selected.push(cb.value);
+    checkboxes.forEach(c => {
+      if (c.checked) {
+        selected.push(c.value);
+      }
     });
 
     output.textContent = "Selected: " + selected.join(", ");
-  }
+  });
 });
 </script>
 
