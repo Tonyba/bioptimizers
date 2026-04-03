@@ -715,6 +715,19 @@
     },
     "section_76i8zR": {
       "type": "section",
+      "blocks": {
+        "frequently_bought_together_wtCdiw": {
+          "type": "frequently-bought-together",
+          "name": "Frequently bought together",
+          "settings": {
+            "product": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "frequently_bought_together_wtCdiw"
+      ],
       "name": "t:names.multicolumn",
       "settings": {
         "custom_css": "",
