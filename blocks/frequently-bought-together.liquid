@@ -1,25 +1,32 @@
-<div>
-    {{ block.settings.product.metafields.custom.loop_image }}
-    {{ block.settings.product.title }}
-    {{ block.settings.product.price | money }}
-    <input type="checkbox">
-</div>
+{% for product in block.settings.product_list %}
+  <div class="fbt-item">
+    {% assign img = product.metafields.custom.loop_image.value %}
+    {% if img %}
+      {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+    {% elsif product.featured_image %}
+      {{ product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+    {% endif %}
+
+    <p>{{ product.title }}</p>
+    <p>{{ product.price | money }}</p>
+    <input type="checkbox" name="product_id" value="{{ product.id }}">
+  </div>
+{% endfor %}
 
 {% schema %}
 {
-    "name": "Frequently bought",
-    "settings": [
-        {
-            "type": "product_list",
-            "id": "product_list",
-            "label": "t:settings.product"
-        }
-    ],
-    "presets": [
-        {
-            "name": "Frequently bought together"
-        }
-    ]
-     
+  "name": "Frequently bought",
+  "settings": [
+    {
+      "type": "product_list",
+      "id": "product_list",
+      "label": "Products"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Frequently bought together"
+    }
+  ]
 }
 {% endschema %}
