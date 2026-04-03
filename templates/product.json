@@ -716,6 +716,33 @@
     "section_76i8zR": {
       "type": "section",
       "blocks": {
+        "text_t8BwKQ": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "custom_css": "",
+            "text": "<h2>Frequently Bought Together</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "frequently_bought_together_wtCdiw": {
           "type": "frequently-bought-together",
           "name": "Frequently bought together",
@@ -730,17 +757,18 @@
         }
       },
       "block_order": [
+        "text_t8BwKQ",
         "frequently_bought_together_wtCdiw"
       ],
       "name": "t:names.multicolumn",
       "settings": {
         "custom_css": "",
-        "content_direction": "row",
+        "content_direction": "column",
         "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
+        "horizontal_alignment": "center",
         "vertical_alignment": "flex-start",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 16,
         "section_width": "page-width",
