@@ -2,7 +2,7 @@
 
 <div class="flex">
     {% for variant in block.settings.product_list %}
-
+<div id="myBlueDiv">{% render 'icon-plus' %}</div>
     <div id="container" class="fbt-item width h-100 ">
         {% assign img = variant.metafields.custom.loop_image.value %}
         {% if img %}
@@ -26,8 +26,7 @@
         <p id="cyan"><strong>{{ variant.price | money }}</strong></p>
         
     </div>
-
-    <div id="myBlueDiv">{% render 'icon-plus' %}</div>
+    
     {% endfor %}
     <div class="space"><span>Total Price: </span><span id="totalAfterPrice"></span><span id="totalPrice"></span></div>
 </div>
