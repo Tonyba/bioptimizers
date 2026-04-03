@@ -1,79 +1,453 @@
+{% comment %}
+  Shopify Section: Frequently Bought
+  This section displays a list of selected products and calculates a total price.
+{% endcomment %}
 
-<div class="flex">
-    {% for product in block.settings.product_list %}
-    <div class="fbt-item width h-100 ">
-        {% assign img = product.metafields.custom.loop_image.value %}
-        {% if img %}
-            <div class="image-card">
-                <input class="check-position" type="checkbox" name="product_id" value="{{ product.id }}">
-                {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
-            </div>
-        {% elsif product.featured_image %}
-            <div lass="image-card">
-                {{ product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
-                <input class="check-position" type="checkbox" name="product_id" value="{{ product.id }}">
-            </div>
-        {% endif %}
+{% comment %} Initialize total price and an array to hold variant IDs {% endcomment %}
+{% assign initial_total_price = 0 %}
+{% assign initial_variant_ids = '' %}
 
-        <p id="size"><strong>{{ product.title }}</strong></p>
-        <p id="cyan"><strong>{{ product.price | money }}</strong></p>
-        
-    </div>
-    <div id="myBlueDiv">{% render 'icon-plus' %}</div>
+{% comment %} Assume `product` is the current product on the page if this section is on a product template {% endcomment %}
+{% assign main_product = product %}
+
+<div class="frequently-bought-wrapper" {{ section.shopify_attributes }}>
+  <h2 class="frequently-bought-title">{{ section.settings.title }}</h2>
+
+  <div class="fbt-items-container flex">
+    {% comment %} Check if the main product should be included automatically {% endcomment %}
+    {% if section.settings.include_main_product and main_product %}
+      {% assign main_variant = main_product.selected_or_first_available_variant %}
+      {% if main_variant %}
+        {% assign initial_total_price = initial_total_price | plus: main_variant.price %}
+        {% assign initial_variant_ids = initial_variant_ids | append: main_variant.id | append: ',' %}
+
+        <div class="fbt-item width h-100">
+          <div class="image-card">
+            <input class="check-position" type="checkbox"
+                   id="fbt-variant-{{ main_variant.id }}"
+                   value="{{ main_variant.id }}"
+                   data-price="{{ main_variant.price }}"
+                   checked disabled> {# Main product is always checked and disabled #}
+            {% if main_product.featured_image %}
+              {{ main_product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: main_product.title }}
+            {% endif %}
+          </div>
+          <p class="fbt-item-title"><strong>{{ main_product.title }}</strong></p>
+          {% if main_variant.title != 'Default Title' %}
+            <p class="fbt-item-variant">({{ main_variant.title }})</p>
+          {% endif %}
+          <p class="fbt-item-price" data-price="{{ main_variant.price }}"><strong>{{ main_variant.price | money }}</strong></p>
+        </div>
+        <div class="plus-divider">{% render 'icon-plus' %}</div>
+      {% endif %}
+    {% endif %}
+
+    {% for product_in_list in block.settings.product_list %}
+      {% assign selected_variant = product_in_list.selected_or_first_available_variant %}
+      {% if selected_variant and product_in_list.available %}
+        {% assign initial_total_price = initial_total_price | plus: selected_variant.price %}
+        {% assign initial_variant_ids = initial_variant_ids | append: selected_variant.id | append: ',' %}
+
+        <div class="fbt-item width h-100">
+          <div class="image-card">
+            <input class="check-position" type="checkbox"
+                   id="fbt-variant-{{ selected_variant.id }}"
+                   value="{{ selected_variant.id }}"
+                   data-price="{{ selected_variant.price }}"
+                   checked onchange="updateFBTPrice()">
+            {% comment %} Prioritize metafield image if available, otherwise featured_image {% endcomment %}
+            {% assign img = product_in_list.metafields.custom.loop_image.value %}
+            {% if img %}
+              {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product_in_list.title }}
+            {% elsif product_in_list.featured_image %}
+              {{ product_in_list.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: product_in_list.title }}
+            {% endif %}
+          </div>
+          <p class="fbt-item-title"><strong>{{ product_in_list.title }}</strong></p>
+          {% if selected_variant.title != 'Default Title' %}
+            <p class="fbt-item-variant">({{ selected_variant.title }})</p>
+          {% endif %}
+          <p class="fbt-item-price" data-price="{{ selected_variant.price }}"><strong>{{ selected_variant.price | money }}</strong></p>
+        </div>
+        {% unless forloop.last %}
+          <div class="plus-divider">{% render 'icon-plus' %}</div>
+        {% endunless %}
+      {% endif %}
     {% endfor %}
+  </div>
+
+  <div class="fbt-summary-container">
+    <div class="fbt-total-price-display">
+      <span class="fbt-total-label">{{ section.settings.total_price_label }}</span>
+      {% comment %} Example for a higher original price, adjust logic as needed {% endcomment %}
+      {% if section.settings.show_original_price %}
+        {% assign original_total_price = initial_total_price | times: 1.2 %}
+        <span class="fbt-original-price">{{ original_total_price | money }}</span>
+      {% endif %}
+      <span id="fbt-current-total" class="fbt-current-price">{{ initial_total_price | money }}</span>
+    </div>
+
+    <button type="button" class="fbt-add-to-cart-button" onclick="addSelectedFBTToCart()">
+      {{ section.settings.add_to_cart_button_text }}
+    </button>
+  </div>
 </div>
+
+<script>
+  // Namespace for FBT script functions to prevent conflicts
+  if (typeof window.frequentlyBought === 'undefined') {
+    window.frequentlyBought = {};
+  }
+
+  // Initial prices in cents (used for calculation)
+  window.frequentlyBought.initialVariantPrices = {};
+  document.querySelectorAll('.fbt-items-container input[type="checkbox"]').forEach(checkbox => {
+    window.frequentlyBought.initialVariantPrices[checkbox.value] = parseInt(checkbox.dataset.price);
+  });
+
+  // Function to update the total price
+  window.frequentlyBought.updateFBTPrice = function() {
+    let currentTotal = 0;
+    document.querySelectorAll('.fbt-items-container input[type="checkbox"]').forEach(checkbox => {
+      if (checkbox.checked) {
+        currentTotal += window.frequentlyBought.initialVariantPrices[checkbox.value];
+      }
+    });
+    document.getElementById('fbt-current-total').innerText = window.frequentlyBought.formatMoney(currentTotal, "{{ shop.money_format }}");
+  };
+
+  // Function to add selected items to cart
+  window.frequentlyBought.addSelectedFBTToCart = function() {
+    const itemsToAdd = [];
+    document.querySelectorAll('.fbt-items-container input[type="checkbox"]:checked').forEach(checkbox => {
+      itemsToAdd.push({
+        id: parseInt(checkbox.value), // Ensure it's an integer variant ID
+        quantity: 1
+      });
+    });
+
+    if (itemsToAdd.length === 0) {
+      alert("Please select at least one product to add to your cart.");
+      return;
+    }
+
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ items: itemsToAdd })
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Successfully added to cart:', data);
+      // Optional: Dispatch a custom event for other theme scripts (e.g., cart drawer)
+      document.dispatchEvent(new CustomEvent('cart:add', { detail: data }));
+      window.location.href = '/cart'; // Redirect to cart page
+    })
+    .catch(error => {
+      console.error('Error adding to cart:', error);
+      alert('There was an error adding items to your cart. Please try again.');
+    });
+  };
+
+  // Helper function to format money (mimicking Shopify's money_format)
+  window.frequentlyBought.formatMoney = function(cents, format) {
+    if (typeof cents == 'string') { cents = cents.replace('.', ''); }
+    var value = '';
+    var placeholderRegex = /\{\{\s*(\w+)\s*\}\}/;
+    var formatString = format || "{{ shop.money_format }}";
+
+    function defaultOption(opt, def) {
+      return (typeof opt == 'undefined' ? def : opt);
+    }
+
+    function formatWithDelimiters(number, precision, thousands, decimal) {
+      precision = defaultOption(precision, 2);
+      thousands = defaultOption(thousands, ',');
+      decimal   = defaultOption(decimal, '.');
+
+      if (isNaN(number) || number == null) { return 0; }
+
+      number = (number / 100.0).toFixed(precision); // Convert cents to dollars/euros
+
+      var parts   = number.split('.');
+      var integer = parts[0];
+      var fraction = parts[1] ? (decimal + parts[1]) : '';
+
+      return integer.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1' + thousands) + fraction;
+    }
+
+    var match = formatString.match(placeholderRegex);
+    if (match && match[1]) {
+      switch(match[1]) {
+        case 'amount':
+          value = formatWithDelimiters(cents, 2);
+          break;
+        case 'amount_no_decimals':
+          value = formatWithDelimiters(cents, 0);
+          break;
+        case 'amount_with_comma_separator':
+          value = formatWithDelimiters(cents, 2, '.', ',');
+          break;
+        case 'amount_no_decimals_with_comma_separator':
+          value = formatWithDelimiters(cents, 0, '.', ',');
+          break;
+        default:
+          value = formatWithDelimiters(cents, 2); // Default to regular amount if no match
+      }
+    } else {
+        value = formatWithDelimiters(cents, 2); // Fallback if no placeholder is found
+    }
+
+    return formatString.replace(placeholderRegex, value);
+  };
+
+  // Initial call to set the price on load
+  document.addEventListener('DOMContentLoaded', window.frequentlyBought.updateFBTPrice);
+</script>
+
 {% stylesheet %}
-#myBlueDiv {
- position: relative;
- top: 125px;
-}
-#myBlueDiv:last-child{
-    display: none;
-}
-.image-card input:checked, .image-card input:hover {
-    background-color: #018476;
-}
-.check-position{
+  .frequently-bought-wrapper {
+    
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  .frequently-bought-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    color: #333;
+  }
+  .fbt-items-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 15px; /* Spacing between items and plus signs */
+    margin-bottom: 30px;
+  }
+  .fbt-item {
+    width: 230px; /* From your code */
+    height: 100%; /* From your code, consider if a fixed height is better for layout consistency */
+    display: flex; /* Adjust to flex for internal stacking of title/price */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px; /* Add padding to make space for the checkbox */
+  }
+  .image-card {
+    position: relative; /* important for checkbox positioning */
+    display: block; /* Change from inline-block to block */
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px; /* Space between card and text */
+  }
+  .image-card img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+  }
+
+  /* Checkbox styling */
+  .check-position {
     position: absolute;
-    top: 10px;     
-    right: 10px;   
+    top: 10px;
+    right: 10px;
     width: 25px;
     height: 25px;
-    z-index: 99;;
-}
-    #size{
-        font-size: 18px;
+    z-index: 99;
+    margin: 0; /* Reset default margin */
+    -webkit-appearance: none; /* Hide default checkbox for custom styling */
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff; /* Default background */
+    border: 2px solid #D9D9D9; /* Default border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .check-position:checked::before {
+    content: '\2713'; /* Unicode checkmark */
+    display: block;
+    color: #fff; /* Checkmark color */
+    font-size: 18px;
+    line-height: 20px; /* Adjust to vertically center */
+    text-align: center;
+  }
+  .check-position:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  .check-position:checked:disabled {
+     background-color: #ccc; /* Different color for disabled checked */
+     border-color: #ccc;
+  }
+
+
+  .plus-divider {
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Center the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+    width: 30px; /* Adjust width as needed for spacing */
+    height: 30px;
+  }
+  .plus-divider .icon-plus { /* Assuming your icon-plus snippet renders an SVG */
+    width: 20px; /* Adjust size of the plus icon */
+    height: 20px;
+    fill: #D9D9D9; /* Color of the plus icon */
+  }
+  .plus-divider:last-child { /* This rule is now applied to the last plus sign divider, which we want to hide */
+    display: none;
+  }
+
+
+  .fbt-item-title {
+    font-size: 18px; /* From your code */
+    margin-bottom: 5px;
+  }
+  .fbt-item-variant {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+  }
+ 
+
+  .fbt-summary-container {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #eee; /* Separator for summary */
+    padding-top: 20px;
+  }
+  .fbt-total-price-display {
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+  }
+  .fbt-total-label {
+    font-weight: normal;
+    color: #666;
+  }
+  .fbt-original-price {
+    color: #ff0000;
+    text-decoration: line-through;
+    font-size: 0.8em;
+  }
+  .fbt-current-price {
+    font-weight: bold;
+    color: #000;
+    font-size: 1.2em;
+  }
+
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .fbt-items-container {
+      flex-direction: column;
+      gap: 20px;
     }
-    #cyan{
-        color: #018476;
-        font-size: 21px;
+    .fbt-item {
+      width: 100%; /* Take full width on mobile */
+      max-width: 300px; /* Optional: limit max-width even on mobile */
     }
-    .width{
-        width: 230px;
+    .plus-divider {
+      transform: rotate(90deg); /* Rotate plus sign for vertical layout */
+      margin: 10px 0;
     }
-    .image-card{
-        position: relative; /* important */
-  display: inline-block;
-        border: 2px solid #D9D9D9;
-        border-radius: 10px;
-        padding: 20px;
-    }
+  }
 {% endstylesheet %}
 
 {% schema %}
 {
-  "name": "Frequently bought",
+  "name": "Frequently Bought",
   "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Frequently Bought Together"
+    },
+    {
+      "type": "checkbox",
+      "id": "include_main_product",
+      "label": "Include current product (if on product page)",
+      "default": true,
+      "info": "If checked, the product currently being viewed will be the first item, always selected."
+    },
     {
       "type": "product_list",
       "id": "product_list",
-      "label": "Products"
+      "label": "Additional Products to Suggest",
+      "info": "These products will be suggested along with the main product."
+    },
+    {
+      "type": "text",
+      "id": "total_price_label",
+      "label": "Total price label",
+      "default": "Total Price:"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_original_price",
+      "label": "Show original (higher) price",
+      "default": true,
+      "info": "Displays a struck-through price to suggest a bundle discount."
+    },
+    {
+      "type": "text",
+      "id": "add_to_cart_button_text",
+      "label": "Button text",
+      "default": "Add Selected To Cart"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1200,
+      "step": 50,
+      "unit": "px",
+      "label": "Maximum content width",
+      "default": 900
+    },
+    {
+      "type": "color",
+      "id": "checkbox_checked_color",
+      "label": "Checkbox checked color",
+      "default": "#018476"
+    },
+    {
+      "type": "color",
+      "id": "price_color",
+      "label": "Price text color",
+      "default": "#018476"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button background color",
+      "default": "#ff9900"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
     }
   ],
   "presets": [
     {
-      "name": "Frequently bought together"
+      "name": "Frequently Bought Together"
     }
   ]
+  
 }
 {% endschema %}
