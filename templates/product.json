@@ -715,19 +715,6 @@
     },
     "section_76i8zR": {
       "type": "section",
-      "blocks": {
-        "frequently_bought_together_TXpMCQ": {
-          "type": "frequently-bought-together",
-          "name": "Frequently bought together",
-          "settings": {
-            "product": "magnesium-power-blend"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "frequently_bought_together_TXpMCQ"
-      ],
       "name": "t:names.multicolumn",
       "settings": {
         "custom_css": "",

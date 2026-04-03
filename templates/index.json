@@ -525,6 +525,7 @@
               "type": "button",
               "name": "t:names.button",
               "settings": {
+                "custom_css": "",
                 "label": "View All Products",
                 "icon": "shopify://shop_images/plus.svg",
                 "link": "shopify://collections/all",
@@ -1661,6 +1662,7 @@
               "type": "button",
               "name": "t:names.button",
               "settings": {
+                "custom_css": "",
                 "label": "View All Categories",
                 "icon": "shopify://shop_images/plus.svg",
                 "link": "shopify://collections",
@@ -3020,6 +3022,7 @@
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
+                    "custom_css": "",
                     "label": "Get to Know Us",
                     "icon": "shopify://shop_images/plus_1.svg",
                     "link": "shopify://collections/all",
@@ -4174,6 +4177,7 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
+            "custom_css": "",
             "label": "Meet Our Experts",
             "icon": "shopify://shop_images/plus_1_1.svg",
             "link": "shopify://pages/the-team",
@@ -5430,6 +5434,7 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
+            "custom_css": "",
             "label": "View All Articles",
             "icon": "shopify://shop_images/plus.svg",
             "link": "shopify://blogs/news",
@@ -5602,6 +5607,7 @@
               "type": "button",
               "static": true,
               "settings": {
+                "custom_css": "",
                 "label": "Learn more",
                 "icon": "shopify://shop_images/Frame_1000012060.svg",
                 "link": "{{ closest.article.url }}",
