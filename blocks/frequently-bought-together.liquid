@@ -1,7 +1,7 @@
 
 <div class="flex">
     {% for product in block.settings.product_list %}
-    <div class="fbt-item width text-cyan">
+    <div class="fbt-item width">
         {% assign img = product.metafields.custom.loop_image.value %}
         {% if img %}
             <div class="image-card">
@@ -15,13 +15,19 @@
         
         {% endif %}
 
-        <p id=""><strong>{{ product.title }}</strong></p>
-        <p class=""><strong>{{ product.price | money }}</strong></p>
+        <p id="size"><strong>{{ product.title }}</strong></p>
+        <p id="cyan"><strong>{{ product.price | money }}</strong></p>
         <input type="checkbox" name="product_id" value="{{ product.id }}">
     </div>
     {% endfor %}
 </div>
 {% stylesheet %}
+    .size{
+        font-size: 18px;
+    }
+    .cyan{
+        color: #018476;
+    }
     .width{
         width: 200px;
     }
