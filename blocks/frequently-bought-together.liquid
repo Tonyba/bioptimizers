@@ -1,17 +1,20 @@
-{% for product in block.settings.product_list %}
-  <div class="fbt-item width flex">
-    {% assign img = product.metafields.custom.loop_image.value %}
-    {% if img %}
-      {{ img | image_url: width: 100 | image_tag: loading: 'lazy', alt: product.title }}
-    {% elsif product.featured_image %}
-      {{ product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
-    {% endif %}
 
-    <p>{{ product.title }}</p>
-    <p>{{ product.price | money }}</p>
-    <input type="checkbox" name="product_id" value="{{ product.id }}">
-  </div>
-{% endfor %}
+<div class="flex">
+    {% for product in block.settings.product_list %}
+    <div class="fbt-item width">
+        {% assign img = product.metafields.custom.loop_image.value %}
+        {% if img %}
+        {{ img | image_url: width: 100 | image_tag: loading: 'lazy', alt: product.title }}
+        {% elsif product.featured_image %}
+        {{ product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+        {% endif %}
+
+        <p>{{ product.title }}</p>
+        <p>{{ product.price | money }}</p>
+        <input type="checkbox" name="product_id" value="{{ product.id }}">
+    </div>
+    {% endfor %}
+</div>
 {% stylesheet %}
     .width{
         width: 200px;
