@@ -2,7 +2,7 @@
 <div class="flex">
     {% for product in block.settings.product_list %}
     
-    <div class="fbt-item width h-100 ">
+    <div id="container" class="fbt-item width h-100 ">
         {% assign img = product.metafields.custom.loop_image.value %}
         {% if img %}
             <div class="image-card">
@@ -32,14 +32,14 @@
 </div>
 
 <script>
-    const container = document.getElementById("fbt-item");
+    const container = document.getElementById("container");
 const output = document.getElementById("output");
 
 container.addEventListener("change", function(e) {
-  if (e.target.classList.contains("itemCheckbox")) {
+  if (e.target.classList.contains("check-position")) {
     const selected = [];
 
-    document.querySelectorAll(".itemCheckbox:checked").forEach(cb => {
+    document.querySelectorAll(".check-position:checked").forEach(cb => {
       selected.push(cb.value);
     });
 
