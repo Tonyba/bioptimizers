@@ -50,7 +50,8 @@
   </div>
 
   <button class="button add-to-cart-button button" type="button" id="fbt-add-to-cart" onclick="addFBTToCart()">
-    <span class="add-to-cart-text">{% render 'icon-plus' %}
+    <span class="add-to-cart-text">
+        {% render 'icon-plus' %}
         <span class="add-to-cart-text__content">Add selected to cart</span>
     </span>
     
@@ -104,6 +105,9 @@ updateFBTPrice();
 
 
 {% stylesheet %}
+.add-to-cart-text svg{
+    width: 20px;
+}
 .space{
     gap: 12px;
 }
