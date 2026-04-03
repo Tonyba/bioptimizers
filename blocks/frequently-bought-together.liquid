@@ -1,4 +1,4 @@
-<h2>Frequently Bought Together</h2>
+<h2>{{ block.settings.text.value }}</h2>
 <div class="fbt-container">
 <div class="product_section">
 <div class="flex">
@@ -207,6 +207,11 @@ updateFBTPrice();
       "type": "product_list",
       "id": "product_list",
       "label": "Products"
+    },
+    {
+        "type": "richtext",
+        "id": "text",
+        "label": "Heading text"
     }
   ],
   "presets": [
