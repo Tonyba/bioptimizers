@@ -658,5 +658,8 @@ button {
     font-weight: bold;
 }
 .front{
-    z-index: 999;
+    z-index: 1;
+}
+.back{
+    z-index: 0;
 }
