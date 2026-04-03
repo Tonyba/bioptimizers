@@ -15,10 +15,11 @@
             </div>
         {% endif %}
 
-        <p id="size"><strong>{{ product.title }}</strong></p>
-        <p id="cyan"><strong>{{ product.price | money }}</strong></p>
+        
         
     </div>
+    <p id="size"><strong>{{ product.title }}</strong></p>
+        <p id="cyan"><strong>{{ product.price | money }}</strong></p>
     <div id="myBlueDiv">{% render 'icon-plus' %}</div>
     {% endfor %}
 </div>
