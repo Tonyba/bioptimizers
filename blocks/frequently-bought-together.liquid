@@ -29,6 +29,9 @@
     
     {% endfor %}
     <div class="space"><span>Total Price: </span><span id="totalAfterPrice"></span><span id="totalPrice"></span></div>
+    <button type="button" id="fbt-add-to-cart" onclick="addFBTToCart()">
+    Add all to cart
+    </button>
 </div>
 
 <script>
@@ -45,6 +48,37 @@ function updateFBTPrice() {
 
   document.getElementById("totalPrice").textContent = total.toFixed(2);
   document.getElementById("totalAfterPrice").textContent = afterTotal.toFixed(2);
+}
+async function addFBTToCart() {
+  const checkboxes = document.querySelectorAll('.check-position:checked');
+  
+  if (checkboxes.length === 0) return;
+
+  const items = [];
+
+  for (const checkbox of checkboxes) {
+    const productId = checkbox.value;
+
+    // Fetch the default variant ID for this product
+    const response = await fetch(`/products/${productId}.js`);
+    const data = await response.json();
+    const variantId = data.variants[0].id;
+
+    items.push({
+      id: variantId,
+      quantity: 1
+    });
+  }
+
+  // Add all items at once
+  await fetch('/cart/add.js', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ items })
+  });
+
+  // Redirect to cart or refresh
+  window.location.href = '/cart';
 }
 </script>
 
