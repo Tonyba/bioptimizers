@@ -19,7 +19,7 @@
         <p id="cyan"><strong>{{ product.price | money }}</strong></p>
         
     </div>
-    <span class="plus">+</span>
+    {% render 'icon-plus' %}
     {% endfor %}
 </div>
 {% stylesheet %}
