@@ -9,7 +9,10 @@
             </div>
         
         {% elsif product.featured_image %}
-        {{ product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+            <div lass="image-card">
+                {{ product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+            </div>
+        
         {% endif %}
 
         <p>{{ product.title }}</p>
