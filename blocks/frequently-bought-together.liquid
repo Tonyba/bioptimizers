@@ -12,7 +12,7 @@
                    id="fbt-variant-{{ product.id }}"
                    value="{{ product.id }}"
                    data-price="{{ variant.price | money_without_currency | replace: ',', '' }}"
-                   data-after-price="{{ variant.compare_at_price }}"
+                   data-after-price="{{ variant.compare_at_price | replace: ',', '' }}"
                    checked onchange="updateFBTPrice()">
                 {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
             </div>
