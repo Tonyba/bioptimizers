@@ -1,15 +1,15 @@
 
 <div class="flex">
     {% for product in block.settings.product_list %}
-         {% assign selected_variant = product_in_list.selected_or_first_available_variant %}
+    
     <div class="fbt-item width h-100 ">
         {% assign img = product.metafields.custom.loop_image.value %}
         {% if img %}
             <div class="image-card">
                 <input class="check-position" type="checkbox"
-                   id="fbt-variant-{{ selected_variant.id }}"
-                   value="{{ selected_variant.id }}"
-                   data-price="{{ selected_variant.price }}"
+                   id="fbt-variant-{{ product.id }}"
+                   value="{{ product.id }}"
+                   data-price="{{ product.price }}"
                    checked onchange="updateFBTPrice()">
                 {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
             </div>
