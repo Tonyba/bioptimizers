@@ -17,11 +17,17 @@
 
         <p id="size"><strong>{{ product.title }}</strong></p>
         <p id="cyan"><strong>{{ product.price | money }}</strong></p>
-        <input class="wrapper-link" type="checkbox" name="product_id" value="{{ product.id }}">
+        <input class="check-position" type="checkbox" name="product_id" value="{{ product.id }}">
     </div>
     {% endfor %}
 </div>
 {% stylesheet %}
+.check-position{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 3;
+}
     #size{
         font-size: 18px;
     }
