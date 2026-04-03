@@ -17,9 +17,12 @@
 {% comment %} 
         <p id="size"><strong>{{ product.title }}</strong></p>
         <p id="cyan"><strong>{{ product.price | money }}</strong></p> {% endcomment %}
-        
     </div>
     <div id="myBlueDiv">{% render 'icon-plus' %}</div>
+    {% endfor %}
+    {% for product in block.settings.product_list %}
+        <p id="size"><strong>{{ product.title }}</strong></p>
+        <p id="cyan"><strong>{{ product.price | money }}</strong></p> 
     {% endfor %}
 </div>
 {% stylesheet %}
