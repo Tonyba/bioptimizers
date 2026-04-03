@@ -1,5 +1,5 @@
 
-<div class="flex">
+<div class="flex justify-center">
     {% for product in block.settings.product_list %}
     <div class="fbt-item width">
         {% assign img = product.metafields.custom.loop_image.value %}
@@ -8,7 +8,6 @@
                 <input class="check-position" type="checkbox" name="product_id" value="{{ product.id }}">
                 {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
             </div>
-        
         {% elsif product.featured_image %}
             <div lass="image-card">
                 {{ product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
