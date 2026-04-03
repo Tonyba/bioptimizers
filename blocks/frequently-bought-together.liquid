@@ -1,6 +1,7 @@
+{% assign variant = product.selected_or_first_available_variant %}
 
 <div class="flex">
-    {% for product in block.settings.product_list %}
+    {% for variant in block.settings.product_list %}
 
     <div id="container" class="fbt-item width h-100 ">
         {% assign img = product.metafields.custom.loop_image.value %}
@@ -10,8 +11,8 @@
                 <input class="check-position" type="checkbox"
                    id="fbt-variant-{{ product.id }}"
                    value="{{ product.id }}"
-                   data-price="{{ product.price | money_without_currency | replace: ',', '' }}"
-                   data-after-price="{{ product.compare_at_price }}"
+                   data-price="{{ variant.price | money_without_currency | replace: ',', '' }}"
+                   data-after-price="{{ variant.compare_at_price }}"
                    checked onchange="updateFBTPrice()">
                 {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
             </div>
@@ -23,7 +24,7 @@
         {% endif %}
 
         <p id="size"><strong>{{ product.title }}</strong></p>
-        <p id="cyan"><strong>{{ product.price | money }} {{ product.compare_at_price | money }}</strong></p>
+        <p id="cyan"><strong>{{ product.price | money }} {{ variant.compare_at_price | money }}</strong></p>
         
     </div>
 
