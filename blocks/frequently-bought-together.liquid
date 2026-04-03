@@ -14,10 +14,7 @@
                 {{ product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
                 <input class="check-position" type="checkbox" name="product_id" value="{{ product.id }}">
             </div>
-        {% endif %}
-
-        
-        
+        {% endif %}  
     </div>
     <div>
         <p id="size"><strong>{{ product.title }}</strong></p>
