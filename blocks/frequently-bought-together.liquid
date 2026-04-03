@@ -4,7 +4,7 @@
     {% for variant in block.settings.product_list %}
 
     <div id="container" class="fbt-item width h-100 ">
-        {% assign img = product.metafields.custom.loop_image.value %}
+        {% assign img = variant.metafields.custom.loop_image.value %}
         {% if img %}
             <div class="image-card">
                 
