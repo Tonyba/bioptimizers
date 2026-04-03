@@ -11,7 +11,7 @@
                    id="fbt-variant-{{ product.id }}"
                    value="{{ product.id }}"
                    data-price="{{ product.price }}"
-                   checked onchange="updateFBTPrice()">
+                   checked onchange="updateFBTPrice(this)">
                 {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
             </div>
         {% elsif product.featured_image %}
@@ -32,22 +32,13 @@
 </div>
 
 <script>
-const checkboxes = document.querySelectorAll(".check-position");
-const output = document.getElementById("output");
-
-checkboxes.forEach(cb => {
-  cb.addEventListener("change", () => {
-    const selected = [];
-
-    checkboxes.forEach(c => {
-      if (c.checked) {
-        selected.push(c.value);
-      }
-    });
-
-    output.textContent = "Selected: " + selected.join(", ");
-  });
-});
+function updateFBTPrice(el) {
+  if (el.checked) {
+    console.log("Checked:", el.value, "Price:", el.dataset.price);
+  } else {
+    console.log("Unchecked:", el.value);
+  }
+}
 </script>
 
 {% stylesheet %}
