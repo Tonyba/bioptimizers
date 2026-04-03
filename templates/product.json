@@ -716,20 +716,47 @@
     "section_76i8zR": {
       "type": "section",
       "blocks": {
+        "button_iECdVd": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "custom_css": "",
+            "label": "Shop now",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        },
         "frequently_bought_together_wtCdiw": {
           "type": "frequently-bought-together",
           "name": "Frequently bought together",
           "settings": {
+            "title": "Frequently Bought Together",
+            "include_main_product": true,
             "product_list": [
               "magnesium-power-blend",
               "masszymes",
               "probiotic-breakthrough"
-            ]
+            ],
+            "total_price_label": "Total Price:",
+            "show_original_price": true,
+            "add_to_cart_button_text": "Add Selected To Cart",
+            "max_width": 900,
+            "checkbox_checked_color": "#018476",
+            "price_color": "#018476",
+            "button_bg_color": "#ff9900",
+            "button_text_color": "#ffffff"
           },
           "blocks": {}
         }
       },
       "block_order": [
+        "button_iECdVd",
         "frequently_bought_together_wtCdiw"
       ],
       "name": "t:names.multicolumn",
