@@ -1,6 +1,7 @@
 <div>
+    {{ block.settings.product.metafields.custom.loop_image }}
     {{ block.settings.product.title }}
-    {{ block.settings.product.price }}
+    {{ block.settings.product.price | money }}
     <input type="checkbox">
 </div>
 
