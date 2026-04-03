@@ -6,6 +6,7 @@
         {% if img %}
             <div class="image-card">
                 <input class="check-position" type="checkbox" name="product_id" value="{{ product.id }}">
+                <span class="checkmark"></span>
                 {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
             </div>
         
@@ -23,6 +24,13 @@
     {% endfor %}
 </div>
 {% stylesheet %}
+.checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  display: inline-block;
+  border-radius: 4px;
+}
 .check-position{
     position: absolute;
     top: 10px;     
