@@ -5,7 +5,12 @@
   "name": "t:names.divider",
   "tag": null,
   "settings": [
-    {
+  {
+      "type": "color",
+      "id": "color",
+      "label": "t:settings.color"
+  }, 
+  {
       "type": "range",
       "id": "thickness",
       "label": "t:settings.thickness",
@@ -41,6 +46,26 @@
       "step": 1,
       "unit": "%",
       "default": 100
+    },
+    {
+      "type": "select",
+      "id": "alignment_horizontal",
+      "label": "t:settings.alignment",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "t:options.left"
+        },
+        {
+          "value": "center",
+          "label": "t:options.center"
+        },
+        {
+          "value": "flex-end",
+          "label": "t:options.right"
+        }
+      ],
+      "default": "center"
     },
     {
       "type": "header",

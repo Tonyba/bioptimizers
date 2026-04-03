@@ -64,12 +64,18 @@
   <{{ element }} {{ attributes }}>
     {{ content | strip_html | truncatewords: truncatewords }}
     {% if show_read_more %}
-      <a href="{{ article.url }}">{{- 'content.read_more' | t -}}</a>
+      <a href="{{ article.url }}" class="link"><img src="//perfectprotocol.co/cdn/shop/files/Frame_1000012060.svg?crop=center&amp;height=60&amp;v=1773848168&amp;width=60" alt="" srcset="//perfectprotocol.co/cdn/shop/files/Frame_1000012060.svg?crop=center&amp;height=35&amp;v=1773848168&amp;width=35 35w" width="35" height="35" loading="lazy" class="icn button-icon link"><span class="text">{{- 'content.read_more' | t -}}</span></a>
     {% endif %}
   </{{ element }}>
 {% endif %}
 
 {% stylesheet %}
+  .icn{
+
+    display: flex;
+    flex-direction: row;
+  }
+
   .blog-post-card__content-text a {
     color: var(--color-primary);
   }
