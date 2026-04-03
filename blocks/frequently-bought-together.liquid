@@ -19,11 +19,13 @@
         <p id="cyan"><strong>{{ product.price | money }}</strong></p>
         
     </div>
-    {% render 'icon-plus' %}
+    <div id="myBlueDiv">{% render 'icon-plus' %}</div>
     {% endfor %}
 </div>
 {% stylesheet %}
-
+#myBlueDiv {
+  align-self: center;
+}
 .image-card input:checked, .image-card input:hover {
     background-color: #018476;
 }
