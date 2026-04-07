@@ -173,18 +173,17 @@
 </div>
 
 {% stylesheet %}
-.table-container {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* smooth iOS scroll */
-}
+  .table-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    overflow-x: auto;
+  }
 
-.table-container table {
-  min-width: 900px; /* forces horizontal scroll */
-  border-collapse: collapse;
-}
-
- 
+  table {
+    min-width: 900px;
+    border-collapse: collapse;
+    background: white;
+  }
 
   th, td {
     text-align: center;
