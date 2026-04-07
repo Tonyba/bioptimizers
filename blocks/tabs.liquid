@@ -58,7 +58,13 @@
 
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(tab).style.display = "block";
-  evt.currentTarget.className += " active";
+  if (evt) {
+            evt.currentTarget.className += " active";
+        } else {
+            // If no event, find the button by its data-tab (or in this case, by its associated tabId in the HTML)
+            // This is a slightly more robust way for the initial load if the button isn't directly passed
+            document.querySelector(`.tablinks[onclick*='${tabId}']`).className += " active";
+        }
 }
 </script>
 
