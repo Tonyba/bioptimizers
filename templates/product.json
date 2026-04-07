@@ -1862,7 +1862,9 @@
         "tabs_fGxdry": {
           "type": "tabs",
           "name": "Static Tabs",
-          "settings": {},
+          "settings": {
+            "image": "shopify://shop_images/our-tummies-love-good-workout-shot-young-woman-holding-heart-her-tummy-workout_3_1.png"
+          },
           "blocks": {}
         }
       },
