@@ -1,7 +1,7 @@
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">About Magnesium Breakthrough</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="openTab(event, 'London')">About Magnesium Breakthrough</button>
+  <button class="tablinks" onclick="openTab(event, 'Paris')">Benefits</button>
+  <button class="tablinks" onclick="openTab(event, 'Tokyo')">How to Take </button>
 </div>
 
 <!-- Tab content -->
@@ -20,7 +20,7 @@
   <p>Tokyo is the capital of Japan.</p>
 </div>
 <script>
-    function openCity(evt, cityName) {
+    function openTab(evt, tab) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -37,7 +37,7 @@
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tab).style.display = "block";
   evt.currentTarget.className += " active";
 }
 </script>
