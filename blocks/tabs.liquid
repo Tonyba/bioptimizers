@@ -26,23 +26,22 @@
     <div class="benefit">
         <h3>{{product.title}} Benefits</h3>
         {% for item in benefits__header %}
-            <div>
-            <div class="benefit-header">
-          <div class="index-number">
-            {% if forloop.index < 10 %}
-                    0{{ forloop.index }}.
-                {% else %}
-                    {{ forloop.index }}.
-                {% endif %}
-          </div>
-          <div class="benefit-title">{{benefits__header}}</div>
-        </div>
-        <p>
-          Magnesium is extremely important for heart health and blood vessel health.
-          Magnesium deficiency seems to worsen inflammation, blood vessel constriction,
-          blood clotting, and stress responses that trigger heart conditions.
-        </p>
+            <div class="benefit-header flex">
+                <div class="index-number">
+                    {% if forloop.index < 10 %}
+                            0{{ forloop.index }}.
+                        {% else %}
+                            {{ forloop.index }}.
+                        {% endif %}
+                </div>
+                <div class="benefit-title">{{benefits__header}}</div>
             </div>
+            <p>
+            Magnesium is extremely important for heart health and blood vessel health.
+            Magnesium deficiency seems to worsen inflammation, blood vessel constriction,
+            blood clotting, and stress responses that trigger heart conditions.
+            </p>
+            
         {% endfor %}
         
     </div>
