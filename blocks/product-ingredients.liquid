@@ -173,10 +173,16 @@
 </div>
 
 {% stylesheet %}
-  .table-container {
-    overflow-x: auto;
-    width: 100%;
-  }
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* smooth iOS scroll */
+}
+
+.table-container table {
+  min-width: 900px; /* forces horizontal scroll */
+  border-collapse: collapse;
+}
 
   table {
     min-width: 900px;
