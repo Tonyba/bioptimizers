@@ -34,8 +34,7 @@
                 {% endif %} 
             </div>
 
-            {% assign benefits__header = benefits__header[forloop.index] %}
-            {% assign benefits__content = benefits__header[forloop.index] %}
+            {{benefits__header}}
         {% endfor %}
         <div class="benefit-header">
           <div class="index-number">01.</div>
