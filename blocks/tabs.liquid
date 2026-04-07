@@ -1,4 +1,5 @@
-
+{% assign benefits__header = product.metafields.custom.benefits_header.value %}
+{% assign benefits__content = product.metafields.custom.benefits_content.value %}
 
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'a')">About {{product.title}}</button>
@@ -25,8 +26,6 @@
     <div class="benefit">
         <h3>{{product.title}} Benefits</h3>
         {% for item in benefits__header %}
-            {% assign benefits__header = product.metafields.custom.benefits_header.value %}
-{% assign benefits__content = product.metafields.custom.benefits_content.value %}
             <div class="benefit-header flex">
                 <div class="index-number">
                     {% if forloop.index < 10 %}
