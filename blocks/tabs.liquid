@@ -26,7 +26,7 @@
     <div class="benefit">
         <h3>{{product.title}} Benefits</h3>
         {% for item in benefits__header %}
-            <div class="benefit-header flex">
+            <div class="benefit-item flex">
                 <div class="index-number" style="font-size: 21px; margin-top: -5px">
                     {% if forloop.index0 < 10 %}
                             0{{ forloop.index0 |  plus: 1}}.
@@ -99,6 +99,10 @@ function openTab(evt, tabId) { // Renamed 'tab' to 'tabId' for clarity
 </script>
 
 {% stylesheet %}
+.benefit-item{
+    display: flex;
+    gap: 20px;
+}
 .header{
     font-size: 21px;
     font-weight: bold;
