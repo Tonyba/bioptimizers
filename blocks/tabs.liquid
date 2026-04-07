@@ -22,9 +22,12 @@
 <div id="b" class="tabcontent">
     <div class="image-box">
       {{
-      block.settings.image
-      | image_url: width: 500
-    }}
+  block.settings.image
+  | image_url: width: 500
+  | image_tag:
+    alt: block.settings.image.alt,
+    loading: 'lazy'
+}}
     </div>
     <div class="benefit">
         <h3>{{product.title}} Benefits</h3>
