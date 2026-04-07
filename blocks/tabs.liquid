@@ -28,14 +28,14 @@
         {% for item in benefits__header %}
             <div class="benefit-header flex">
                 <div class="index-number">
-                    {% if forloop.index < 10 %}
-                            0{{ forloop.index }}.
+                    {% if forloop.index0 < 10 %}
+                            0{{ forloop.index0 }}.
                         {% else %}
-                            {{ forloop.index }}.
+                            {{ forloop.index0 }}.
                         {% endif %}
                 </div>
-                {% assign header = benefits__header[forloop.index] %}
-                {% assign content = benefits__content[forloop.index] %}
+                {% assign header = benefits__header[forloop.index0] %}
+                {% assign content = benefits__content[forloop.index0] %}
                 <div>
                     <div class="benefit-title">{{header}}</div>
                     <p>{{content}}</p>
