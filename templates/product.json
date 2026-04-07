@@ -1424,11 +1424,18 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "product_ingredients_xGmCRM": {
+              "type": "product-ingredients",
+              "name": "Product ingredients",
+              "settings": {},
+              "blocks": {}
             }
           },
           "block_order": [
             "text_FKcM3D",
-            "text_h3Gq8A"
+            "text_h3Gq8A",
+            "product_ingredients_xGmCRM"
           ]
         }
       },
