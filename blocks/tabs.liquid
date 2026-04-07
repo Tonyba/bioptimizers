@@ -34,7 +34,9 @@
                             {{ forloop.index }}.
                         {% endif %}
                 </div>
-                <div class="benefit-title">{{item}}</div>
+                {% assign header = benefits__header[forloop.index] %}
+                {% assign content = benefits__content[forloop.index] %}
+                <div class="benefit-title">{{header}}</div>
             </div>
             <p>
             Magnesium is extremely important for heart health and blood vessel health.
