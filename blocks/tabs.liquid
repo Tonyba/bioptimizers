@@ -26,6 +26,7 @@
     <div class="benefit">
         <h3>{{product.title}} Benefits</h3>
         {% for item in benefits__header %}
+            <div>
             <div class="benefit-header">
           <div class="index-number">
             {% if forloop.index < 10 %}
@@ -41,7 +42,7 @@
           Magnesium deficiency seems to worsen inflammation, blood vessel constriction,
           blood clotting, and stress responses that trigger heart conditions.
         </p>
-            
+            </div>
         {% endfor %}
         
     </div>
