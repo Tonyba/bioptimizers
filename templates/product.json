@@ -1859,68 +1859,14 @@
     "section_Yw8XNg": {
       "type": "section",
       "blocks": {
-        "group_Nc7ED9": {
-          "type": "group",
-          "name": "t:names.group",
-          "settings": {
-            "custom_css": "",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 60,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "tabs_fzXyV7": {
-              "type": "tabs",
-              "name": "Static Tabs",
-              "settings": {},
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "tabs_fzXyV7"
-          ]
-        },
         "tabs_fGxdry": {
           "type": "tabs",
           "name": "Static Tabs",
-          "disabled": true,
           "settings": {},
           "blocks": {}
         }
       },
       "block_order": [
-        "group_Nc7ED9",
         "tabs_fGxdry"
       ],
       "name": "t:names.multicolumn",
