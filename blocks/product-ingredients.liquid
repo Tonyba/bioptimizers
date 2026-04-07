@@ -1,3 +1,5 @@
+{% assign img = product.metafields.custom.loop_image.value %}
+
 <div class="table-container">
   <table>
     <thead>
@@ -5,42 +7,42 @@
         <th></th>
 
         <th class="highlight-header">
-          <img src="https://via.placeholder.com/60" alt="">
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
           <div class="product-name">Magnesium Breakthrough</div>
         </th>
 
         <th>
-          <img src="https://via.placeholder.com/60" alt="">
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
           <div class="product-name">Strength Sensei</div>
         </th>
 
         <th>
-          <img src="https://via.placeholder.com/60" alt="">
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
           <div class="product-name">Livewell</div>
         </th>
 
         <th>
-          <img src="https://via.placeholder.com/60" alt="">
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
           <div class="product-name">Zeal Naturals</div>
         </th>
 
         <th>
-          <img src="https://via.placeholder.com/60" alt="">
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
           <div class="product-name">Natural Rhythm</div>
         </th>
 
         <th>
-          <img src="https://via.placeholder.com/60" alt="">
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
           <div class="product-name">BioEmblem</div>
         </th>
 
         <th>
-          <img src="https://via.placeholder.com/60" alt="">
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
           <div class="product-name">Terranics</div>
         </th>
 
         <th>
-          <img src="https://via.placeholder.com/60" alt="">
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
           <div class="product-name">Life Extension</div>
         </th>
       </tr>
