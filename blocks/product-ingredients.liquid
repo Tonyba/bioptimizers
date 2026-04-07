@@ -1,4 +1,11 @@
 {% assign img = product.metafields.custom.loop_image.value %}
+{% assign malate = product.metafields.custom.malate.value %}
+{% assign chelate = product.metafields.custom.chelate.value %}
+{% assign citrate = product.metafields.custom.citrate.value %}
+{% assign sucrosomial = product.metafields.custom.sucrosomial.value %}
+{% assign orotate = product.metafields.custom.orotate.value %}
+{% assign taurate = product.metafields.custom.taurate.value %}
+{% assign glycinate = product.metafields.custom.glycinate.value %}
 
 <div class="table-container">
   <table>
@@ -52,7 +59,11 @@
       <!-- Glycinate -->
       <tr>
         <td class="label">Glycinate</td>
-        <td class="highlight"><span class="check">✓</span></td>
+        {% if glycinate %}
+           <td class="highlight"><span class="check">✓</span></td> 
+           {% else %}
+            <td><span class="cross">×</span></td>
+        {% endif %}
         <td><span class="check">✓</span></td>
         <td><span class="check">✓</span></td>
         <td><span class="check">✓</span></td>
