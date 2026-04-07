@@ -13,7 +13,7 @@
 
         <th>
           <img src="{{ 'empty-product-bottle.svg' | asset_url }}" alt="empty prooduct bottle" width="24" height="24" class="empty-product">
-          <div class="product-name">Strength Sensei</div>
+          <div class="highlight-product-name">Strength Sensei</div>
         </th>
 
         <th>
@@ -228,8 +228,12 @@ th:not(:nth-child(1)):not(:nth-child(2)), td:not(:nth-child(1)):not(:nth-child(2
     margin-bottom: 6px;
   }
 
+  .highlight-product-name {
+    font-size: 18px;
+    margin-top: 5px;
+  }
   .product-name {
-    font-size: 13px;
+    font-size: 16px;
     margin-top: 5px;
   }
   
