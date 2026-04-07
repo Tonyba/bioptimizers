@@ -8,12 +8,12 @@
 
         <th class="highlight-header">
           {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
-          <div class="product-name">{{ product.title }}</div>
+          <div class="highlight-product-name">{{ product.title }}</div>
         </th>
 
         <th>
           <img src="{{ 'empty-product-bottle.svg' | asset_url }}" alt="empty prooduct bottle" width="24" height="24" class="empty-product">
-          <div class="highlight-product-name">Strength Sensei</div>
+          <div class="product-name">Strength Sensei</div>
         </th>
 
         <th>
