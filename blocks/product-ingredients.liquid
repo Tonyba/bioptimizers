@@ -1,258 +1,225 @@
 {% assign img = product.metafields.custom.loop_image.value %}
 
-<div class="comparison-table-container">
-        <table class="comparison-table">
-            <thead>
-                <tr>
-                    <th class="table-corner-cell"></th>
-                    <th class="product-column highlight">
-                        <div class="product-header-content">
-                            <div class="product-image-wrapper">
-                                {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
-                            </div>
-                            <span class="product-name">AGNESIUM BREAKTHROUGH</span>
-                        </div>
-                    </th>
-                    <th class="product-column">Strength Sensei</th>
-                    <th class="product-column">Livewell</th>
-                    <th class="product-column">Zeal Naturals</th>
-                    <th class="product-column">Natural Rhythm</th>
-                    <th class="product-column">BioEmblem</th>
-                    <th class="product-column">Terranics</th>
-                    <th class="product-column">Life Extension</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="feature-cell">Glycinate</td>
-                    <td class="check-cell highlight"><span class="check-icon">&#10003;</span></td> <!-- Checkmark -->
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                </tr>
-                <tr>
-                    <td class="feature-cell">Taurate</td>
-                    <td class="check-cell highlight"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td> <!-- X mark -->
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                </tr>
-                <tr>
-                    <td class="feature-cell">Orotate</td>
-                    <td class="check-cell highlight"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                </tr>
-                <tr>
-                    <td class="feature-cell">Sucrosomial</td>
-                    <td class="check-cell highlight"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                </tr>
-                <tr>
-                    <td class="feature-cell">Citrate</td>
-                    <td class="check-cell highlight"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                </tr>
-                <tr>
-                    <td class="feature-cell">Chelate</td>
-                    <td class="check-cell highlight"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                </tr>
-                <tr>
-                    <td class="feature-cell">Malate</td>
-                    <td class="check-cell highlight"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                    <td class="check-cell"><span class="times-icon">&#x2715;</span></td>
-                    <td class="check-cell"><span class="check-icon">&#10003;</span></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+
+        <th class="highlight-header">
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+          <div class="product-name">{{ product.title }}</div>
+        </th>
+
+        <th>
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+          <div class="product-name">Strength Sensei</div>
+        </th>
+
+        <th>
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+          <div class="product-name">Livewell</div>
+        </th>
+
+        <th>
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+          <div class="product-name">Zeal Naturals</div>
+        </th>
+
+        <th>
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+          <div class="product-name">Natural Rhythm</div>
+        </th>
+
+        <th>
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+          <div class="product-name">BioEmblem</div>
+        </th>
+
+        <th>
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+          <div class="product-name">Terranics</div>
+        </th>
+
+        <th>
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+          <div class="product-name">Life Extension</div>
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- Glycinate -->
+      <tr>
+        <td class="label">Glycinate</td>
+        <td class="highlight"><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+      </tr>
+
+      <!-- Taurate -->
+      <tr>
+        <td class="label">Taurate</td>
+        <td class="highlight"><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+      </tr>
+
+      <!-- Orotate -->
+      <tr>
+        <td class="label">Orotate</td>
+        <td class="highlight"><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+      </tr>
+
+      <!-- Sucrosomial -->
+      <tr>
+        <td class="label">Sucrosomial</td>
+        <td class="highlight"><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+      </tr>
+
+      <!-- Citrate -->
+      <tr>
+        <td class="label">Citrate</td>
+        <td class="highlight"><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+      </tr>
+
+      <!-- Chelate -->
+      <tr>
+        <td class="label">Chelate</td>
+        <td class="highlight"><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+      </tr>
+
+      <!-- Malate -->
+      <tr>
+        <td class="label">Malate</td>
+        <td class="highlight"><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="check">✓</span></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
 
 {% stylesheet %}
-.comparison-table-container {
-    width: 100%;
-    max-width: 1200px; /* Adjust as needed */
-    overflow-x: auto; /* Enable horizontal scrolling on small screens */
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
+      .table-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    overflow-x: auto;
+  }
 
-/* Table Styling */
-.comparison-table {
+  table {
     width: 100%;
-    border-collapse: collapse; /* Remove space between cells */
-    min-width: 900px; /* Ensure table doesn't shrink too much */
-}
+    border-collapse: collapse;
+    background: white;
+  }
 
-/* Table Headers */
-.comparison-table th,
-.comparison-table td {
-    padding: 15px 10px;
+  th, td {
     text-align: center;
-    border: 1px solid #e0e0e0;
-    vertical-align: middle;
-}
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+  }
 
-.comparison-table thead th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    color: #333;
-    white-space: nowrap; /* Prevent product names from wrapping */
-}
+  th {
+    font-weight: 600;
+    background: #fafafa;
+  }
 
-/* Highlighted Column (Your product) */
-.highlight {
-    background-color: #FFF2E6; /* Light orange background */
-}
-
-/* Top-left corner cell (empty) */
-.table-corner-cell {
-    background-color: #fff; /* White background */
-    border-right: none;
-    border-bottom: none;
-}
-
-/* Product Column Headers */
-.product-column {
-    width: 10%; /* Distribute width among product columns */
-    min-width: 100px; /* Minimum width for product columns */
-}
-
-.product-header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.product-image-wrapper {
-    width: 80px; /* Size for product image */
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff; /* White background for image */
-    border-radius: 5px;
-    padding: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.product-image-wrapper img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-.product-name {
-    font-size: 0.9em;
-    font-weight: bold;
-    color: #333;
-}
-
-/* Feature Cells (leftmost column) */
-.feature-cell {
+  /* First column (labels) */
+  td.label {
     text-align: left;
-    font-weight: bold;
-    color: #555;
-    background-color: #f9f9f9;
-    padding-left: 20px;
-    white-space: nowrap;
-}
-.feature-cell.highlight {
-    background-color: #FFE6CC; /* Slightly darker orange for highlighted feature cell */
-}
+    font-weight: 500;
+    background: #f0f0f0;
+  }
 
-/* Check/Times Cells */
-.check-cell {
-    font-size: 1.5em; /* Size of the check/x icons */
-}
+  /* Highlighted product column */
+  .highlight {
+    background: #f5a623;
+    color: black;
+    font-weight: 600;
+  }
 
-.check-icon {
-    color: #018476; /* Green for checkmark */
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background-color: #E6F3F2; /* Light green background */
-}
+  .highlight-header {
+    background: #f5a623;
+    color: black;
+  }
 
-.times-icon {
-    color: #c9302c; /* Red for X mark */
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background-color: #F8E6E6; /* Light red background */
-}
+  /* Icons */
+  .check {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #0f9d8a;
+    color: white;
+    line-height: 18px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
 
-/* Highlight specific column cells in body */
-.comparison-table tbody td.highlight {
-    background-color: #FFE6CC;
-}
-.comparison-table tbody td.highlight .check-icon {
-    background-color: #018476; /* Darker green background */
-    color: #fff; /* White checkmark */
-}
-.comparison-table tbody td.highlight .times-icon {
-    background-color: #c9302c; /* Darker red background */
-    color: #fff; /* White X mark */
-}
+  .cross {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #e0e0e0;
+    color: #666;
+    line-height: 18px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
 
-/* General table row styling (alternating background if desired, or just hover) */
-.comparison-table tbody tr:nth-child(even) {
-    /* background-color: #fcfcfc; */
-}
-.comparison-table tbody tr:hover {
-    background-color: #f5f5f5;
-}
+  img {
+    height: 60px;
+    margin-bottom: 6px;
+  }
 
-/* Adjustments for first row in tbody (if it has special styling needs) */
-.comparison-table tbody tr:first-child .feature-cell {
-    border-top: 1px solid #e0e0e0; /* Ensure top border if header doesn't connect well */
-}
+  .product-name {
+    font-size: 13px;
+    margin-top: 5px;
+  }
 {% endstylesheet %}
 
 {% schema %}
