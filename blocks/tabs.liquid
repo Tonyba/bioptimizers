@@ -13,7 +13,6 @@
   <button class="tablinks" onclick="openTab(event, 'f')">Loading Program</button>
 </div>
 
-<!-- Tab content -->
 <div id="a" class="tabcontent">
   <h3>About</h3>
   <p>{{product.description}}</p>
@@ -57,48 +56,29 @@
   <p>Tokyo is the capital of Japan.</p>
 </div>
 <script>
-function openTab(evt, tabId) { // Renamed 'tab' to 'tabId' for clarity
-        // Declare all variables
+function openTab(evt, tabId) {
         var i, tabcontent, tablinks;
 
-        // Get all elements with class="tabcontent" and hide them
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.display = "none";
         }
 
-        // Get all elements with class="tablinks" and remove the class "active"
         tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
 
-        // Show the current tab, and add an "active" class to the button that opened the tab
         document.getElementById(tabId).style.display = "block";
-        // Check if evt exists, because openTab will be called without an event on load
         if (evt) {
             evt.currentTarget.className += " active";
         } else {
-            // If no event, find the button by its data-tab (or in this case, by its associated tabId in the HTML)
-            // This is a slightly more robust way for the initial load if the button isn't directly passed
             document.querySelector(`.tablinks[onclick*='${tabId}']`).className += " active";
         }
     }
 
-    // --- Call openTab for the first tab on page load ---
     document.addEventListener('DOMContentLoaded', function() {
-        // Call openTab with null for the event (since it's not a click event) and 'a' for the tab ID
         openTab(null, 'a');
-
-        // You might also want to simulate a click on the first button
-        // if your 'active' class has specific CSS that relies on the button being clicked.
-        // let firstButton = document.querySelector('.tablinks.active');
-        // if (firstButton) {
-        //     firstButton.click();
-        // } else {
-        //     // Fallback if 'active' class isn't on the first button in HTML
-        //     document.querySelector('.tablinks').click();
-        // }
     });
 </script>
 
@@ -132,12 +112,12 @@ function openTab(evt, tabId) { // Renamed 'tab' to 'tabId' for clarity
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
 }
+
 .tabcontent{
     background-color: #F9F9F9;
     padding: 60px 58px;
 }
 
-/* Buttons */
 .tab button {
     font-weight: 600;
     font-size: 21px !important;
@@ -162,24 +142,20 @@ function openTab(evt, tabId) { // Renamed 'tab' to 'tabId' for clarity
 }
 
 
-/* Vertical divider */
 .vertical_divider {
     content: "";
     border-right: 1px solid #A6A6A6;
     height: auto;
 }
 
-/* Hover */
 .tab button:hover {
     color: #fff;
 }
 
-/* Active tab */
 .tab button.active {
     color: #fff;
 }
 
-/* Orange underline */
 .tab button.active::before {
     content: "";
     position: absolute;
