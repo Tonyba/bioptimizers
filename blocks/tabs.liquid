@@ -31,7 +31,7 @@
                     {% if forloop.index0 < 10 %}
                             0{{ forloop.index0 |  plus: 1}}.
                         {% else %}
-                            {{ forloop.index0 }}.
+                            {{ forloop.index0 |  plus: 1}}.
                         {% endif %}
                 </div>
                 {% assign header = benefits__header[forloop.index0] %}
