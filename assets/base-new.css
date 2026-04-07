@@ -596,8 +596,7 @@ button {
     display: grid;
     grid-template-columns: auto auto;
     gap: 25px;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding: 45px 20px;
 }
 
 .product-keylist-item{
@@ -645,6 +644,9 @@ button {
     justify-content: center;
     width: 100%;
     padding: 10px 30px;
+}
+.product-keylist-grid{
+
 }
 }
 /* scientici studies */
