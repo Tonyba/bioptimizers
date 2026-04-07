@@ -177,7 +177,13 @@
     max-width: 1100px;
     margin: 40px auto;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
+  .table-container table {
+  width: max-content;   /* 🔥 key */
+  min-width: 900px;
+  border-collapse: collapse;
+}
 
   table {
     min-width: 900px;
@@ -190,6 +196,7 @@
     padding: 14px;
     vertical-align: bottom;
     font-size: 14px;
+    white-space: nowrap;
   }
 
 th:not(:nth-child(1)):not(:nth-child(2)), td:not(:nth-child(1)):not(:nth-child(2)){
