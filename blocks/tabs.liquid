@@ -37,8 +37,8 @@
                 {% assign header = benefits__header[forloop.index0] %}
                 {% assign content = benefits__content[forloop.index0] %}
                 <div>
-                    <div class="benefit-title">{{header}}</div>
-                    <p>{{content}}</p>
+                    <div class="header">{{header}}</div>
+                    <p class="content">{{content}}</p>
                 </div>
             </div>
         {% endfor %}
@@ -99,6 +99,10 @@ function openTab(evt, tabId) { // Renamed 'tab' to 'tabId' for clarity
 </script>
 
 {% stylesheet %}
+.header{
+    font-size: 21px;
+    font-weight: bold;
+}
 .image-box img {
     width: 500px;
     height: 500px;
