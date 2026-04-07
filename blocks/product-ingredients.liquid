@@ -8,7 +8,7 @@
                     <th class="product-column highlight">
                         <div class="product-header-content">
                             <div class="product-image-wrapper">
-                                <img src="https://i.imgur.com/your-product-image.png" alt="Perfect Protocol Magnesium Power Blend">
+                                {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
                             </div>
                             <span class="product-name">AGNESIUM BREAKTHROUGH</span>
                         </div>
