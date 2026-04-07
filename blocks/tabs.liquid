@@ -28,13 +28,13 @@
         {% for item in benefits__header %}
             <div class="index-number">
                 {% if forloop.index < 10 %}
-                    0{{ forloop.index }}.
+                    0{{ forloop.index }}.{{benefits__header}}
                 {% else %}
                     {{ forloop.index }}.
                 {% endif %} 
             </div>
 
-            {{benefits__header}}
+            
         {% endfor %}
         <div class="benefit-header">
           <div class="index-number">01.</div>
