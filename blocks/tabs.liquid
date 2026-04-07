@@ -21,13 +21,11 @@
 
 <div id="b" class="tabcontent">
     <div class="image-box">
-      {{
-  block.settings.image
-  | image_url: width: 500
-  | image_tag:
-    alt: block.settings.image.alt,
-    loading: 'lazy'
-}}
+        {{
+        block.settings.image | image_url: width: 500 | image_tag:
+        alt: block.settings.image.alt,
+        loading: 'lazy'
+        }}
     </div>
     <div class="benefit">
         <h3>{{product.title}} Benefits</h3>
@@ -130,6 +128,9 @@ function openTab(evt, tabId) { // Renamed 'tab' to 'tabId' for clarity
   padding: 35px 30px;
   border-radius: 6px 6px 0 0;
   gap: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
 }
 .tabcontent{
     background-color: #F9F9F9;
