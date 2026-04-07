@@ -1,5 +1,5 @@
 <div class="tab">
-  <button class="tablinks active" onclick="openTab(event, 'a')">About {{product.title}}</button>
+  <button class="tablinks" onclick="openTab(event, 'a')">About {{product.title}}</button>
   <span class="vertical_divider"></span>
   <button class="tablinks" onclick="openTab(event, 'b')">Benefits</button>
   <span class="vertical_divider"></span>
@@ -71,7 +71,7 @@ function openTab(evt, tabId) { // Renamed 'tab' to 'tabId' for clarity
     // --- Call openTab for the first tab on page load ---
     document.addEventListener('DOMContentLoaded', function() {
         // Call openTab with null for the event (since it's not a click event) and 'a' for the tab ID
-        openTab(null, 'b');
+        openTab(null, 'a');
 
         // You might also want to simulate a click on the first button
         // if your 'active' class has specific CSS that relies on the button being clicked.
