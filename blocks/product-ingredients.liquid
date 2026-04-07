@@ -145,40 +145,32 @@
 </div>
 
 {% stylesheet %}
-.table-container {
+  .table-container {
     max-width: 1100px;
     margin: 40px auto;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
   }
 
   table {
-    min-width: 900px; /* Keep this for desktop, adjust in media query */
+    min-width: 900px;
     border-collapse: collapse;
     background: white;
   }
 
   th, td {
     text-align: center;
-    padding: 14px; /* Keep your existing padding */
+    padding: 14px;
     vertical-align: bottom;
-    font-size: 14px; /* Keep your existing font size */
-    border-bottom: 1px solid #DFDFDF; /* Ensure horizontal borders for all cells */
+    font-size: 14px;
   }
 
   th {
     font-weight: 600;
+   
   }
-
-  /* Your existing border logic, but ensure full borders for responsiveness */
-  th:not(:first-child),
-  td:not(:first-child) {
+  th:not(:first-child), td:not(:first-child){
     border-right: 1px solid #DFDFDF;
-  }
-  /* Ensure a left border for the first column's cells */
-  th:first-child,
-  td.label {
-    border-left: 1px solid #DFDFDF;
   }
 
   /* First column (labels) */
@@ -186,37 +178,53 @@
     text-align: left;
     font-weight: 500;
   }
-
   tbody tr:nth-child(odd) {
     background-color: #f2f2f2;
-  }
+    }
 
   /* Highlighted product column */
   .highlight {
     background: #f5a623;
     color: black;
     font-weight: 600;
-    /* Removed border-top: 1px solid white; here, as it conflicts with collapsed borders.
-       If you want a visual break, consider margin or a specific border-top on td.highlight within a TR. */
+    border-top: 1px solid white;
   }
-  /* Apply highlight background to the feature label cell as well if it belongs to the highlighted column */
-  tbody td.label.highlight {
-      background: #f5a623; /* Or a slightly different shade if preferred, like #ffb74d */
-  }
-
 
   .highlight-header {
     background: #f5a623;
     color: black;
     border-radius: 20px 20px 0 0;
   }
-  .highlight-header img {
+
+  /* Icons */
+  .check {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #0f9d8a;
+    color: white;
+    line-height: 18px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+
+  .cross {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #e0e0e0;
+    color: #666;
+    line-height: 18px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+ .highlight-header img {
     height: 200px;
     margin-bottom: 6px;
     object-fit: contain;
-  }
+ }
 
-  .empty-product {
+  .empty-product{
     height: 150px;
     margin-bottom: 6px;
   }
@@ -224,97 +232,8 @@
   .product-name {
     font-size: 13px;
     margin-top: 5px;
-    white-space: normal; /* Allow product names to wrap if necessary in header cells for compactness */
   }
-
-  /* Icons */
-  .check {
-    display: inline-flex; /* Changed from inline-block to flex for better centering */
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    width: 18px;
-    height: 18px;
-    background: #0f9d8a;
-    color: white;
-    /* line-height: 18px; Removed as flex handles vertical alignment */
-    border-radius: 3px;
-    font-size: 12px;
-  }
-
-  .cross {
-    display: inline-flex; /* Changed from inline-block to flex for better centering */
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    width: 18px;
-    height: 18px;
-    background: #e0e0e0;
-    color: #666;
-    /* line-height: 18px; Removed as flex handles vertical alignment */
-    border-radius: 3px;
-    font-size: 12px;
-  }
-
-  /* Adjust highlight icons for better contrast */
-  td.highlight .check {
-    background: #018476; /* Darker green for highlighted check */
-    color: white;
-  }
-  td.highlight .cross {
-    background: #c9302c; /* Red for highlighted cross */
-    color: white;
-  }
-
-
-  /* --- Responsive Adjustments (Mobile Last) --- */
-  @media (max-width: 768px) {
-    .table-container {
-      margin: 20px 10px; /* Adjust margin for smaller screens */
-    }
-
-    table {
-      min-width: 700px; /* Table minimum width for horizontal scroll */
-    }
-
-    th, td {
-      padding: 10px 8px; /* Slightly reduce padding */
-      font-size: 13px; /* Slightly reduce font size */
-    }
-
-    /* Adjust image and product name sizes in header for compactness */
-    .highlight-header img {
-      height: 150px; /* Reduce image height */
-      margin-bottom: 4px;
-    }
-    .empty-product {
-      height: 100px; /* Reduce empty product image height */
-      margin-bottom: 4px;
-    }
-    .product-name {
-      font-size: 12px; /* Further reduce product name font size */
-    }
-
-    /* Adjust icon sizes */
-    .check, .cross {
-      width: 16px;
-      height: 16px;
-      font-size: 11px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    table {
-      min-width: 600px; /* Further reduce min-width for very small screens */
-    }
-    /* You could add more aggressive hiding here if desired, e.g.: */
-    /*
-    th:not(.highlight-header):not(:first-child),
-    td:not(.highlight):not(.label) {
-        // Example: Hide all non-highlighted product columns except the first (label) one
-        // This is a more advanced technique that requires careful consideration.
-        // display: none;
-    }
-    */
-  }
+  
 {% endstylesheet %}
 
 {% schema %}
