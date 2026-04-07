@@ -56,7 +56,6 @@
     </thead>
 
     <tbody>
-      <!-- Glycinate -->
       <tr>
         <td class="label">Glycinate</td>
         {% if glycinate %}
@@ -73,10 +72,13 @@
         <td><span class="check">✓</span></td>
       </tr>
 
-      <!-- Taurate -->
       <tr>
         <td class="label">Taurate</td>
-        <td class="highlight"><span class="check">✓</span></td>
+        {% if taurate %}
+           <td class="highlight"><span class="check">✓</span></td> 
+           {% else %}
+            <td class="highlight"><span class="cross">×</span></td>
+        {% endif %}
         <td><span class="check">✓</span></td>
         <td><span class="cross">×</span></td>
         <td><span class="cross">×</span></td>
@@ -86,10 +88,13 @@
         <td><span class="cross">×</span></td>
       </tr>
 
-      <!-- Orotate -->
       <tr>
         <td class="label">Orotate</td>
-        <td class="highlight"><span class="check">✓</span></td>
+        {% if orotate %}
+           <td class="highlight"><span class="check">✓</span></td> 
+           {% else %}
+            <td class="highlight"><span class="cross">×</span></td>
+        {% endif %}
         <td><span class="check">✓</span></td>
         <td><span class="cross">×</span></td>
         <td><span class="cross">×</span></td>
@@ -99,10 +104,13 @@
         <td><span class="cross">×</span></td>
       </tr>
 
-      <!-- Sucrosomial -->
       <tr>
         <td class="label">Sucrosomial</td>
-        <td class="highlight"><span class="check">✓</span></td>
+        {% if sucrosomial %}
+           <td class="highlight"><span class="check">✓</span></td> 
+           {% else %}
+            <td class="highlight"><span class="cross">×</span></td>
+        {% endif %}
         <td><span class="cross">×</span></td>
         <td><span class="cross">×</span></td>
         <td><span class="cross">×</span></td>
@@ -112,10 +120,13 @@
         <td><span class="cross">×</span></td>
       </tr>
 
-      <!-- Citrate -->
       <tr>
         <td class="label">Citrate</td>
-        <td class="highlight"><span class="check">✓</span></td>
+        {% if citrate %}
+           <td class="highlight"><span class="check">✓</span></td> 
+           {% else %}
+            <td class="highlight"><span class="cross">×</span></td>
+        {% endif %}
         <td><span class="cross">×</span></td>
         <td><span class="check">✓</span></td>
         <td><span class="check">✓</span></td>
@@ -125,10 +136,13 @@
         <td><span class="check">✓</span></td>
       </tr>
 
-      <!-- Chelate -->
       <tr>
         <td class="label">Chelate</td>
-        <td class="highlight"><span class="check">✓</span></td>
+        {% if chelate %}
+           <td class="highlight"><span class="check">✓</span></td> 
+           {% else %}
+            <td class="highlight"><span class="cross">×</span></td>
+        {% endif %}
         <td><span class="cross">×</span></td>
         <td><span class="cross">×</span></td>
         <td><span class="cross">×</span></td>
@@ -138,10 +152,13 @@
         <td><span class="check">✓</span></td>
       </tr>
 
-      <!-- Malate -->
       <tr>
         <td class="label">Malate</td>
-        <td class="highlight"><span class="check">✓</span></td>
+        {% if malate %}
+           <td class="highlight"><span class="check">✓</span></td> 
+           {% else %}
+            <td class="highlight"><span class="cross">×</span></td>
+        {% endif %}
         <td><span class="cross">×</span></td>
         <td><span class="check">✓</span></td>
         <td><span class="check">✓</span></td>
