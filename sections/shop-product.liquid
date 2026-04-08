@@ -20,7 +20,7 @@
             {% assign product_block_id = block.id | default: '' %}
             {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %}
 
-            <div class="flex {{ buttons_position }}" style="width: 70%;">
+            <div class="flex {{ buttons_position }} w70" >
                 {% render 'quick-add', product: section.settings.product, section_id: section.id, block: block %}
 
                 <button
@@ -79,6 +79,9 @@ function triggerQuickAdd(productId) {
     .imgg, .txt{
         width: 100% !important;
     }
+    }
+    .w70{
+        width: 70%;
     }
     .main_right{
         flex-direction: row;
