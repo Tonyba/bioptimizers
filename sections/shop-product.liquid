@@ -2,7 +2,7 @@
     <div class="product-img">
         {{ section.settings.product.metafields.custom.loop_image | image_url: width: 200 | image_tag: alt: 'product bottle'}}
     </div>
-    <div class="imgg" style="position: absolute;">
+    <div class="imgg" style="position: relative;">
         {{ section.settings.image | image_url: width: 200 | image_tag: alt: section.settings.section_image.alt , loading: "lazy"}}
         <div class="color-gray"></div>
     </div>
