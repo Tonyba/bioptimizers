@@ -316,7 +316,7 @@ button {
 @media (max-width: 768px){
     .all-products-are .group-block {
     padding-right: 0px!important;
-    border-right-width: none;
+    border-right-width: 0px !important;
 }
 }
 /*basic*/
