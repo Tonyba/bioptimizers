@@ -1,9 +1,7 @@
 {% if section.settings.position == "row" %}
     {% assign product_position = "left: 35%;" %}
-    {% assign button_position = "" %}
 {% else %}
     {% assign product_position = "left: 68%;" %}
-    {% assign button_position = "justify-content: end;" %}
 {% endif %}
 
 <div class="main" style="flex-direction: {{ section.settings.position }};">
