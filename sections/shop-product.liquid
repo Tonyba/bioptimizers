@@ -1,4 +1,6 @@
-<div class="main" style="flex-direction: row-reverse;">
+
+
+<div class="main" style="flex-direction: {{ section.settings.position }};">
     <div class="imgg">
         {{ section.settings.image | image_url: width: 200 | image_tag: alt: section.settings.section_image.alt , loading: "lazy"}}
         <div class="color-gray"></div>
@@ -144,15 +146,15 @@ function triggerQuickAdd(productId) {
         "label": "Position",
         "options": [
             {
-            "value": "left",
+            "value": "row",
             "label": "Left"
             },
             {
-            "value": "right",
+            "value": "row-reverse",
             "label": "Right"
             }
         ],
-        "default": "left"
+        "default": "row"
     }
   ],
   "presets": [
