@@ -1,4 +1,8 @@
-
+{% if section.settings.position == "row" %}
+    {% assign product_position = "left: 35%;" %}
+{% else %}
+    {% assign product_position = "left: 0%;" %}
+{% endif %}
 
 <div class="main" style="flex-direction: {{ section.settings.position }};">
     <div class="imgg">
@@ -30,7 +34,7 @@
             </div>
         </div>
     </div>
-    <div class="product-img">
+    <div class="product-img" style=" {{ product_position }} ">
         {{ section.settings.product.metafields.custom.loop_image | image_url: width: 200 | image_tag: alt: 'product bottle'}}
     </div>
 </div>
@@ -104,7 +108,7 @@ function triggerQuickAdd(productId) {
     }
     .product-img {
         position: absolute;
-        right: 0%;
+        /* left: 35%; */
         top: 80px;
         transform: translateX(-50%);
         width: 370px;
