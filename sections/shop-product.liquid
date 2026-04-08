@@ -1,8 +1,5 @@
 <div class="main">
-    <div class="product-img">
-        {{ section.settings.product.metafields.custom.loop_image | image_url: width: 200 | image_tag: alt: 'product bottle'}}
-    </div>
-    <div class="imgg" style="position: relative;">
+    <div class="imgg">
         {{ section.settings.image | image_url: width: 200 | image_tag: alt: section.settings.section_image.alt , loading: "lazy"}}
         <div class="color-gray"></div>
     </div>
@@ -31,7 +28,9 @@
             </div>
         </div>
     </div>
-    
+    <div class="product-img">
+        {{ section.settings.product.metafields.custom.loop_image | image_url: width: 200 | image_tag: alt: 'product bottle'}}
+    </div>
 </div>
 
 <script>
