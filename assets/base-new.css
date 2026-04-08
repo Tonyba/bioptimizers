@@ -110,6 +110,9 @@ button {
 .items-center {
     align-items: center;
 }
+.self-end{
+    align-self: self-end;
+}
 
 .horizontal,
 .menu--horizontal {
