@@ -1,11 +1,11 @@
 {% if section.settings.position == "row" %}
     {% assign product_position = "left: 35%;" %}
     {% assign buttons_position = "" %}
-    {% assign _position = "forced-row" %}
+    {% assign _position = "main_right" %}
 {% else %}
     {% assign product_position = "left: 68%;" %}
     {% assign buttons_position = "self-end" %}
-    {% assign _position = "reverse" %}
+    {% assign _position = "main_left" %}
 {% endif %}
 
 <div class="main {{_position}}">
@@ -70,6 +70,12 @@ function triggerQuickAdd(productId) {
         .main{
             flex-direction: column;
         }
+    }
+    .main_right{
+        flex-direction: row;
+    }
+    .main_left{
+        flex-direction: row-reverse;
     }
     .main{
         display: flex;
