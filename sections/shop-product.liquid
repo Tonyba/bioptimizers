@@ -10,7 +10,7 @@
             <div class="flex">
                 {% assign variant = section.settings.product.selected_or_first_available_variant %}
                 {% render 'quick-add', product: section.settings.product, section_id: section.id %}
-                <button class="button flex items-center product-carousel-add" data-product-id="{{ section.settings.product.id }}" data-variant-id="{{ variant.id }}">
+                <button class="button flex items-center product-carousel-add" data-product-id="{{ section.settings.product.id }}" data-variant-id="{{ variant.id }}" onclick="addToCart(this)">
                 <span class="icon">{% render 'icon', icon: 'bag' %}</span>
                     Shop Now
                 </button>
