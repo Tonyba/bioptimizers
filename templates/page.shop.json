@@ -215,7 +215,9 @@
       "type": "shop-product",
       "name": "Shop Product",
       "settings": {
-        "product": ""
+        "product": "",
+        "image": "shopify://shop_images/Rectangle_389.png",
+        "color": ""
       }
     },
     "section_BX9Cwf": {
