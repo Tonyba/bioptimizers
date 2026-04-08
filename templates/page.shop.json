@@ -213,6 +213,94 @@
     },
     "shop_product_3bXbrm": {
       "type": "shop-product",
+      "blocks": {
+        "text_AgUwyQ": {
+          "type": "text",
+          "name": "t:names.description",
+          "settings": {
+            "custom_css": "text-white section-subheading",
+            "text": "<p>Nature’s Best Choices</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": true,
+            "background_color": "#07180f",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 31,
+            "padding-inline-end": 31
+          },
+          "blocks": {}
+        },
+        "text_cHXQRk": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "custom_css": "",
+            "text": "<h2>{{ closest.product.title }}</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_rxfaVA": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "custom_css": "",
+            "text": "<p>Gut Pro is a scientifically-formulated probiotic designed as a women's health supplement. Featuring clinically-researched probiotic strains and potent botanical extracts, this innovative gut health supplement works tirelessly to enhance digestive function and overall gut health</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_AgUwyQ",
+        "text_cHXQRk",
+        "text_rxfaVA"
+      ],
       "name": "Shop Product",
       "settings": {
         "product": "magnesium-power-blend",
