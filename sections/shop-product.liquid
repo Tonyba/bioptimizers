@@ -64,7 +64,11 @@ function triggerQuickAdd(productId) {
 }
 </script>
 {% stylesheet %}
-
+    @media (max-width: 768px){
+        .main{
+            flex-direction: column;
+        }
+    }
     .main{
         display: flex;
         /* flex-direction: row-reverse; */
