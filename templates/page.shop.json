@@ -215,7 +215,7 @@
       "type": "shop-product",
       "name": "Shop Product",
       "settings": {
-        "product": "",
+        "product": "magnesium-power-blend",
         "image": "shopify://shop_images/Rectangle_389.png",
         "color": ""
       }
