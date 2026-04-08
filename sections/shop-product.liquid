@@ -6,8 +6,18 @@
     
     <div class="txt">
         <div class="prod-content">{% content_for 'blocks' %}</div>
-        <div class="color-gray"></div>
-    </div><div class="product-img">
+        <div class="color-gray">
+            <div class="flex">
+                {% render 'quick-add', product: product, section_id: block.id %}
+                <button class="button flex items-center product-carousel-add" data-product-id="{{ product.id }}">
+                <span class="icon">{% render 'icon', icon: 'bag' %}</span>
+                    Shop Now
+                </button>
+                <a class="button button-secondary flex items-center" href="{{ product.url }}"><span class="icon-second-btn">{% render 'icon', icon: 'chevron-right', width: 17 %}</span>View Product </a>
+            </div>
+        </div>
+    </div>
+    <div class="product-img">
         {{ section.settings.product.metafields.custom.loop_image | image_url: width: 200 | image_tag: alt: 'product bottle'}}
     </div>
 </div>
