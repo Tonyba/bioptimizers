@@ -8,8 +8,9 @@
         <div class="prod-content">{% content_for 'blocks' %}</div>
         <div class="color-gray">
             <div class="flex">
+                {% assign variant = section.settings.product.selected_or_first_available_variant %}
                 {% render 'quick-add', product: section.settings.product, section_id: section.id %}
-                <button class="button flex items-center product-carousel-add" data-product-id="{{ section.settings.product.id }}">
+                <button class="button flex items-center product-carousel-add" data-product-id="{{ section.settings.product.id }}" data-variant-id="{{ variant.id }}">
                 <span class="icon">{% render 'icon', icon: 'bag' %}</span>
                     Shop Now
                 </button>
@@ -68,7 +69,7 @@
       .product-img {
     position: absolute;
     left: 35%;
-    top: 0px;
+    bottom: 0px;
     transform: translateX(-50%);
     width: 370px;
   }
