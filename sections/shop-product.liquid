@@ -3,12 +3,12 @@
         {{ section.settings.image | image_url: width: 200 | image_tag: alt: section.settings.section_image.alt }}
         <div class="color-gray"></div>
     </div>
-    <div class="product_image">
-        {{ section.settings.product.metafields.custom.loop_image | image_url: width: 200 | image_tag: alt: 'product bottle'}}
-    </div>
+    
     <div class="txt">
         <div class="content">Gut Pro is a scientifically-formulated probiotic designed as a women's health supplement. Featuring clinically-researched probiotic strains and potent botanical extracts, this innovative gut health supplement works tirelessly to enhance digestive function and overall gut health</div>
         <div class="color-gray"></div>
+    </div><div class="product_image">
+        {{ section.settings.product.metafields.custom.loop_image | image_url: width: 200 | image_tag: alt: 'product bottle'}}
     </div>
 </div>
 {% stylesheet %}
@@ -16,6 +16,7 @@
     .main{
         display: flex;
         flex-direction: row;
+        /* reverse row */
         width: 100%;
     }
     .imgg{
@@ -44,6 +45,17 @@
     .txt{
         width: 65%;
     }
+      .product-img {
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 180px;
+  }
+
+  .product-img img {
+    width: 100%;
+  }
 {% endstylesheet %}
 
 {% schema %}
