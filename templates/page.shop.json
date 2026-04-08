@@ -355,6 +355,150 @@
         "position": "row"
       }
     },
+    "shop_product_dyDbpV": {
+      "type": "shop-product",
+      "blocks": {
+        "group_wnyyVx": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "custom_css": "self-end",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 70,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-6",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_CLVrEz": {
+              "type": "text",
+              "name": "t:names.description",
+              "settings": {
+                "custom_css": "text-white section-subheading",
+                "text": "<p>Unwind, Reset andThrive</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#5d589f",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 31,
+                "padding-inline-end": 31
+              },
+              "blocks": {}
+            },
+            "text_E78jnf": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "custom_css": "",
+                "text": "<h2><strong>{{ closest.product.title }}</strong></h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "2.5rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_ACg6iL": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "custom_css": "",
+                "text": "<p>Designed to support your digestion and gently but effectively restore intestinal comfort. With clinically tested ingredients such as Pyruvate, Co-q10, and Carnitine, GutZyme Harmony supports nutrient absorption, reduces bloating, and promotes long-lasting digestive balance. Ideal for those who prioritize natural health over aggressive solutions.</p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_CLVrEz",
+            "text_E78jnf",
+            "text_ACg6iL"
+          ]
+        }
+      },
+      "block_order": [
+        "group_wnyyVx"
+      ],
+      "name": "Shop Product",
+      "settings": {
+        "product": "masszymes",
+        "image": "shopify://shop_images/old-wooden-table-front-trees-autumn-season_1_1.png",
+        "color": "#7c76c8",
+        "position": "row-reverse"
+      }
+    },
     "section_BX9Cwf": {
       "type": "section",
       "blocks": {
@@ -2936,6 +3080,7 @@
     "main",
     "section_qHnA4Q",
     "shop_product_3bXbrm",
+    "shop_product_dyDbpV",
     "section_BX9Cwf",
     "section_pkJcE3",
     "section_p9NQh6",
