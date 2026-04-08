@@ -1,4 +1,4 @@
-<div class="main" style="flex-direction: reverse-row;">
+<div class="main" style="flex-direction: row-reverse;">
     <div class="imgg">
         {{ section.settings.image | image_url: width: 200 | image_tag: alt: section.settings.section_image.alt , loading: "lazy"}}
         <div class="color-gray"></div>
@@ -59,7 +59,7 @@ function triggerQuickAdd(productId) {
 
     .main{
         display: flex;
-        /* flex-direction: row; */
+        /* flex-direction: row-reverse; */
         /* reverse row */
         width: 100%;
         position: relative;
