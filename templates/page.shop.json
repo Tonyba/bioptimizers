@@ -349,6 +349,9 @@
           "block_order": []
         }
       },
+      "custom_css": [
+        ".featured-blog-posts-card .featured-blog-posts-card__inner {display: flex !important; flex-direction: row !important;}"
+      ],
       "name": "t:names.blog_posts_editorial",
       "settings": {
         "blog": "",
