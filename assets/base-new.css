@@ -313,7 +313,12 @@ button {
     padding-right: 37px;
     border-right-width: 2px;
 }
-
+@media (max-width: 768px){
+    .all-products-are .group-block:not(:last-child) {
+    padding-right: 0px;
+    border-right-width: none;
+}
+}
 /*basic*/
 .flex {
     display: flex;
