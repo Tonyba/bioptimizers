@@ -1,4 +1,4 @@
-<div class="main" style="position: relative;">
+<div class="main">
     <div class="imgg">
         {{ section.settings.image | image_url: width: 200 | image_tag: alt: section.settings.section_image.alt , loading: "lazy"}}
         <div class="color-gray"></div>
@@ -62,6 +62,7 @@ function triggerQuickAdd(productId) {
         flex-direction: row;
         /* reverse row */
         width: 100%;
+        position: relative;
     }
     .imgg{
         width: 35%;
