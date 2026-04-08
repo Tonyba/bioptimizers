@@ -5,7 +5,7 @@
     </div>
     
     <div class="txt">
-        <div class="content">{% content_for 'blocks' %}</div>
+        <div class="prod-content">{% content_for 'blocks' %}</div>
         <div class="color-gray"></div>
     </div><div class="product-img">
         {{ section.settings.product.metafields.custom.loop_image | image_url: width: 200 | image_tag: alt: 'product bottle'}}
@@ -37,7 +37,7 @@
         left: 475px;
         top: 435px;
     }
-    .content{
+    .prod-content{
         background-color: aqua;
         height: 400px;
         padding: 0 0 0 160px;
