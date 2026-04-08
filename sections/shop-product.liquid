@@ -16,7 +16,7 @@
             {% assign product_block_id = block.id | default: '' %}
             {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %}
 
-            <div class="flex self-end">
+            <div class="flex">
                 {% render 'quick-add', product: section.settings.product, section_id: section.id, block: block %}
 
                 <button
