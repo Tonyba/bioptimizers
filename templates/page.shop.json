@@ -305,7 +305,8 @@
       "settings": {
         "product": "magnesium-power-blend",
         "image": "shopify://shop_images/old-wooden-table-front-trees-autumn-season_1.png",
-        "color": "#fe9400"
+        "color": "#fe9400",
+        "position": "row-reverse"
       }
     },
     "section_BX9Cwf": {
