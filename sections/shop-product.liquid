@@ -8,24 +8,24 @@
         <div class="prod-content">{% content_for 'blocks' %}</div>
         <div class="color-gray">
             {% assign product_block_id = block.id | default: '' %}
-{% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %}
+            {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %}
 
-<div class="flex">
-  {% render 'quick-add', product: section.settings.product, section_id: section.id, block: block %}
+            <div class="flex">
+                {% render 'quick-add', product: section.settings.product, section_id: section.id, block: block %}
 
-  <button
-    class="button flex items-center"
-    onclick="triggerQuickAdd('{{ section.settings.product.id }}')"
-  >
-    <span class="icon">{% render 'icon', icon: 'bag' %}</span>
-    Shop Now
-  </button>
+                <button
+                    class="button flex items-center"
+                    onclick="triggerQuickAdd('{{ section.settings.product.id }}')"
+                >
+                    <span class="icon">{% render 'icon', icon: 'bag' %}</span>
+                    Shop Now
+                </button>
 
-  <a class="button button-secondary flex items-center" href="{{ section.settings.product.url }}">
-    <span class="icon-second-btn">{% render 'icon', icon: 'chevron-right', width: 17 %}</span>
-    View Product
-  </a>
-</div>
+                <a class="button button-secondary flex items-center" href="{{ section.settings.product.url }}">
+                    <span class="icon-second-btn">{% render 'icon', icon: 'chevron-right', width: 17 %}</span>
+                    View Product
+                </a>
+            </div>
         </div>
     </div>
     <div class="product-img">
