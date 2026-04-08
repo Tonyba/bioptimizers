@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main" style="flex-direction: reverse-row;">
     <div class="imgg">
         {{ section.settings.image | image_url: width: 200 | image_tag: alt: section.settings.section_image.alt , loading: "lazy"}}
         <div class="color-gray"></div>
@@ -59,7 +59,7 @@ function triggerQuickAdd(productId) {
 
     .main{
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row; */
         /* reverse row */
         width: 100%;
         position: relative;
@@ -137,6 +137,22 @@ function triggerQuickAdd(productId) {
       "type": "color",
       "id": "color",
       "label": "BSackground color"
+    },
+    {
+        "type": "radio",
+        "id": "position",
+        "label": "Position",
+        "options": [
+            {
+            "value": "left",
+            "label": "Left"
+            },
+            {
+            "value": "right",
+            "label": "Right"
+            }
+        ],
+        "default": "left"
     }
   ],
   "presets": [
