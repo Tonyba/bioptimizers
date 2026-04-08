@@ -211,6 +211,13 @@
         "padding-block-end": 48
       }
     },
+    "shop_product_3bXbrm": {
+      "type": "shop-product",
+      "name": "Shop Product",
+      "settings": {
+        "product": ""
+      }
+    },
     "section_BX9Cwf": {
       "type": "section",
       "blocks": {
@@ -2791,6 +2798,7 @@
   "order": [
     "main",
     "section_qHnA4Q",
+    "shop_product_3bXbrm",
     "section_BX9Cwf",
     "section_pkJcE3",
     "section_p9NQh6",
