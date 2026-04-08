@@ -1,15 +1,16 @@
-<div class="img">
-    {{ section.settings.image | image_url: width: 200 | image_tag: alt: section.settings.section_image.alt }}
-    <div class="color-gray"></div>
+<div class="flex">
+    <div class="img">
+        {{ section.settings.image | image_url: width: 200 | image_tag: alt: section.settings.section_image.alt }}
+        <div class="color-gray"></div>
+    </div>
+    <div class="product_image">
+        {{ section.settings.product.metafields.custom.loop_image | image_url: width: 200 | image_tag: alt: 'product bottle'}}
+    </div>
+    <div class="txt">
+    ssdfd
+        <div class="color-gray"></div>
+    </div>
 </div>
-<div class="product_image">
-    {{ section.settings.product.metafields.custom.loop_image | image_url: width: 200 | image_tag: alt: 'product bottle'}}
-</div>
-<div class="txt">
-ssdfd
-    <div class="color-gray"></div>
-</div>
-
 {% stylesheet %}
     .img{
         width: 35%;
