@@ -214,6 +214,14 @@
     "shop_product_3bXbrm": {
       "type": "shop-product",
       "blocks": {
+        "custom_liquid_iCKLkr": {
+          "type": "custom-liquid",
+          "name": "t:names.custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"flex\">\n                  {% render 'quick-add', product: product, section_id: block.id %}\n                  <button class=\"button flex items-center product-carousel-add\" data-product-id=\"{{ product.id }}\">\n                    <span class=\"icon\">{% render 'icon', icon: 'bag' %}</span>\n                    Shop Now\n                  </button>\n                  <a class=\"button button-secondary flex items-center\" href=\"{{ product.url }}\"><span class=\"icon-second-btn\">{% render 'icon', icon: 'chevron-right', width: 17 %}</span>View Product </a>\n                </div>"
+          },
+          "blocks": {}
+        },
         "text_AgUwyQ": {
           "type": "text",
           "name": "t:names.description",
@@ -297,6 +305,7 @@
         }
       },
       "block_order": [
+        "custom_liquid_iCKLkr",
         "text_AgUwyQ",
         "text_cHXQRk",
         "text_rxfaVA"
