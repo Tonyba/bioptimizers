@@ -9,7 +9,7 @@
         <div class="color-gray">
             <div class="flex">
                 {% render 'quick-add', product: product, section_id: section.settings.product.id.value %}
-                <button class="button flex items-center product-carousel-add" data-product-id="{{ product.id }}">
+                <button class="button flex items-center product-carousel-add" data-product-id="{{ section.settings.product.id }}">
                 <span class="icon">{% render 'icon', icon: 'bag' %}</span>
                     Shop Now
                 </button>
