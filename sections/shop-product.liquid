@@ -1,7 +1,9 @@
 {% if section.settings.position == "row" %}
     {% assign product_position = "left: 35%;" %}
+    {% assign button_position = "" %}
 {% else %}
     {% assign product_position = "left: 68%;" %}
+    {% assign button_position = "justify-content: end;" %}
 {% endif %}
 
 <div class="main" style="flex-direction: {{ section.settings.position }};">
@@ -16,7 +18,7 @@
             {% assign product_block_id = block.id | default: '' %}
             {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %}
 
-            <div class="flex" style="justify-content: end;">
+            <div class="flex" style="{{ button_position }}">
                 {% render 'quick-add', product: section.settings.product, section_id: section.id, block: block %}
 
                 <button
