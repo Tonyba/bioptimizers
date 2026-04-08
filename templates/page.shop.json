@@ -275,7 +275,7 @@
             "custom_css": "",
             "text": "<p>Gut Pro is a scientifically-formulated probiotic designed as a women's health supplement. Featuring clinically-researched probiotic strains and potent botanical extracts, this innovative gut health supplement works tirelessly to enhance digestive function and overall gut health</p>",
             "width": "fit-content",
-            "max_width": "normal",
+            "max_width": "none",
             "alignment": "left",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
