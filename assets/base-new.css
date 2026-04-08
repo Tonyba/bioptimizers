@@ -111,7 +111,7 @@ button {
     align-items: center;
 }
 .self-end{
-    align-self: self-end;
+    align-self: end;
 }
 
 .horizontal,
