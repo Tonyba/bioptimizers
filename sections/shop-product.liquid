@@ -23,16 +23,13 @@
             <div class="flex {{ buttons_position }} w70" >
                 {% render 'quick-add', product: section.settings.product, section_id: section.id %}
 
-                {% assign variant = section.settings.product.selected_or_first_available_variant %}
-
-<button
-  class="button flex items-center"
-  data-variant-id="{{ variant.id }}"
-  data-product-title="{{ section.settings.product.title }}"
-  onclick="addSectionProductToCart(this)">
-  <span class="icon">{% render 'icon', icon: 'bag' %}</span>
-  Shop Now
-</button>
+                <button
+                    class="button flex items-center"
+                    onclick="triggerQuickAdd('{{ section.settings.product.id }}')"
+                >
+                    <span class="icon">{% render 'icon', icon: 'bag' %}</span>
+                    Shop Now
+                </button>
 
                 <a class="button button-secondary flex items-center" href="{{ section.settings.product.url }}">
                     <span class="icon-second-btn">{% render 'icon', icon: 'chevron-right', width: 17 %}</span>
@@ -47,62 +44,22 @@
 </div>
 
 <script>
-async function addSectionProductToCart(btn) {
-  const variantId = btn.dataset.variantId;
-  if (!variantId) return;
+function triggerQuickAdd(productId) {
+  const section = document.getElementById('shop-product-{{ section.id }}');
+  if (!section) return;
 
-  const original = btn.innerHTML;
-  btn.disabled = true;
-  btn.textContent = 'Adding...';
+  const quickAdd = section.querySelector('quick-add-component');
+  if (!quickAdd) return;
 
-  try {
-    const res = await fetch('/cart/add.js', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ items: [{ id: variantId, quantity: 1 }] })
-    });
+  const quickAddType = quickAdd.dataset.quickAddButton;
+  const addBtn = quickAdd.querySelector('.quick-add__button--add');
+  const chooseBtn = quickAdd.querySelector('.quick-add__button--choose');
 
-    if (!res.ok) throw new Error('Failed');
-
-    // Get updated cart
-    const cartRes = await fetch('/cart.js');
-    const cart = await cartRes.json();
-
-    // Update cart count bubble
-    updateCartCount(cart.item_count);
-
-    // Trigger theme cart drawer if available
-    document.dispatchEvent(new CustomEvent('cart:refresh', { bubbles: true }));
-
-    btn.textContent = 'Added!';
-
-  } catch(e) {
-    btn.textContent = 'Error — try again';
-  } finally {
-    setTimeout(() => {
-      btn.disabled = false;
-      btn.innerHTML = original;
-    }, 2000);
+  if (quickAddType === 'add' && addBtn) {
+    addBtn.click();
+  } else if (chooseBtn) {
+    chooseBtn.click();
   }
-}
-
-function updateCartCount(count) {
-  // Try common cart count selectors used by themes
-  const selectors = [
-    '[data-cart-count]',
-    '[data-cart-item-count]',
-    '.cart-count',
-    '.cart__count',
-    '#cart-count',
-    'cart-count',
-    '.header__cart-count'
-  ];
-
-  selectors.forEach(sel => {
-    document.querySelectorAll(sel).forEach(el => {
-      el.textContent = count;
-    });
-  });
 }
 </script>
 {% stylesheet %}
