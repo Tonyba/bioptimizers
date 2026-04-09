@@ -21,7 +21,7 @@
             {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %} {% endcomment %}
 
             <div class="flex {{ buttons_position }} w70" >
-                {% render 'quick-add', product: product, section_id: block.id %}
+                {% render 'quick-add', product: block.settings.product, section_id: block.id %}
                   <button class="button flex items-center product-carousel-add" data-product-id="{{ product.id }}">
                     <span class="icon">{% render 'icon', icon: 'bag' %}</span>
                     Shop Now
