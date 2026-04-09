@@ -43,7 +43,7 @@
     </div>
 </div>
 
-<script>
+{% comment %} <script>
 function triggerQuickAdd(productId) {
   const section = document.getElementById('shop-product-{{ block.id }}');
   if (!section) return;
@@ -61,7 +61,7 @@ function triggerQuickAdd(productId) {
     chooseBtn.click();
   }
 }
-</script>
+</script> {% endcomment %}
 {% stylesheet %}
     @media (max-width: 768px){   
     .main_right{
