@@ -130,6 +130,10 @@
 
     {% render 'search-modal' %}
 
+    {% if template.name == 'product' %}
+      <script src="{{ 'custom-single-product.js' |  asset_url   }}" defer ></script>
+    {% endif %}
+
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
     {% endif %}
