@@ -21,15 +21,16 @@
             {% comment %} {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %} {% endcomment %}
 
             <div class="flex {{ buttons_position }} w70" >
-                {% render 'quick-add', product: section.settings.product, section_id: section.id %}
+                {% assign variant = section.settings.product.selected_or_first_available_variant %}
 
-                <button
-                    class="button flex items-center"
-                    onclick="triggerQuickAdd('{{ section.settings.product.id }}')"
-                >
-                    <span class="icon">{% render 'icon', icon: 'bag' %}</span>
-                    Shop Now
-                </button>
+<button
+  class="button flex items-center"
+  data-variant-id="{{ variant.id }}"
+  data-product-title="{{ section.settings.product.title }}"
+  onclick="addSectionProductToCart(this)">
+  <span class="icon">{% render 'icon', icon: 'bag' %}</span>
+  Shop Now
+</button>
 
                 <a class="button button-secondary flex items-center" href="{{ section.settings.product.url }}">
                     <span class="icon-second-btn">{% render 'icon', icon: 'chevron-right', width: 17 %}</span>
@@ -44,21 +45,35 @@
 </div>
 
 <script>
-function triggerQuickAdd(productId) {
-  const section = document.getElementById('shop-product-{{ section.id }}');
-  if (!section) return;
+async function addSectionProductToCart(btn) {
+  const variantId = btn.dataset.variantId;
+  if (!variantId) return;
 
-  const quickAdd = section.querySelector('quick-add-component');
-  if (!quickAdd) return;
+  const original = btn.innerHTML;
+  btn.disabled = true;
+  btn.textContent = 'Adding...';
 
-  const quickAddType = quickAdd.dataset.quickAddButton;
-  const addBtn = quickAdd.querySelector('.quick-add__button--add');
-  const chooseBtn = quickAdd.querySelector('.quick-add__button--choose');
+  try {
+    const res = await fetch('/cart/add.js', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ items: [{ id: variantId, quantity: 1 }] })
+    });
 
-  if (quickAddType === 'add' && addBtn) {
-    addBtn.click();
-  } else if (chooseBtn) {
-    chooseBtn.click();
+    if (!res.ok) throw new Error('Failed');
+
+    btn.textContent = 'Added!';
+
+    // Refresh cart bubble count if your theme supports it
+    document.dispatchEvent(new CustomEvent('cart:refresh'));
+
+  } catch(e) {
+    btn.textContent = 'Error — try again';
+  } finally {
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.innerHTML = original;
+    }, 2000);
   }
 }
 </script>
