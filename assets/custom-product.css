@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     text-align: left;
+    width: 100%;
 }
 
 .variant-option--buttons,
