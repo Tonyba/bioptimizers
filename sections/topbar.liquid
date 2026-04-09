@@ -30,6 +30,11 @@
     padding: 9px 40px;
     border-radius: 50px
   }
+  @media (max-width: 768px){
+    .tb-content{
+      display: none;
+    }
+  }
 </style>
 
 <div class="topbar-inner section section--page-width color-{{ section.settings.color_scheme }}">
@@ -40,7 +45,7 @@
       <span class="icon"> {% render 'icon', icon: 'chevron-right' %} </span>
     </div>
 
-    <div class="flex items-center gap-40">
+    <div class="tb-content flex items-center gap-40">
       <a href="tel:{{ section.settings.phone_link }}" class="flex items-center">
         <span class="icon"> {% render 'icon', icon: 'phone' %} </span> {{ section.settings.phone -}}
       </a>
