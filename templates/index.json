@@ -428,6 +428,9 @@
         "group_hbwBqM",
         "group_rhJ4py"
       ],
+      "custom_css": [
+        "@media (max-width: 768px) {.below-home-section .group-block:not(:last-child){border: none; }}"
+      ],
       "name": "t:names.multicolumn",
       "settings": {
         "custom_css": "below-home-section",
