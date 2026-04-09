@@ -25,7 +25,7 @@
 
                 <button
                     class="button flex items-center"
-                    onclick="triggerQuickAdd('{{ section.settings.product.id }}')"
+                    onclick="triggerQuickAdd('{{ section.settings.product.id }}', this)"
                 >
                     <span class="icon">{% render 'icon', icon: 'bag' %}</span>
                     Shop Now
@@ -44,9 +44,9 @@
 </div>
 
 <script>
-function triggerQuickAdd(productId) {
+function triggerQuickAdd(productId, btn) {
   // Find the quick-add-component for this product
-  console.log(this)
+  console.log(btn)
   const quickAdd = document.querySelector(
     `quick-add-component[data-product-title]`
   );
