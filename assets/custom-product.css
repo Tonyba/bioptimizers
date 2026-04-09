@@ -12,3 +12,8 @@
     flex-direction: column;
 }
 
+.variant-option--equal-width-buttons {
+    .variant-option__button-label__text {
+        text-align: left;
+    }
+}
