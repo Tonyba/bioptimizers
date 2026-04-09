@@ -46,6 +46,7 @@
 <script>
 function triggerQuickAdd(productId) {
   // Find the quick-add-component for this product
+  console.log(this)
   const quickAdd = document.querySelector(
     `quick-add-component[data-product-title]`
   );
