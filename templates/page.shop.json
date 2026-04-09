@@ -76,6 +76,7 @@
       "block_order": [
         "shop_product_Krjx3D"
       ],
+      "disabled": true,
       "name": "t:names.custom_section",
       "settings": {
         "custom_css": "",
@@ -3435,6 +3436,7 @@
       "block_order": [
         "group_8C48xw"
       ],
+      "disabled": true,
       "name": "Shop Product",
       "settings": {
         "product": "probiotic-breakthrough",
