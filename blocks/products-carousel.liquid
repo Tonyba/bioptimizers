@@ -171,13 +171,13 @@
                 <div class="price">
                   {{ product.price | money }}
                 </div>
-                <div class="flex">
+                <div class="w-100 flex">
                   {% render 'quick-add', product: product, section_id: block.id %}
                   <button class="button flex items-center product-carousel-add" data-product-id="{{ product.id }}">
                     <span class="icon">{% render 'icon', icon: 'bag' %}</span>
                     Shop Now
                   </button>
-                  <a class="button button-secondary flex items-center" href="{{ product.url }}"><span class="icon-second-btn">{% render 'icon', icon: 'chevron-right', width: 17 %}</span>View Product </a>
+                  <a class="w-100 button button-secondary flex items-center" href="{{ product.url }}"><span class="icon-second-btn">{% render 'icon', icon: 'chevron-right', width: 17 %}</span>View Product </a>
                 </div>
               </div>
             </div>
