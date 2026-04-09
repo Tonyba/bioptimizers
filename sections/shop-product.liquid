@@ -46,7 +46,9 @@
 <script>
 function triggerQuickAdd(productId, btn) {
   // Find the quick-add-component for this product
-  console.log(btn)
+  const siblings = Array.from(btn.parentNode.children);
+  console.log(siblings)
+
   const quickAdd = document.querySelector(
     `quick-add-component[data-product-title]`
   );
