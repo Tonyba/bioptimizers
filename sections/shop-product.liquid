@@ -64,10 +64,17 @@ async function addSectionProductToCart(btn) {
 
     if (!res.ok) throw new Error('Failed');
 
-    btn.textContent = 'Added!';
+    // Get updated cart
+    const cartRes = await fetch('/cart.js');
+    const cart = await cartRes.json();
 
-    // Refresh cart bubble count if your theme supports it
-    document.dispatchEvent(new CustomEvent('cart:refresh'));
+    // Update cart count bubble
+    updateCartCount(cart.item_count);
+
+    // Trigger theme cart drawer if available
+    document.dispatchEvent(new CustomEvent('cart:refresh', { bubbles: true }));
+
+    btn.textContent = 'Added!';
 
   } catch(e) {
     btn.textContent = 'Error — try again';
@@ -77,6 +84,25 @@ async function addSectionProductToCart(btn) {
       btn.innerHTML = original;
     }, 2000);
   }
+}
+
+function updateCartCount(count) {
+  // Try common cart count selectors used by themes
+  const selectors = [
+    '[data-cart-count]',
+    '[data-cart-item-count]',
+    '.cart-count',
+    '.cart__count',
+    '#cart-count',
+    'cart-count',
+    '.header__cart-count'
+  ];
+
+  selectors.forEach(sel => {
+    document.querySelectorAll(sel).forEach(el => {
+      el.textContent = count;
+    });
+  });
 }
 </script>
 {% stylesheet %}
