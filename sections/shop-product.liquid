@@ -8,7 +8,7 @@
     {% assign _position = "main_left" %}
 {% endif %}
 
-<div class="main {{_position}}">
+<div class="main {{_position}}" id="shop-product-{{ section.id }}">
     <div class="imgg">
         {{ section.settings.image | image_url: width: 2000 | image_tag: alt: section.settings.section_image.alt , loading: "lazy"}}
         <div class="color-gray"></div>
@@ -45,18 +45,15 @@
 
 <script>
 function triggerQuickAdd(productId) {
-  // Find the quick-add-component for this product
-  const quickAdd = document.querySelector(
-    `quick-add-component[data-product-title]`
-  );
+  const section = document.getElementById('shop-product-{{ section.id }}');
+  if (!section) return;
 
+  const quickAdd = section.querySelector('quick-add-component');
   if (!quickAdd) return;
 
-  // Click whichever button is visible (add or choose)
+  const quickAddType = quickAdd.dataset.quickAddButton;
   const addBtn = quickAdd.querySelector('.quick-add__button--add');
   const chooseBtn = quickAdd.querySelector('.quick-add__button--choose');
-
-  const quickAddType = quickAdd.dataset.quickAddButton;
 
   if (quickAddType === 'add' && addBtn) {
     addBtn.click();
