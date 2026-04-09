@@ -3313,7 +3313,7 @@
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
                 "background": true,
-                "background_color": "#07180f",
+                "background_color": "#04baa7",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
