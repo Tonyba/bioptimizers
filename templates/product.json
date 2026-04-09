@@ -259,6 +259,12 @@
               },
               "blocks": {}
             },
+            "bony_subscriptions_app_subscription_block_43dePE": {
+              "type": "shopify://apps/bony-subscriptions-app/blocks/subscription-block/4dad6cee-f4ef-42d8-bd6b-ba84841f76a9",
+              "settings": {
+                "product": "{{closest.product}}"
+              }
+            },
             "buy_buttons_eYQEYi": {
               "type": "buy-buttons",
               "settings": {
@@ -547,6 +553,7 @@
             "text_aEtTtq",
             "price_8FJEaT",
             "variant_picker_R3rGDr",
+            "bony_subscriptions_app_subscription_block_43dePE",
             "buy_buttons_eYQEYi",
             "group_r97hxY",
             "social_share_dKHAaQ"
