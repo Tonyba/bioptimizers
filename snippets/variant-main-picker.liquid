@@ -146,6 +146,13 @@
                     {% endif %}
                    
                     <span class="regular-price"> {{ product_option_value.variant.price | money }}</span>
+
+                    {% if product_option_value.variant.compare_at_price > product_option_value.variant.price %}
+                      <span class="savings-percentage">
+                        Save {{ product_option_value.variant.compare_at_price | minus: product_option_value.variant.price | times: 100.0 | divided_by: product_option_value.variant.compare_at_price | round }}%
+                      </span>
+                    {% endif %}
+
                    
                     
                   </span>
