@@ -141,7 +141,12 @@
                   >
                     {{- product_option_value | escape -}}
 
-                    {{ product_option_value.variant.price | money }}
+                    {% if product_option_value.variant.compare_at_price != blank %}
+                       <span class="discount-price">{{   product_option_value.variant.compare_at_price | money    }}</span>
+                    {% endif %}
+                   
+                    <span class="regular-price"> {{ product_option_value.variant.price | money }}</span>
+                   
                     
                   </span>
                 {% endif %}
