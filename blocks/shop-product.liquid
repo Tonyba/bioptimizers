@@ -1,0 +1,204 @@
+{% if section.settings.position == "row" %}
+    {% assign product_position = "p-left" %}
+    {% assign buttons_position = "" %}
+    {% assign _position = "main_right" %}
+{% else %}
+    {% assign product_position = "p-left1" %}
+    {% assign buttons_position = "self-end" %}
+    {% assign _position = "main_left" %}
+{% endif %}
+
+<div class="main {{ _position }}" id="shop-product-{{ section.id }}">
+    <div class="imgg">
+        {{ section.settings.image | image_url: width: 2000 | image_tag: alt: section.settings.section_image.alt , loading: "lazy"}}
+        <div class="color-gray"></div>
+    </div>
+    
+    <div class="txt">
+        <div class="prod-content" style="background-color: {{ section.settings.color }};">{% content_for 'blocks' %}</div>
+        <div class="color-gray">
+            {% comment %} {% assign product_block_id = block.id | default: '' %}
+            {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %} {% endcomment %}
+
+            <div class="flex {{ buttons_position }} w70" >
+                {% render 'quick-add', product: section.settings.product, section_id: section.id %}
+
+                <button
+                    class="button flex items-center"
+                    onclick="triggerQuickAdd('{{ section.settings.product.id }}')"
+                >
+                    <span class="icon">{% render 'icon', icon: 'bag' %}</span>
+                    Shop Now
+                </button>
+
+                <a class="button button-secondary flex items-center" href="{{ section.settings.product.url }}">
+                    <span class="icon-second-btn">{% render 'icon', icon: 'chevron-right', width: 17 %}</span>
+                    View Product
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="product-img {{ product_position }}" style="  ">
+        {{ section.settings.product.metafields.custom.loop_image | image_url: width: 2000 | image_tag: alt: 'product bottle'}}
+    </div>
+</div>
+
+<script>
+function triggerQuickAdd(productId) {
+  const section = document.getElementById('shop-product-{{ section.id }}');
+  if (!section) return;
+
+  const quickAdd = section.querySelector('quick-add-component');
+  if (!quickAdd) return;
+
+  const quickAddType = quickAdd.dataset.quickAddButton;
+  const addBtn = quickAdd.querySelector('.quick-add__button--add');
+  const chooseBtn = quickAdd.querySelector('.quick-add__button--choose');
+
+  if (quickAddType === 'add' && addBtn) {
+    addBtn.click();
+  } else if (chooseBtn) {
+    chooseBtn.click();
+  }
+}
+</script>
+{% stylesheet %}
+    @media (max-width: 768px){   
+    .main_right{
+            flex-direction: column !important;
+        }
+        .main_left{
+            flex-direction: column !important;
+        }
+        .prod-content, .color-gray {
+        padding:  20px 20px !important;
+    }
+    .imgg, .txt{
+        width: 100% !important;
+    }
+    .w70, .w70 .button{
+        width: 100% !important;
+    }
+    .p-left, .p-left1{
+        left: 56% !important;
+    }
+    }
+    .w70{
+        width: 70%;
+    }
+    .main_right{
+        flex-direction: row;
+    }
+    .main_left{
+        flex-direction: row-reverse;
+    }
+    .main{
+        display: flex;
+        /* flex-direction: row-reverse; */
+        /* reverse row */
+        width: 100%;
+        position: relative;
+    }
+    .imgg{
+        width: 35%;
+    }
+    .imgg img{
+        height: 400px;
+        object-fit: cover;
+    }
+    .color-gray{
+        background-color: #F9F9F9;
+        width: 100%;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product_image{
+        width: 370px;
+        position: absolute;
+        left: 475px;
+        top: 435px;
+    }
+    .prod-content, .color-gray {
+        padding:  0 160px;
+    }
+    .prod-content{
+        
+        height: 400px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+    .txt{
+        width: 65%;
+    }
+    .product-img {
+        position: absolute;
+        /* left: 35%; */
+        top: 80px;
+        transform: translateX(-50%);
+        width: 370px;
+    }
+.p-left{
+    left: 35%;
+}
+.p-left1{
+    left: 68%;
+}
+
+  .product-img img {
+    width: 100%;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Shop product",
+  "blocks": [
+    {
+        "type": "@theme"
+    }
+  ],
+  "settings": [
+    {
+        "type": "product",
+        "id": "product",
+        "label": "Choose product"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Choose image"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "BSackground color"
+    },
+    {
+        "type": "radio",
+        "id": "position",
+        "label": "Position",
+        "options": [
+            {
+            "value": "row",
+            "label": "Left"
+            },
+            {
+            "value": "row-reverse",
+            "label": "Right"
+            }
+        ],
+        "default": "row"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop Product block"
+    }
+  ]
+}
+{% endschema %}
