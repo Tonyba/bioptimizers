@@ -8,14 +8,14 @@
     {% assign _position = "main_left" %}
 {% endif %}
 
-<div class="main {{ _position }}" id="shop-product-{{ section.id }}">
+<div class="main {{ _position }}" id="shop-product-{{ block.id }}">
     <div class="imgg">
-        {{ section.settings.image | image_url: width: 2000 | image_tag: alt: section.settings.section_image.alt , loading: "lazy"}}
+        {{ block.settings.image | image_url: width: 2000 | image_tag: alt: section.settings.section_image.alt , loading: "lazy"}}
         <div class="color-gray"></div>
     </div>
     
     <div class="txt">
-        <div class="prod-content" style="background-color: {{ section.settings.color }};">{% content_for 'blocks' %}</div>
+        <div class="prod-content" style="background-color: {{ block.settings.color }};">{% content_for 'blocks' %}</div>
         <div class="color-gray">
             {% comment %} {% assign product_block_id = block.id | default: '' %}
             {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %} {% endcomment %}
