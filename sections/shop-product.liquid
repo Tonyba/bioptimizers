@@ -14,105 +14,51 @@
         <div class="color-gray"></div>
     </div>
     
-    {% assign selected_product = section.settings.product %}
-{% assign default_variant = selected_product.selected_or_first_available_variant %}
+    <div class="txt">
+        <div class="prod-content" style="background-color: {{ section.settings.color }};">{% content_for 'blocks' %}</div>
+        <div class="color-gray">
+            {% comment %} {% assign product_block_id = block.id | default: '' %} {% endcomment %}
+            {% comment %} {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %} {% endcomment %}
 
-<div class="txt">
-    <div class="prod-content" style="background-color: {{ section.settings.color }};">{% content_for 'blocks' %}</div>
-    <div class="color-gray">
-        <div class="flex {{ buttons_position }} w70" >
-            {% if selected_product != blank %}
-                {% render 'quick-add', product: selected_product, section_id: section.id %}
+            <div class="flex {{ buttons_position }} w70" >
+                {% render 'quick-add', product: section.settings.product, section_id: section.id %}
 
-                {% if default_variant != blank %}
-                    <button
-                        class="button flex items-center"
-                        onclick="triggerQuickAdd('{{ selected_product.id }}', '{{ section.id }}')" {# Pass product.id AND section.id #}
-                    >
-                        <span class="icon">{% render 'icon', icon: 'bag' %}</span>
-                        Shop Now
-                    </button>
-                {% else %}
-                    <button
-                        class="button flex items-center"
-                        disabled
-                    >
-                        <span class="icon">{% render 'icon', icon: 'bag' %}</span>
-                        Unavailable
-                    </button>
-                {% endif %}
-            {% else %}
-                 <p>No product selected for this section.</p>
-            {% endif %}
+                <button
+                    class="button flex items-center"
+                    onclick="triggerQuickAdd('{{ section.settings.product.id }}')"
+                >
+                    <span class="icon">{% render 'icon', icon: 'bag' %}</span>
+                    Shop Now
+                </button>
 
-            {% if selected_product != blank %}
-                <a class="button button-secondary flex items-center" href="{{ selected_product.url }}">
+                <a class="button button-secondary flex items-center" href="{{ section.settings.product.url }}">
                     <span class="icon-second-btn">{% render 'icon', icon: 'chevron-right', width: 17 %}</span>
                     View Product
                 </a>
-            {% endif %}
+            </div>
         </div>
     </div>
-</div>
     <div class="product-img {{ product_position }}" style="  ">
         {{ section.settings.product.metafields.custom.loop_image | image_url: width: 2000 | image_tag: alt: 'product bottle'}}
     </div>
 </div>
 
 <script>
-function triggerQuickAdd(productId, sectionId) {
-  const sectionElement = document.getElementById('shop-product-{{ section.id }}'); // Use the ID of your main section div
-  if (!sectionElement) {
-    console.error('Main section element not found for ID:', 'shop-product-{{ section.id }}');
-    return;
-  }
+function triggerQuickAdd(productId) {
+  const section = document.getElementById('shop-product-{{ section.id }}');
+  if (!section) return;
 
-  // Construct the expected form ID from the quick-add snippet
-  // product_form_id = 'QuickAdd-ProductForm-' | append: product.id | append: '-' | append: block.id
-  // In your current context, the 'block.id' for the quick-add snippet is probably empty,
-  // so it would be 'QuickAdd-ProductForm-' + productId + '-'
-  // Let's assume block.id is empty or we use the section.id if it's rendered directly in a section.
-  // Based on your snippet: id: product_form_id -> `id: 'QuickAdd-ProductForm-' | append: product.id | append: '-' | append: block.id`
-  // If `block.id` is empty, the form ID will be `QuickAdd-ProductForm-PRODUCT_ID-`
-  // Let's adjust for the most common case:
-  const formId = `QuickAdd-ProductForm-${productId}-${sectionId || ''}`; // If block.id is empty, this works. If block is used, `section.id` won't match.
+  const quickAdd = section.querySelector('quick-add-component');
+  if (!quickAdd) return;
 
-  // The most robust way is to find the form inside the quick-add-component
-  const quickAddComponent = sectionElement.querySelector('quick-add-component');
-  if (!quickAddComponent) {
-      console.error('quick-add-component not found within the section.');
-      return;
-  }
+  const quickAddType = quickAdd.dataset.quickAddButton;
+  const addBtn = quickAdd.querySelector('.quick-add__button--add');
+  const chooseBtn = quickAdd.querySelector('.quick-add__button--choose');
 
-  // Find the actual form element inside the quick-add-component
-  const productForm = quickAddComponent.querySelector(`#${formId}`); // Look for the form by ID
-  // If the form ID is not fully reliable, you could also try to find the form by its data-type:
-  // const productForm = quickAddComponent.querySelector('form[data-type="add-to-cart-form"]');
-
-  if (productForm) {
-    // Ensure the variant ID is set in the hidden input, though quick-add snippet should handle this.
-    // This is good for redundancy.
-    const hiddenVariantInput = productForm.querySelector('input[name="id"]');
-    if (hiddenVariantInput) {
-        // Ensure the value is correct, though the snippet already sets it based on `variant.id`
-        // We trust the snippet to set the correct `variant.id` for a single-variant product.
-        // hiddenVariantInput.value = variantId; // No need to pass variantId to function if we trust the form
-    }
-
-    // Submit the form! This should trigger the custom element's handleSubmit listener.
-    productForm.submit();
-  } else {
-    console.error(`Product form with ID '${formId}' not found within quick-add-component.`);
-    // Fallback: If form not found, use direct AJAX API (less ideal if custom element does other things)
-    console.warn('Falling back to direct AJAX add-to-cart.');
-    fetch('/cart/add.js', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ items: [{ id: parseInt(hiddenVariantInput.value), quantity: 1 }] }) // Use the value from the form
-    })
-    .then(response => response.json())
-    .then(data => { window.location.href = '/cart'; })
-    .catch(error => { alert('Failed to add product to cart.'); });
+  if (quickAddType === 'add' && addBtn) {
+    addBtn.click();
+  } else if (chooseBtn) {
+    chooseBtn.click();
   }
 }
 </script>
