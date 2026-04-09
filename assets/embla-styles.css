@@ -152,7 +152,7 @@
     .embla__controls , .embla__viewpodrt{
       display: none;
     }
-    ..products-carousel{
-        max-width: 100% !important;
+    .products-carousel{
+        max-width: 100%;
     }
   }
