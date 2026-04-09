@@ -43,6 +43,28 @@
     </div>
 </div>
 
+<script>
+function triggerQuickAdd(productId) {
+  // Find the quick-add-component for this product
+  const quickAdd = document.querySelector(
+    `quick-add-component[data-product-title]`
+  );
+
+  if (!quickAdd) return;
+
+  // Click whichever button is visible (add or choose)
+  const addBtn = quickAdd.querySelector('.quick-add__button--add');
+  const chooseBtn = quickAdd.querySelector('.quick-add__button--choose');
+
+  const quickAddType = quickAdd.dataset.quickAddButton;
+
+  if (quickAddType === 'add' && addBtn) {
+    addBtn.click();
+  } else if (chooseBtn) {
+    chooseBtn.click();
+  }
+}
+</script>
 {% stylesheet %}
     @media (max-width: 768px){   
     .main_right{
