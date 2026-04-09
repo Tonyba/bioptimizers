@@ -141,7 +141,8 @@
                   >
 
                    <div class="variant-content">
-                    {{- product_option_value | escape -}}
+                      <div class="variant-content-top">
+                      {{- product_option_value | escape -}}
 
 
                       {% if product_option_value.variant.compare_at_price != blank %}
@@ -149,6 +150,8 @@
                       {% endif %}
                     
                       <span class="regular-price"> {{ product_option_value.variant.price | money }}</span>
+                      </div>
+                   
                    </div>
                     
                     {% if product_option_value.variant.compare_at_price > product_option_value.variant.price %}
