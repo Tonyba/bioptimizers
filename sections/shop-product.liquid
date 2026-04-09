@@ -21,6 +21,8 @@
             {% comment %} {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %} {% endcomment %}
 
             <div class="flex {{ buttons_position }} w70" >
+                {% render 'quick-add', product: section.settings.product, section_id: section.id %}
+
                 {% assign variant = section.settings.product.selected_or_first_available_variant %}
 
 <button
