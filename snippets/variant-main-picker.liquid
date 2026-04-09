@@ -142,7 +142,8 @@
 
                   {% liquid   
                     assign percentage =  product_option_value.variant.compare_at_price | minus: product_option_value.variant.price | times: 100.0 | divided_by: product_option_value.variant.compare_at_price | round
-                    assign bottle_amount = product_option_value | escape
+                    assign bottle_amount = product_option_value | escape | split: " " | first
+
                   %}
 
                    <div class="variant-content">
