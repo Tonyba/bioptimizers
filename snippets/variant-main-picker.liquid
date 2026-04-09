@@ -158,7 +158,11 @@
 
                       {% if bottle_amount > 1 %}
                           <div class="variant-content-bottom">
-                              {{ product_option_value.variant.price |  divided_by: bottle_amount | money }}/bottle
+                              {% if product_option_value.variant.compare_at_price > product_option_value.variant.price %}
+                                 <span class="single-discount">{{ product_option_value.variant.compare_at_price |  divided_by: bottle_amount | money }}</span>
+                              {% endif %}
+                             
+                              <span class="single-regular-price">{{ product_option_value.variant.price |  divided_by: bottle_amount | money }}/bottle</span>
                          </div>
                       {% endif %}
 
