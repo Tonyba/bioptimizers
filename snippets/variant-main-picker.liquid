@@ -140,7 +140,8 @@
                     data-key="variant-option-text"
                   >
                     {{- product_option_value | escape -}}
-                    {{ product_option_value.price | money }}
+
+                    {{ product_option.price | money }}
                     
                   </span>
                 {% endif %}
