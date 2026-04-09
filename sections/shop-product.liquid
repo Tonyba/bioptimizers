@@ -17,7 +17,7 @@
     <div class="txt">
         <div class="prod-content" style="background-color: {{ section.settings.color }};">{% content_for 'blocks' %}</div>
         <div class="color-gray">
-            {% assign product_block_id = block.id | default: '' %}
+            {% comment %} {% assign product_block_id = block.id | default: '' %} {% endcomment %}
             {% comment %} {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %} {% endcomment %}
 
             <div class="flex {{ buttons_position }} w70" >
