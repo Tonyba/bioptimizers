@@ -140,23 +140,33 @@
                     data-key="variant-option-text"
                   >
 
+                  {% liquid   
+                    assign percentage =  product_option_value.variant.compare_at_price | minus: product_option_value.variant.price | times: 100.0 | divided_by: product_option_value.variant.compare_at_price | round
+                  %}
+
                    <div class="variant-content">
                       <div class="variant-content-top">
-                      {{- product_option_value | escape -}}
+                        {{- product_option_value | escape -}}
 
 
-                      {% if product_option_value.variant.compare_at_price != blank %}
-                        <span class="discount-price">{{   product_option_value.variant.compare_at_price | money    }}</span>
-                      {% endif %}
-                    
-                      <span class="regular-price"> {{ product_option_value.variant.price | money }}</span>
+                        {% if product_option_value.variant.compare_at_price != blank %}
+                          <span class="discount-price">{{   product_option_value.variant.compare_at_price | money    }}</span>
+                        {% endif %}
+                      
+                        <span class="regular-price"> {{ product_option_value.variant.price | money }}</span>
+                      </div>
+
+
+
+                      <div class="variant-content-bottom">
+
                       </div>
                    
                    </div>
                     
                     {% if product_option_value.variant.compare_at_price > product_option_value.variant.price %}
                       <span class="savings-percentage">
-                        Save {{ product_option_value.variant.compare_at_price | minus: product_option_value.variant.price | times: 100.0 | divided_by: product_option_value.variant.compare_at_price | round }}%
+                        Save {{ percentage }}%
                       </span>
                     {% endif %}
 
