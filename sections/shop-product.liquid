@@ -8,7 +8,7 @@
     {% assign _position = "main_left" %}
 {% endif %}
 
-<div class="main {{ _position }}" id="shop-product-{{ section.id }}">
+<div class="main {{_position}}" id="shop-product-{{ section.id }}">
     <div class="imgg">
         {{ section.settings.image | image_url: width: 2000 | image_tag: alt: section.settings.section_image.alt , loading: "lazy"}}
         <div class="color-gray"></div>
@@ -17,12 +17,11 @@
     <div class="txt">
         <div class="prod-content" style="background-color: {{ section.settings.color }};">{% content_for 'blocks' %}</div>
         <div class="color-gray">
-            {% comment %} {% assign product_block_id = block.id | default: '' %}
-            {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %} {% endcomment %}
-            {% assign productt = section.settings.product %}
-            {% if productt == section.settings.product %}
-                <div class="flex {{ buttons_position }} w70" >
-                {% render 'quick-add', product: section.settings.product, section_id: section.id %}
+            {% comment %} {% assign product_block_id = block.id | default: '' %} {% endcomment %}
+            {% comment %} {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %} {% endcomment %}
+
+            <div class="flex {{ buttons_position }} w70" >
+                {% render 'quick-add', product: section.settings.product, section_id: section.id, block: block %}
 
                 <button
                     class="button flex items-center"
@@ -37,8 +36,6 @@
                     View Product
                 </a>
             </div>
-            {% endif %}
-            
         </div>
     </div>
     <div class="product-img {{ product_position }}" style="  ">
@@ -48,15 +45,18 @@
 
 <script>
 function triggerQuickAdd(productId) {
-  const section = document.getElementById('shop-product-{{ section.id }}');
-  if (!section) return;
+  // Find the quick-add-component for this product
+  const quickAdd = document.querySelector(
+    `quick-add-component[data-product-title]`
+  );
 
-  const quickAdd = section.querySelector('quick-add-component');
   if (!quickAdd) return;
 
-  const quickAddType = quickAdd.dataset.quickAddButton;
+  // Click whichever button is visible (add or choose)
   const addBtn = quickAdd.querySelector('.quick-add__button--add');
   const chooseBtn = quickAdd.querySelector('.quick-add__button--choose');
+
+  const quickAddType = quickAdd.dataset.quickAddButton;
 
   if (quickAddType === 'add' && addBtn) {
     addBtn.click();
