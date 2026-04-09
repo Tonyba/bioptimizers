@@ -2,4 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: left;
+}
+
+.variant-option--buttons {
+    display: flex;
+    flex-direction: column;
 }
