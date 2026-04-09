@@ -141,6 +141,7 @@
                   >
                     {{- product_option_value | escape -}}
                     {{ product_option_value.price | money }}
+                    
                   </span>
                 {% endif %}
                 {% render 'strikethrough-variant', product_option: product_option_value %}
