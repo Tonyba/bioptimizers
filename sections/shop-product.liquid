@@ -19,23 +19,25 @@
         <div class="color-gray">
             {% comment %} {% assign product_block_id = block.id | default: '' %}
             {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %} {% endcomment %}
-
-            <div class="flex {{ buttons_position }} w70" >
-                {% render 'quick-add', product: section.settings.product, section_id: section.id %}
+            {% for product in section.settings.product %}
+                <div class="flex {{ buttons_position }} w70" >
+                {% render 'quick-add', product: product, section_id: section.id %}
 
                 <button
                     class="button flex items-center"
-                    onclick="triggerQuickAdd('{{ section.settings.product.id }}')"
+                    onclick="triggerQuickAdd('{{ product.id }}')"
                 >
                     <span class="icon">{% render 'icon', icon: 'bag' %}</span>
                     Shop Now
                 </button>
 
-                <a class="button button-secondary flex items-center" href="{{ section.settings.product.url }}">
+                <a class="button button-secondary flex items-center" href="{{ product.url }}">
                     <span class="icon-second-btn">{% render 'icon', icon: 'chevron-right', width: 17 %}</span>
                     View Product
                 </a>
             </div>
+            {% endfor %}
+            
         </div>
     </div>
     <div class="product-img {{ product_position }}" style="  ">
