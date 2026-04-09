@@ -7,7 +7,7 @@
     {% assign buttons_position = "self-end" %}
     {% assign _position = "main_left" %}
 {% endif %}
-
+{% assign prod = section.settings.product %}
 <div class="main {{_position}}" id="shop-product-{{ section.id }}">
     <div class="imgg">
         {{ section.settings.image | image_url: width: 2000 | image_tag: alt: section.settings.section_image.alt , loading: "lazy"}}
@@ -21,7 +21,7 @@
             {% comment %} {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %} {% endcomment %}
 
             <div class="flex {{ buttons_position }} w70" >
-                {% render 'quick-add', product: section.settings.product, section_id: section.id %}
+                {% render 'quick-add', product: prod, section_id: section.id %}
 
                 <button
                     class="button flex items-center"
