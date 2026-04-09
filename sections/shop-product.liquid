@@ -19,7 +19,7 @@
         <div class="color-gray">
             {% comment %} {% assign product_block_id = block.id | default: '' %}
             {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %} {% endcomment %}
-            {% for product in section.settings.product %}
+            {% for product in section.settings.product.value %}
                 <div class="flex {{ buttons_position }} w70" >
                 {% render 'quick-add', product: product, section_id: section.id %}
 
