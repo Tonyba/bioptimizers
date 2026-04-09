@@ -141,7 +141,7 @@
                   >
                     {{- product_option_value | escape -}}
 
-                    {{ product_variant.price | money }}
+                    {{ product_option_value.variant.price | money }}
                     
                   </span>
                 {% endif %}
