@@ -21,17 +21,17 @@
             {% assign qa_form_id = 'QuickAdd-ProductForm-' | append: section.settings.product.id | append: '-' | append: product_block_id %} {% endcomment %}
 
             <div class="flex {{ buttons_position }} w70" >
-                {% render 'quick-add', product: section.settings.product, section_id: section.id %}
+                {% render 'quick-add', product: block.settings.product, section_id: block.id %}
 
                 <button
                     class="button flex items-center"
-                    onclick="triggerQuickAdd('{{ section.settings.product.id }}')"
+                    onclick="triggerQuickAdd('{{ block.settings.product.id }}')"
                 >
                     <span class="icon">{% render 'icon', icon: 'bag' %}</span>
                     Shop Now
                 </button>
 
-                <a class="button button-secondary flex items-center" href="{{ section.settings.product.url }}">
+                <a class="button button-secondary flex items-center" href="{{ block.settings.product.url }}">
                     <span class="icon-second-btn">{% render 'icon', icon: 'chevron-right', width: 17 %}</span>
                     View Product
                 </a>
@@ -39,13 +39,13 @@
         </div>
     </div>
     <div class="product-img {{ product_position }}" style="  ">
-        {{ section.settings.product.metafields.custom.loop_image | image_url: width: 2000 | image_tag: alt: 'product bottle'}}
+        {{ block.settings.product.metafields.custom.loop_image | image_url: width: 2000 | image_tag: alt: 'product bottle'}}
     </div>
 </div>
 
 <script>
 function triggerQuickAdd(productId) {
-  const section = document.getElementById('shop-product-{{ section.id }}');
+  const section = document.getElementById('shop-product-{{ block.id }}');
   if (!section) return;
 
   const quickAdd = section.querySelector('quick-add-component');
