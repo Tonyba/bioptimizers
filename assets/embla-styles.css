@@ -155,4 +155,7 @@
     .products-carousel{
         max-width: 100%;
     }
+    .col-content{
+        width: 100%;
+    }
   }
