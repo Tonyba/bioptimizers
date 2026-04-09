@@ -5,7 +5,8 @@
     text-align: left;
 }
 
-.variant-option--buttons {
+.variant-option--buttons,
+.variant-content {
     display: flex;
     flex-direction: column;
 }
