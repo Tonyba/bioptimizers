@@ -43,25 +43,7 @@
     </div>
 </div>
 
-{% comment %} <script>
-function triggerQuickAdd(productId) {
-  const section = document.getElementById('shop-product-{{ block.id }}');
-  if (!section) return;
 
-  const quickAdd = section.querySelector('quick-add-component');
-  if (!quickAdd) return;
-
-  const quickAddType = quickAdd.dataset.quickAddButton;
-  const addBtn = quickAdd.querySelector('.quick-add__button--add');
-  const chooseBtn = quickAdd.querySelector('.quick-add__button--choose');
-
-  if (quickAddType === 'add' && addBtn) {
-    addBtn.click();
-  } else if (chooseBtn) {
-    chooseBtn.click();
-  }
-}
-</script> {% endcomment %}
 {% stylesheet %}
     @media (max-width: 768px){   
     .main_right{
