@@ -47,12 +47,7 @@
 function triggerQuickAdd(productId, btn) {
   // Find the quick-add-component for this product
   const parent = btn.parentNode;
-  console.log(parent.querySelector("quick-add-component[data-product-title]")) 
-
-  const quickAdd = document.querySelector(
-    `quick-add-component[data-product-title]`
-  );
-
+  const quickAdd = parent.querySelector("quick-add-component[data-product-title]");
   if (!quickAdd) return;
 
   // Click whichever button is visible (add or choose)
