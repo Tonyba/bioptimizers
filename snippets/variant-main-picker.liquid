@@ -147,9 +147,7 @@
 
                    <div class="variant-content">
                       <div class="variant-content-top">
-                        {{bottle_amount}}
                         {{- product_option_value | escape -}}
-
 
                         {% if product_option_value.variant.compare_at_price != blank %}
                           <span class="discount-price">{{   product_option_value.variant.compare_at_price | money    }}</span>
@@ -160,7 +158,7 @@
 
                       {% if bottle_amount > 1 %}
                           <div class="variant-content-bottom">
-                              {{ product_option_value.variant.price |  divided_by: bottle_amount }}/bottle
+                              {{ product_option_value.variant.price |  divided_by: bottle_amount | money }}/bottle
                          </div>
                       {% endif %}
 
