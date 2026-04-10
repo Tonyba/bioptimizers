@@ -84,7 +84,7 @@
               {% if product_option_value.size > longest_value and option_id_attribute %}
                 {% assign longest_value = product_option_value.size %}
               {% endif %}
-              <label
+              <div
                 class="variant-option__button-label{% if variant_style == 'swatch' %} variant-option__button-label--has-swatch{% endif %}"
               >
                 <input
@@ -177,7 +177,7 @@
                   </span>
                 {% endif %}
                 {% render 'strikethrough-variant', product_option: product_option_value %}
-              </label>
+              </div>
             {%- endfor -%}
             {% if option_id_attribute %}
               {% style %}
