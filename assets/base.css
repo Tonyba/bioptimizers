@@ -2283,7 +2283,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   }
 }
 .variant-option__button-label:not(:last-child){
-  border-bottom: none;
+  border: none;
 }
 .variant-option__button-label {
   --variant-picker-stroke-color: var(--color-variant-border);
