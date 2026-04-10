@@ -3064,7 +3064,6 @@ input[type='radio'] {
 :where(input[type='radio']):checked {
   /* border-color: var(--color-foreground); */
   border: none;
-  background-color: red;
   background: var(--color-background);
 }
 
