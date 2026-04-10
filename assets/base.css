@@ -2295,7 +2295,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   position: relative;
   padding-block: var(--padding-sm);
   padding-inline: var(--padding-lg);
-  border-top: var(--options-border-width) solid var(--color-variant-border);
+  border-top: 2px solid var(--color-variant-border);
   border-radius: var(--options-border-radius);
   overflow: clip;
   justify-content: center;
