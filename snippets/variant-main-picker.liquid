@@ -145,7 +145,7 @@
                     assign bottle_amount = product_option_value | escape | split: " " | first | plus: 0 | times: 1
                   %}
 
-                   <div class="variant-content"><input type="radio">
+                   <div class="variant-content">
                       <div class="variant-content-top">
                         {{- product_option_value | escape -}}
 
@@ -175,7 +175,7 @@
                         Save {{ percentage }}%
                       </span>
                     {% endif %}
-
+<input type="radio">
                    
                     
                   </span>
