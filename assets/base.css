@@ -2196,7 +2196,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 
 /* Variant option component */
 .variant-option {
-  --options-border-radius: var(--variant-picker-button-radius);
+  /* --options-border-radius: var(--variant-picker-button-radius); */
   --options-border-width: var(--variant-picker-button-border-width);
   --variant-option-padding-inline: var(--padding-md);
 }
@@ -2467,7 +2467,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 }
 
 .variant-option__button-label:has(:checked) {
-  color: var(--color-selected-variant-text);
+  color: var(--color-selected-variant-text);/* black */
   border-color: var(--color-selected-variant-border);
 }
 
