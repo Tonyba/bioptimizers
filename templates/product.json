@@ -261,6 +261,7 @@
             },
             "bony_subscriptions_app_subscription_block_43dePE": {
               "type": "shopify://apps/bony-subscriptions-app/blocks/subscription-block/4dad6cee-f4ef-42d8-bd6b-ba84841f76a9",
+              "disabled": true,
               "settings": {
                 "product": "{{closest.product}}"
               }
