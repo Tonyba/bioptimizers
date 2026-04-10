@@ -3063,8 +3063,8 @@ input[type='radio'] {
 }
 
 :where(input[type='radio']):checked {
-  /* border-color: var(--color-foreground); */
-  border: none!important;
+  border-color: #F58220!important;
+  /* border: none!important; */
   background: #F58220!important;
 }
 
