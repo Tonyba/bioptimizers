@@ -2282,8 +2282,8 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
     transition-property: background-color, border-color, color;
   }
 }
-.variant-option__button-label:not(:last-child){
-  border-bottom: var(--options-border-width) solid var(--color-variant-border);
+.variant-option__button-label:last-child{
+  border-bottom: none;
 
 }
 .variant-option__button-label {
