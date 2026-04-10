@@ -3059,6 +3059,7 @@ input[type='radio'] {
   border-radius: var(--style-border-radius-50);
   background: transparent;
   transition: border-color 0.2s ease, background-color 0.2s ease;
+  border: 1px solid red;
 }
 
 :where(input[type='radio']):checked {
