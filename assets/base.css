@@ -2532,18 +2532,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   inset: 0;
 
   /* hide it */
-  opacity: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  aspect-ratio: unset;
-  border: none;
-  border-radius: 0;
-  background: transparent;
-  appearance: auto;
-  display: block;
-  cursor: pointer;
+
 }
 
 .variant-option__button-label svg {
