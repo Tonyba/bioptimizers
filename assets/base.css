@@ -2526,7 +2526,6 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 
 .variant-option__button-label input {
   z-index: 4;
-  color: red;
 }
 
 .variant-option__button-label svg {
