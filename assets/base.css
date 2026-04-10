@@ -2231,7 +2231,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   margin: 0;
   padding: 27px;
   border: 2px solid #D9D9D9;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .variant-option--buttons legend {
