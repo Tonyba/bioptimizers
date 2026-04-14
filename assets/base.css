@@ -2299,7 +2299,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   border-radius: var(--options-border-radius);
   overflow: clip;
   justify-content: center;
-  min-height: 3.25em;
+  /* min-height: 3.25em; */
   min-width: fit-content;
   white-space: nowrap;
   background-color: var(--color-variant-background);
