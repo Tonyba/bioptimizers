@@ -6,7 +6,9 @@
     width: 100%;
     padding: 10px;
 }
-
+.variant-option__button-label{
+    margin: 17px;
+}
 .variant-option--buttons,
 .variant-content {
     display: flex;
@@ -17,4 +19,7 @@
     .variant-option__button-label__text {
         text-align: left;
     }
+}
+.variant-content-top {
+    font-weight: bold;
 }
