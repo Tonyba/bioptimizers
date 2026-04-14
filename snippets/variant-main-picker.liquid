@@ -161,7 +161,7 @@
                                  <span class="single-discount">{{ product_option_value.variant.compare_at_price |  divided_by: bottle_amount | money }}</span>
                               {% endif %}
                              
-                              <span class="single-regular-price">{{ product_option_value.variant.price |  divided_by: bottle_amount | money }}/bottle</span>
+                              <span class="single-regular-price"> <strong>{{ product_option_value.variant.price |  divided_by: bottle_amount | money }}</strong> /bottle</span>
                          </div>
                       {% endif %}
                    </div>
