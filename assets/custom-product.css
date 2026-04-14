@@ -6,7 +6,7 @@
     width: 100%;
 }
 .variant-option__button-label {
-    padding: 20px;
+    margin: 20px;
 }
 .variant-option--buttons,
 .variant-content {
