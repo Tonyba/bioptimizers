@@ -4,10 +4,9 @@
     justify-content: space-between;
     text-align: left;
     width: 100%;
+    padding: 10px;
 }
-.variant-option__button-label {
-    margin: 20px;
-}
+
 .variant-option--buttons,
 .variant-content {
     display: flex;
