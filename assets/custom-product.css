@@ -5,7 +5,9 @@
     text-align: left;
     width: 100%;
 }
-
+.variant-option__button-label {
+    padding: 20px;
+}
 .variant-option--buttons,
 .variant-content {
     display: flex;
