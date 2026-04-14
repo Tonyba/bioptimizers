@@ -20,7 +20,7 @@
         text-align: left;
     }
 }
-.variant-content-top {
+.variant-content-top, .savings-percentage {
     font-weight: bold;
 }
 .discount-price{
