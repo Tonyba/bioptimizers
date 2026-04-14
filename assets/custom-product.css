@@ -23,7 +23,7 @@
 .variant-content-top, .savings-percentage {
     font-weight: bold;
 }
-.discount-price{
+.discount-price, .single-discount{
     color: #D93B20;
     font-weight: 500;
     text-decoration: line-through;
