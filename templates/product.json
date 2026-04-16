@@ -893,7 +893,7 @@
                 "color": "#f58220",
                 "thickness": 3,
                 "corner_radius": "square",
-                "width_percent": 100,
+                "width_percent": 10,
                 "alignment_horizontal": "center",
                 "padding-block-start": 0,
                 "padding-block-end": 0
