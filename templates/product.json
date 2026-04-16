@@ -4287,6 +4287,281 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "section_xWQnYc": {
+      "type": "section",
+      "blocks": {
+        "group_b3VJrd": {
+          "type": "group",
+          "name": "t:names.column",
+          "settings": {
+            "custom_css": "",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 40,
+            "width": "custom",
+            "custom_width": 45,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_tPN3xV": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "custom_css": "",
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 30,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "divider_aCBpEq": {
+                  "type": "_divider",
+                  "name": "t:names.divider",
+                  "settings": {
+                    "color": "#f58220",
+                    "thickness": 3,
+                    "corner_radius": "square",
+                    "width_percent": 10,
+                    "alignment_horizontal": "flex-start",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_rPE4mm": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "custom_css": "",
+                    "text": "<h2>Wade and Matt were both trainers working with pro athletes and other high performers<br/><br/></h2>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "divider_aCBpEq",
+                "text_rPE4mm"
+              ]
+            },
+            "text_8bhwTL": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "custom_css": "",
+                "text": "<p>They both spent a decade in the gym helping people transform their health. Wade and Matt met in the gym, struck a friendship, and then started a business partnership that has been going strong since 2004.<br/><br/>That’s right, we started selling fitness programs, digestive enzymes and organic plant-based protein in 2004. Our obsession to build the best-in-class formulas and solutions just gets stronger. Our policy is, “If we can’t build the best product in that category, forget about it.”<br/><br/>We’re willing to go ALL IN on the formulas. What does this mean? Our average cost per bottle is 200% to 400% higher than most of our competitors. We use the optimal, effective doses of the most researched ingredients. We know that once you experience the results, you’ll be a fan of BIOptimizers for life.<br/><br/></p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_tPN3xV",
+            "text_8bhwTL"
+          ]
+        },
+        "group_fBhPGJ": {
+          "type": "group",
+          "name": "t:names.column",
+          "settings": {
+            "custom_css": "",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 8,
+            "width": "custom",
+            "custom_width": 45,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "image_dqGNnF": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "custom_css": "",
+                "image": "shopify://shop_images/Group_18627.png",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_dqGNnF"
+          ]
+        }
+      },
+      "block_order": [
+        "group_b3VJrd",
+        "group_fBhPGJ"
+      ],
+      "custom_css": [
+        ".gray-text {color: #6d6d6d;}",
+        ".best-selling .link .text {border-bottom: none;}",
+        ".best-selling .link {border-bottom: 2px solid; padding: 10px 0;}"
+      ],
+      "name": "t:names.multicolumn",
+      "settings": {
+        "custom_css": "",
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "space-between",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-5",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 48,
+        "padding-block-end": 100
+      }
     }
   },
   "order": [
@@ -4303,6 +4578,7 @@
     "section_9er87p",
     "section_jX7rVF",
     "section_KfWycn",
-    "section_FeXwyY"
+    "section_FeXwyY",
+    "section_xWQnYc"
   ]
 }
