@@ -1484,8 +1484,8 @@
                       "settings": {
                         "custom_css": "",
                         "text": "<p>Informed Sport is a global sports supplement quality assurance and supplement certification program. The presence of the Informed Sport supplement certification on the packaging of a product assures athletes and consumers that:</p>",
-                        "width": "fit-content",
-                        "max_width": "normal",
+                        "width": "100%",
+                        "max_width": "none",
                         "alignment": "left",
                         "type_preset": "rte",
                         "font": "var(--font-body--family)",
@@ -1511,8 +1511,8 @@
                       "settings": {
                         "custom_css": "color-yellow",
                         "text": "<ul><li>Every batch of a product has been tested for 250+ substances that are prohibited in sports</li></ul>",
-                        "width": "fit-content",
-                        "max_width": "normal",
+                        "width": "100%",
+                        "max_width": "none",
                         "alignment": "left",
                         "type_preset": "rte",
                         "font": "var(--font-body--family)",
@@ -1538,8 +1538,8 @@
                       "settings": {
                         "custom_css": "",
                         "text": "<ul><li>Every product was made in an environment with quality systems appropriate for sports nutrition manufacturing</li></ul>",
-                        "width": "fit-content",
-                        "max_width": "normal",
+                        "width": "100%",
+                        "max_width": "none",
                         "alignment": "left",
                         "type_preset": "rte",
                         "font": "var(--font-body--family)",
@@ -1583,7 +1583,7 @@
         "group_mEWGw4"
       ],
       "custom_css": [
-        ".color-yellow {color: #FBBC05;}"
+        ".color-yellow {color: #fbbc05;}"
       ],
       "name": "t:names.multicolumn",
       "settings": {
