@@ -2816,7 +2816,7 @@
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
-            "height": "fit",
+            "height": "fill",
             "custom_height": 100,
             "inherit_color_scheme": true,
             "color_scheme": "",
@@ -2857,7 +2857,7 @@
                 "custom_width": 100,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
-                "height": "fit",
+                "height": "fill",
                 "custom_height": 100,
                 "inherit_color_scheme": true,
                 "color_scheme": "",
@@ -2898,7 +2898,7 @@
                     "custom_width": 100,
                     "width_mobile": "fill",
                     "custom_width_mobile": 100,
-                    "height": "fit",
+                    "height": "fill",
                     "custom_height": 100,
                     "inherit_color_scheme": false,
                     "color_scheme": "scheme-3",
@@ -2919,7 +2919,7 @@
                     "padding-block-start": 25,
                     "padding-block-end": 25,
                     "padding-inline-start": 40,
-                    "padding-inline-end": 20
+                    "padding-inline-end": 40
                   },
                   "blocks": {
                     "icon_rBVKRm": {
@@ -2984,7 +2984,7 @@
                     "custom_width": 100,
                     "width_mobile": "fill",
                     "custom_width_mobile": 100,
-                    "height": "fit",
+                    "height": "fill",
                     "custom_height": 100,
                     "inherit_color_scheme": false,
                     "color_scheme": "scheme-3",
@@ -3070,7 +3070,7 @@
                     "custom_width": 100,
                     "width_mobile": "fill",
                     "custom_width_mobile": 100,
-                    "height": "fit",
+                    "height": "fill",
                     "custom_height": 100,
                     "inherit_color_scheme": false,
                     "color_scheme": "scheme-3",
@@ -3163,7 +3163,7 @@
                 "custom_width": 100,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
-                "height": "fit",
+                "height": "fill",
                 "custom_height": 100,
                 "inherit_color_scheme": true,
                 "color_scheme": "",
@@ -3186,7 +3186,184 @@
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "group_gFGVPg": {
+                  "type": "group",
+                  "name": "t:names.group",
+                  "settings": {
+                    "custom_css": "",
+                    "content_direction": "row",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 12,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fill",
+                    "custom_height": 100,
+                    "inherit_color_scheme": false,
+                    "color_scheme": "scheme-3",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 12,
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
+                    "padding-block-start": 25,
+                    "padding-block-end": 25,
+                    "padding-inline-start": 40,
+                    "padding-inline-end": 40
+                  },
+                  "blocks": {
+                    "icon_L8bVYY": {
+                      "type": "icon",
+                      "name": "t:names.icon",
+                      "settings": {
+                        "icon": "price_tag",
+                        "image_upload": "shopify://shop_images/Vector_10.svg",
+                        "width": 40,
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "text_J8AKFH": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "custom_css": "",
+                        "text": "<p><strong>\"BEST IN CLASS\" guarantee: </strong>Our mission is focused on customer obsession. If after trying our products you don't feel we are the BEST IN CLASS, we will refund your money.</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "icon_L8bVYY",
+                    "text_J8AKFH"
+                  ]
+                },
+                "group_RzzANY": {
+                  "type": "group",
+                  "name": "t:names.group",
+                  "settings": {
+                    "custom_css": "",
+                    "content_direction": "row",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 12,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fill",
+                    "custom_height": 100,
+                    "inherit_color_scheme": false,
+                    "color_scheme": "scheme-3",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 12,
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
+                    "padding-block-start": 25,
+                    "padding-block-end": 25,
+                    "padding-inline-start": 40,
+                    "padding-inline-end": 40
+                  },
+                  "blocks": {
+                    "icon_cQwti3": {
+                      "type": "icon",
+                      "name": "t:names.icon",
+                      "settings": {
+                        "icon": "price_tag",
+                        "image_upload": "shopify://shop_images/Vector_10.svg",
+                        "width": 40,
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "text_PQ7yj9": {
+                      "type": "text",
+                      "name": "t:names.text",
+                      "settings": {
+                        "custom_css": "",
+                        "text": "<p><strong>\"BEST IN CLASS\" guarantee: </strong>Our mission is focused on customer obsession. If after trying our products you don't feel we are the BEST IN CLASS, we will refund your money.</p>",
+                        "width": "fit-content",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "icon_cQwti3",
+                    "text_PQ7yj9"
+                  ]
+                }
+              },
+              "block_order": [
+                "group_gFGVPg",
+                "group_RzzANY"
+              ]
             },
             "group_dyeGij": {
               "type": "group",
