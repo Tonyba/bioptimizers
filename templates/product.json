@@ -255,6 +255,20 @@
               },
               "block_order": []
             },
+            "divider_CbCVA3": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "color": "#d9d9d9",
+                "thickness": 2,
+                "corner_radius": "square",
+                "width_percent": 100,
+                "alignment_horizontal": "center",
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
             "social_share_fffRzT": {
               "type": "social_share",
               "name": "Social Share",
@@ -272,6 +286,7 @@
             "divider_VJhene",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
+            "divider_CbCVA3",
             "social_share_fffRzT"
           ]
         }
