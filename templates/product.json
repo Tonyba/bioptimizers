@@ -1825,16 +1825,16 @@
                   "name": "t:names.heading",
                   "settings": {
                     "custom_css": "",
-                    "text": "<h2>Product Information</h2>",
+                    "text": "<h2><strong>Product Information</strong></h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "h3",
+                    "type_preset": "custom",
                     "font": "var(--font-body--family)",
-                    "font_size": "1rem",
+                    "font_size": "1.5rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
-                    "case": "none",
+                    "case": "uppercase",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
                     "background": false,
@@ -1911,7 +1911,7 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "image_upload": "shopify://shop_images/informed-sports-logo.svg",
+                    "image_upload": "shopify://shop_images/icon-made-in-usa.svg",
                     "width": 100,
                     "link": "",
                     "open_in_new_tab": false
@@ -1923,7 +1923,7 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "image_upload": "shopify://shop_images/informed-sports-logo.svg",
+                    "image_upload": "shopify://shop_images/icon-gmp.svg",
                     "width": 100,
                     "link": "",
                     "open_in_new_tab": false
@@ -1935,7 +1935,7 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "image_upload": "shopify://shop_images/informed-sports-logo.svg",
+                    "image_upload": "shopify://shop_images/icon-coa.svg",
                     "width": 100,
                     "link": "",
                     "open_in_new_tab": false
