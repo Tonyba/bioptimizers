@@ -3233,7 +3233,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Vector_10.svg",
+                        "image_upload": "shopify://shop_images/medal_4_1.svg",
                         "width": 40,
                         "link": "",
                         "open_in_new_tab": false
@@ -3245,7 +3245,7 @@
                       "name": "t:names.text",
                       "settings": {
                         "custom_css": "",
-                        "text": "<p><strong>\"BEST IN CLASS\" guarantee: </strong>Our mission is focused on customer obsession. If after trying our products you don't feel we are the BEST IN CLASS, we will refund your money.</p>",
+                        "text": "<p><strong>We work with 5 world-class formulators</strong> to create the best in class formulas</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -3319,7 +3319,7 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Vector_10.svg",
+                        "image_upload": "shopify://shop_images/customer-service_1_1.svg",
                         "width": 40,
                         "link": "",
                         "open_in_new_tab": false
@@ -3331,7 +3331,7 @@
                       "name": "t:names.text",
                       "settings": {
                         "custom_css": "",
-                        "text": "<p><strong>\"BEST IN CLASS\" guarantee: </strong>Our mission is focused on customer obsession. If after trying our products you don't feel we are the BEST IN CLASS, we will refund your money.</p>",
+                        "text": "<p><strong>We have helped over 1,048,498 legendary customers</strong> optimize their health since 2004</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -3411,12 +3411,12 @@
                   "name": "t:names.group",
                   "settings": {
                     "custom_css": "",
-                    "content_direction": "row",
+                    "content_direction": "column",
                     "vertical_on_mobile": true,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "horizontal_alignment_flex_direction_column": "center",
                     "vertical_alignment_flex_direction_column": "center",
                     "gap": 12,
                     "width": "fill",
@@ -3452,26 +3452,127 @@
                       "name": "t:names.icon",
                       "settings": {
                         "icon": "price_tag",
-                        "image_upload": "shopify://shop_images/Vector_10.svg",
-                        "width": 40,
+                        "image_upload": "shopify://shop_images/health_1.svg",
+                        "width": 60,
                         "link": "",
                         "open_in_new_tab": false
                       },
                       "blocks": {}
                     },
-                    "text_L6gKb4": {
+                    "group_7Dydqb": {
+                      "type": "group",
+                      "name": "t:names.group",
+                      "settings": {
+                        "custom_css": "",
+                        "content_direction": "column",
+                        "vertical_on_mobile": true,
+                        "horizontal_alignment": "flex-start",
+                        "vertical_alignment": "center",
+                        "align_baseline": false,
+                        "horizontal_alignment_flex_direction_column": "center",
+                        "vertical_alignment_flex_direction_column": "center",
+                        "gap": 0,
+                        "width": "fill",
+                        "custom_width": 100,
+                        "width_mobile": "fill",
+                        "custom_width_mobile": 100,
+                        "height": "fit",
+                        "custom_height": 100,
+                        "inherit_color_scheme": true,
+                        "color_scheme": "",
+                        "background_media": "none",
+                        "video_position": "cover",
+                        "background_image_position": "cover",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 0,
+                        "toggle_overlay": false,
+                        "overlay_color": "#00000026",
+                        "overlay_style": "solid",
+                        "gradient_direction": "to top",
+                        "link": "",
+                        "open_in_new_tab": false,
+                        "placeholder": "",
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {
+                        "text_CW8j8Y": {
+                          "type": "text",
+                          "name": "t:names.text",
+                          "settings": {
+                            "custom_css": "",
+                            "text": "<p><strong>Customers love us:</strong></p>",
+                            "width": "fit-content",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "rte",
+                            "font": "var(--font-body--family)",
+                            "font_size": "1rem",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "color": "var(--color-foreground)",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        },
+                        "text_8BPaGi": {
+                          "type": "text",
+                          "name": "t:names.text",
+                          "settings": {
+                            "custom_css": "",
+                            "text": "<p><strong>5000+</strong></p>",
+                            "width": "fit-content",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "custom",
+                            "font": "var(--font-body--family)",
+                            "font_size": "3rem",
+                            "line_height": "tight",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "color": "var(--color-foreground)",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "text_CW8j8Y",
+                        "text_8BPaGi"
+                      ]
+                    },
+                    "text_be3EeD": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
                         "custom_css": "",
-                        "text": "<p><strong>\"BEST IN CLASS\" guarantee: </strong>Our mission is focused on customer obsession. If after trying our products you don't feel we are the BEST IN CLASS, we will refund your money.</p>",
+                        "text": "<p>positive product reviews</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
                         "type_preset": "rte",
                         "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
+                        "font_size": "3rem",
+                        "line_height": "tight",
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
@@ -3489,7 +3590,8 @@
                   },
                   "block_order": [
                     "icon_XHtXCx",
-                    "text_L6gKb4"
+                    "group_7Dydqb",
+                    "text_be3EeD"
                   ]
                 }
               },
