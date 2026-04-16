@@ -2364,7 +2364,7 @@
                     "custom_css": "w-100 justify-center",
                     "label": "WATCH THIS VIDEO",
                     "icon": "shopify://shop_images/Frame_1000012061.svg",
-                    "link": "{{ closest.product.url }}",
+                    "link": "{{ closest.product.metafields.custom.product_video_url.value }}",
                     "open_in_new_tab": false,
                     "style_class": "link",
                     "width": "fit-content",
