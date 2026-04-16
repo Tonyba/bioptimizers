@@ -442,7 +442,7 @@
                       "name": "t:names.text",
                       "settings": {
                         "custom_css": "",
-                        "text": "<ul><li>Order above $99 and get free shipping.</li></ul><p></p><ul><li>Get instant access to our best-selling book \"From Sick To Superhuman\".<br/><br/></li></ul>",
+                        "text": "<ul><li>Order above $99 and get free shipping.</li></ul><p></p><ul><li>Get instant access to our best-selling book \"From Sick To Superhuman\".</li></ul>",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
