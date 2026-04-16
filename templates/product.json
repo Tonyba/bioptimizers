@@ -254,13 +254,25 @@
                 }
               },
               "block_order": []
+            },
+            "social_share_fffRzT": {
+              "type": "social_share",
+              "name": "Social Share",
+              "settings": {
+                "enable_facebook": true,
+                "enable_instagram": true,
+                "enable_pinterest": true,
+                "enable_email": true
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "group_icgrde",
             "divider_VJhene",
             "variant_picker_R3rGDr",
-            "buy_buttons_eYQEYi"
+            "buy_buttons_eYQEYi",
+            "social_share_fffRzT"
           ]
         }
       },
