@@ -1207,6 +1207,9 @@
         "group_cJ6BAw",
         "product_ingredients_qDp8Te"
       ],
+      "custom_css": [
+        ".text-block em {color: #018476; font-style: normal;}"
+      ],
       "name": "t:names.custom_section",
       "settings": {
         "custom_css": "",
