@@ -5124,7 +5124,7 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "flex-start",
-            "gap": 8,
+            "gap": 17,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -5157,7 +5157,7 @@
               "type": "_divider",
               "name": "t:names.divider",
               "settings": {
-                "color": "",
+                "color": "#f58220",
                 "thickness": 3,
                 "corner_radius": "square",
                 "width_percent": 10,
@@ -5172,16 +5172,16 @@
               "name": "t:names.heading",
               "settings": {
                 "custom_css": "",
-                "text": "<h2>Scientific Studies</h2>",
+                "text": "<h2><strong>Scientific Studies</strong></h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h2",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font_size": "1.5rem",
                 "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
+                "letter_spacing": "loose",
+                "case": "uppercase",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
                 "background": false,
@@ -5230,8 +5230,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 30,
+        "padding-block-end": 14
       }
     },
     "scientific_studies_RkebYF": {
