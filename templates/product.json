@@ -2344,7 +2344,7 @@
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
-                    "custom_css": "w-100",
+                    "custom_css": "w-100 justify-center",
                     "label": "FIND OUT MORE",
                     "icon": "shopify://shop_images/plus_1_1.svg",
                     "link": "shopify://collections/all",
@@ -2361,7 +2361,7 @@
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
-                    "custom_css": "w-100",
+                    "custom_css": "w-100 justify-center",
                     "label": "Shop now",
                     "icon": "shopify://shop_images/Frame_1000012061.svg",
                     "link": "{{ closest.product.metafields.custom.product_video_url.value }}",
