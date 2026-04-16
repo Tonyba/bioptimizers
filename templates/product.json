@@ -2362,7 +2362,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "custom_css": "w-100 justify-center",
-                    "label": "Shop now",
+                    "label": "WATCH THIS VIDEO",
                     "icon": "shopify://shop_images/Frame_1000012061.svg",
                     "link": "{{ closest.product.url }}",
                     "open_in_new_tab": false,
@@ -2466,7 +2466,9 @@
         "group_zx3byN"
       ],
       "custom_css": [
-        ".gray-text {color: #6d6d6d;}"
+        ".gray-text {color: #6d6d6d;}",
+        ".best-selling .link .text {border-bottom: none;}",
+        ".best-selling .link {border-bottom: 2px solid; padding: 10px 0;}"
       ],
       "name": "t:names.multicolumn",
       "settings": {
