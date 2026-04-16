@@ -3652,7 +3652,7 @@
               "name": "t:names.text",
               "settings": {
                 "custom_css": "",
-                "text": "<p>Experienced customer service: our happy health concierges are happy to help via phone at (800) 719-2467 or email support@bioptimizers.com</p>",
+                "text": "<p><strong>Experienced customer service:</strong> our happy health concierges are happy to help via phone at <strong>(800) 719-2467 </strong>or email <strong>support@bioptimizers.com</strong></p>",
                 "width": "fit-content",
                 "max_width": "none",
                 "alignment": "left",
