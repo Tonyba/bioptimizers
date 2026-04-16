@@ -1582,6 +1582,9 @@
       "block_order": [
         "group_mEWGw4"
       ],
+      "custom_css": [
+        ".color-yellow {color: #FBBC05;}"
+      ],
       "name": "t:names.multicolumn",
       "settings": {
         "custom_css": "",
