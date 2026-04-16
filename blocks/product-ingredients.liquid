@@ -1,0 +1,291 @@
+{% assign img = product.metafields.custom.loop_image.value %}
+{% assign malate = product.metafields.custom.malate.value %}
+{% assign chelate = product.metafields.custom.chelate.value %}
+{% assign citrate = product.metafields.custom.citrate.value %}
+{% assign sucrosomial = product.metafields.custom.sucrosomial.value %}
+{% assign orotate = product.metafields.custom.orotate.value %}
+{% assign taurate = product.metafields.custom.taurate.value %}
+{% assign glycinate = product.metafields.custom.glycinate.value %}
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+
+        <th class="highlight-header">
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+          <div class="highlight-product-name">{{ product.title }}</div>
+        </th>
+
+        <th>
+          <img src="{{ 'empty-product-bottle.svg' | asset_url }}" alt="empty prooduct bottle" width="24" height="24" class="empty-product">
+          <div class="product-name">Strength Sensei</div>
+        </th>
+
+        <th>
+          <img src="{{ 'empty-product-bottle.svg' | asset_url }}" alt="empty prooduct bottle" width="24" height="24" class="empty-product">
+          <div class="product-name">Livewell</div>
+        </th>
+
+        <th>
+          <img src="{{ 'empty-product-bottle.svg' | asset_url }}" alt="empty prooduct bottle" width="24" height="24" class="empty-product">
+          <div class="product-name">Zeal Naturals</div>
+        </th>
+
+        <th>
+          <img src="{{ 'empty-product-bottle.svg' | asset_url }}" alt="empty prooduct bottle" width="24" height="24" class="empty-product">
+          <div class="product-name">Natural Rhythm</div>
+        </th>
+
+        <th>
+          <img src="{{ 'empty-product-bottle.svg' | asset_url }}" alt="empty prooduct bottle" width="24" height="24" class="empty-product">
+          <div class="product-name">BioEmblem</div>
+        </th>
+
+        <th>
+          <img src="{{ 'empty-product-bottle.svg' | asset_url }}" alt="empty prooduct bottle" width="24" height="24" class="empty-product">
+          <div class="product-name">Terranics</div>
+        </th>
+
+        <th>
+          <img src="{{ 'empty-product-bottle.svg' | asset_url }}" alt="empty prooduct bottle" width="24" height="24" class="empty-product">
+          <div class="product-name">Life Extension</div>
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td class="label">Glycinate</td>
+        {% if glycinate %}
+           <td class="highlight"><span class="check">✓</span></td> 
+           {% else %}
+            <td class="highlight"><span class="cross">×</span></td>
+        {% endif %}
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+      </tr>
+
+      <tr>
+        <td class="label">Taurate</td>
+        {% if taurate %}
+           <td class="highlight"><span class="check">✓</span></td> 
+           {% else %}
+            <td class="highlight"><span class="cross">×</span></td>
+        {% endif %}
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+      </tr>
+
+      <tr>
+        <td class="label">Orotate</td>
+        {% if orotate %}
+           <td class="highlight"><span class="check">✓</span></td> 
+           {% else %}
+            <td class="highlight"><span class="cross">×</span></td>
+        {% endif %}
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+      </tr>
+
+      <tr>
+        <td class="label">Sucrosomial</td>
+        {% if sucrosomial %}
+           <td class="highlight"><span class="check">✓</span></td> 
+           {% else %}
+            <td class="highlight"><span class="cross">×</span></td>
+        {% endif %}
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+      </tr>
+
+      <tr>
+        <td class="label">Citrate</td>
+        {% if citrate %}
+           <td class="highlight"><span class="check">✓</span></td> 
+           {% else %}
+            <td class="highlight"><span class="cross">×</span></td>
+        {% endif %}
+        <td><span class="cross">×</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+      </tr>
+
+      <tr>
+        <td class="label">Chelate</td>
+        {% if chelate %}
+           <td class="highlight"><span class="check">✓</span></td> 
+           {% else %}
+            <td class="highlight"><span class="cross">×</span></td>
+        {% endif %}
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+      </tr>
+
+      <tr>
+        <td class="label">Malate</td>
+        {% if malate %}
+           <td class="highlight"><span class="check">✓</span></td> 
+           {% else %}
+            <td class="highlight"><span class="cross">×</span></td>
+        {% endif %}
+        <td><span class="cross">×</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">×</span></td>
+        <td><span class="check">✓</span></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+{% stylesheet %}
+  .table-container {
+    max-width: 100%;
+    margin: 40px auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+     width: max-content;
+    border-collapse: collapse;
+    background: white;
+  }
+
+  th, td {
+    text-align: center;
+    padding: 14px;
+    vertical-align: bottom;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+th:not(:nth-child(1)):not(:nth-child(2)):not(:last-child), td:not(:nth-child(1)):not(:nth-child(2)):not(:last-child){
+    border-right: 2px solid #DFDFDF;
+  }
+
+  td.label {
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+    }
+
+  .highlight {
+    background: #f5a623;
+    color: black;
+    font-weight: 600;
+    border-top: 1px solid white;
+  }
+
+  .highlight-header {
+    background: #f5a623;
+    color: black;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .check {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #0f9d8a;
+    color: white;
+    line-height: 18px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+
+.highlight .cross, .highlight .check{
+    color: white;
+    background: #231F20;
+    border: 1px solid #231F20;
+}
+  .cross {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #7a7a7a;
+    color: #7a7a7a;
+    line-height: 17px;
+    border-radius: 3px;
+    font-size: 20px;
+  }
+ .highlight-header img {
+    height: 200px;
+    margin-bottom: 6px;
+    object-fit: contain;
+ }
+
+  .empty-product{
+    height: 150px;
+    margin-bottom: 6px;
+  }
+
+  .highlight-product-name {
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  .product-name {
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 600;
+  }
+    @media (max-width: 768px){
+        .table-container{
+            max-width: 350px;
+        }
+    }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Product ingredients",
+  "settings": [
+    
+  ],
+  "presets": [
+    {
+      "name": "Product ingredients"
+    }
+  ]
+}
+{% endschema %}

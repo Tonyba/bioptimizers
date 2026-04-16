@@ -148,3 +148,11 @@
         --slide-size: 70%;
     }
 }
+  @media (max-width: 768px){
+    .embla__controls , .embla__viewpodrt{
+      display: none;
+    }
+    .products-carousel{
+        max-width: 100%;
+    }
+  }

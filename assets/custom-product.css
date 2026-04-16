@@ -1,0 +1,33 @@
+.variant-option__button-label__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+}
+.variant-option__button-label{
+    padding: 17px;
+}
+.variant-option--buttons,
+.variant-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.variant-option--equal-width-buttons {
+    .variant-option__button-label__text {
+        text-align: left;
+    }
+}
+.variant-content-top, .savings-percentage {
+    font-weight: bold;
+}
+.discount-price, .single-discount{
+    color: #D93B20;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.single-discount{
+    font-size: 14px;
+}

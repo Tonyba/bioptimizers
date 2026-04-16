@@ -110,6 +110,9 @@ button {
 .items-center {
     align-items: center;
 }
+.self-end{
+    align-self: end;
+}
 
 .horizontal,
 .menu--horizontal {
@@ -310,7 +313,12 @@ button {
     padding-right: 37px;
     border-right-width: 2px;
 }
-
+@media (max-width: 768px){
+    .all-products-are .group-block {
+    padding-right: 0px!important;
+    border-right-width: 0px !important;
+}
+}
 /*basic*/
 .flex {
     display: flex;
@@ -596,8 +604,7 @@ button {
     display: grid;
     grid-template-columns: auto auto;
     gap: 25px;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding: 45px 20px;
 }
 
 .product-keylist-item{
@@ -647,7 +654,7 @@ button {
     padding: 10px 30px;
 }
 }
-/* scientici studies */
+/* scientific studies */
 .scientific-item{
     padding: 10px 0;
     align-items: center;

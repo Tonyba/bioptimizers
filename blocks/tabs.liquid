@@ -1,0 +1,189 @@
+{% assign benefits__header = product.metafields.custom.benefits_header.value %}
+{% assign benefits__content = product.metafields.custom.benefits_content.value %}
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'a')">About {{product.title}}</button>
+  <span class="vertical_divider"></span>
+  <button class="tablinks" onclick="openTab(event, 'b')">Benefits</button>
+  <span class="vertical_divider"></span>
+  <button class="tablinks" onclick="openTab(event, 'c')">How to Take </button>
+  <span class="vertical_divider"></span>
+  <button class="tablinks" onclick="openTab(event, 'd')">Faqs</button>
+  <span class="vertical_divider"></span>
+  <button class="tablinks" onclick="openTab(event, 'e')">Loading Program</button>
+</div>
+
+<div id="a" class="tabcontent">
+  <h3>About</h3>
+  <p>{{product.description}}</p>
+</div>
+
+<div id="b" class="tabcontent">
+    <div class="image-box">
+        {{
+        block.settings.image | image_url: width: 500 | image_tag:
+        alt: block.settings.image.alt,
+        loading: 'lazy'
+        }}
+    </div>
+    <div class="benefit">
+        <h3>{{product.title}} Benefits</h3>
+        {% for item in benefits__header %}
+            <div class="benefit-item flex">
+                <div class="index-number" style="font-size: 21px; margin-top: -5px">
+                    {% if forloop.index0 < 10 %}
+                            0{{ forloop.index0 |  plus: 1}}.
+                        {% else %}
+                            {{ forloop.index0 |  plus: 1}}.
+                        {% endif %}
+                </div>
+                {% assign header = benefits__header[forloop.index0] %}
+                {% assign content = benefits__content[forloop.index0] %}
+                <div>
+                    <h4 class="header">{{header}}</h4>
+                    <p class="content">{{content}}</p>
+                </div>
+            </div>
+        {% endfor %}
+        
+    </div>
+    
+    
+</div>
+
+<div id="c" class="tabcontent">
+  <h3>How to take</h3>
+  <p>one per day</p>
+</div>
+<script>
+function openTab(evt, tabId) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(tabId).style.display = "block";
+        if (evt) {
+            evt.currentTarget.className += " active";
+        } else {
+            document.querySelector(`.tablinks[onclick*='${tabId}']`).className += " active";
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        openTab(null, 'a');
+    });
+</script>
+
+{% stylesheet %}
+.benefit-item{
+    padding: 35px 0 35px 0;
+    border-bottom: 2px solid #D9D9D9;
+}
+.header{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.image-box img {
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+    float: right;
+    margin-left: 80px;
+  }
+.tab {
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+  background: #1f1b1b;
+  padding: 35px 30px;
+  border-radius: 12px 12px 0 0;
+  gap: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+}
+
+.tabcontent{
+    background-color: #F9F9F9;
+    padding: 60px 58px;
+    border-radius: 0 0 12px 12px;
+}
+
+.tab button {
+    font-weight: 600;
+    font-size: 21px !important;
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 16px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.tab button::before{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #888888;
+}
+
+
+.vertical_divider {
+    content: "";
+    border-right: 1px solid #A6A6A6;
+    height: auto;
+}
+
+.tab button:hover {
+    color: #fff;
+}
+
+.tab button.active {
+    color: #fff;
+}
+
+.tab button.active::before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #F58220;
+}
+
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Tabs",
+  "class": "w-100",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Benefit tab image"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Static Tabs"
+    }
+  ]
+}
+{% endschema %}
