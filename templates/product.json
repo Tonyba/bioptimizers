@@ -2091,7 +2091,7 @@
                       "name": "t:names.text",
                       "settings": {
                         "custom_css": "",
-                        "text": "<ul><li>Height: <strong>{{ closest.product.metafields.custom.height | metafield_tag }}</strong></li></ul><p></p><ul><li>Weight: </li></ul>",
+                        "text": "<ul><li>Height: <strong>{{ closest.product.metafields.custom.height | metafield_tag }}</strong></li></ul><p></p><ul><li>Weight: <strong>{{ closest.product.metafields.custom.weight | metafield_tag }}</strong></li></ul>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
