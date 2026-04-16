@@ -1015,6 +1015,82 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "section_nn8gxi": {
+      "type": "section",
+      "blocks": {
+        "timeline_product_pnVQKr": {
+          "type": "timeline-product",
+          "name": "Timeline product block",
+          "settings": {
+            "custom_css": "",
+            "index_start": 5,
+            "index_end": 7,
+            "width": "fit-content",
+            "custom_width": 3,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        },
+        "image_LAi3a6": {
+          "type": "image",
+          "name": "t:names.image",
+          "settings": {
+            "custom_css": "",
+            "image": "shopify://shop_images/our-tummies-love-good-workout-shot-young-woman-holding-heart-her-tummy-workout_1_1.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "custom",
+            "custom_width": 80,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 12,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "timeline_product_pnVQKr",
+        "image_LAi3a6"
+      ],
+      "name": "t:names.multicolumn",
+      "settings": {
+        "custom_css": "",
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 50,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-3",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
     }
   },
   "order": [
@@ -1022,6 +1098,7 @@
     "section_8LBGQR",
     "section_3kHQXe",
     "section_wJ4qwA",
-    "section_gQACLp"
+    "section_gQACLp",
+    "section_nn8gxi"
   ]
 }
