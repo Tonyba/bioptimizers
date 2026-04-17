@@ -867,7 +867,7 @@
                       "name": "t:names.image",
                       "settings": {
                         "custom_css": "",
-                        "image": "shopify://shop_images/Rectangle_380.png",
+                        "image": "shopify://shop_images/Rectangle_380_1.png",
                         "link": "",
                         "image_ratio": "square",
                         "width": "custom",
@@ -1039,7 +1039,7 @@
                       "name": "t:names.image",
                       "settings": {
                         "custom_css": "",
-                        "image": "shopify://shop_images/Rectangle_380.png",
+                        "image": "shopify://shop_images/Rectangle_380_2.png",
                         "link": "",
                         "image_ratio": "square",
                         "width": "custom",
@@ -1258,7 +1258,7 @@
                       "name": "t:names.image",
                       "settings": {
                         "custom_css": "",
-                        "image": "shopify://shop_images/Rectangle_380.png",
+                        "image": "shopify://shop_images/Rectangle_380_3.png",
                         "link": "",
                         "image_ratio": "square",
                         "width": "custom",
@@ -1430,7 +1430,7 @@
                       "name": "t:names.image",
                       "settings": {
                         "custom_css": "",
-                        "image": "shopify://shop_images/Rectangle_380.png",
+                        "image": "shopify://shop_images/Rectangle_380_4.png",
                         "link": "",
                         "image_ratio": "square",
                         "width": "custom",
