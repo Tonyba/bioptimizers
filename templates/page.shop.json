@@ -495,10 +495,10 @@
       "settings": {
         "color": "#d9d9d9",
         "color_scheme": "",
-        "section_width": "page-width",
+        "section_width": "full-width",
         "thickness": 1,
         "corner_radius": "square",
-        "width_percent": 70,
+        "width_percent": 60,
         "alignment_horizontal": "center",
         "padding-block-start": 65,
         "padding-block-end": 65
