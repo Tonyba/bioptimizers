@@ -449,7 +449,7 @@
       "settings": {
         "color": "#d9d9d9",
         "color_scheme": "",
-        "section_width": "full-width",
+        "section_width": "page-width",
         "thickness": 1,
         "corner_radius": "square",
         "width_percent": 66,
