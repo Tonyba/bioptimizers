@@ -1615,7 +1615,7 @@
         },
         "group_wELzgB": {
           "type": "group",
-          "name": "t:names.group",
+          "name": "Group hidden on mobile",
           "settings": {
             "custom_css": "hide-mobile",
             "content_direction": "row",
@@ -2107,7 +2107,7 @@
         "button_GjUFnR"
       ],
       "custom_css": [
-        "@media (max-width: 768px) {.hide-mobile{display: none; }}"
+        "@media (max-width: 768px) {.hide-mobile {display: none; }}"
       ],
       "name": "t:names.multicolumn",
       "settings": {
