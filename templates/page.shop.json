@@ -442,11 +442,27 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "divider_H36zAT": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color": "#d9d9d9",
+        "color_scheme": "",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 66,
+        "alignment_horizontal": "center",
+        "padding-block-start": 65,
+        "padding-block-end": 65
+      }
     }
   },
   "order": [
     "main",
     "shop_product_9XMcEP",
-    "section_CmMHhR"
+    "section_CmMHhR",
+    "divider_H36zAT"
   ]
 }
