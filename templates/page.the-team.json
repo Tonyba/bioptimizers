@@ -659,7 +659,7 @@
                     "custom_css": "",
                     "text": "<p>3-Time Canadian Natural Bodybuilding Champion, Wade Lightheart, is one of the world's premier authorities on Natural Nutrition and Training Methods. Having majored in Sports Science at the University of New Brunswick, he has authored numerous books on health, nutrition, and exercise which have sold in over 80 countries. Wade is sought out by athletes and high-performance oriented individuals worldwide for his advice on how to optimize their health and fitness levels.</p>",
                     "width": "fit-content",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
