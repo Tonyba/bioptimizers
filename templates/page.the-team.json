@@ -61,15 +61,102 @@
     "hero_bHx8QH": {
       "type": "hero",
       "blocks": {
-        "text_PWmENc": {
+        "group_FcjPwX": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "custom_css": "",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 9,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "divider_jaHJLc": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "color": "#f58220",
+                "thickness": 3,
+                "corner_radius": "square",
+                "width_percent": 10,
+                "alignment_horizontal": "center",
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "text_49RXPP": {
+              "type": "text",
+              "settings": {
+                "custom_css": "",
+                "text": "<h1><strong>Meet The Team</strong></h1>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "3.5rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "divider_jaHJLc",
+            "text_49RXPP"
+          ]
+        },
+        "text_DRkp94": {
           "type": "text",
           "settings": {
             "custom_css": "",
-            "text": "<h1>Creating a <strong>new standard</strong> of self-care</h1>",
+            "text": "<p>At BIOptimizers we are working hard every day to bring you the best in health and nutrition supplements.<br/>We strive to provide you with the best products and the best customer service out there.</p>",
             "width": "fit-content",
-            "max_width": "narrow",
+            "max_width": "none",
             "alignment": "left",
-            "type_preset": "custom",
+            "type_preset": "rte",
             "font": "var(--font-body--family)",
             "font_size": "3.5rem",
             "line_height": "normal",
@@ -89,12 +176,13 @@
         }
       },
       "block_order": [
-        "text_PWmENc"
+        "group_FcjPwX",
+        "text_DRkp94"
       ],
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/woman-sitting-sofa-smiles_1.png",
+        "image_1": "shopify://shop_images/woman-sitting-sofa-smiles_1_2.png",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -109,7 +197,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
+        "gap": 20,
         "section_width": "page-width",
         "section_height": "small",
         "section_height_custom": 50,
