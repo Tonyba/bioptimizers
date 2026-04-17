@@ -5513,7 +5513,7 @@
         "gap": 0,
         "section_width": "full-width",
         "section_height": "",
-        "section_height_custom": 50,
+        "section_height_custom": 6,
         "color_scheme": "scheme-1",
         "background_media": "none",
         "video_position": "cover",
