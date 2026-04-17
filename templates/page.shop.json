@@ -485,8 +485,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 55,
+        "padding-block-end": 0
       }
     },
     "divider_H36zAT": {
@@ -500,8 +500,8 @@
         "corner_radius": "square",
         "width_percent": 60,
         "alignment_horizontal": "center",
-        "padding-block-start": 65,
-        "padding-block-end": 65
+        "padding-block-start": 60,
+        "padding-block-end": 60
       }
     }
   },
