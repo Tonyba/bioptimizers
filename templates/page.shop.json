@@ -932,7 +932,7 @@
                           "name": "t:names.heading",
                           "settings": {
                             "custom_css": "",
-                            "text": "<h3>Energy Production</h3>",
+                            "text": "<h3>Sleep & Relaxation</h3>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -959,7 +959,7 @@
                           "name": "t:names.text",
                           "settings": {
                             "custom_css": "",
-                            "text": "<p>Creatine Citrate and D-Ribose work to fuel cellular energy and reduce fatigue.</p>",
+                            "text": "<p>Melatonin and Magnesium work together to improve sleep quality and support deep rest.</p>",
                             "width": "fit-content",
                             "max_width": "none",
                             "alignment": "left",
@@ -1104,7 +1104,7 @@
                           "name": "t:names.heading",
                           "settings": {
                             "custom_css": "",
-                            "text": "<h3>Energy Production</h3>",
+                            "text": "<h3>Mental Clarity</h3>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -1131,7 +1131,7 @@
                           "name": "t:names.text",
                           "settings": {
                             "custom_css": "",
-                            "text": "<p>Creatine Citrate and D-Ribose work to fuel cellular energy and reduce fatigue.</p>",
+                            "text": "<p>DL-Phenylalanine contributes to focus, motivation, and emotional balance.</p>",
                             "width": "fit-content",
                             "max_width": "none",
                             "alignment": "left",
@@ -1323,7 +1323,7 @@
                           "name": "t:names.heading",
                           "settings": {
                             "custom_css": "",
-                            "text": "<h2>Energy Production</h2>",
+                            "text": "<h2>Hormonal Balance</h2>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -1350,7 +1350,7 @@
                           "name": "t:names.text",
                           "settings": {
                             "custom_css": "",
-                            "text": "<p>Creatine Citrate and D-Ribose work to fuel cellular energy and reduce fatigue.</p>",
+                            "text": "<p>DHEA and Pregnenolone help regulate hormone levels, supporting mood and vitality.</p>",
                             "width": "fit-content",
                             "max_width": "none",
                             "alignment": "left",
@@ -1495,7 +1495,7 @@
                           "name": "t:names.heading",
                           "settings": {
                             "custom_css": "",
-                            "text": "<h3>Energy Production</h3>",
+                            "text": "<h3>Cellular Health</h3>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -1522,7 +1522,7 @@
                           "name": "t:names.text",
                           "settings": {
                             "custom_css": "",
-                            "text": "<p>Creatine Citrate and D-Ribose work to fuel cellular energy and reduce fatigue.</p>",
+                            "text": "<p>Phosphatidylcholine supports cell membrane integrity and overall brain health.</p>",
                             "width": "fit-content",
                             "max_width": "none",
                             "alignment": "left",
@@ -1652,7 +1652,7 @@
               "name": "t:names.description",
               "settings": {
                 "custom_css": "text-white section-subheading",
-                "text": "<p>A Team of Real People</p>",
+                "text": "<p>Comfort, Relief & Balance</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -1719,7 +1719,7 @@
               "name": "t:names.text",
               "settings": {
                 "custom_css": "",
-                "text": "<p>Gut Pro is a scientifically-formulated probiotic designed as a women's health supplement. Featuring clinically-researched probiotic strains and potent botanical extracts, this innovative gut health supplement works tirelessly to enhance digestive function and overall gut health</p>",
+                "text": "<p>Designed to support your digestion and gently but effectively restore intestinal comfort. With clinically tested ingredients such as Pyruvate, Co-q10, and Carnitine, GutZyme Harmony supports nutrient absorption, reduces bloating, and promotes long-lasting digestive balance. Ideal for those who prioritize natural health over aggressive solutions.</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
