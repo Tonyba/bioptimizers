@@ -64,14 +64,14 @@
         "text_PWmENc": {
           "type": "text",
           "settings": {
-            "custom_css": "fixing-heading",
+            "custom_css": "",
             "text": "<h1>Creating a <strong>new standard</strong> of self-care</h1>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
-            "type_preset": "rte",
+            "type_preset": "custom",
             "font": "var(--font-body--family)",
-            "font_size": "1rem",
+            "font_size": "3.5rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
