@@ -1,0 +1,179 @@
+{% liquid
+  assign timelineheader = product.metafields.custom.timeline_items.value
+  assign timelinecontent = product.metafields.custom.timeline_items_content.value
+%}
+{% assign start = block.settings.index_start | minus: 1 %}
+{% assign end = block.settings.index_end %}
+
+<div class="right">  
+  <div class="timeline">
+    {% for item in timelineheader %}
+      {% assign i = forloop.index0 | plus: start %}
+      {% assign display_index = forloop.index | plus: start %}
+
+      {% if display_index > end %}
+        {% break %}
+      {% endif %}
+
+      {% assign actualitem = timelineheader[i] %}
+      {% assign otheritem = timelinecontent[i] %}
+      {% assign padded = display_index | prepend: '0' %}
+
+      <div class="timeline-item">
+        <div class="timeline-number">
+          {{ padded | slice: -2, 2 }}
+        </div>
+        <div class="timeline-content">
+          <h3>{{ actualitem }}</h3>
+          <p>{{ otheritem }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+      
+
+{%  stylesheet  %} 
+
+.right {
+  flex: 1;
+  height: 100%;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 40px;
+  height: 100%;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #0a7c6f;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline-number {
+  position: absolute;
+  left: -40px;
+  top: 10px;
+  background: #07180F;
+  color: #fff;
+  font-size: 12px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-content {
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.timeline-content h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.timeline-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+{% endstylesheet %}
+{% schema  %} 
+    {
+        "name": "Timeline Section",
+        "class": "w-100 h-100",
+        "settings": [
+            {
+                "type": "text",
+                "id": "custom_css",
+                "label": "Custom CSS classes"
+            },
+            {
+                "type": "number",
+                "id": "index_start",
+                "label": "Start numbering from",
+                "default": 1
+            },
+            {
+                "type": "number",
+                "id": "index_end",
+                "label": "Stop numbering at",
+                "default": 4
+            },
+            {
+                "type": "select",
+                "id": "width",
+                "label": "t:settings.width_desktop",
+                "options": [
+                    {
+                    "value": "fit-content",
+                    "label": "t:options.fit_content"
+                    },
+                    {
+                    "value": "custom",
+                    "label": "t:options.custom"
+                    }
+                ],
+                "default": "fit-content"
+                },
+                {
+                "type": "range",
+                "id": "custom_width",
+                "label": "t:settings.custom_width",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "%",
+                "default": 100,
+                "visible_if": "{{ block.settings.width == \"custom\" }}"
+                },
+                {
+                "type": "select",
+                "id": "width_mobile",
+                "label": "t:settings.width_mobile",
+                "options": [
+                    {
+                    "value": "fit-content",
+                    "label": "t:options.fit_content"
+                    },
+                    {
+                    "value": "custom",
+                    "label": "t:options.custom"
+                    }
+                ],
+                "default": "fit-content"
+                },
+                {
+                "type": "range",
+                "id": "custom_width_mobile",
+                "label": "t:settings.custom_width",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "%",
+                "default": 100,
+                "visible_if": "{{ block.settings.width_mobile == \"custom\" }}"
+                }
+                    ],
+                    "presets": [
+                {
+                    "name": "Timeline product block"
+                }
+            ]
+    }
+{% endschema %}

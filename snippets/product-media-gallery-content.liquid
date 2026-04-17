@@ -23,6 +23,9 @@
   ></script>
 {%- endif -%}
 {%- liquid
+
+  assign product_keylist = product.metafields.custom.product_key_benefits.value
+
   assign selected_product = closest.product
   assign selected_variant_media = selected_product.selected_or_first_available_variant.featured_media
   assign first_3d_model = selected_product.media | where: 'media_type', 'model' | first
@@ -352,6 +355,7 @@
     data-presentation="{{ media_presentation }}"
     {{ block_shopify_attributes }}
   >
+    <div class="product-badge"><img src="https://cdn.shopify.com/s/files/1/0635/4744/1237/files/Group_18529.png?v=1773929667" alt="Money back badge" width="auto" height="auto"></div>
     {% capture slides %}
       {% for media in sorted_media %}
         {% capture children %}
@@ -594,7 +598,16 @@
         </dialog>
       </zoom-dialog>
     {%- endif -%}
-
+    
+  {% comment %} spiro {% endcomment %}
+    <div class="product-keylist-grid">
+      {%  for item in product_keylist  %}
+        <div class="product-keylist-item">
+          <div class="product-keylist-item_icon">{%  render 'icon-check-circle' %}</div>
+          <div class="key-text">{{ item }}</div>
+        </div>
+      {% endfor %}
+    </div>
     {%- if first_3d_model -%}
       <link
         id="ModelViewerStyle"

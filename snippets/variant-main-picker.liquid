@@ -74,12 +74,12 @@
             ref="fieldsets[]"
             {{ option_id_attribute }}
           >
-            <legend>
+            {% comment %} <legend>
               {{ product_option.name | escape -}}
               {%- if variant_style == 'swatch' -%}
                 <span class="variant-option__swatch-value">{{ product_option.selected_value }}</span>
               {%- endif %}
-            </legend>
+            </legend> {% endcomment %}
             {%- for product_option_value in product_option.values -%}
               {% if product_option_value.size > longest_value and option_id_attribute %}
                 {% assign longest_value = product_option_value.size %}
@@ -139,7 +139,41 @@
                     class="variant-option__button-label__text"
                     data-key="variant-option-text"
                   >
-                    {{- product_option_value | escape -}}
+                  {% liquid   
+                    assign percentage =  product_option_value.variant.compare_at_price | minus: product_option_value.variant.price | times: 100.0 | divided_by: product_option_value.variant.compare_at_price | round
+                    assign bottle_amount = product_option_value | escape | split: " " | first | plus: 0 | times: 1
+                  %}
+                  <div class="flex">
+                   <div class="variant-content">
+                      <div class="variant-content-top">
+                        {{- product_option_value | escape -}}
+
+                        {% if product_option_value.variant.compare_at_price != blank %}
+                          <span class="discount-price">{{   product_option_value.variant.compare_at_price | money    }}</span>
+                        {% endif %}
+                      
+                        <span class="regular-price"> {{ product_option_value.variant.price | money }}</span>
+                      </div>
+
+                      {% if bottle_amount > 1 %}
+                          <div class="variant-content-bottom">
+                              {% if product_option_value.variant.compare_at_price > product_option_value.variant.price %}
+                                 <span class="single-discount">{{ product_option_value.variant.compare_at_price |  divided_by: bottle_amount | money }}</span>
+                              {% endif %}
+                             
+                              <span class="single-regular-price"> <strong>{{ product_option_value.variant.price |  divided_by: bottle_amount | money }}</strong> /bottle</span>
+                         </div>
+                      {% endif %}
+                   </div>
+                  </div>  
+                    {% if product_option_value.variant.compare_at_price > product_option_value.variant.price %}
+                      <span class="savings-percentage">
+                        Save {{ percentage }}%
+                      </span>
+                    {% endif %}
+
+                   
+                    
                   </span>
                 {% endif %}
                 {% render 'strikethrough-variant', product_option: product_option_value %}

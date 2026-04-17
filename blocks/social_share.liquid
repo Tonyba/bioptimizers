@@ -1,0 +1,74 @@
+{%- liquid
+    assign share_url = shop.url | append: product.url
+    
+    assign action = "javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+-%}
+<ul class="ls-none flex justify-center">
+    
+    <li class=" {% if block.settings.enable_facebook %}d-block{% else %}d-none{% endif %}">
+    <a aria-label="Facebook" class="share-social flex horizontal items-center" href="https://www.facebook.com/sharer.php?u={{ share_url }}" onclick="{{ action }}">
+      {%- render 'icon-facebook',  -%}
+      <span>SHARE</span>
+    </a>
+  </li>
+    <li class="{% if block.settings.enable_instagram %}d-block{% else %}d-none{% endif %}">
+        <a aria-label="Twitter" class="share-social flex horizontal items-center" href="https://instagram.com/share?text={{ product.title }}&url={{ share_url }}" onclick="{{ action }}">
+        {%- render 'icon-instagram',  -%}
+        <span>SHARE</span>
+        </a>
+    </li>
+    <li class="{% if block.settings.enable_pinterest %}d-block{% else %}d-none{% endif %}">
+        <a aria-label="Pinterest" class="share-social flex horizontal items-center" href="https://pinterest.com/pin/create/button/?url={{ share_url }}&media={{ share_image }}&description={{ share_description }}" onclick="{{ action }}">
+        {%- render 'icon-pinterest',  -%}
+        <span>SHARE</span>
+        </a>
+    </li>
+    <li class=" {% if block.settings.enable_email %}d-block{% else %}d-none{% endif %}">
+        <a aria-label="Email" class="share-social flex horizontal items-center" {% unless content_for_header contains 'Shopify.designMode' %} href="mailto:?subject={{ product.title }}&body={{ product.title }}%0D%0A{{ share_url }}" onclick="{{ action }}"{% endunless %}>
+        {%- render 'icon-mail',  -%}
+        <span>SHARE</span>
+        </a>
+    </li>
+</ul>
+{%  schema  %} 
+{
+    "name": "Social Share",
+    "settings": [
+        {
+          "type": "header",
+          "content": "Social"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_facebook",
+          "label": "Facebook",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_instagram",
+          "label": "Instagram",
+          "default": true
+        }
+        ,
+        {
+          "type": "checkbox",
+          "id": "enable_pinterest",
+          "label": "Pinterest",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_email",
+          "label": "Email",
+          "default": true
+        }
+      ],
+      "presets": [
+        {
+            "name": "Social Share",
+            "category": "t:categories.product"
+        }
+      ]
+}
+{% endschema %}

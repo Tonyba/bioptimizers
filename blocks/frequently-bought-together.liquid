@@ -1,0 +1,223 @@
+<h2>{{ block.settings.text }}</h2>
+<div class="fbt-container">
+<div class="product_section">
+<div class="flex">
+  {% for product in block.settings.product_list %}
+    {% assign variant = product.selected_or_first_available_variant %}
+    {% assign img = product.metafields.custom.loop_image.value %}
+
+    <div id="myBlueDiv">{% render 'icon-plus' %}</div>
+
+    <div class="fbt-item width h-100">
+      {% if img %}
+        <div class="image-card">
+          <input class="check-position" type="checkbox"
+            id="fbt-variant-{{ product.id }}"
+            value="{{ product.id }}"
+            data-variant-id="{{ variant.id }}"
+            data-price="{{ variant.price | money_without_currency | replace: ',', '' }}"
+            data-after-price="{{ variant.compare_at_price | money_without_currency | replace: ',', '' }}"
+            checked
+            onchange="updateFBTPrice()">
+          {{ img | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+        </div>
+      {% elsif product.featured_image %}
+        <div class="image-card">
+          <input class="check-position" type="checkbox"
+            id="fbt-variant-{{ product.id }}"
+            value="{{ product.id }}"
+            data-variant-id="{{ variant.id }}"
+            data-price="{{ variant.price | money_without_currency | replace: ',', '' }}"
+            data-after-price="{{ variant.compare_at_price | money_without_currency | replace: ',', '' }}"
+            checked
+            onchange="updateFBTPrice()">
+          {{ product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: product.title }}
+        </div>
+      {% endif %}
+
+      <p id="size"><strong>{{ product.title }}</strong></p>
+      <p id="cyan">
+        <strong>{{ variant.price | money }}</strong>
+      </p>
+    </div>
+
+  {% endfor %}
+
+</div>
+</div>
+<div class="cart_section">
+  <div class="space">
+    <span>Total Price: </span>
+    <span id="totalAfterPrice"></span>
+    <span id="totalPrice"></span>
+  </div>
+
+  <button class="w-100 button add-to-cart-button button" type="button" id="fbt-add-to-cart" onclick="addFBTToCart()">
+    <span class="add-to-cart-text gap">
+        {% render 'icon-plus' %}
+        <span class="add-to-cart-text__content">Add selected to cart</span>
+    </span>
+  </button>
+
+  <span class="flexx">{% render 'icon-info' %}<span>Some of these products are shipped before others.</span></span>
+
+</div>
+</div>
+
+<script>
+function updateFBTPrice() {
+  let total = 0;
+  let afterTotal = 0;
+
+  document.querySelectorAll('.check-position:checked').forEach(cb => {
+    total += parseFloat(cb.dataset.price) || 0;
+    afterTotal += parseFloat(cb.dataset.afterPrice) || 0;
+  });
+
+  document.getElementById('totalPrice').textContent = '$' + total.toFixed(2);
+  document.getElementById('totalAfterPrice').textContent = afterTotal > 0 ? '$' + afterTotal.toFixed(2) : '';
+}
+
+async function addFBTToCart() {
+  const checkboxes = document.querySelectorAll('.check-position:checked');
+
+  if (checkboxes.length === 0) {
+    alert('Please select at least one product.');
+    return;
+  }
+
+  const items = Array.from(checkboxes).map(cb => ({
+    id: cb.dataset.variantId,
+    quantity: 1
+  }));
+
+  const btn = document.getElementById('fbt-add-to-cart');
+  btn.disabled = true;
+  btn.textContent = 'Adding...';
+
+  await fetch('/cart/add.js', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ items })
+  });
+
+  window.location.href = '/cart';
+}
+
+// Run on load to set initial total
+updateFBTPrice();
+</script>
+
+
+{% stylesheet %}
+.fbt-container{
+    display: flex;
+    gap: 45px;
+}
+@media (max-width: 767px){
+    .fbt-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+#myBlueDiv {
+ display: none;
+}
+.fbt-item{
+    width: 100%;
+}
+.fbt-item {
+ align-items: center;
+}
+}
+.flexx{
+    display: flex;
+    gap: 5px;
+}
+.cart_section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.gap{
+    gap: 17px;
+}
+.add-to-cart-text svg{
+    width: 20px;
+}
+.space{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+#totalPrice{
+    font-size: 28px;
+    font-weight: bold;
+}
+#totalAfterPrice{
+    text-decoration: line-through;
+    font-size: 28px;
+    font-weight: 500;
+    color: #D93B20;
+}
+#myBlueDiv {
+ position: relative;
+ top: 125px;
+}
+#myBlueDiv:first-child{
+    display: none;
+}
+.image-card input:checked, .image-card input:hover {
+    background-color: #018476;
+    border: 2px solid transparent;
+}
+.check-position{
+    position: absolute;
+    top: 10px;     
+    right: 10px;   
+    width: 25px;
+    height: 25px;
+    z-index: 99;
+    border: 2px solid black;
+}
+    #size{
+        font-size: 18px;
+    }
+    #cyan{
+        color: #018476;
+        font-size: 21px;
+    }
+    .width{
+        width: 230px;
+    }
+    .image-card{
+        position: relative; /* important */
+  display: inline-block;
+        border: 2px solid #D9D9D9;
+        border-radius: 10px;
+        padding: 20px;
+    }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Frequently bought",
+  "settings": [
+    {
+      "type": "product_list",
+      "id": "product_list",
+      "label": "Products"
+    },
+    {
+        "type": "richtext",
+        "id": "text",
+        "label": "Heading text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Frequently bought together"
+    }
+  ]
+}
+{% endschema %}
