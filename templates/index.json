@@ -4318,7 +4318,7 @@
                 "custom_css": "",
                 "text": "<h2>The 365 Day \"Best Product Ever Or Your Money Back\" Guarantee</h2>",
                 "width": "100%",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "center",
                 "type_preset": "h2",
                 "font": "var(--font-body--family)",
