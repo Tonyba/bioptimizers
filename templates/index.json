@@ -5771,7 +5771,7 @@
                 "vertical_alignment_flex_direction_column": "flex-start",
                 "gap": 16,
                 "width": "custom",
-                "custom_width": 40,
+                "custom_width": 50,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
                 "height": "fit",
@@ -5794,8 +5794,8 @@
                 "placeholder": "",
                 "padding-block-start": 50,
                 "padding-block-end": 50,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-inline-start": 40,
+                "padding-inline-end": 40
               },
               "blocks": {
                 "text_djCyKC": {
@@ -5899,7 +5899,7 @@
                 "vertical_alignment_flex_direction_column": "flex-start",
                 "gap": 0,
                 "width": "custom",
-                "custom_width": 40,
+                "custom_width": 50,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
                 "height": "fill",
