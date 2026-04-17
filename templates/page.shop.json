@@ -57,9 +57,168 @@
         "padding-block-start": 40,
         "padding-block-end": 80
       }
+    },
+    "shop_product_9XMcEP": {
+      "type": "shop-product",
+      "blocks": {
+        "group_nz4Dd4": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "custom_css": "",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_y9GUUM": {
+              "type": "text",
+              "name": "t:names.description",
+              "settings": {
+                "custom_css": "text-white section-subheading",
+                "text": "<p>A Team of Real People</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#07180f",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 31,
+                "padding-inline-end": 31
+              },
+              "blocks": {}
+            },
+            "text_z86bbg": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "custom_css": "",
+                "text": "<h2><strong>{{ closest.product.title }}</strong></h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "review_d9q39R": {
+              "type": "review",
+              "name": "t:names.product_review_stars",
+              "settings": {
+                "stars_style": "shaded",
+                "show_number": true,
+                "rating_color": "primary",
+                "type_preset": "paragraph",
+                "width": "100%",
+                "alignment": "left"
+              },
+              "blocks": {}
+            },
+            "text_U8DEeW": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "custom_css": "",
+                "text": "<p>Gut Pro is a scientifically-formulated probiotic designed as a women's health supplement. Featuring clinically-researched probiotic strains and potent botanical extracts, this innovative gut health supplement works tirelessly to enhance digestive function and overall gut health</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_y9GUUM",
+            "text_z86bbg",
+            "review_d9q39R",
+            "text_U8DEeW"
+          ]
+        }
+      },
+      "block_order": [
+        "group_nz4Dd4"
+      ],
+      "name": "Shop Product",
+      "settings": {
+        "product": "magnesium-power-blend",
+        "image": "shopify://shop_images/old-wooden-table-front-trees-autumn-season_1.png",
+        "color": "#fe9400",
+        "position": "row"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "shop_product_9XMcEP"
   ]
 }
