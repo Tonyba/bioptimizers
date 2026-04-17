@@ -452,7 +452,7 @@
         "section_width": "page-width",
         "thickness": 1,
         "corner_radius": "square",
-        "width_percent": 66,
+        "width_percent": 70,
         "alignment_horizontal": "center",
         "padding-block-start": 65,
         "padding-block-end": 65
