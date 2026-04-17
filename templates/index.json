@@ -6130,7 +6130,7 @@
                       "name": "t:names.heading",
                       "settings": {
                         "custom_css": "",
-                        "text": "<h3>Save<em> 20% off</em></h3>",
+                        "text": "<h3>Save<em> </em>20% off</h3>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
