@@ -1119,7 +1119,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "custom_css": "",
+                        "custom_css": "text-is-white",
                         "text": "<h3>Save<em> 20% off</em></h3>",
                         "width": "100%",
                         "max_width": "normal",
@@ -1288,7 +1288,8 @@
         "group_Pk6Kqj"
       ],
       "custom_css": [
-        ".bg-color {background-color: #f58220;}"
+        ".bg-color {background-color: #f58220;}",
+        ".text-is-white em{color: white; font-style: normal;}"
       ],
       "name": "t:names.custom_section",
       "settings": {
