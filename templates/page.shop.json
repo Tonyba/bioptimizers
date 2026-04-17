@@ -1323,7 +1323,7 @@
                           "name": "t:names.heading",
                           "settings": {
                             "custom_css": "",
-                            "text": "<h2>Hormonal Balance</h2>",
+                            "text": "<h3>Hormonal Balance</h3>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -1851,7 +1851,7 @@
                   "name": "t:names.image",
                   "settings": {
                     "custom_css": "",
-                    "image": "shopify://shop_images/Rectangle_381.png",
+                    "image": "shopify://shop_images/Rectangle_384.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -1921,7 +1921,7 @@
                   "name": "t:names.heading",
                   "settings": {
                     "custom_css": "",
-                    "text": "<h2>Sleep deeper. Stress less. Live more.</h2>",
+                    "text": "<h2>Comfort from the inside out.</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1948,7 +1948,7 @@
                   "name": "t:names.description",
                   "settings": {
                     "custom_css": "",
-                    "text": "<p>7 key ingredients. Clinically tested. Designed to restore balance, support restful sleep, and recharge your body—night after night.</p>",
+                    "text": "<p>6 powerful compounds. Targeted digestive support. Formulated to ease discomfort, improve nutrient absorption, and keep your gut in harmony—every day.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2098,7 +2098,7 @@
               "name": "t:names.heading",
               "settings": {
                 "custom_css": "",
-                "text": "<h2>Clinically Proven Ingredients for Rest, Balance & Vitality</h2>",
+                "text": "<h2>Targeted Digestive Support Backed by Science & Nature</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -2253,7 +2253,7 @@
                       "name": "t:names.image",
                       "settings": {
                         "custom_css": "",
-                        "image": "shopify://shop_images/Rectangle_380.png",
+                        "image": "shopify://shop_images/Rectangle_380_5.png",
                         "link": "",
                         "image_ratio": "square",
                         "width": "custom",
@@ -2318,7 +2318,7 @@
                           "name": "t:names.heading",
                           "settings": {
                             "custom_css": "",
-                            "text": "<h3>Energy Production</h3>",
+                            "text": "<h3>Digestive Comfort</h3>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -2345,7 +2345,7 @@
                           "name": "t:names.text",
                           "settings": {
                             "custom_css": "",
-                            "text": "<p>Creatine Citrate and D-Ribose work to fuel cellular energy and reduce fatigue.</p>",
+                            "text": "<p>Pyruvate helps reduce bloating and supports smoother digestion.</p>",
                             "width": "fit-content",
                             "max_width": "none",
                             "alignment": "left",
@@ -2644,7 +2644,7 @@
                       "name": "t:names.image",
                       "settings": {
                         "custom_css": "",
-                        "image": "shopify://shop_images/Rectangle_380.png",
+                        "image": "shopify://shop_images/Rectangle_380_6.png",
                         "link": "",
                         "image_ratio": "square",
                         "width": "custom",
@@ -2709,7 +2709,7 @@
                           "name": "t:names.heading",
                           "settings": {
                             "custom_css": "",
-                            "text": "<h2>Energy Production</h2>",
+                            "text": "<h3>Cardiovascular Support</h3>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -2736,7 +2736,7 @@
                           "name": "t:names.text",
                           "settings": {
                             "custom_css": "",
-                            "text": "<p>Creatine Citrate and D-Ribose work to fuel cellular energy and reduce fatigue.</p>",
+                            "text": "<p>Co-Q10 strengthens heart health while enhancing nutrient absorption.</p>",
                             "width": "fit-content",
                             "max_width": "none",
                             "alignment": "left",
@@ -2816,7 +2816,7 @@
                       "name": "t:names.image",
                       "settings": {
                         "custom_css": "",
-                        "image": "shopify://shop_images/Rectangle_380.png",
+                        "image": "shopify://shop_images/Rectangle_380_7.png",
                         "link": "",
                         "image_ratio": "square",
                         "width": "custom",
@@ -2881,7 +2881,7 @@
                           "name": "t:names.heading",
                           "settings": {
                             "custom_css": "",
-                            "text": "<h3>Energy Production</h3>",
+                            "text": "<h3>Metabolic Balance</h3>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -2908,7 +2908,7 @@
                           "name": "t:names.text",
                           "settings": {
                             "custom_css": "",
-                            "text": "<p>Creatine Citrate and D-Ribose work to fuel cellular energy and reduce fatigue.</p>",
+                            "text": "<p>L-Carnitine assists in fat metabolism and supports healthy weight management.</p>",
                             "width": "fit-content",
                             "max_width": "none",
                             "alignment": "left",
