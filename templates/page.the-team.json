@@ -725,6 +725,21 @@
         "padding-block-end": 0
       }
     },
+    "divider_E8WGzy": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color": "#d9d9d9",
+        "color_scheme": "",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 60,
+        "alignment_horizontal": "center",
+        "padding-block-start": 16,
+        "padding-block-end": 16
+      }
+    },
     "section_y68kaf": {
       "type": "section",
       "blocks": {
@@ -4511,6 +4526,7 @@
     "hero_bHx8QH",
     "section_jWihc4",
     "section_BefXXf",
+    "divider_E8WGzy",
     "section_y68kaf",
     "section_3pwgAU",
     "section_bWTCC7",
