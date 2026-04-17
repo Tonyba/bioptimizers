@@ -3191,76 +3191,6 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_hWwDH9": {
-              "type": "group",
-              "name": "t:names.column",
-              "settings": {
-                "custom_css": "",
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 8,
-                "width": "custom",
-                "custom_width": 50,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "image_rQPLan": {
-                  "type": "image",
-                  "name": "t:names.image",
-                  "settings": {
-                    "custom_css": "",
-                    "image": "shopify://shop_images/Rectangle_381.png",
-                    "link": "",
-                    "image_ratio": "adapt",
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "height": "fit",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 12,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "image_rQPLan"
-              ]
-            },
             "group_cCjN7d": {
               "type": "group",
               "name": "t:names.column",
@@ -3307,7 +3237,7 @@
                   "name": "t:names.heading",
                   "settings": {
                     "custom_css": "",
-                    "text": "<h2>Sleep deeper. Stress less. Live more.</h2>",
+                    "text": "<h2>Strong gut. Stronger you.</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -3334,7 +3264,7 @@
                   "name": "t:names.description",
                   "settings": {
                     "custom_css": "",
-                    "text": "<p>7 key ingredients. Clinically tested. Designed to restore balance, support restful sleep, and recharge your body—night after night.</p>",
+                    "text": "<p>5 active ingredients. Science-backed probiotics. Engineered to boost immunity, enhance digestion, and promote long-term vitality with daily balanc</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -3379,11 +3309,81 @@
                 "text_Uhfpbx",
                 "button_prgexD"
               ]
+            },
+            "group_hWwDH9": {
+              "type": "group",
+              "name": "t:names.column",
+              "settings": {
+                "custom_css": "",
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 8,
+                "width": "custom",
+                "custom_width": 50,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_rQPLan": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "custom_css": "",
+                    "image": "shopify://shop_images/Rectangle_385_96c9a1fe-72f0-4e8f-b76c-978d642d18e4.png",
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 12,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_rQPLan"
+              ]
             }
           },
           "block_order": [
-            "group_hWwDH9",
-            "group_cCjN7d"
+            "group_cCjN7d",
+            "group_hWwDH9"
           ]
         }
       },
@@ -3484,7 +3484,7 @@
               "name": "t:names.heading",
               "settings": {
                 "custom_css": "",
-                "text": "<h2>Clinically Proven Ingredients for Rest, Balance & Vitality</h2>",
+                "text": "<h2>Advanced Formula for Long-Term Gut & Immune Wellness</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -3639,7 +3639,7 @@
                       "name": "t:names.image",
                       "settings": {
                         "custom_css": "",
-                        "image": "shopify://shop_images/Rectangle_380.png",
+                        "image": "shopify://shop_images/Rectangle_380_8.png",
                         "link": "",
                         "image_ratio": "square",
                         "width": "custom",
@@ -3704,7 +3704,7 @@
                           "name": "t:names.heading",
                           "settings": {
                             "custom_css": "",
-                            "text": "<h3>Energy Production</h3>",
+                            "text": "<h3>Gut Flora Balance</h3>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -3731,7 +3731,7 @@
                           "name": "t:names.text",
                           "settings": {
                             "custom_css": "",
-                            "text": "<p>Creatine Citrate and D-Ribose work to fuel cellular energy and reduce fatigue.</p>",
+                            "text": "<p>Probiotic strains support a healthy gut microbiome and long-term digestive health.</p>",
                             "width": "fit-content",
                             "max_width": "none",
                             "alignment": "left",
@@ -3811,7 +3811,7 @@
                       "name": "t:names.image",
                       "settings": {
                         "custom_css": "",
-                        "image": "shopify://shop_images/Rectangle_380.png",
+                        "image": "shopify://shop_images/Rectangle_380_9.png",
                         "link": "",
                         "image_ratio": "square",
                         "width": "custom",
@@ -3876,7 +3876,7 @@
                           "name": "t:names.heading",
                           "settings": {
                             "custom_css": "",
-                            "text": "<h3>Energy Production</h3>",
+                            "text": "<h3>Metabolic Support</h3>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -3903,7 +3903,7 @@
                           "name": "t:names.text",
                           "settings": {
                             "custom_css": "",
-                            "text": "<p>Creatine Citrate and D-Ribose work to fuel cellular energy and reduce fatigue.</p>",
+                            "text": "<p>AG1 supports mental performance with pantothenic acid and cognitive function with zinc.</p>",
                             "width": "fit-content",
                             "max_width": "none",
                             "alignment": "left",
@@ -4030,7 +4030,7 @@
                       "name": "t:names.image",
                       "settings": {
                         "custom_css": "",
-                        "image": "shopify://shop_images/Rectangle_380.png",
+                        "image": "shopify://shop_images/Rectangle_380_10.png",
                         "link": "",
                         "image_ratio": "square",
                         "width": "custom",
@@ -4095,7 +4095,7 @@
                           "name": "t:names.heading",
                           "settings": {
                             "custom_css": "",
-                            "text": "<h2>Energy Production</h2>",
+                            "text": "<h3>Immune Defense</h3>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -4122,7 +4122,7 @@
                           "name": "t:names.text",
                           "settings": {
                             "custom_css": "",
-                            "text": "<p>Creatine Citrate and D-Ribose work to fuel cellular energy and reduce fatigue.</p>",
+                            "text": "<p>Vitamin B12 and Green Tea Extract boost natural immunity and energy.</p>",
                             "width": "fit-content",
                             "max_width": "none",
                             "alignment": "left",
@@ -4202,7 +4202,7 @@
                       "name": "t:names.image",
                       "settings": {
                         "custom_css": "",
-                        "image": "shopify://shop_images/Rectangle_380.png",
+                        "image": "shopify://shop_images/Rectangle_380_11.png",
                         "link": "",
                         "image_ratio": "square",
                         "width": "custom",
@@ -4267,7 +4267,7 @@
                           "name": "t:names.heading",
                           "settings": {
                             "custom_css": "",
-                            "text": "<h3>Energy Production</h3>",
+                            "text": "<h3>Sustained Vitality</h3>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -4294,7 +4294,7 @@
                           "name": "t:names.text",
                           "settings": {
                             "custom_css": "",
-                            "text": "<p>Creatine Citrate and D-Ribose work to fuel cellular energy and reduce fatigue.</p>",
+                            "text": "<p>Caffeine and Green Tea provide natural energy without the crash.</p>",
                             "width": "fit-content",
                             "max_width": "none",
                             "alignment": "left",
