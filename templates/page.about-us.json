@@ -2663,7 +2663,7 @@
                       "settings": {
                         "icon": "price_tag",
                         "image_upload": "shopify://shop_images/brain_1.png",
-                        "width": 126,
+                        "width": 110,
                         "link": "",
                         "open_in_new_tab": false
                       },
