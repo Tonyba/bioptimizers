@@ -1007,8 +1007,8 @@
             "gap": 12,
             "width": "custom",
             "custom_width": 60,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
+            "width_mobile": "custom",
+            "custom_width_mobile": 95,
             "height": "fit",
             "custom_height": 100,
             "inherit_color_scheme": false,
@@ -1271,7 +1271,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 80,
-        "padding-block-end": 0
+        "padding-block-end": 20
       }
     }
   },
