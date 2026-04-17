@@ -597,13 +597,13 @@
                       "name": "t:names.heading",
                       "settings": {
                         "custom_css": "",
-                        "text": "<p>Dr. Joann Doe</p>",
+                        "text": "<p><strong>Dr. Joann Doe</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
-                        "type_preset": "h4",
+                        "type_preset": "custom",
                         "font": "var(--font-body--family)",
-                        "font_size": "1rem",
+                        "font_size": "1.5rem",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -871,13 +871,13 @@
                       "name": "t:names.heading",
                       "settings": {
                         "custom_css": "",
-                        "text": "<p>Dr. Joann Doe</p>",
+                        "text": "<p><strong>Matt Gallant</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
-                        "type_preset": "h4",
+                        "type_preset": "custom",
                         "font": "var(--font-body--family)",
-                        "font_size": "1rem",
+                        "font_size": "1.5rem",
                         "line_height": "normal",
                         "letter_spacing": "normal",
                         "case": "none",
@@ -898,7 +898,7 @@
                       "name": "t:names.description",
                       "settings": {
                         "custom_css": "text-cyan",
-                        "text": "<p><strong>President</strong></p>",
+                        "text": "<p><strong>Chief Executive Officer</strong></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -1066,7 +1066,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-end": 60
       }
     },
     "section_y68kaf": {
