@@ -53,7 +53,7 @@
       >
         {% if block_settings.display_type == 'text' %}
           
-            {% render 'icon', icon: 'chevron-right' | width: 25px %}
+            {% render 'icon', icon: 'chevron-right', width: renamed_variable_25px %}
           {{ block_settings.label }}
         {% else %} 
           <svg
@@ -706,3 +706,13 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'icon', icon: 'chevron-right' | width: 25px %}"
+  to: "{% render 'icon', icon: 'chevron-right', width: renamed_variable_25px %}"
+  position: 3022..3094
+{% endcomment %}
